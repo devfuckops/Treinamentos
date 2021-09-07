@@ -13,5 +13,5 @@
 
 # Links 
 
-- ## [Aula do Bruno](https://github.com/brunokktro/auladobruno)
+- [Aula do Bruno](https://github.com/brunokktro/auladobruno)
 
