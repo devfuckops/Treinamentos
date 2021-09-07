@@ -13,6 +13,5 @@
 
 # Links 
 
-### **Agregação de Links**
+- ## [Aula do Bruno](https://github.com/brunokktro/auladobruno)
 
-- ### https://github.com/brunokktro/auladobruno
