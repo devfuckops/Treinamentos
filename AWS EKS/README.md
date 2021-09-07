@@ -73,6 +73,10 @@ https://docs.google.com/presentation/d/1weqpBWa9FNjKc1ugCUIpwYYquvoIOFbUvEcZ9ZYa
 
 - ### **Backing up and Restoring Kubernetes Data in etcd**
 
+- ### **Helm Deep Dive V3**
+
+- ### A Practical Guide to Amazon EKS
+
 - ### Learn Kubernetes by Doing
 
 - **Monitoring Kubernetes With Prometheus**
@@ -107,6 +111,138 @@ https://www.youtube.com/watch?v=IcslsH7OoYo&list=RDCMUCR-DXc1voovS8nhAvccRZhg&in
 https://www.udemy.com/course/kubernetes-hands-on-the-complete-guide/learn/lecture/27575504?start=0#overview
 
 https://www.udemy.com/course/certified-kubernetes-security-specialist/learn/lecture/23184246?start=0#overview
+
+
+
+## **AWS**
+
+
+
+- **Amazon Elastic Kubernetes Service (EKS) Primer**✔
+
+  
+
+- ### **Containers on AWS: Ecosystem Integration✔**
+
+- ### **Running Containers on Amazon Elastic Kubernetes Service (Amazon EKS)** ✔
+
+- ### **Containers na AWS✔**
+  - https://pages.awscloud.com/LATAM_TRAINCERT_WEBINAR_immersion-day-containers-video-series_20200331_7010z000001LIBT_LPVideos-CostOptimizationVideoSeries.html
+
+  
+
+  
+
+- **Leitura**
+  - https://github.com/terraform-aws-modules/terraform-aws-eks
+  - https://aws.github.io/aws-eks-best-practices/
+
+
+
+- ### Amazon EKS on the AWS Cloud Quick Start Reference Deployment
+  - https://aws-quickstart.github.io/quickstart-amazon-eks/
+  - https://aws-quickstart.github.io/
+
+
+
+- ### **Workshops AWS**
+
+  - https://www.eksworkshop.com/
+
+  
+
+- ### **WINDOWS CONTAINERS ON AWS**
+
+  - https://ms-containers.workshop.aws/en/
+
+  
+
+  
+
+- ### **DISASTER RECOVERY ON AWS**
+
+  - https://disaster-recovery.workshop.aws/en/
+
+  
+
+- ### **BLUE/GREEN AND CANARY DEPLOYMENT FOR EKS AND ECS**
+
+  - https://cicd-pipeline-cdk-eks-bluegreen.workshop.aws/en/
+
+
+
+- ### **MANAGE YOUR EKS CLUSTER IN FULL-STACK WITH CDK**
+
+  - https://cdk-eks-devops.workshop.aws/en/
+
+
+
+- ### **INTRODUCTION TO AMAZON EKS**
+
+  - https://eks-for-aws-summit-online.workshop.aws/
+
+
+
+- ### **AMAZON EKS TERRAFORM WORKSHOP**
+
+  - https://tf-eks-workshop.workshop.aws/
+
+
+
+- ### **WELCOME TO THE AMAZON EC2 SPOT INSTANCES WORKSHOPS WEBSITE**
+
+  - https://ec2spotworkshops.com/
+
+
+
+- ### **AWS MODERNIZATION WORKSHOP**
+
+  - https://aqua.awsworkshop.io/
+
+
+
+- ### **APPLICATION MODERNIZATION WITH AWS, SNYK AND DOCKER**
+
+  - https://docker-snyk.awsworkshop.io/
+
+
+
+- ### **AWS MODERNIZATION WORKSHOP WITH HARNESS**
+
+  - https://harness.awsworkshop.io/
+
+
+
+- ### **Introduction to GitOps on EKS with Weaveworks**
+
+  - https://weaveworks-gitops.awsworkshop.io/
+
+
+
+- ### **HELLO** 
+
+  - https://observability.workshop.aws/en/
+
+
+
+- ### **AWS MODERNIZATION WORKSHOP: DEVSECOPS WITH ATLASSIAN & SNYK**
+
+  - https://snyk-atlassian.awsworkshop.io/
+
+
+
+- ### **Workshop Links**
+
+  - https://workshops.aws/
+  - https://awsworkshop.io/
+
+
+
+- ### **Agregação de Links**
+
+  - ### https://github.com/brunokktro/auladobruno
+
+
 
 
 
