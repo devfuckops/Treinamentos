@@ -8,8 +8,8 @@
 4. **[Terraform](https://github.com/devfuckops/Treinamentos/tree/main/Terraform)**
 5. **[Istio](https://github.com/devfuckops/Treinamentos/tree/main/Istio)**
 6. **[AWS EKS](https://github.com/devfuckops/Treinamentos/tree/main/AWS%20EKS)**
-7. **Helm**
-8. **Ansible**
+7. [**Helm**](https://github.com/devfuckops/Treinamentos/tree/main/Helm)
+8. [**Ansible**](https://github.com/devfuckops/Treinamentos/tree/main/Ansible)
 
 
 
