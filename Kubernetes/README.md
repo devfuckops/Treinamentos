@@ -100,13 +100,13 @@ https://docs.google.com/presentation/d/1weqpBWa9FNjKc1ugCUIpwYYquvoIOFbUvEcZ9ZYa
 
 ## **Kubernetes 101**
 
-https://www.youtube.com/watch?v=IcslsH7OoYo&list=RDCMUCR-DXc1voovS8nhAvccRZhg&index=2
+- https://www.youtube.com/watch?v=IcslsH7OoYo&list=RDCMUCR-DXc1voovS8nhAvccRZhg&index=2
+
 
 ## **Udemy**
 
-https://www.udemy.com/course/kubernetes-hands-on-the-complete-guide/learn/lecture/27575504?start=0#overview
-
-https://www.udemy.com/course/certified-kubernetes-security-specialist/learn/lecture/23184246?start=0#overview
+- https://www.udemy.com/course/kubernetes-hands-on-the-complete-guide/learn/lecture/27575504?start=0#overview
+- https://www.udemy.com/course/certified-kubernetes-security-specialist/learn/lecture/23184246?start=0#overview
 
 
 
@@ -115,25 +115,23 @@ https://www.udemy.com/course/certified-kubernetes-security-specialist/learn/lect
 
 - ### **Descomplicando o Kubernetes** 
 
-
-https://github.com/badtuxx/DescomplicandoKubernetes
+  - 
+    https://github.com/badtuxx/DescomplicandoKubernetes
 
 - ### **multi etcd**
 
 - ### Canary Deploy
 
+  - 
+    https://www.youtube.com/watch?v=CTvsdWZrAW0
+  - https://github.com/badtuxx/k8s-canary-deploy-example
 
-https://www.youtube.com/watch?v=CTvsdWZrAW0
 
-https://github.com/badtuxx/k8s-canary-deploy-example
-
-- ### **helm**
-
-  
 
 ## **Jayendra Patil**
 
-https://jayendrapatil.com/certified-kubernetes-administrator-cka-learning-path/
+- https://jayendrapatil.com/certified-kubernetes-administrator-cka-learning-path/
+
 
 
 
@@ -141,15 +139,15 @@ https://jayendrapatil.com/certified-kubernetes-administrator-cka-learning-path/
 
 - **Play with K8s**
 
-https://labs.play-with-k8s.com/
+  - https://labs.play-with-k8s.com/
 
 - **Katacoda**
 
-https://www.katacoda.com/courses/kubernetes
+  - https://www.katacoda.com/courses/kubernetes
 
 - **Tutorials**
 
-https://kubernetes.io/docs/tutorials/
+  - https://kubernetes.io/docs/tutorials/
 
 # **Documentação oficial**
 
