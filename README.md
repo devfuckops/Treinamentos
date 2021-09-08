@@ -9,6 +9,7 @@
 5. **[Istio](https://github.com/devfuckops/Treinamentos/tree/main/Istio)**
 6. **[AWS EKS](https://github.com/devfuckops/Treinamentos/tree/main/AWS%20EKS)**
 7. **Helm**
+8. **Ansible**
 
 
 
