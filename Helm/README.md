@@ -2,17 +2,19 @@
 
 # **Helm**
 
-Helm ajuda a gerenciar aplicativos Kubernetes - Helm Charts ajuda a definir, instalar e atualizar até mesmo o aplicativo Kubernetes mais complexo.
-
 ![Helm-icon | Brands HA - HZ](./imagens/34_helm-icon.2aa753566a.png)
 
 
 
-O **Helm** é o gerenciador de pacotes do Kubernetes. Os pacotes gerenciados pelo Helm, são chamados de **charts**, que basicamente são formados por um conjunto de manifestos Kubernetes no formato YAML e alguns templates que ajudam a manter variáveis dinâmicas de acordo com o ambiente. O Helm ajuda você a definir, instalar e atualizar até o aplicativo Kubernetes mais complexo.
+[`Kubernetes Helm`](https://github.com/kubernetes/helm) é uma ferramenta para gerenciar pacotes de recursos pré-configurados do Kubernetes, também conhecidos como Kubernetes charts.
 
-Os Helm charts são fáceis de criar, versionar, compartilhar e publicar.
+Use o Helm para:
 
-O Helm é um projeto graduado no CNCF e é mantido pela comunidade, assim como o Kubernetes.
+- Encontrar e usar softwares populares empacotados como Kubernetes charts
+- Compartilhar seus próprios aplicativos como Kubernetes charts
+- Criar builds reproduzíveis de seus aplicativos Kubernetes
+- Gerenciar de forma inteligente os arquivos de manifesto do Kubernetes
+- Gerenciar versões dos pacotes Helm
 
 # **Treinamentos**
 
@@ -28,11 +30,15 @@ Colocar ✔ quando concluído.
 
 # **Documentação**
 
+https://helm.sh/pt/docs/helm/helm/
+
+https://helm.sh/pt/docs/intro/quickstart/
+
 
 
 ## **Instalando Helm**
 
-https://helm.sh/docs/intro/install/
+https://helm.sh/pt/docs/intro/install/
 
 
 
@@ -103,15 +109,35 @@ annotations:
 
 
 
+
+
+### Inicialize um Repositório para os Charts do Helm
+
+https://helm.sh/pt/docs/intro/quickstart/#inicialize-um-reposit%C3%B3rio-para-os-charts-do-helm
+
+
+
+#### **Comandos**
+
+| Comandos                                           | Descrição                                    |
+| -------------------------------------------------- | -------------------------------------------- |
+| helm repo add stable https://charts.helm.sh/stable | Add Repo Stable                              |
+| helm repo list                                     |                                              |
+| helm search repo "*palavra-chave*"                 | Procura por repositórios com a palavra chave |
+| helm search hub "*palavra-chave*"                  | Procura por chats com a palavra chave        |
+| helm repo update                                   | Atualiza Repos                               |
+| helm list                                          | Mostra os Helm´s instalados                  |
+|                                                    |                                              |
+|                                                    |                                              |
+|                                                    |                                              |
+
+
+
 # **Links Úteis**
 
 **Site Oficial**
 
 https://helm.sh/
-
-
-
-
 
 
 

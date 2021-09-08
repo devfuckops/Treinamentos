@@ -1087,7 +1087,11 @@ spec:
 
 ```
 
+Pegar Secret
 
+```shell
+$(kubectl get secret --namespace default mysql-1631144634 -o jsonpath="{.data.mysql-root-password}" | base64 --decode)
+```
 
 ##############################################################################################
 
