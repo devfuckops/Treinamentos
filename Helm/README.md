@@ -30,27 +30,27 @@ Colocar ✔ quando concluído.
 
 # **Documentação**
 
-https://helm.sh/pt/docs/helm/helm/
+- https://helm.sh/pt/docs/helm/helm/
 
-https://helm.sh/pt/docs/intro/quickstart/
+- https://helm.sh/pt/docs/intro/quickstart/
 
 
 
 ## **Instalando Helm**
 
-https://helm.sh/pt/docs/intro/install/
+- https://helm.sh/pt/docs/intro/install/
 
 
 
 ## **Charts**
 
-https://artifacthub.io/
+- https://artifacthub.io/
 
-https://helm.sh/docs/topics/charts/
+- https://helm.sh/docs/topics/charts/
 
 ### The Chart File Structure
 
-https://helm.sh/docs/topics/charts/#the-chart-file-structure
+- https://helm.sh/docs/topics/charts/#the-chart-file-structure
 
 Estrutura do Chart
 
@@ -72,7 +72,7 @@ wordpress/
 
 ### The Chart.yaml File
 
-https://helm.sh/docs/topics/charts/#the-chartyaml-file
+- https://helm.sh/docs/topics/charts/#the-chartyaml-file
 
 ```yaml
 apiVersion: The chart API version (required)
@@ -113,7 +113,7 @@ annotations:
 
 ### Inicialize um Repositório para os Charts do Helm
 
-https://helm.sh/pt/docs/intro/quickstart/#inicialize-um-reposit%C3%B3rio-para-os-charts-do-helm
+- https://helm.sh/pt/docs/intro/quickstart/#inicialize-um-reposit%C3%B3rio-para-os-charts-do-helm
 
 
 
@@ -122,13 +122,13 @@ https://helm.sh/pt/docs/intro/quickstart/#inicialize-um-reposit%C3%B3rio-para-os
 | Comandos                                           | Descrição                                    |
 | -------------------------------------------------- | -------------------------------------------- |
 | helm repo add stable https://charts.helm.sh/stable | Add Repo Stable                              |
-| helm repo list                                     |                                              |
+| helm repo list                                     | Lista repositórios                           |
 | helm search repo "*palavra-chave*"                 | Procura por repositórios com a palavra chave |
 | helm search hub "*palavra-chave*"                  | Procura por chats com a palavra chave        |
 | helm repo update                                   | Atualiza Repos                               |
 | helm list                                          | Mostra os Helm´s instalados                  |
-|                                                    |                                              |
-|                                                    |                                              |
+| helm status "nomedochart"                          | Status do chart                              |
+| helm uninstall "nomedochart"                       | Remove o chart                               |
 |                                                    |                                              |
 
 
