@@ -2,7 +2,7 @@
 
 # **Kubernetes**
 
-<img src="./imagens/pngwing.com.png" style="zoom:50%;" />
+<img src="./imagens/pngwing.com.png" style="zoom: 25%;" />
 
 # **Treinamentos**
 
