@@ -22,11 +22,20 @@ Colocar ✔ quando concluído.
 
 ## Linux Tips
 
-- Descomplicando Kubernetes - Helm
+### **Descomplicando Kubernetes - Helm**
+
 - https://github.com/devfuckops/DescomplicandoHelm
 - https://github.com/devfuckops/DescomplicandoKubernetes/blob/main/day-4/DescomplicandoKubernetes-Day4.md#helm
 
 ## 
+
+## **acloudguru**
+
+### **Helm Deep Dive V3**
+
+- https://learn.acloud.guru/course/helm-deep-dive-v3/overview
+
+
 
 # **Documentação**
 
@@ -117,19 +126,24 @@ annotations:
 
 
 
-#### **Comandos**
+### **Comandos**
 
-| Comandos                                           | Descrição                                    |
-| -------------------------------------------------- | -------------------------------------------- |
-| helm repo add stable https://charts.helm.sh/stable | Add Repo Stable                              |
-| helm repo list                                     | Lista repositórios                           |
-| helm search repo "*palavra-chave*"                 | Procura por repositórios com a palavra chave |
-| helm search hub "*palavra-chave*"                  | Procura por chats com a palavra chave        |
-| helm repo update                                   | Atualiza Repos                               |
-| helm list                                          | Mostra os Helm´s instalados                  |
-| helm status "nomedochart"                          | Status do chart                              |
-| helm uninstall "nomedochart"                       | Remove o chart                               |
-|                                                    |                                              |
+| Comandos                                                     | Descrição                                    |
+| ------------------------------------------------------------ | -------------------------------------------- |
+| helm repo add stable https://charts.helm.sh/stable           | Add Repo Stable                              |
+| helm repo list                                               | Lista repositórios                           |
+| helm search repo "*palavra-chave*"                           | Procura por repositórios com a palavra chave |
+| helm search hub "*palavra-chave*"                            | Procura por chats com a palavra chave        |
+| helm repo update                                             | Atualiza Repos                               |
+| helm list                                                    | Mostra os Helm´s instalados                  |
+| helm status "*nomedochart*"                                  | Status do chart                              |
+| helm uninstall "*nomedochart*"                               | Remove o chart                               |
+| helm show chart "*nomedochart*" (helm show chart bitnami/mysql) | Descrição do Chart                           |
+| helm install "nome" "diretório/" --values "diretório"/values.yaml | Instalar repo local                          |
+| helm upgrade "nome" "diretório/" --values "diretório"/values.yaml | Upgrade                                      |
+| helm rollback giropops 1                                     | Rollback                                     |
+| helm history giropops                                        | Histórico de versões                         |
+|                                                              |                                              |
 
 
 
