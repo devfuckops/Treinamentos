@@ -143,7 +143,7 @@ annotations:
 | helm upgrade "nome" "diretório/" --values "diretório"/values.yaml | Upgrade                                      |
 | helm rollback giropops 1                                     | Rollback                                     |
 | helm history giropops                                        | Histórico de versões                         |
-|                                                              |                                              |
+| helm install --namespace="*nome-namespace*"--name="*nome*"--version="*versão*" --set=adminUser=admin,adminPassword=admin,service.type=NodePort "*nomedochart*" | Install com parametros                       |
 
 
 
