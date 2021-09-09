@@ -2,6 +2,8 @@
 
 # **Kubernetes**
 
+![Kubernetes png free download - Document icon Folder icon](./imagens/kisspng-logo-kubernetes-transparency-font-computer-softwar-5c6d5611218595.4040047015506693291373.jpg)
+
 # **Treinamentos**
 
 Colocar ✔ quando concluído. 
