@@ -1,5 +1,7 @@
 # git
 
+![Git, logo Free Icon of Coreui Brands](./Imagens/Git, logo Free Icon of Coreui Brands.png)
+
 ### Estudos
 ## DESCOMPLICANDO O GITLAB | CERTIFICAÇÃO GITLAB
 ## Primeria aula 
