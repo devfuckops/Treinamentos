@@ -10,6 +10,7 @@
 6. **[AWS EKS](https://github.com/devfuckops/Treinamentos/tree/main/AWS%20EKS)**
 7. [**Helm**](https://github.com/devfuckops/Treinamentos/tree/main/Helm)
 8. [**Ansible**](https://github.com/devfuckops/Treinamentos/tree/main/Ansible)
+9. [**Certificações AWS**](https://github.com/devfuckops/Treinamentos/tree/main/AWS%20Certification)
 
 
 
