@@ -445,13 +445,11 @@ Kubelet é o agente Kubernetes executado em cada nó. Ele se comunica com o plan
 | Describe Node               | kubectl describe node "*node_name*"                      |
 | Pegar bloco de ip dos nodes | kubectl get nodes -o jsonpath='{.items[*].spec.podCIDR}' |
 
-##############################################################################################
+
 
 ## **Demais componentes**
 
 
-
-##############################################################################################
 
 ### **Namespaces**
 
@@ -511,9 +509,9 @@ No POD a namespace é declarada no metadata.
 
 
 
-##############################################################################################
 
-**2.6.5 - Replicas e Replicas Set**
+
+**Replicas e Replicas Set**
 
 https://kubernetes.io/docs/concepts/workloads/controllers/replicaset/
 
@@ -563,7 +561,7 @@ verifique a saida: Controlled By
 
 ![image-20210726213935171](./imagens/image-20210726213935171.png)
 
-**2.3.5.1 - Comandos**
+**Comandos**
 
 
 
@@ -575,16 +573,6 @@ verifique a saida: Controlled By
 |                         | kubectl get rs/"*nomedareplica*"                             |
 
 
-
-### 
-
-##############################################################################################
-
-
-
-
-
-##############################################################################################
 
 ### **Labels**
 
@@ -630,13 +618,13 @@ https://kubernetes.io/docs/concepts/overview/working-with-objects/common-labels/
 
 
 
-##############################################################################################
+
 
 ### **[Supervisord](http://supervisord.org/)** 
 
 é o responsável por monitorar e restabelecer, se necessário, o `kubelet` e o Docker. Por esse motivo, quando existe algum problema em relação ao kubelet, como por exemplo o uso do driver `cgroup` diferente do que está rodando no Docker, você perceberá que ele ficará tentando subir o kubelet frequentemente.
 
-##############################################################################################
+
 
 ### **Kubectl Taint**
 
@@ -656,20 +644,6 @@ O nó `master` está marcado com o taint `NoSchedule`, assim o scheduler do Kube
 **Desabilitado** - kubectl taint node elliot-03 key1=value1:NoExecute-
 ```
 
-##############################################################################################
-
-### **Context**
-
-##############################################################################################
-
-### **Alias**
-
-alias kk=kubectl
-
-
-
-##############################################################################################
-
 # **Setup WEB UI**
 
 https://acloudguru-content-attachment-production.s3-accelerate.amazonaws.com/1596555315055-302-kubernetessecuritydashboardsetup_1558387085.pdf
@@ -687,8 +661,6 @@ kubectl -n kubernetes-dashboard describe secret $(kubectl -n kubernetes-dashboar
 **Acesso**
 
 http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/#!/login
-
-##############################################################################################
 
 
 
@@ -711,7 +683,7 @@ https://kubernetes.io/docs/reference/kubectl/cheatsheet/#interacting-with-runnin
 
 ![image-20210726205830178](./imagens/image-20210726205830178.png)
 
-##############################################################################################
+
 
 ## **Anatomia de um Pod ** 
 
@@ -744,7 +716,7 @@ spec:											---->  espeficicações do container
         done
 ```
 
-##############################################################################################
+
 
 ## **Init Containers**
 
@@ -775,7 +747,7 @@ command: ['sleep', '30']
 
 ```
 
-##############################################################################################
+
 
 ## **Static POD**
 
@@ -787,7 +759,7 @@ Arquivo yaml fica no diretório: /etc/kubernetes/manifests/
 
 
 
-##############################################################################################
+
 
 ## **Multi-Container POD**
 
@@ -803,7 +775,7 @@ trabalhando juntos para fornecer funcionalidade
 
 
 
-##############################################################################################
+
 
 ## **LifeCycle**
 
@@ -955,7 +927,7 @@ spec:
     command: ['sh', '-c', 'sleep 10']
 ```
 
-##############################################################################################
+
 
 ## **Resource CPU/Memory**
 
@@ -965,7 +937,7 @@ https://acloudguru-content-attachment-production.s3-accelerate.amazonaws.com/159
 
 
 
-##############################################################################################
+
 
 ### **Resource Request**
 
@@ -1040,7 +1012,7 @@ spec:
 
 **Atenção! 1 core de CPU corresponde a 1000m (1000 milicore). Ao especificar 200m, estamos querendo reservar 20% de 1 core da CPU. Se fosse informado o valor 0.2 teria o mesmo efeito, ou seja, seria reservado 20% de 1 core da CPU.**
 
-##############################################################################################
+
 
 ## **Secrets**
 
@@ -1095,7 +1067,7 @@ Pegar Secret
 $(kubectl get secret --namespace default mysql-1631144634 -o jsonpath="{.data.mysql-root-password}" | base64 --decode)
 ```
 
-##############################################################################################
+
 
 ## **ConfigMaps**
 
@@ -1144,8 +1116,6 @@ spec:
 
 ```
 
-##############################################################################################
-
 
 
 **Comandos**
@@ -1161,8 +1131,6 @@ spec:
 
 
 
-
-##############################################################################################
 
 # **Deployment**
 
@@ -1373,8 +1341,6 @@ kubectl rollout undo deployment.v1.apps/my-deployment --to-revision=<last workin
 
 
 
-##############################################################################################
-
 Stateful Sets
 
 StatefulSet é o objeto da API de carga de trabalho usado para gerenciar aplicações stateful. 
@@ -1386,10 +1352,6 @@ Ao contrário de uma Deployment, um StatefulSet mantém uma identidade persisten
 Esses pods são criados com a mesma especificação, mas não são intercambiáveis: cada um tem um identificador persistente, mantido em qualquer reagendamento.
 
 
-
-
-
-##############################################################################################
 
 # **Daemon Sets**
 
@@ -1459,8 +1421,6 @@ spec:
 
 
 
-
-##############################################################################################
 
 # **Services**
 
@@ -1623,8 +1583,6 @@ cluster.local
 |                   |                                        |
 |                   |                                        |
 
-##############################################################################################
-
 # **Ingress**
 
 https://kubernetes.io/docs/concepts/services-networking/ingress/
@@ -1680,7 +1638,7 @@ https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/
 | ------------- | ------- |
 | Lista ingress |         |
 
-##############################################################################################
+
 
 # **Network**
 
@@ -1850,8 +1808,6 @@ options ndots:5
 ```
 
 
-
-##############################################################################################
 
 # **Storage**
 
@@ -2195,8 +2151,6 @@ https://kubernetes.io/blog/2019/01/15/container-storage-interface-ga/
 
 
 
-##############################################################################################
-
 # **Management Tools**
 
 ## **kubectl**
@@ -2297,8 +2251,6 @@ configurações para Kubernetes formulários.
 
 Similar ao Helm.
 
-##############################################################################################
-
 # **Kubernetes Metrics Server**
 
 Para visualizar métricas sobre os recursos pods e contêineres estão usando, precisamos de um add-on para coletar e fornecer esses dados. 
@@ -2331,8 +2283,6 @@ kubectl get --raw /apis/metrics.k8s.io/
 | kubectl top node                            | Mostra consumo cpu/ram dos Nodes |
 
 
-
-##############################################################################################
 
 # **Service Account**
 
@@ -2386,8 +2336,6 @@ roleRef:
 | kubectl create sa "nomedaserviceaccoint" | Criar Service Account    |
 | kubectl get sa                           | Lista as Service Account |
 | kubectl describe sa my-serviceaccount    |                          |
-
-##############################################################################################
 
 # **Upgrade with kubeadm**
 
@@ -2541,12 +2489,6 @@ https://kubernetes.io/docs/tasks/administer-cluster/kubeadm/kubeadm-upgrade/
 
 
 
-
-
-
-
-##############################################################################################
-
 # **Draining Node**
 
 https://kubernetes.io/docs/tasks/administer-cluster/safely-drain-node/
@@ -2573,8 +2515,6 @@ https://acloudguru-content-attachment-production.s3-accelerate.amazonaws.com/159
 | Inclui o Worker Node no cluster         | kubectl uncordon <node name>                  |
 
 
-
-##############################################################################################
 
 # **High Availability**
 
@@ -2609,8 +2549,6 @@ https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/ha-topolog
 Um cluster HA com etcd externo é uma [topologia em](https://en.wikipedia.org/wiki/Network_topology) que o cluster de armazenamento de dados distribuído fornecido pelo etcd é externo ao cluster formado pelos nós que executam os componentes do Control Plane.
 
 ![image-20210823195036875](./imagens/image-20210823195036875.png)
-
-##############################################################################################
 
 # **Security**
 
@@ -3089,8 +3027,6 @@ https://kubernetes.io/docs/tasks/administer-cluster/securing-a-cluster/
 
 
 
-##############################################################################################
-
 # **Monitoring**
 
 **TODO - Mudar o setup do monitoramento para Helm.**
@@ -3303,8 +3239,6 @@ https://www.metricfire.com/blog/how-to-deploy-prometheus-on-kubernetes/#Deployme
 
 https://devopscube.com/setup-prometheus-monitoring-on-kubernetes/
 
-##############################################################################################
-
 # **Troubleshooting**
 
 https://acloudguru-content-attachment-production.s3-accelerate.amazonaws.com/1607462106795-devops-wb002%20-%20S11%20Troubleshooting.pdf
@@ -3404,8 +3338,6 @@ https://acloudguru-content-attachment-production.s3-accelerate.amazonaws.com/160
 | -------------------------------------------------------- | --------------------------------- |
 | kubectl exec *"pod-name*" -c "*containername*" -- comand | Executar comando dentro container |
 |                                                          |                                   |
-
-##############################################################################################
 
 # **Setup do Kubernetes**
 
@@ -3536,15 +3468,11 @@ kubectl apply -f "https://cloud.weave.works/k8s/net?k8s-version=$(kubectl versio
 kubeadm join --discovery-token-unsafe-skip-ca-verification --token=102952.1a7dd4cc8d1f4cc5 172.17.0.69:6443
 ```
 
-##############################################################################################
-
 # **Best  Practices**
 
 - **ETCD** - em produção sempre manter fora do Master e em HA
 
 
-
-##############################################################################################
 
 # **Vídeos**
 
@@ -3553,8 +3481,6 @@ kubeadm join --discovery-token-unsafe-skip-ca-verification --token=102952.1a7dd4
 - **Webinar: Role based access control (RBAC) policies in Kubernetes** - https://www.youtube.com/watch?v=CnHTCTP8d48
 - **Effective RBAC - Jordan Liggitt, Red Hat** - https://www.youtube.com/watch?v=Nw1ymxcLIDI
 - **[ Kube 68 ] Kubernetes RBAC Demo | Creating Users and Roles** - https://www.youtube.com/watch?v=U67OwM-e9rQ
-
-##############################################################################################
 
 # **Exemplos**
 
@@ -3685,7 +3611,7 @@ spec:
 Atenção! 1 core de CPU corresponde a 1000m (1000 milicore). Ao especificar 200m, estamos querendo reservar 20% de 1 core da CPU. Se fosse informado o valor 0.2 teria o mesmo efeito, ou seja, seria reservado 20% de 1 core da CPU.
 ```
 
-##############################################################################################
+
 
 # **Comandos **
 
@@ -3699,7 +3625,7 @@ Atenção! 1 core de CPU corresponde a 1000m (1000 milicore). Ao especificar 200
 |  echo "source <(kubectl completion bash)" >> /root/.bashrc   | auto complete                                           |
 | aws eks --region "*region*" update-kubeconfig --name "*cluster-name*" | Conecta no cluster EKS                                  |
 
-##############################################################################################
+
 
 # **Links Úteis**
 
