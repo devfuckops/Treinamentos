@@ -6,7 +6,7 @@
 
 # **Certificações**
 
-- AWS Certified Cloud Practitioner
+- [AWS Certified Cloud Practitioner Exam (CLF-C01)](https://github.com/devfuckops/Treinamentos/tree/main/AWS%20Certification/AWS%20Certified%20Cloud%20Practitioner%20(CLF-C01))
 - AWS Certified Solutions Architect – Associate (SAA-C02)
 - AWS Certified SysOps Administrator – Associate (SOA-C01)
 - AWS Certified Developer – Associate (DVA-C01)
