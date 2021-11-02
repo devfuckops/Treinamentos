@@ -152,7 +152,7 @@ https://www.whizlabs.com/learn/course/aws-certified-cloud-practitioner/219
 
 ## **Infrastructure Global (Infraestrutura Global)**	
 
-### Regions (Regiões)
+### **Regions (Regiões)**
 
 ### **Zonas de disponibilidades (AZ)**
 
@@ -165,7 +165,7 @@ https://www.whizlabs.com/learn/course/aws-certified-cloud-practitioner/219
 
 
 
-## **Análise**	
+## **Analytics (Análise)**	
 
 Athena
 CloudSearch
@@ -218,7 +218,7 @@ Redshift
 
 ## **Database (Banco de Dados)** 	
 
-### Aurora
+### **Aurora**
 
 - Forcene poder computacional até 5x mais rápido que m bd mysql tradicional
 
@@ -251,7 +251,7 @@ https://docs.aws.amazon.com/autoscaling/plans/userguide/what-is-aws-auto-scaling
 - **scaling-up** - vertical scaling
 - **scaling-out** - horizontal scaling
 
-### Batch
+### **Batch**
 
 ### **EC2(Elastic Compute Cloud)**
 
@@ -353,7 +353,7 @@ X-Ray
 
 ## **Management (Governaça)**	
 
-### CloudFormation
+### **CloudFormation**
 
 - Cloudformation Change Sets - pode ser usado para visualizar as alterações nos recursos
 
@@ -365,7 +365,7 @@ X-Ray
 
 - Kit de desenvolvimento
 
-### Config
+### **Config**
 
 - Controla as alterações de configuração nos recuros 
 
@@ -373,10 +373,13 @@ X-Ray
 
 ### **Interface de linha de comando (CLI)**
 
-License Manager 
-Organization 
-Service Catalog 
-System Manager 
+### **License Manager** 
+
+### **Organization** 
+
+### **Service Catalog** 
+
+### **System Manager** 
 
 ### **Trusted Advisor**
 
@@ -398,19 +401,19 @@ https://wa.aws.amazon.com/index.pt_BR.html
 
 ## **Integração** 	
 
-AppFlow
+### **AppFlow**
 
-AppSync
+### **AppSync**
 
-EventBridge
+### **EventBridge**
 
-MQ
+### **MQ**
 
-SNS	
+### **SNS**	
 
-SQS
+### **SQS**
 
-Step Functions 
+### **Step Functions** 
 
 
 
@@ -426,18 +429,34 @@ SageMaker
 
 ## **Migration (Migração)**	
 
-**Database Migration Service (DMS)**
+### **Estratégias de Migração (6R´s)**
+
+https://aws.amazon.com/blogs/enterprise-strategy/6-strategies-for-migrating-applications-to-the-cloud/
+
+![image-20211102183406187](./Imagans/image-20211102183406187.png)
+
+
+
+- Rehost
+- Refactory (Refatorar)
+- Replatform
+
+
+
+
+
+### **Database Migration Service (DMS)**
 
 - Migra bd do local para AWS
 - Migra bd da AWS para Local
 - Migra bd do EC2 para RDS
 - Migra Redshift para DynamoDB
 
-**DataSync**
+### **DataSync**
 
 - Maneira mais simples e rápida de migrar grandes quantidades de dados entre o local e S3, EFS ou FSx. 
 
-**Server Migration Service**
+### **Server Migration Service**
 
 
 
@@ -471,7 +490,7 @@ SageMaker
 
 ## **Security (Segurança)**	
 
-### **IAM**(Identity & Access Management)
+### **IAM(Identity & Access Management)**
 
 - Controle de acesso para recursos
 - MFA
