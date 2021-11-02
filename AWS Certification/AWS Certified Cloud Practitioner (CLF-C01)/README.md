@@ -48,13 +48,15 @@ https://d1.awsstatic.com/pt_BR/training-and-certification/docs-cloud-practitione
 
 # **Treinamentos**
 
+Colocar ✔ quando concluído. 
+
 ## AWS
 
 https://d1.awsstatic.com/training-and-certification/ramp-up_guides/Ramp-Up_Guide_CloudPractitioner.pdf
 
 
 
-**AWS Partner - Accreditation Business**
+**AWS Partner - Accreditation Business** ✔
 
 https://explore.skillbuilder.aws/learn/course/internal/view/elearning/2427/aws-partner-accreditation-business-digital
 
@@ -122,6 +124,23 @@ https://www.whizlabs.com/learn/course/aws-certified-cloud-practitioner/219
 
 # **Anotações**
 
+
+
+## **Infrastructure Global (Infraestrutura Global)**	
+
+### Regions (Regiões)
+
+### **Zonas de disponibilidades (AZ)**
+
+- Interconectas por uma fibra
+- Pode ter 2 ou mais AZ´s em uma região
+
+### **PoP - Pontos de Presenças**
+
+- Cache
+
+
+
 ## **Análise**	
 
 Athena
@@ -170,7 +189,7 @@ Neptune
 
 
 
-## **Computação** 	
+## **Compute (Computação)**	
 
 ### Auto Scaling
 
@@ -179,32 +198,26 @@ Neptune
 https://docs.aws.amazon.com/autoscaling/plans/userguide/what-is-aws-auto-scaling.html
 
 - **Scaling-up** adciona mais recursos a uma instancia e **scaling-out** adciona mais instancias 
-- scaling-up - vertical scaling
-- scaling-out - horizontal scaling
+- **scaling-up** - vertical scaling
+- **scaling-out** - horizontal scaling
 
 ### Batch
 
-### **EC2**
+### **EC2(Elastic Compute Cloud)**
 
 - Serviço que vc tem controle total
+- **Beneficios da EC2** - Elasticidade, Flexivel, Integração com demais serviços, Confiavél, Seguro, Baixo Custo
+- **Tipos de Instancias** - General Purpose, Compute Optimized, Memory Optimized, Accelerated Computing, Storage Optimized
 
 ### Elastic Beanstalk
 
 ### Lightsail
 
-
-
-## **Computação sem servidor** (Serverless)
-
-### **API Gateway**	
+**Elastic Load Balancing**	
 
 ### **Lambda**
 
 - Serverless
-
-
-
-## **Contêiners**	
 
 App Runner 
 
@@ -215,6 +228,20 @@ ECS Elastic Container Service
 EKS Elastic Kubernets Service
 
 Fargate
+
+
+
+## **Computação sem servidor** (Serverless)
+
+### **API Gateway**	
+
+
+
+
+
+## 
+
+
 
 
 
@@ -264,7 +291,7 @@ X-Ray
 
 ### **Saving Plans**
 
-### Faturamento consolidado
+### **Faturamento consolidado**
 
 - Usa bucket s3 direto da conta mestre
 
@@ -361,7 +388,7 @@ Cloud Map
 
 CloudFront
 
-Elastic Load Balancing	
+
 
 Global Accelerator
 
