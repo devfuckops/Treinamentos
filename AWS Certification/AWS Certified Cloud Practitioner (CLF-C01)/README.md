@@ -17,26 +17,48 @@ https://d1.awsstatic.com/pt_BR/training-and-certification/docs-cloud-practitione
 
 
 **Domain 1: Cloud Concepts (26%)**
+
 1.1 Definir a nuvem AWS e sua proposta de valor
+
 1.2 Identificar aspectos da economia da nuvem AWS
+
 1.3 Liste os diferentes princípios de design de arquitetura de nuvem
 
-**Domain 2: Security and Compliance (25%)**
+
+
+**Domain 2: Security and Compliance (25%)
+
 2.1 Definir o modelo de responsabilidade compartilhada da AWS
+
 2.2 Definir os conceitos de segurança e conformidade da nuvem AWS
+
 2.3 Identifique os recursos de gerenciamento de acesso da AWS
+
 2.4 Identificar recursos para o suporte de segurança
 
+
+
 **Domain 3: Technology (33%)**
+
 3.1 Definir métodos de implantação e operação na nuvem AWS
+
 3.2 Definir a infraestrutura global da AWS
+
 3.3 Identificar os principais serviços da AWS
+
 3.4 Identificar recursos para suporte de tecnologia
 
+
+
 **Domain 4: Billing and Pricing (16%)**
+
 4.1 Comparar os vários modelos de preços para AWS
+
 4.2 Reconhecer as várias estruturas de conta em relação ao faturamento e preços da AWS
+
 4.3 Identificar recursos disponíveis para suporte de faturamento
+
+
 
 
 
