@@ -26,7 +26,7 @@ https://d1.awsstatic.com/pt_BR/training-and-certification/docs-cloud-practitione
 
 
 
-**Domain 2: Security and Compliance (25%)
+**Domain 2: Security and Compliance (25%)**
 
 2.1 Definir o modelo de responsabilidade compartilhada da AWS
 
@@ -144,7 +144,9 @@ https://www.whizlabs.com/learn/course/aws-certified-cloud-practitioner/219
 
 
 
-# **Anotações**
+# **Services (Serviços)**
+
+![image-20211102181756497](./Imagans/image-20211102181756497.png)
 
 
 
@@ -174,35 +176,61 @@ Kinesis
 QuickSight
 Redshift
 
-## **Armazenamento** 	
+## **Storage (Armazenamento)** 	
 
-Backup
-Elastic Block Store (EBS)
-Elastic File System (EFS)
-Família Snow
-S3 Glacier
+### **Simple Storage Service (S3)**
 
-### Simple Storage Service (S3)
+- Armazenamento a nivel de objeto
+- Arquivos de até 5 TB
 
-- 
+![image-20211102173111307](./Imagans/image-20211102173111307.png)
 
-Storage Gateway
+### **Elastic Block Store (EBS)**
+
+- Armazenamento a nivel de bloco
+- Independente da vida util da instancia
+- É automaticamente replicado entre AZ´s
+- Pode ser associado a uma unica instancia
+- Snapshot point-in-time
+- Snapshots podem ser copiados entre Regiões
+
+### **S3 Glacier**
+
+- Arquivamento e backup de dados
 
 
 
-## **Banco de dados** 	
+### **Elastic File System (EFS)**
 
-### **Aurora**
+**Backup**
+
+### **Família Snow**
+
+**Storage Gateway**
+
+
+
+### 
+
+
+
+
+
+## **Database (Banco de Dados)** 	
+
+### Aurora
 
 - Forcene poder computacional até 5x mais rápido que m bd mysql tradicional
 
-DynamoDB
+### **DynamoDB**
 
-ElastiCache
+- Banco de dados NOSQL
 
-Neptune
+### **ElastiCache**
 
-### **RDS**
+### **Neptune**
+
+### RDS
 
 - São beneficios Patches e backups automatizados
 - São beneficios o redimencionamento da capacidade de acordo com uso
@@ -213,9 +241,9 @@ Neptune
 
 ## **Compute (Computação)**	
 
-### Auto Scaling
+### **Auto Scaling**
 
-### AWS Auto Scaling
+### **AWS Auto Scaling**
 
 https://docs.aws.amazon.com/autoscaling/plans/userguide/what-is-aws-auto-scaling.html
 
@@ -231,25 +259,27 @@ https://docs.aws.amazon.com/autoscaling/plans/userguide/what-is-aws-auto-scaling
 - **Beneficios da EC2** - Elasticidade, Flexivel, Integração com demais serviços, Confiavél, Seguro, Baixo Custo
 - **Tipos de Instancias** - General Purpose, Compute Optimized, Memory Optimized, Accelerated Computing, Storage Optimized
 
-### Elastic Beanstalk
+### **Elastic Beanstalk**
 
-### Lightsail
+### **Lightsail**
 
-**Elastic Load Balancing**	
+### **Elastic Load Balancing**	
+
+- Tipos - Application, Network e Classic 
 
 ### **Lambda**
 
 - Serverless
 
-App Runner 
+### **App Runner** 
 
-ECR Elastic Container Registry 
+### **ECR Elastic Container Registry** 
 
-ECS Elastic Container Service 
+### **ECS Elastic Container Service** 
 
-EKS Elastic Kubernets Service
+### **EKS Elastic Kubernets Service**
 
-Fargate
+### **Fargate**
 
 
 
@@ -321,21 +351,28 @@ X-Ray
 
 
 
-## **Governaça**	
+## **Management (Governaça)**	
 
-### **CloudFormation**
+### CloudFormation
 
 - Cloudformation Change Sets - pode ser usado para visualizar as alterações nos recursos
 
-CloudTrail 
-CloudWatch
+### **CloudTrail** 
+
+### **CloudWatch**
+
+### **SDK**
+
+- Kit de desenvolvimento
 
 ### Config
 
 - Controla as alterações de configuração nos recuros 
 
-Console de gerenciamento
-Interface de linha de comando
+### **Console de gerenciamento**
+
+### **Interface de linha de comando (CLI)**
+
 License Manager 
 Organization 
 Service Catalog 
@@ -387,7 +424,7 @@ SageMaker
 
 
 
-## **Migração**	
+## **Migration (Migração)**	
 
 **Database Migration Service (DMS)**
 
@@ -404,83 +441,85 @@ SageMaker
 
 
 
-## **Rede**	
+## **Networking (Rede)**	
 
-Cloud Map
+### **Cloud Map**
 
-CloudFront
+### **CloudFront**
 
+### **Global Accelerator**
 
+### **Route 53**
 
-Global Accelerator
+### **VPC**
 
-Route 53
+- Uma rede virtual dedicada a sua conta
+- Subnets
+- route-tables
+- vpc-flowlogs - Captura trafego da vpc, subnet e armazena no cloudwatch logs
 
-VPC
+### **Security Group  (Grupo de Segurança)**
 
-Grupo de Segurança
+- **Segurança a nivel da instancia**
 
-**Network ACL**
+### **Network ACL - NACL**
 
 - Pode ser configurada adcionalmente a nível de subnet para controlar o tráfego de entrada e saida. 
+- **Segurança a nivel da subnet**
 
 
 
-## **Segurança Identidade**	
+## **Security (Segurança)**	
+
+### **IAM**(Identity & Access Management)
+
+- Controle de acesso para recursos
+- MFA
+- Analise de acesso
+
+### **Shared Responsability  (Modelo de Responsabilidade Compartilhada)**
+
+![image-20211102181239562](./Imagans/image-20211102181239562.png)
+
+
 
 ### Artifact
 
 - Acesso aos relatorios emitidos pelo auditor da AWS
 
-### Audit Manager
+### **Audit Manager**
 
-### Certificate Manager
+### **Certificate Manager**
 
-Cognito
+### **Cognito**
 
-Firewall Manager
-
-### Identity & Access Management
+### **Firewall Manager**
 
 ### **Inspector**
 
 - Realiza verificações nas instancias EC2 em relação a modelos de segurança
 
-- Analisa vulnerabilidads
+- Analisa vulnerabilidades
 
   
 
-GuardDuty
+### **GuardDuty**
 
-Key Management Service	
+### **Key Management Service**	
 
-Macie
+### **Macie**
 
-Network Firewall
+### **Network Firewall**
 
-### Resource Access Manager
+### **Resource Access Manager**
 
 - 
 
-Secrets Manager
+### **Secrets Manager**
 
-Shield and Shield Advanced
+### **Shield and Shield Advanced**
 
-WAF
-
-
-
-
-
-Usuário Final 	WorkSpaces
-
-Web, Movel e frontend	Aplify
-
-
-
-
-
-https://docs.google.com/spreadsheets/d/19jMiDZ1d5E4bORzTYuWyWisgYgR1AX8I/edit#gid=577445205
+### **WAF**
 
 # **Links** 
 
