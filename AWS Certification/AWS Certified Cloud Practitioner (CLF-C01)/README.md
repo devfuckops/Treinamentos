@@ -86,7 +86,7 @@ https://explore.skillbuilder.aws/learn/course/internal/view/elearning/2249/aws-p
 
  
 
-**AWS Partner Accreditation - Technical**
+**AWS Partner Accreditation - Technical** ✔
 
 https://explore.skillbuilder.aws/learn/course/internal/view/elearning/1096/aws-partner-accreditation-technical
 
@@ -173,17 +173,26 @@ ElasticSearch
 EMR
 Glue
 Kinesis
-QuickSight
-Redshift
+
+### **QuickSight**
+
+- Criação de relatórios inteligentes
+
+### **Redshift**
+
+- Data warehouse
 
 ## **Storage (Armazenamento)** 	
 
 ### **Simple Storage Service (S3)**
 
+![image-20211102173111307](./Imagans/image-20211102173111307.png)
+
 - Armazenamento a nivel de objeto
 - Arquivos de até 5 TB
+- **AWS S3 Transfer Acceleration** - Tranferencias rapidas e seguras em longas distanticas para bucket utilizando os pontos de presenças.
 
-![image-20211102173111307](./Imagans/image-20211102173111307.png)
+
 
 ### **Elastic Block Store (EBS)**
 
@@ -197,10 +206,13 @@ Redshift
 ### **S3 Glacier**
 
 - Arquivamento e backup de dados
+- **AWS S3 Glacier Deep** - Armazenamento mais barato 
 
 
 
 ### **Elastic File System (EFS)**
+
+- Compartilhamento de arquivos
 
 **Backup**
 
@@ -225,12 +237,15 @@ Redshift
 ### **DynamoDB**
 
 - Banco de dados NOSQL
+- **DynamoDB Accelerator(DAX)** - aprimora o desenpenho de leitura, leitura pesada
+- Não suportam um esquema pre-definido
+- Oferecem atomicidade
 
 ### **ElastiCache**
 
 ### **Neptune**
 
-### RDS
+### **RDS**
 
 - São beneficios Patches e backups automatizados
 - São beneficios o redimencionamento da capacidade de acordo com uso
@@ -260,6 +275,14 @@ https://docs.aws.amazon.com/autoscaling/plans/userguide/what-is-aws-auto-scaling
 - **Tipos de Instancias** - General Purpose, Compute Optimized, Memory Optimized, Accelerated Computing, Storage Optimized
 
 ### **Elastic Beanstalk**
+
+### **OpsWorks**
+
+- Gerencia aplicativos no datacenter atravez de SO Linux conectados em Endpoints publicos AWS
+- Agent do OpsWorks instalados nas instancias Linux
+- Automatizar a configuração de um software e replicar
+
+
 
 ### **Lightsail**
 
@@ -301,7 +324,9 @@ https://docs.aws.amazon.com/autoscaling/plans/userguide/what-is-aws-auto-scaling
 
 Connect 
 
-SES Simple Email Services
+### **SES Simple Email Services**
+
+- Configurar um VPC Endpoint com AWS PrivateLink para alcançar dentro da VPC
 
 
 
@@ -313,9 +338,13 @@ CodeArtifact
 
 CodeBuild
 
-CodeCommit
+### **CodeCommit**
 
-CodeDeploy
+- Armazenamento de codigo fonte
+
+### **CodeDeploy**
+
+- Automatizar a instalação de um conjunto de aplications em EC2 e em Servidores Locias
 
 CodePipeline
 
@@ -329,13 +358,18 @@ Ferramentas e SDKs da AWS
 
 Interface da Linha de Comando da AWS
 
-X-Ray
+### **X-Ray**
+
+- Monitorar microserviços 
+- Detecta problemas de desempenho em app no Lambda
 
 
 
 ## **Gerenciamento Financeiro** 	
 
 ### **Budgets**
+
+- Pode configurar alertas de orçamentos
 
 ### **Cost Explorer** 
 
@@ -355,7 +389,9 @@ X-Ray
 
 ### **CloudFormation**
 
-- Cloudformation Change Sets - pode ser usado para visualizar as alterações nos recursos
+https://aws.amazon.com/cloudformation/features/
+
+- **Cloudformation Change Sets** - pode ser usado para visualizar as alterações nos recursos
 
 ### **CloudTrail** 
 
@@ -377,13 +413,32 @@ X-Ray
 
 ### **Organization** 
 
+- Para automatizar a criação de AWS Accounts
+
 ### **Service Catalog** 
 
 ### **System Manager** 
 
+https://aws.amazon.com/systems-manager/
+
+- Permite que os usurios controlem seus recursos unificando serviços onde ele podem visualizar, monitorar e automatizar
+
+### **AWS Personal Health Dashboard**
+
+https://aws.amazon.com/premiumsupport/technology/personal-health-dashboard/
+
+- Visão sobre a disponibilidade e desenpenho dos servios AWS
+- Avisa o usuário com alertas e notificações sobre atividades agendadas
+
 ### **Trusted Advisor**
 
 - Checar os softlimits 
+
+- Recomendações de Segurança e Otimização de custos
+
+- Cost Optimization, Performance, Secutiry, Fault Tolerance and Service Limits
+
+  
 
 ### **AWS Well-Architected Framework**
 
@@ -437,7 +492,7 @@ https://aws.amazon.com/blogs/enterprise-strategy/6-strategies-for-migrating-appl
 
 
 
-- Rehost
+- Rehost (Lift and Shift)
 - Refactory (Refatorar)
 - Replatform
 
@@ -468,7 +523,15 @@ https://aws.amazon.com/blogs/enterprise-strategy/6-strategies-for-migrating-appl
 
 ### **Global Accelerator**
 
+https://aws.amazon.com/global-accelerator/faqs/
+
+- Usam a rede global AWS de alta velocidade e as tecnicas de roteamento anycast para melhorar a disponibildiade e desempenho do app do cliente
+- Não inclui recursos de cache de conteudo
+- São adequados para VOIP, MTTQ
+
 ### **Route 53**
+
+- Politica de Roteamento de Latencia para melhor performance de usuários globais
 
 ### **VPC**
 
@@ -498,6 +561,8 @@ https://aws.amazon.com/blogs/enterprise-strategy/6-strategies-for-migrating-appl
 
 ### **Shared Responsability  (Modelo de Responsabilidade Compartilhada)**
 
+https://aws.amazon.com/compliance/shared-responsibility-model/
+
 ![image-20211102181239562](./Imagans/image-20211102181239562.png)
 
 
@@ -508,9 +573,23 @@ https://aws.amazon.com/blogs/enterprise-strategy/6-strategies-for-migrating-appl
 
 ### **Audit Manager**
 
+### **Certification Manager**
+
+- Pode atualizar e renover certificados
+
+### **Penetration Testing**
+
+https://aws.amazon.com/security/penetration-testing/
+
+- Pode ser executado, desde que a AWS autorize. 
+
 ### **Certificate Manager**
 
 ### **Cognito**
+
+https://aws.amazon.com/cognito/
+
+- Federação de identidade web   Facebook
 
 ### **Firewall Manager**
 
@@ -527,6 +606,10 @@ https://aws.amazon.com/blogs/enterprise-strategy/6-strategies-for-migrating-appl
 ### **Key Management Service**	
 
 ### **Macie**
+
+### **Detective**
+
+- Serviço persistente orientado a Machine Learning
 
 ### **Network Firewall**
 
