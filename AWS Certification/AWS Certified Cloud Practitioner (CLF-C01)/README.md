@@ -72,7 +72,7 @@ https://d1.awsstatic.com/pt_BR/training-and-certification/docs-cloud-practitione
 
 Colocar ✔ quando concluído. 
 
-## AWS
+## **AWS**
 
 https://d1.awsstatic.com/training-and-certification/ramp-up_guides/Ramp-Up_Guide_CloudPractitioner.pdf
 
@@ -126,7 +126,7 @@ https://d1.awsstatic.com/pt_BR/training-and-certification/docs-cloud-practitione
 
  
 
-## **ACLOUDGURU**
+## ACLOUDGURU
 
 https://learn.acloud.guru/course/aws-certified-cloud-practitioner/dashboard
 
@@ -202,11 +202,13 @@ Kinesis
 - Pode ser associado a uma unica instancia
 - Snapshot point-in-time
 - Snapshots podem ser copiados entre Regiões
+- Replicação do mesmo volume entre AZ´s
 
 ### **S3 Glacier**
 
 - Arquivamento e backup de dados
 - **AWS S3 Glacier Deep** - Armazenamento mais barato 
+- Não faz upload de arquivos pela Console
 
 
 
@@ -218,11 +220,9 @@ Kinesis
 
 ### **Família Snow**
 
+- AWS Snowball 
+
 **Storage Gateway**
-
-
-
-### 
 
 
 
@@ -240,6 +240,8 @@ Kinesis
 - **DynamoDB Accelerator(DAX)** - aprimora o desenpenho de leitura, leitura pesada
 - Não suportam um esquema pre-definido
 - Oferecem atomicidade
+- Modelo de dados flexiveis e latencia de milissegundos de um digito
+- Para jogo on-line, Fortimente Consistente
 
 ### **ElastiCache**
 
@@ -251,6 +253,10 @@ Kinesis
 - São beneficios o redimencionamento da capacidade de acordo com uso
 
 
+
+## **Suporte AWS**
+
+![img](./Imagans/questions_dgdbva.png)
 
 
 
@@ -268,13 +274,18 @@ https://docs.aws.amazon.com/autoscaling/plans/userguide/what-is-aws-auto-scaling
 
 ### **Batch**
 
-### **EC2(Elastic Compute Cloud)**
+### **EC2 (Elastic Compute Cloud)**
 
 - Serviço que vc tem controle total
 - **Beneficios da EC2** - Elasticidade, Flexivel, Integração com demais serviços, Confiavél, Seguro, Baixo Custo
 - **Tipos de Instancias** - General Purpose, Compute Optimized, Memory Optimized, Accelerated Computing, Storage Optimized
+- **Hosts Dedicados** - Podem utilizar licenças de software existentes no cliente.
 
 ### **Elastic Beanstalk**
+
+https://aws.amazon.com/elasticbeanstalk/?p=tile
+
+- Implemantação rápida de recursos que podem usar difernetes linguagens de programação como .NET e JAVA
 
 ### **OpsWorks**
 
@@ -370,6 +381,7 @@ Interface da Linha de Comando da AWS
 ### **Budgets**
 
 - Pode configurar alertas de orçamentos
+- Usa informações fornecidas pelo AWS Cost Explorer
 
 ### **Cost Explorer** 
 
@@ -435,6 +447,8 @@ https://aws.amazon.com/premiumsupport/technology/personal-health-dashboard/
 - Checar os softlimits 
 
 - Recomendações de Segurança e Otimização de custos
+
+- Para receber notificações deve-se confgura-las na console
 
 - Cost Optimization, Performance, Secutiry, Fault Tolerance and Service Limits
 
@@ -521,6 +535,16 @@ https://aws.amazon.com/blogs/enterprise-strategy/6-strategies-for-migrating-appl
 
 ### **CloudFront**
 
+https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html
+
+- Pode usar TTL para habilitar o cache de conteudo dinamico
+
+- Pode ser S3, EC2, ELB
+
+- Usa Edge Location para distribuir conteudo 
+
+  
+
 ### **Global Accelerator**
 
 https://aws.amazon.com/global-accelerator/faqs/
@@ -565,6 +589,8 @@ https://aws.amazon.com/compliance/shared-responsibility-model/
 
 ![image-20211102181239562](./Imagans/image-20211102181239562.png)
 
+- Infraestrutura Global não faz parte dos controles compartilhados entre cliente e AWS
+
 
 
 ### Artifact
@@ -572,6 +598,12 @@ https://aws.amazon.com/compliance/shared-responsibility-model/
 - Acesso aos relatorios emitidos pelo auditor da AWS
 
 ### **Audit Manager**
+
+### **KMS**
+
+https://aws.amazon.com/kms/features/
+
+- Usa Envelope Encryption
 
 ### **Certification Manager**
 
