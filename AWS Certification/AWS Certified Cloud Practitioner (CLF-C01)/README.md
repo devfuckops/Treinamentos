@@ -268,6 +268,8 @@ Kinesis
 
 https://docs.aws.amazon.com/autoscaling/plans/userguide/what-is-aws-auto-scaling.html
 
+![image-20211109195133948](./Imagans/image-20211109195133948.png)
+
 - **Scaling-up** adciona mais recursos a uma instancia e **scaling-out** adciona mais instancias 
 - **scaling-up** - vertical scaling
 - **scaling-out** - horizontal scaling
@@ -277,9 +279,33 @@ https://docs.aws.amazon.com/autoscaling/plans/userguide/what-is-aws-auto-scaling
 ### **EC2 (Elastic Compute Cloud)**
 
 - Serviço que vc tem controle total
+
 - **Beneficios da EC2** - Elasticidade, Flexivel, Integração com demais serviços, Confiavél, Seguro, Baixo Custo
+
 - **Tipos de Instancias** - General Purpose, Compute Optimized, Memory Optimized, Accelerated Computing, Storage Optimized
+
 - **Hosts Dedicados** - Podem utilizar licenças de software existentes no cliente.
+
+- **Preços**
+
+  - **Sob-Demanda** (por hora ou por segundo)
+
+  - **Instancias Reservadas**
+
+  - **Instancias Spot**
+
+    - Aviso de até 2 minutos
+    - até 90% de desconto comparado ao sob-demanda
+    - Cargas de trabalhos em lote
+
+  - **Saving Plans** 
+
+    - 1 ou 3 anos 
+
+    - até 70% de desconto comparado ao sob-demanda
+
+    - EC2, Fargate e Lambda
+
 
 ### **Elastic Beanstalk**
 
@@ -297,13 +323,21 @@ https://aws.amazon.com/elasticbeanstalk/?p=tile
 
 ### **Lightsail**
 
-### **Elastic Load Balancing**	
+### **Elastic Load Balancing (ELB)**	
 
-- Tipos - Application, Network e Classic 
+- **Tipos** - Application, Network e Classic 
+- É regional
+- É altamente disponivel 
 
 ### **Lambda**
 
 - Serverless
+
+- Escalavél e disponivel 
+
+- Executar em até **15 minutos**
+
+  
 
 ### **App Runner** 
 
@@ -311,21 +345,21 @@ https://aws.amazon.com/elasticbeanstalk/?p=tile
 
 ### **ECS Elastic Container Service** 
 
+- Ferramenta de orquestração de container
+- Gerencia a EC2
+
 ### **EKS Elastic Kubernets Service**
+
+- Ferramenta de orquestração de container
+- Gerencia a EC2
 
 ### **Fargate**
 
+- Serveless
+- Para ECS e EKS
+- **Não Gerencia a EC2**
 
-
-## **Computação sem servidor** (Serverless)
-
-### **API Gateway**	
-
-
-
-
-
-## 
+### *API Gateway**	
 
 
 
@@ -480,7 +514,15 @@ https://wa.aws.amazon.com/index.pt_BR.html
 
 ### **SNS**	
 
+- Envia notificações aos usuários finais
+
 ### **SQS**
+
+- Envia, armazena e receba sem perder a mensagem em qualquer volume
+
+- Mensagens são colocadas até que sejam processadas
+
+  
 
 ### **Step Functions** 
 
