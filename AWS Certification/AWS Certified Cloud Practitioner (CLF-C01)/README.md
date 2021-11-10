@@ -154,25 +154,36 @@ https://www.whizlabs.com/learn/course/aws-certified-cloud-practitioner/219
 
 ### **Regions (Regiões)**
 
-### **Zonas de disponibilidades (AZ)**
-
-- Interconectas por uma fibra
 - Pode ter 2 ou mais AZ´s em uma região
 
-### **PoP - Pontos de Presenças**
+### **Zonas de disponibilidades (AZ)**
+
+![image-20211109204810592](./Imagans/image-20211109204810592.png)
+
+- Interconectas por uma fibra
+- Um ou mais DataCenters
+- Pode ter 2 ou mais AZ´s em uma região
+
+### **Edge Location - PoP - Pontos de Presenças**
 
 - Cache
+- CDN - Rede de Entrega de Conteudo
 
 
 
 ## **Analytics (Análise)**	
 
-Athena
-CloudSearch
-ElasticSearch
-EMR
-Glue
-Kinesis
+### **Athena**
+
+### **CloudSearch**
+
+### **ElasticSearch**
+
+### **EMR**
+
+### **Glue**
+
+### **Kinesis**
 
 ### **QuickSight**
 
@@ -294,7 +305,7 @@ https://docs.aws.amazon.com/autoscaling/plans/userguide/what-is-aws-auto-scaling
 
   - **Instancias Spot**
 
-    - Aviso de até 2 minutos
+    - Aviso de até **2 minutos**
     - até 90% de desconto comparado ao sob-demanda
     - Cargas de trabalhos em lote
 
@@ -311,7 +322,11 @@ https://docs.aws.amazon.com/autoscaling/plans/userguide/what-is-aws-auto-scaling
 
 https://aws.amazon.com/elasticbeanstalk/?p=tile
 
-- Implemantação rápida de recursos que podem usar difernetes linguagens de programação como .NET e JAVA
+- Implemantação rápida de recursos que podem usar diferentes linguagens de programação como .NET e JAVA
+- Baseado em EC2
+- Controle dos recursos 
+
+
 
 ### **OpsWorks**
 
@@ -359,7 +374,7 @@ https://aws.amazon.com/elasticbeanstalk/?p=tile
 - Para ECS e EKS
 - **Não Gerencia a EC2**
 
-### *API Gateway**	
+### **API Gateway**	
 
 
 
@@ -421,7 +436,7 @@ Interface da Linha de Comando da AWS
 
 - Fornece previsões baseadas no uso de custos estimados de faturamento e uso para os proximos meses
 
-### **Saving Plans**
+
 
 ### **Faturamento consolidado**
 
@@ -438,6 +453,12 @@ Interface da Linha de Comando da AWS
 https://aws.amazon.com/cloudformation/features/
 
 - **Cloudformation Change Sets** - pode ser usado para visualizar as alterações nos recursos
+- Infraestrutura como codigo - JSON/YAML
+- Formato declarativo
+
+
+
+
 
 ### **CloudTrail** 
 
@@ -453,7 +474,11 @@ https://aws.amazon.com/cloudformation/features/
 
 ### **Console de gerenciamento**
 
+- Ambiente Web
+
 ### **Interface de linha de comando (CLI)**
+
+- Chamadas de API
 
 ### **License Manager** 
 
@@ -575,15 +600,19 @@ https://aws.amazon.com/blogs/enterprise-strategy/6-strategies-for-migrating-appl
 
 ### **Cloud Map**
 
+### **AWS Outposts**
+
 ### **CloudFront**
 
 https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html
 
 - Pode usar TTL para habilitar o cache de conteudo dinamico
 
-- Pode ser S3, EC2, ELB
+- Pode ser S3, EC2, ELB, Route 53
 
-- Usa Edge Location para distribuir conteudo 
+- Usa **Edge Location** para distribuir conteudo 
+
+- Dados, videos aplicações e API
 
   
 
