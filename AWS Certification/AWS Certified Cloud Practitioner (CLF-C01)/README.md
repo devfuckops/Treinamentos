@@ -618,6 +618,10 @@ https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.
 
 - Dados, videos aplicações e API
 
+- CDN
+
+- Arquivos estaticos 
+
   
 
 ### **Global Accelerator**
@@ -631,6 +635,10 @@ https://aws.amazon.com/global-accelerator/faqs/
 ### **Route 53**
 
 - Politica de Roteamento de Latencia para melhor performance de usuários globais
+
+- Geolocalização
+
+- Pode registrar nomes de dominios
 
   
 
