@@ -602,6 +602,10 @@ https://aws.amazon.com/blogs/enterprise-strategy/6-strategies-for-migrating-appl
 
 ### **AWS Outposts**
 
+- Infraestrutura da AWS no cliente
+
+
+
 ### **CloudFront**
 
 https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html
@@ -628,21 +632,46 @@ https://aws.amazon.com/global-accelerator/faqs/
 
 - Politica de Roteamento de Latencia para melhor performance de usuários globais
 
-### **VPC**
+  
+
+### **Virtual Private Cloud - VPC**
 
 - Uma rede virtual dedicada a sua conta
-- Subnets
+
+- Subnets - Publica e Privada
+
 - route-tables
+
+- Virtual Private Gateway - VPN
+
 - vpc-flowlogs - Captura trafego da vpc, subnet e armazena no cloudwatch logs
+
+  
 
 ### **Security Group  (Grupo de Segurança)**
 
 - **Segurança a nivel da instancia**
 
+- Grupo de segurança default é todo bloqueado de entrada
+
+- De saida é tudo liberado 
+
+- **Stateful** - Não verifica o trafego de retorno pois reconheçe que é o mesmo pacote
+
+  
+
 ### **Network ACL - NACL**
 
-- Pode ser configurada adcionalmente a nível de subnet para controlar o tráfego de entrada e saida. 
+- Pode ser configurada adcionalmente a nível de subnet para controlar o **tráfego de entrada e saida**. 
 - **Segurança a nivel da subnet**
+- Por padrão é tudo liberado 
+- **Stateless** - checa entrada e saida 
+
+
+
+### **Direct Connect**
+
+- Conexão dedicada com a AWS
 
 
 
@@ -651,8 +680,12 @@ https://aws.amazon.com/global-accelerator/faqs/
 ### **IAM(Identity & Access Management)**
 
 - Controle de acesso para recursos
+
 - MFA
+
 - Analise de acesso
+
+  
 
 ### **Shared Responsability  (Modelo de Responsabilidade Compartilhada)**
 
