@@ -200,26 +200,76 @@ https://www.whizlabs.com/learn/course/aws-certified-cloud-practitioner/219
 ![image-20211102173111307](./Imagans/image-20211102173111307.png)
 
 - Armazenamento a nivel de objeto
-- Arquivos de até 5 TB
-- **AWS S3 Transfer Acceleration** - Tranferencias rapidas e seguras em longas distanticas para bucket utilizando os pontos de presenças.
+
+- Upload de arquivos de até 5 TB
+
+- Sites estaticos
+
+  
+
+- **S3 Standard**
+
+  - 11 - 9
+  - Replicas em 3 az´s
+
+  
+
+  
+
+- **S3 IA**
+
+  - rapidez quando necessário
+  - acesso infrequente
+
+
+
+
+-  **AWS S3 Transfer Acceleration**
+
+  - Tranferencias rapidas e seguras em longas distanticas para bucket utilizando os pontos de presenças.
+
+    
+
+
+- **S3 Glacier**
+
+  - Arquivamento e backup de dados
+
+  - criar cofres
+
+  - controles de escritas e leituras
+
+  - restore em minutos e horas
+
+    
+
+- **AWS S3 Glacier Deep** 
+  - Armazenamento mais barato 
+  - Não faz upload de arquivos pela Console
+
+
+
+
 
 
 
 ### **Elastic Block Store (EBS)**
 
 - Armazenamento a nivel de bloco
+
 - Independente da vida util da instancia
+
 - É automaticamente replicado entre AZ´s
+
 - Pode ser associado a uma unica instancia
+
 - Snapshot point-in-time
+
 - Snapshots podem ser copiados entre Regiões
+
 - Replicação do mesmo volume entre AZ´s
 
-### **S3 Glacier**
-
-- Arquivamento e backup de dados
-- **AWS S3 Glacier Deep** - Armazenamento mais barato 
-- Não faz upload de arquivos pela Console
+  
 
 
 
@@ -227,13 +277,17 @@ https://www.whizlabs.com/learn/course/aws-certified-cloud-practitioner/219
 
 - Compartilhamento de arquivos
 
-**Backup**
+  
+
+### **Backup**
 
 ### **Família Snow**
 
 - AWS Snowball 
 
-**Storage Gateway**
+  
+
+### **Storage Gateway**
 
 
 
