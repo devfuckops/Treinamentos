@@ -605,38 +605,65 @@ https://aws.amazon.com/cloudformation/features/
 
 - Kit de desenvolvimento
 
-### **Config**
+  
+
+### **AWS Config**
 
 - Controla as alterações de configuração nos recuros 
+
+  
 
 ### **Console de gerenciamento**
 
 - Ambiente Web
 
+  
+
 ### **Interface de linha de comando (CLI)**
 
 - Chamadas de API
 
+  
+
 ### **License Manager** 
 
-### **Organization** 
+### **AWS Organization** 
 
 - Para automatizar a criação de AWS Accounts
 
-### **Service Catalog** 
+- Gerenciamento centralizado de todas as contas
 
-### **System Manager** 
+- Faturamento consolidado e desconto em massa
+
+- Agrupamento - OU
+
+- Controle de serviços/API por conta 
+
+- SCP´s
+
+  
+
+
+
+### **AWS Service Catalog** 
+
+### **AWS System Manager** 
 
 https://aws.amazon.com/systems-manager/
 
 - Permite que os usurios controlem seus recursos unificando serviços onde ele podem visualizar, monitorar e automatizar
+
+  
 
 ### **AWS Personal Health Dashboard**
 
 https://aws.amazon.com/premiumsupport/technology/personal-health-dashboard/
 
 - Visão sobre a disponibilidade e desenpenho dos servios AWS
+
 - Avisa o usuário com alertas e notificações sobre atividades agendadas
+
+  
 
 ### **Trusted Advisor**
 
@@ -677,6 +704,8 @@ https://wa.aws.amazon.com/index.pt_BR.html
 ### **SNS**	
 
 - Envia notificações aos usuários finais
+
+  
 
 ### **SQS**
 
@@ -831,13 +860,29 @@ https://aws.amazon.com/global-accelerator/faqs/
 
 ## **Security (Segurança)**	
 
-### **IAM(Identity & Access Management)**
+### **IAM (Identity & Access Management)**
 
 - Controle de acesso para recursos
 
 - MFA
 
 - Analise de acesso
+
+- Por padrão um usuário não tem permissões - tudo negado por default
+
+- **Policy** 
+
+  - json
+  
+- **Grupos** 
+
+  - Agurpamentos de usuários com permissões em comum
+
+- **Roles** 
+
+  - Identidades que podem assumir
+  - assumidas temporária
+  - permissoes associadas 
 
   
 
@@ -847,7 +892,7 @@ https://aws.amazon.com/compliance/shared-responsibility-model/
 
 ![image-20211102181239562](./Imagans/image-20211102181239562.png)
 
-- Infraestrutura Global não faz parte dos controles compartilhados entre cliente e AWS
+- Infraestrutura Global não faz parte dos controles compartilhados entre Cliente e AWS
 
 
 
