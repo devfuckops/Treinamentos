@@ -102,7 +102,7 @@ https://explore.skillbuilder.aws/learn/course/internal/view/elearning/8287/aws-c
 
  
 
- **AWS Cloud Practitioner Essentials - Final Assessment**
+ **AWS Cloud Practitioner Essentials - Final Assessment✔**
 
 https://explore.skillbuilder.aws/learn/course/internal/view/elearning/3010/aws-partner-aws-cloud-practitioner-essentials
 
@@ -110,7 +110,7 @@ https://explore.skillbuilder.aws/learn/course/internal/view/elearning/3010/aws-p
 
  
 
-**AWS Cloud Practitioner - Exam Guide**
+**AWS Cloud Practitioner - Exam Guide**✔
 
 https://d1.awsstatic.com/training-and-certification/docs-cloud-practitioner/AWS-Certified-Cloud-Practitioner_Exam-Guide.pdf
 
@@ -118,7 +118,7 @@ https://d1.awsstatic.com/pt_BR/training-and-certification/docs-cloud-practitione
 
  
 
-**AWS Cloud Practitioner - Sample Questions**
+**AWS Cloud Practitioner - Sample Questions✔**
 
 https://d1.awsstatic.com/training-and-certification/docs-cloud-practitioner/AWS-Certified-Cloud-Practitioner_Sample-Questions.pdf
 
@@ -968,7 +968,13 @@ https://aws.amazon.com/cognito/
 
 ### **Shield and Shield Advanced**
 
+- Usa machine learning
+
+
+
 ### **WAF**
+
+- Firewall aplicação web
 
 
 
