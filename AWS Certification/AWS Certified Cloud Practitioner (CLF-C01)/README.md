@@ -194,8 +194,10 @@ https://www.whizlabs.com/learn/course/aws-certified-cloud-practitioner/219
 ### **Redshift**
 
 - Data warehouse
+
 - PBs
-- 
+
+  
 
 
 
