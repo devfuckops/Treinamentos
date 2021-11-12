@@ -900,6 +900,8 @@ https://aws.amazon.com/compliance/shared-responsibility-model/
 
 - Acesso aos relatorios emitidos pelo auditor da AWS
 
+
+
 ### **Audit Manager**
 
 ### **KMS**
@@ -908,15 +910,21 @@ https://aws.amazon.com/kms/features/
 
 - Usa Envelope Encryption
 
+
+
 ### **Certification Manager**
 
 - Pode atualizar e renover certificados
+
+
 
 ### **Penetration Testing**
 
 https://aws.amazon.com/security/penetration-testing/
 
 - Pode ser executado, desde que a AWS autorize. 
+
+
 
 ### **Certificate Manager**
 
@@ -926,9 +934,11 @@ https://aws.amazon.com/cognito/
 
 - Federação de identidade web   Facebook
 
+
+
 ### **Firewall Manager**
 
-### **Inspector**
+### **AWS Inspector**
 
 - Realiza verificações nas instancias EC2 em relação a modelos de segurança
 
@@ -946,17 +956,23 @@ https://aws.amazon.com/cognito/
 
 - Serviço persistente orientado a Machine Learning
 
+  
+
 ### **Network Firewall**
 
 ### **Resource Access Manager**
 
-- 
+
 
 ### **Secrets Manager**
 
 ### **Shield and Shield Advanced**
 
 ### **WAF**
+
+
+
+
 
 # **Links** 
 
