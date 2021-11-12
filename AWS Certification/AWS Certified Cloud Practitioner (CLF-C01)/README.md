@@ -944,11 +944,22 @@ https://aws.amazon.com/cognito/
 
 - Analisa vulnerabilidades
 
+- Agente AWS na EC2
+
   
 
 ### **GuardDuty**
 
+- Detecção de ameaças
+- Logs DNS, flow logs e cloudtrail
+
+
+
 ### **Key Management Service**	
+
+- Gerencia chave de criptografia
+
+  
 
 ### **Macie**
 
