@@ -189,9 +189,17 @@ https://www.whizlabs.com/learn/course/aws-certified-cloud-practitioner/219
 
 - Criação de relatórios inteligentes
 
+  
+
 ### **Redshift**
 
 - Data warehouse
+- PBs
+- 
+
+
+
+
 
 ## **Storage (Armazenamento)** 	
 
@@ -205,11 +213,13 @@ https://www.whizlabs.com/learn/course/aws-certified-cloud-practitioner/219
 
 - Sites estaticos
 
+- Regional
+
   
 
 - **S3 Standard**
 
-  - 11 - 9
+  - 11 - 9 - Durabilidade
   - Replicas em 3 az´s
 
   
@@ -218,9 +228,21 @@ https://www.whizlabs.com/learn/course/aws-certified-cloud-practitioner/219
 
 - **S3 IA**
 
-  - rapidez quando necessário
-  - acesso infrequente
+  - Rapidez quando necessário
+  - Acesso infrequente
 
+
+
+
+- **S3 One Zone-Infrequent Access (S3 One Zone – IA)**
+  - Armazena dados em uma única zona de disponibilidade
+  - Tem um preço de armazenamento menor do que o S3 Standard – IA
+
+
+
+- **S3 Intelligent-Tiering (Estratificação inteligente do S3)**
+  - Ideal para dados com padrões de acesso desconhecidos ou em alteração
+  - Requer uma pequena taxa mensal de monitoramento e automação por objeto
 
 
 
@@ -235,17 +257,18 @@ https://www.whizlabs.com/learn/course/aws-certified-cloud-practitioner/219
 
   - Arquivamento e backup de dados
 
-  - criar cofres
+  - Criar cofres
 
-  - controles de escritas e leituras
+  - Controles de escritas e leituras
 
-  - restore em minutos e horas
+  - Restore em minutos e horas
 
     
 
-- **AWS S3 Glacier Deep** 
+- **AWS S3 Glacier Deep** Archive
   - Armazenamento mais barato 
   - Não faz upload de arquivos pela Console
+  - Capaz de recuperar objetos em 12 horas
 
 
 
@@ -261,6 +284,8 @@ https://www.whizlabs.com/learn/course/aws-certified-cloud-practitioner/219
 
 - É automaticamente replicado entre AZ´s
 
+- **Mas é armazenado em uma unica AZ** 
+
 - Pode ser associado a uma unica instancia
 
 - Snapshot point-in-time
@@ -269,6 +294,10 @@ https://www.whizlabs.com/learn/course/aws-certified-cloud-practitioner/219
 
 - Replicação do mesmo volume entre AZ´s
 
+- Ate 16 TiB
+
+  
+
   
 
 
@@ -276,6 +305,10 @@ https://www.whizlabs.com/learn/course/aws-certified-cloud-practitioner/219
 ### **Elastic File System (EFS)**
 
 - Compartilhamento de arquivos
+
+- Sistema de Arquivos Linux
+
+- Regional
 
   
 
@@ -298,24 +331,74 @@ https://www.whizlabs.com/learn/course/aws-certified-cloud-practitioner/219
 ### **Aurora**
 
 - Forcene poder computacional até 5x mais rápido que m bd mysql tradicional
+- banco de dados relacional
+- Mysql e PostgreSQL
+- 6 copias
+- 15 replicas de leitura
+- Bkp continuo no S3
+
+
+
+
 
 ### **DynamoDB**
 
 - Banco de dados NOSQL
-- **DynamoDB Accelerator(DAX)** - aprimora o desenpenho de leitura, leitura pesada
+- Serverless
+- **DynamoDB Accelerator(DAX)** 
+  - Aprimora o desempenho de leitura, leitura pesada
+  - Cache
+
 - Não suportam um esquema pre-definido
 - Oferecem atomicidade
 - Modelo de dados flexiveis e latencia de milissegundos de um digito
 - Para jogo on-line, Fortimente Consistente
 
+
+
+
+
 ### **ElastiCache**
 
+- Cache
+
+- Pode colocar na frente do banco
+
+- Redis / Memcached
+
+  
+
 ### **Neptune**
+
+- Banco de dados em Grafos
+
+
+
+### **Amazon Managed Blockchain**
+
+
+
+
+
+### **Amazon Quantum Ledger Database (QLDB)**
+
+- Imutavel 
+
+
+
+
 
 ### **RDS**
 
 - São beneficios Patches e backups automatizados
+
 - São beneficios o redimencionamento da capacidade de acordo com uso
+
+- MySQL, Oracle, Postgre
+
+  
+
+  
 
 
 
@@ -641,10 +724,19 @@ https://aws.amazon.com/blogs/enterprise-strategy/6-strategies-for-migrating-appl
 - Migra bd da AWS para Local
 - Migra bd do EC2 para RDS
 - Migra Redshift para DynamoDB
+- O banco de dados de origem permanece operacional durante a migração
+- Consolidação de banco de dados
+- DR
+
+
+
+
 
 ### **DataSync**
 
 - Maneira mais simples e rápida de migrar grandes quantidades de dados entre o local e S3, EFS ou FSx. 
+
+
 
 ### **Server Migration Service**
 
