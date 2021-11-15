@@ -94,7 +94,7 @@ https://explore.skillbuilder.aws/learn/course/internal/view/elearning/2314/aws-p
 
  
 
-**AWS Cloud Practitioner Essentials**
+**AWS Cloud Practitioner Essentials**✔
 
 https://explore.skillbuilder.aws/learn/course/internal/view/elearning/134/aws-cloud-practitioner-essentials
 
@@ -207,6 +207,8 @@ https://www.whizlabs.com/learn/course/aws-certified-cloud-practitioner/219
 
 ### **Simple Storage Service (S3)**
 
+https://aws.amazon.com/pt/s3/storage-classes/
+
 ![image-20211102173111307](./Imagans/image-20211102173111307.png)
 
 - Armazenamento a nivel de objeto
@@ -280,6 +282,8 @@ https://www.whizlabs.com/learn/course/aws-certified-cloud-practitioner/219
 
 ### **Elastic Block Store (EBS)**
 
+https://aws.amazon.com/pt/ebs/
+
 - Armazenamento a nivel de bloco
 
 - Independente da vida util da instancia
@@ -316,12 +320,16 @@ https://www.whizlabs.com/learn/course/aws-certified-cloud-practitioner/219
 
 ### **Backup**
 
+### **VMware Cloud on AWS**
+
 ### **Família Snow**
+
+https://aws.amazon.com/pt/snow/
 
 - Criptograia 256 Bits
 - Pode usar KMS
 
-- AWS Snow Mobile
+- **AWS Snow Mobile**
 
   - Caminhão
   
@@ -329,7 +337,7 @@ https://www.whizlabs.com/learn/course/aws-certified-cloud-practitioner/219
   
     
   
-- AWS Snowball Edge
+- **AWS Snowball Edge**
 
   - Snowball Edge otimizado para armazenamento 
 
@@ -371,7 +379,7 @@ https://www.whizlabs.com/learn/course/aws-certified-cloud-practitioner/219
 
 ### **Storage Gateway**
 
-
+### **AWS Ground Station** 
 
 
 
@@ -382,7 +390,7 @@ https://www.whizlabs.com/learn/course/aws-certified-cloud-practitioner/219
 - Forcene poder computacional até 5x mais rápido que m bd mysql tradicional
 - banco de dados relacional
 - Mysql e PostgreSQL
-- 6 copias
+- 6 Cópias
 - 15 replicas de leitura
 - Bkp continuo no S3
 
@@ -453,7 +461,27 @@ https://www.whizlabs.com/learn/course/aws-certified-cloud-practitioner/219
 
 ## **Planos de suporte AWS**
 
+- 
+
+
+
 ![img](./Imagans/questions_dgdbva.png)
+
+
+
+
+
+### **Plano de suporte Enterprise**
+
+- Acesso a todos os itens do Trust Advidor
+
+- TAM
+
+  
+
+### **Plano de suporte Bussines**
+
+- Acesso a todos os itens do Trust Advidor
 
 
 
@@ -476,32 +504,38 @@ https://docs.aws.amazon.com/autoscaling/plans/userguide/what-is-aws-auto-scaling
 ### **EC2 (Elastic Compute Cloud)**
 
 - Serviço que vc tem controle total
-
 - **Beneficios da EC2** - Elasticidade, Flexivel, Integração com demais serviços, Confiavél, Seguro, Baixo Custo
-
 - **Tipos de Instancias** - General Purpose, Compute Optimized, Memory Optimized, Accelerated Computing, Storage Optimized
-
 - **Hosts Dedicados** - Podem utilizar licenças de software existentes no cliente.
-
 - **Preços**
 
   - **Sob-Demanda** (por hora ou por segundo)
-
-  - **Instancias Reservadas**
-
+- **Instancias Reservadas**
   - **Instancias Spot**
 
     - Aviso de até **2 minutos**
-    - até 90% de desconto comparado ao sob-demanda
+  - até 90% de desconto comparado ao sob-demanda
     - Cargas de trabalhos em lote
-
   - **Saving Plans** 
-
-    - 1 ou 3 anos 
-
+  
+  - 1 ou 3 anos 
     - até 70% de desconto comparado ao sob-demanda
+  - EC2, Fargate e Lambda
 
-    - EC2, Fargate e Lambda
+
+
+### **AWS Cloud Adoption Framework**
+
+https://d1.awsstatic.com/whitepapers/aws_cloud_adoption_framework.pdf
+
+- **Perspectiva de operações** do AWS Cloud Adoption Framework também inclui princípios para operar na nuvem usando melhores práticas ágeis.
+- **A Perspectiva de Negócios** ajuda você a mudar de um modelo que separa as estratégias de negócios e TI para um modelo de negócios que integra a estratégia de TI.
+- **A Perspectiva de Pessoa**s ajuda os funcionários de Recursos Humanos (RH) a prepararem suas equipes para adoção da nuvem, atualizando processos organizacionais e habilidades de equipe para incluir competências baseadas em nuvem.
+- **A Perspectiva de Governança** ajuda você a entender como atualizar as habilidades da equipe e os processos organizacionais necessários para garantir a governança de negócios na nuvem.
+
+
+
+
 
 
 ### **Elastic Beanstalk**
@@ -526,11 +560,19 @@ https://aws.amazon.com/elasticbeanstalk/?p=tile
 
 ### **Elastic Load Balancing (ELB)**	
 
+https://aws.amazon.com/pt/elasticloadbalancing/
+
 - **Tipos** - Application, Network e Classic 
 - É regional
 - É altamente disponivel 
 
+
+
+
+
 ### **Lambda**
+
+https://aws.amazon.com/pt/lambda/
 
 - Serverless
 
@@ -549,7 +591,11 @@ https://aws.amazon.com/elasticbeanstalk/?p=tile
 - Ferramenta de orquestração de container
 - Gerencia a EC2
 
+
+
 ### **EKS Elastic Kubernets Service**
+
+https://aws.amazon.com/pt/eks/
 
 - Ferramenta de orquestração de container
 - Gerencia a EC2
@@ -701,7 +747,9 @@ https://aws.amazon.com/cloudformation/features/
 
 ### **License Manager** 
 
-### **AWS Organization** 
+### **AWS Organizations** 
+
+https://aws.amazon.com/pt/organizations/
 
 - Para automatizar a criação de AWS Accounts
 
@@ -741,6 +789,8 @@ https://aws.amazon.com/premiumsupport/technology/personal-health-dashboard/
 
 ### **Trusted Advisor**
 
+https://aws.amazon.com/pt/premiumsupport/technology/trusted-advisor/
+
 - Checar os softlimits 
 
 - Recomendações de Segurança e Otimização de custos
@@ -760,10 +810,20 @@ https://aws.amazon.com/premiumsupport/technology/personal-health-dashboard/
 https://wa.aws.amazon.com/index.pt_BR.html
 
 - [Excelência operacional](https://wa.aws.amazon.com/wat.pillar.operationalExcellence.pt_BR.html)
+  - Executar cargas de trabalho de forma eficaz
+  - obter insights sobre suas operaçõe
+
 - [Segurança](https://wa.aws.amazon.com/wat.pillar.security.pt_BR.html)
 - [Confiabilidade](https://wa.aws.amazon.com/wat.pillar.reliability.pt_BR.html)
+  - concentra na capacidade de uma carga de trabalho executar de forma consistente e correta as funções pretendidas.
+
 - [Eficiência de performance](https://wa.aws.amazon.com/wat.pillar.performance.pt_BR.html)
+  - Concentra no uso eficiente dos recursos de computação para atender aos requisitos do sistema 
+  - Manter essa eficiência à medida que a demanda muda e as tecnologias evoluem.
+
 - [Otimização de custos](https://wa.aws.amazon.com/wat.pillar.costOptimization.pt_BR.html)
+  - concentra na capacidade de executar sistemas para fornecer valor comercial com o preço mais baixo.
+
 
 
 
@@ -787,6 +847,8 @@ https://wa.aws.amazon.com/index.pt_BR.html
 
 ### **SQS**
 
+https://aws.amazon.com/pt/sqs/
+
 - Envia, armazena e receba sem perder a mensagem em qualquer volume
 
 - Mensagens são colocadas até que sejam processadas
@@ -799,11 +861,28 @@ https://wa.aws.amazon.com/index.pt_BR.html
 
 ## **Machine Learning**	
 
-Forecast
+### **Forecast**
 
-Fraud Detector 
+### **Fraud Detector** 
 
-SageMaker
+### **SageMaker**
+
+### **Augmented AI**
+
+https://aws.amazon.com/pt/augmented-ai/
+
+- Fornece fluxos de trabalho de revisão humana integrados para casos de uso comuns de machine learning, como moderação de conteúdo e extração de texto de documentos
+
+### **AWS Deep Racer**
+
+### **Amazon Lex**
+
+- Alexa
+
+### **Textract**
+
+- Extração de texto
+- Extrai automaticamente texto e dados de documentos digitalizados.
 
 
 
@@ -892,6 +971,8 @@ https://aws.amazon.com/global-accelerator/faqs/
 
 ### **Route 53**
 
+https://aws.amazon.com/pt/route53/
+
 - Politica de Roteamento de Latencia para melhor performance de usuários globais
 
 - Geolocalização
@@ -937,7 +1018,10 @@ https://aws.amazon.com/global-accelerator/faqs/
 
 ### **Direct Connect**
 
+https://aws.amazon.com/pt/directconnect/
+
 - Conexão dedicada com a AWS
+- Estabelecer uma conexão privada dedicada entre o seu datacenter e a VPC. 
 
 
 
@@ -1032,6 +1116,8 @@ https://aws.amazon.com/cognito/
   
 
 ### **GuardDuty**
+
+https://aws.amazon.com/pt/guardduty/
 
 - Detecção de ameaças
 - Logs DNS, flow logs e cloudtrail
