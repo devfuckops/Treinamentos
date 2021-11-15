@@ -154,15 +154,24 @@ https://www.whizlabs.com/learn/course/aws-certified-cloud-practitioner/219
 
 ### **Regions (Regiões)**
 
+https://aws.amazon.com/pt/about-aws/global-infrastructure/regions_az/?p=ngi&loc=2
+
 - Pode ter 2 ou mais AZ´s em uma região
 
+  
+
 ### **Zonas de disponibilidades (AZ)**
+
+https://aws.amazon.com/pt/about-aws/global-infrastructure/regions_az/?p=ngi&loc=2
 
 ![image-20211109204810592](./Imagans/image-20211109204810592.png)
 
 - Interconectas por uma fibra
 - Um ou mais DataCenters
 - Pode ter 2 ou mais AZ´s em uma região
+- Conectividade redundante de baixa latência 
+
+
 
 ### **Edge Location - PoP - Pontos de Presenças**
 
@@ -186,6 +195,8 @@ https://www.whizlabs.com/learn/course/aws-certified-cloud-practitioner/219
 ### **Kinesis**
 
 ### **QuickSight**
+
+https://aws.amazon.com/pt/quicksight/
 
 - Criação de relatórios inteligentes
 
@@ -550,9 +561,13 @@ https://aws.amazon.com/elasticbeanstalk/?p=tile
 
 ### **OpsWorks**
 
-- Gerencia aplicativos no datacenter atravez de SO Linux conectados em Endpoints publicos AWS
+- Gerencia aplicativos no datacenter através de SO Linux conectados em **Endpoints públicos** AWS
+
 - Agent do OpsWorks instalados nas instancias Linux
-- Automatizar a configuração de um software e replicar
+
+- Automatizar a configuração de um software e replicar **em outras 400**
+
+  
 
 
 
@@ -618,7 +633,7 @@ Connect
 
 ### **SES Simple Email Services**
 
-- Configurar um VPC Endpoint com AWS PrivateLink para alcançar dentro da VPC
+- Configurar um **VPC Endpoint com AWS PrivateLink** para alcançar dentro da VPC
 
 
 
@@ -628,19 +643,31 @@ Cloud9
 
 CodeArtifact
 
-CodeBuild
+### **CodeBuild**
+
+https://docs.aws.amazon.com/codebuild/latest/userguide/welcome.html
+
+
 
 ### **CodeCommit**
 
-- Armazenamento de codigo fonte
+https://aws.amazon.com/pt/codecommit/
+
+- Armazenamento de código fonte
+
+  
 
 ### **CodeDeploy**
 
-- Automatizar a instalação de um conjunto de aplications em EC2 e em Servidores Locias
+https://docs.aws.amazon.com/codedeploy/latest/userguide/welcome.html
 
-CodePipeline
+- Automatizar a instalação de um conjunto de aplications em EC2 e em Servidores Locais
 
-**CodeStar**
+  
+
+### **CodePipeline**
+
+### **CodeStar**
 
 - 
 
@@ -648,9 +675,15 @@ CodePipeline
 
 Ferramentas e SDKs da AWS
 
-Interface da Linha de Comando da AWS
+### **Interface da Linha de Comando da AWS (CLI)**
+
+
+
+
 
 ### **X-Ray**
+
+https://aws.amazon.com/pt/xray/
 
 - Monitorar microserviços 
 - Detecta problemas de desempenho em app no Lambda
@@ -705,6 +738,8 @@ https://aws.amazon.com/cloudformation/features/
 
 ### **CloudTrail** 
 
+https://aws.amazon.com/pt/cloudtrail/
+
 - Auditoria de API
 
 - Savla log´s em bucket S3
@@ -729,6 +764,10 @@ https://aws.amazon.com/cloudformation/features/
 
 ### **AWS Config**
 
+ É um serviço que permite acessar, auditar e avaliar as configurações dos recursos da AWS.
+
+https://aws.amazon.com/pt/config/
+
 - Controla as alterações de configuração nos recuros 
 
   
@@ -750,6 +789,10 @@ https://aws.amazon.com/cloudformation/features/
 ### **AWS Organizations** 
 
 https://aws.amazon.com/pt/organizations/
+
+![image-20211115182718982](./Imagans/image-20211115182718982.png)
+
+
 
 - Para automatizar a criação de AWS Accounts
 
@@ -953,11 +996,13 @@ https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.
 
 - Usa **Edge Location** para distribuir conteudo 
 
-- Dados, videos aplicações e API
+- Dados, vídeos aplicações e API
 
 - CDN
 
-- Arquivos estaticos 
+- Arquivos estáticos 
+
+- **NÃO usa UNICAST**
 
   
 
@@ -965,19 +1010,31 @@ https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.
 
 https://aws.amazon.com/global-accelerator/faqs/
 
-- Usam a rede global AWS de alta velocidade e as tecnicas de roteamento anycast para melhorar a disponibildiade e desempenho do app do cliente
+- Usam a rede global AWS de alta velocidade e as técnicas de roteamento **Anycast** para melhorar a disponibilidade e desempenho do app do cliente
 - Não inclui recursos de cache de conteudo
-- São adequados para VOIP, MTTQ
+- São adequados para VOIP, MTTQ e Jogos
+
+
 
 ### **Route 53**
 
 https://aws.amazon.com/pt/route53/
 
-- Politica de Roteamento de Latencia para melhor performance de usuários globais
+https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy.html
 
-- Geolocalização
+- Pode registrar nomes de domínios
 
-- Pode registrar nomes de dominios
+- **Roteamento de Latência** 
+
+  - Para melhor performance de usuários globais
+
+- **Roteamento de Geolocalização**
+
+- **Roteamento de Ponderado**
+
+- **Roteamento de Geoproximidade**
+
+  
 
   
 
@@ -1021,7 +1078,8 @@ https://aws.amazon.com/pt/route53/
 https://aws.amazon.com/pt/directconnect/
 
 - Conexão dedicada com a AWS
-- Estabelecer uma conexão privada dedicada entre o seu datacenter e a VPC. 
+- Taxa de transferência alta
+- Estabelecer uma **conexão privada dedicada** entre o seu datacenter e a VPC. 
 
 
 
@@ -1065,6 +1123,8 @@ https://aws.amazon.com/compliance/shared-responsibility-model/
 
 ### Artifact
 
+https://aws.amazon.com/pt/artifact/
+
 - Acesso aos relatorios emitidos pelo auditor da AWS
 
 
@@ -1079,7 +1139,11 @@ https://aws.amazon.com/kms/features/
 
 
 
-### **Certification Manager**
+### **Certificate Manager**
+
+É um serviço que permite provisionar, gerenciar e implantar facilmente certificados Secure Sockets Layer (SSL)/Transport Layer Security (TLS) para uso com os serviços da AWS e os recursos internos conectados. 
+
+https://aws.amazon.com/pt/certificate-manager/
 
 - Pode atualizar e renover certificados
 
@@ -1132,9 +1196,13 @@ https://aws.amazon.com/pt/guardduty/
 
 ### **Macie**
 
-### **Detective**
 
-- Serviço persistente orientado a Machine Learning
+
+### **Amazon Detective**
+
+https://docs.aws.amazon.com/detective/latest/adminguide/what-is-detective.html
+
+- Serviço persistente orientado a **Machine Learning**
 
   
 
@@ -1153,6 +1221,8 @@ https://aws.amazon.com/pt/guardduty/
 
 
 ### **WAF**
+
+https://docs.aws.amazon.com/waf/latest/developerguide/waf-chapter.html
 
 - Firewall aplicação web
 
