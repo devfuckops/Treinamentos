@@ -396,7 +396,7 @@ https://www.whizlabs.com/learn/course/aws-certified-cloud-practitioner/219
 
 - São beneficios o redimencionamento da capacidade de acordo com uso
 
-- MySQL, Oracle, Postgre
+- MySQL, Oracle, PostgreSQL
 
   
 
@@ -404,7 +404,7 @@ https://www.whizlabs.com/learn/course/aws-certified-cloud-practitioner/219
 
 
 
-## **Suporte AWS**
+## **Planos de suporte AWS**
 
 ![img](./Imagans/questions_dgdbva.png)
 
@@ -569,11 +569,20 @@ Interface da Linha de Comando da AWS
 ### **Budgets**
 
 - Pode configurar alertas de orçamentos
+
 - Usa informações fornecidas pelo AWS Cost Explorer
+
+  
 
 ### **Cost Explorer** 
 
+![Exemplo do painel do AWS Cost Explorer, exibindo custos mensais para instâncias do Amazon EC2 em um período de seis meses](./Imagans/VhcqUjh9EBPpO6NY_pS6DLACY5OOiDZZb.png)
+
 - Fornece previsões baseadas no uso de custos estimados de faturamento e uso para os proximos meses
+
+- 12 meses de dados historicos
+
+  
 
 
 
@@ -592,7 +601,7 @@ Interface da Linha de Comando da AWS
 https://aws.amazon.com/cloudformation/features/
 
 - **Cloudformation Change Sets** 
-  - pode ser usado para visualizar as alterações nos recursos
+  - Pode ser usado para visualizar as alterações nos recursos
 
 - Infraestrutura como codigo - JSON/YAML
 - Formato declarativo
@@ -604,6 +613,10 @@ https://aws.amazon.com/cloudformation/features/
 ### **CloudTrail** 
 
 - Auditoria de API
+
+- Savla log´s em bucket S3
+
+  
 
 
 
@@ -685,10 +698,14 @@ https://aws.amazon.com/premiumsupport/technology/personal-health-dashboard/
 
 - Recomendações de Segurança e Otimização de custos
 
-- Para receber notificações deve-se confgura-las na console
+- Para receber notificações deve-se configura-las na console
 
 - Cost Optimization, Performance, Secutiry, Fault Tolerance and Service Limits
 
+- Algumas verificações são gratuitas
+
+  
+  
   
 
 ### **AWS Well-Architected Framework**
