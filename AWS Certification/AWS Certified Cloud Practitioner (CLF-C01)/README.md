@@ -591,7 +591,9 @@ Interface da Linha de Comando da AWS
 
 https://aws.amazon.com/cloudformation/features/
 
-- **Cloudformation Change Sets** - pode ser usado para visualizar as alterações nos recursos
+- **Cloudformation Change Sets** 
+  - pode ser usado para visualizar as alterações nos recursos
+
 - Infraestrutura como codigo - JSON/YAML
 - Formato declarativo
 
@@ -601,7 +603,17 @@ https://aws.amazon.com/cloudformation/features/
 
 ### **CloudTrail** 
 
+- Auditoria de API
+
+
+
 ### **CloudWatch**
+
+- Coleta métricas e Logs 
+
+- Coleta On-premisse
+
+  
 
 ### **SDK**
 
