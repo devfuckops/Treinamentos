@@ -318,7 +318,54 @@ https://www.whizlabs.com/learn/course/aws-certified-cloud-practitioner/219
 
 ### **Família Snow**
 
-- AWS Snowball 
+- Criptograia 256 Bits
+- Pode usar KMS
+
+- AWS Snow Mobile
+
+  - Caminhão
+  
+  - 100 PT - (100.000 TB)
+  
+    
+  
+- AWS Snowball Edge
+
+  - Snowball Edge otimizado para armazenamento 
+
+    são ideais para migrações de dados de grande escala e fluxos de trabalho de transferência recorrentes, em além da computação local com necessidades maiores de capacidade. 
+
+    - Armazenamento: **80 TB de capacidade HDD para volumes de blocos e armazenamento de objeto compatível com Amazon S3, além de 1 TB de SSD SATA para volumes de blocos.** 
+    - Computação: 40 vCPUs e 80 GiB de memória para dar suporte a instâncias sbe1 do Amazon EC2 (equivalente a C5).
+
+  - O Snowball Edge otimizado para computação 
+
+    fornece recursos de computação poderosos para casos de uso, como machine learning, análise de vídeo em movimento completo, análise e pilhas de computação locais. 
+
+    - Armazenamento: **capacidade de HDD utilizável de 42 TB** para armazenamento de objeto compatível com Amazon S3 ou volumes de blocos compatíveis com Amazon EBS e também 7,68 TB de capacidade de SSD NVMe utilizável para volumes de blocos compatíveis com Amazon EBS. 
+    - Computação: 52 vCPUs, 208 GiB de memória e uma GPU NVIDIA Tesla V100 opcional. Os dispositivos executam as instâncias sbe-c e sbe-g do Amazon EC2, que são equivalentes às instâncias C5, M5a, G3 e P3.
+
+  - Otimizado para Armazenamento
+
+  - Encaixa em Rack Existente
+
+  - Pode usar Lamba
+
+  - EC2 e IoT
+
+  - Captura de IoT, Compressão de imagem, Sinalização industrial
+
+    
+
+- AWS Snowcone
+
+  - 8 TB
+
+  - Edge Compute (EC2 - IoT)
+
+  - Copia para um bucket S3
+
+    
 
   
 
@@ -770,9 +817,14 @@ https://aws.amazon.com/blogs/enterprise-strategy/6-strategies-for-migrating-appl
 
 
 
-- Rehost (Lift and Shift)
+- Rehosting (Lift and Shift)
+  - Mais fácil
+
+- Replatforming (Lift and Reshape)
+- Repurchasing
 - Refactory (Refatorar)
-- Replatform
+- Retain - Manter
+- Retire - Aposentar
 
 
 
