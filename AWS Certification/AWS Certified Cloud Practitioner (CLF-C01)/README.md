@@ -158,6 +158,8 @@ https://aws.amazon.com/pt/about-aws/global-infrastructure/regions_az/?p=ngi&loc=
 
 - Pode ter 2 ou mais AZ´s em uma região
 
+- 
+
   
 
 ### **Zonas de disponibilidades (AZ)**
@@ -169,6 +171,7 @@ https://aws.amazon.com/pt/about-aws/global-infrastructure/regions_az/?p=ngi&loc=
 - Interconectas por uma fibra
 - Um ou mais DataCenters
 - Pode ter 2 ou mais AZ´s em uma região
+- As AZ´s são vinculadas a uma única região
 - Conectividade redundante de baixa latência 
 
 
@@ -176,13 +179,17 @@ https://aws.amazon.com/pt/about-aws/global-infrastructure/regions_az/?p=ngi&loc=
 ### **Edge Location - PoP - Pontos de Presenças**
 
 - Cache
-- CDN - Rede de Entrega de Conteudo
+- CDN - Rede de Entrega de Conteúdo
+- Reduz latência
+- É como um mini datacenter, mas não tem infra como EC2
 
 
 
 ## **Analytics (Análise)**	
 
 ### **Athena**
+
+### **Glue**
 
 ### **CloudSearch**
 
@@ -333,58 +340,7 @@ https://aws.amazon.com/pt/ebs/
 
 ### **VMware Cloud on AWS**
 
-### **Família Snow**
-
-https://aws.amazon.com/pt/snow/
-
-- Criptograia 256 Bits
-- Pode usar KMS
-
-- **AWS Snow Mobile**
-
-  - Caminhão
-  
-  - 100 PT - (100.000 TB)
-  
-    
-  
-- **AWS Snowball Edge**
-
-  - Snowball Edge otimizado para armazenamento 
-
-    são ideais para migrações de dados de grande escala e fluxos de trabalho de transferência recorrentes, em além da computação local com necessidades maiores de capacidade. 
-
-    - Armazenamento: **80 TB de capacidade HDD para volumes de blocos e armazenamento de objeto compatível com Amazon S3, além de 1 TB de SSD SATA para volumes de blocos.** 
-    - Computação: 40 vCPUs e 80 GiB de memória para dar suporte a instâncias sbe1 do Amazon EC2 (equivalente a C5).
-
-  - O Snowball Edge otimizado para computação 
-
-    fornece recursos de computação poderosos para casos de uso, como machine learning, análise de vídeo em movimento completo, análise e pilhas de computação locais. 
-
-    - Armazenamento: **capacidade de HDD utilizável de 42 TB** para armazenamento de objeto compatível com Amazon S3 ou volumes de blocos compatíveis com Amazon EBS e também 7,68 TB de capacidade de SSD NVMe utilizável para volumes de blocos compatíveis com Amazon EBS. 
-    - Computação: 52 vCPUs, 208 GiB de memória e uma GPU NVIDIA Tesla V100 opcional. Os dispositivos executam as instâncias sbe-c e sbe-g do Amazon EC2, que são equivalentes às instâncias C5, M5a, G3 e P3.
-
-  - Otimizado para Armazenamento
-
-  - Encaixa em Rack Existente
-
-  - Pode usar Lamba
-
-  - EC2 e IoT
-
-  - Captura de IoT, Compressão de imagem, Sinalização industrial
-
-    
-
-- AWS Snowcone
-
-  - 8 TB
-
-  - Edge Compute (EC2 - IoT)
-
-  - Copia para um bucket S3
-
-    
+- - 
 
   
 
@@ -498,7 +454,17 @@ https://aws.amazon.com/pt/snow/
 
 ## **Compute (Computação)**	
 
-### **Auto Scaling**
+### **EC2 Auto Scaling**
+
+### **AWS Outposts**
+
+https://aws.amazon.com/outposts/
+
+- Infraestrutura da AWS no cliente
+
+
+
+
 
 ### **AWS Auto Scaling**
 
@@ -512,19 +478,23 @@ https://docs.aws.amazon.com/autoscaling/plans/userguide/what-is-aws-auto-scaling
 
 ### **Batch**
 
+https://aws.amazon.com/batch/
+
+- Executar milhares de jobs
+
+
+
 ### **EC2 (Elastic Compute Cloud)**
 
 - Serviço que vc tem controle total
-- **Beneficios da EC2** - Elasticidade, Flexivel, Integração com demais serviços, Confiavél, Seguro, Baixo Custo
+- **Benefícios da EC2** - Elasticidade, Flexível, Integração com demais serviços, Confiável, Seguro, Baixo Custo
 - **Tipos de Instancias** - General Purpose, Compute Optimized, Memory Optimized, Accelerated Computing, Storage Optimized
 - **Hosts Dedicados** - Podem utilizar licenças de software existentes no cliente.
 - **Preços**
-
-  - **Sob-Demanda** (por hora ou por segundo)
+- **Sob-Demanda** (por hora ou por segundo)
 - **Instancias Reservadas**
   - **Instancias Spot**
-
-    - Aviso de até **2 minutos**
+  - Aviso de até **2 minutos**
   - até 90% de desconto comparado ao sob-demanda
     - Cargas de trabalhos em lote
   - **Saving Plans** 
@@ -549,29 +519,17 @@ https://d1.awsstatic.com/whitepapers/aws_cloud_adoption_framework.pdf
 
 
 
-### **Elastic Beanstalk**
-
-https://aws.amazon.com/elasticbeanstalk/?p=tile
-
-- Implemantação rápida de recursos que podem usar diferentes linguagens de programação como .NET e JAVA
-- Baseado em EC2
-- Controle dos recursos 
-
-
-
-### **OpsWorks**
-
-- Gerencia aplicativos no datacenter através de SO Linux conectados em **Endpoints públicos** AWS
-
-- Agent do OpsWorks instalados nas instancias Linux
-
-- Automatizar a configuração de um software e replicar **em outras 400**
-
-  
-
-
 
 ### **Lightsail**
+
+https://aws.amazon.com/lightsail/
+
+- Projetos pequenos
+- Deployments rápidos
+- wordpress por exemplo
+- Similar ao Quick Starts
+
+
 
 ### **Elastic Load Balancing (ELB)**	
 
@@ -579,7 +537,7 @@ https://aws.amazon.com/pt/elasticloadbalancing/
 
 - **Tipos** - Application, Network e Classic 
 - É regional
-- É altamente disponivel 
+- É altamente disponível 
 
 
 
@@ -589,11 +547,15 @@ https://aws.amazon.com/pt/elasticloadbalancing/
 
 https://aws.amazon.com/pt/lambda/
 
-- Serverless
+- **Serverless**
 
-- Escalavél e disponivel 
+- Escalável e disponível 
 
-- Executar em até **15 minutos**
+- Executar em até **15 minutos** (timeout)
+
+- Resposta a eventos (trigger)
+
+- Free Tier - 1 Million rrequest each month 
 
   
 
@@ -613,13 +575,20 @@ https://aws.amazon.com/pt/lambda/
 https://aws.amazon.com/pt/eks/
 
 - Ferramenta de orquestração de container
+
 - Gerencia a EC2
+
+  
 
 ### **Fargate**
 
-- Serveless
+https://aws.amazon.com/fargate/
+
+- **Serveless**
 - Para ECS e EKS
+- Escala automaticamente
 - **Não Gerencia a EC2**
+- 
 
 ### **API Gateway**	
 
@@ -637,11 +606,11 @@ Connect
 
 
 
-## **Ferramentas Desenvolvedor** 	
+## **Developer Tools(Ferramentas Desenvolvedor)** 	
 
-Cloud9
+### **Cloud9**
 
-CodeArtifact
+### **CodeArtifact**
 
 ### **CodeBuild**
 
@@ -669,24 +638,19 @@ https://docs.aws.amazon.com/codedeploy/latest/userguide/welcome.html
 
 ### **CodeStar**
 
-- 
 
 
 
-Ferramentas e SDKs da AWS
+
+
 
 ### **Interface da Linha de Comando da AWS (CLI)**
 
+- Acesso programático
+- Acesso por um terminal ou comando
+- SDK - Java, Python, C++ e etc
 
 
-
-
-### **X-Ray**
-
-https://aws.amazon.com/pt/xray/
-
-- Monitorar microserviços 
-- Detecta problemas de desempenho em app no Lambda
 
 
 
@@ -718,9 +682,9 @@ https://aws.amazon.com/pt/xray/
 
 
 
+## **Deployment and Infrastructure Management**
 
 
-## **Management (Governaça)**	
 
 ### **CloudFormation**
 
@@ -728,11 +692,30 @@ https://aws.amazon.com/cloudformation/features/
 
 - **Cloudformation Change Sets** 
   - Pode ser usado para visualizar as alterações nos recursos
-
 - Infraestrutura como codigo - JSON/YAML
 - Formato declarativo
 
 
+
+### **Elastic Beanstalk**
+
+https://aws.amazon.com/elasticbeanstalk/?p=tile
+
+- Implemantação rápida de recursos que podem usar diferentes linguagens de programação como .NET e JAVA
+- Baseado em EC2
+- Controle dos recursos 
+
+
+
+### **OpsWorks**
+
+- Gerencia aplicativos no datacenter através de SO Linux conectados em **Endpoints públicos** AWS
+- Agent do OpsWorks instalados nas instancias Linux
+- Automatizar a configuração de um software e replicar **em outras 400**
+
+
+
+## **Auditing, Monitoring and Logging**
 
 
 
@@ -741,10 +724,18 @@ https://aws.amazon.com/cloudformation/features/
 https://aws.amazon.com/pt/cloudtrail/
 
 - Auditoria de API
-
 - Savla log´s em bucket S3
 
-  
+
+
+
+
+### **X-Ray**
+
+https://aws.amazon.com/pt/xray/
+
+- Monitorar microserviços 
+- Detecta problemas de desempenho em app no Lambda
 
 
 
@@ -754,7 +745,15 @@ https://aws.amazon.com/pt/cloudtrail/
 
 - Coleta On-premisse
 
-  
+
+
+
+
+## **Management (Governaça)**	
+
+
+
+
 
 ### **SDK**
 
@@ -882,6 +881,14 @@ https://wa.aws.amazon.com/index.pt_BR.html
 
 ### **MQ**
 
+**Step Functions** 
+
+
+
+
+
+## **Messaging and Integration** 
+
 ### **SNS**	
 
 - Envia notificações aos usuários finais
@@ -898,7 +905,7 @@ https://aws.amazon.com/pt/sqs/
 
   
 
-### **Step Functions** 
+### 
 
 
 
@@ -976,15 +983,63 @@ https://aws.amazon.com/blogs/enterprise-strategy/6-strategies-for-migrating-appl
 
 
 
-## **Networking (Rede)**	
+### **Família Snow**
 
-### **Cloud Map**
+https://aws.amazon.com/pt/snow/
 
-### **AWS Outposts**
+- Criptograia 256 Bits
 
-- Infraestrutura da AWS no cliente
+- Pode usar KMS
+
+- **AWS Snow Mobile**
+
+  - Caminhão
+
+  - 100 PT - (100.000 TB)
+
+    
+
+- **AWS Snowball Edge**
+
+  - **Snowball Edge otimizado para armazenamento** 
+
+    são ideais para migrações de dados de grande escala e fluxos de trabalho de transferência recorrentes, em além da computação local com necessidades maiores de capacidade. 
+
+    - Armazenamento: **80 TB de capacidade HDD para volumes de blocos e armazenamento de objeto compatível com Amazon S3, além de 1 TB de SSD SATA para volumes de blocos.** 
+    - Computação: 40 vCPUs e 80 GiB de memória para dar suporte a instâncias sbe1 do Amazon EC2 (equivalente a C5).
+
+  -  **Snowball Edge otimizado para computação** 
+
+    fornece recursos de computação poderosos para casos de uso, como machine learning, análise de vídeo em movimento completo, análise e pilhas de computação locais. 
+
+    - Armazenamento: **capacidade de HDD utilizável de 42 TB** para armazenamento de objeto compatível com Amazon S3 ou volumes de blocos compatíveis com Amazon EBS e também 7,68 TB de capacidade de SSD NVMe utilizável para volumes de blocos compatíveis com Amazon EBS. 
+    - Computação: 52 vCPUs, 208 GiB de memória e uma GPU NVIDIA Tesla V100 opcional. Os dispositivos executam as instâncias sbe-c e sbe-g do Amazon EC2, que são equivalentes às instâncias C5, M5a, G3 e P3.
+
+  - Otimizado para Armazenamento
+
+  - Encaixa em Rack Existente
+
+  - Pode usar Lamba
+
+  - EC2 e IoT
+
+  - Captura de IoT, Compressão de imagem, Sinalização industrial
+
+    
+
+- **AWS Snowcone**
+
+  - 8 TB
+
+  - Edge Compute (EC2 - IoT)
+
+  - Copia para um bucket S3
+
+    
 
 
+
+## **Content Delivery**
 
 ### **CloudFront**
 
@@ -1016,6 +1071,12 @@ https://aws.amazon.com/global-accelerator/faqs/
 
 
 
+## **Networking (Rede)**	
+
+### **Cloud Map**
+
+
+
 ### **Route 53**
 
 https://aws.amazon.com/pt/route53/
@@ -1038,7 +1099,7 @@ https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy.html
 
   
 
-### **Virtual Private Cloud - VPC**
+### **Virtual Private Cloud(VPC)**
 
 - Uma rede virtual dedicada a sua conta
 
@@ -1050,28 +1111,28 @@ https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy.html
 
 - vpc-flowlogs - Captura trafego da vpc, subnet e armazena no cloudwatch logs
 
-  
+- **Network ACL - NACL**
 
-### **Security Group  (Grupo de Segurança)**
+  - Pode ser configurada adcionalmente a nível de subnet para controlar o **tráfego de entrada e saida**. 
+  - **Segurança a nivel da subnet**
+  - Por padrão é tudo liberado 
+  - **Stateless** - checa entrada e saída 
 
-- **Segurança a nivel da instancia**
+- **Security Group  (Grupo de Segurança)**
 
-- Grupo de segurança default é todo bloqueado de entrada
-
-- De saida é tudo liberado 
-
-- **Stateful** - Não verifica o trafego de retorno pois reconheçe que é o mesmo pacote
-
-  
-
-### **Network ACL - NACL**
-
-- Pode ser configurada adcionalmente a nível de subnet para controlar o **tráfego de entrada e saida**. 
-- **Segurança a nivel da subnet**
-- Por padrão é tudo liberado 
-- **Stateless** - checa entrada e saida 
+  - **Segurança a nivel da instancia**
 
 
+  - Grupo de segurança default é todo bloqueado de entrada
+
+
+  - De saida é tudo liberado 
+
+
+  - **Stateful** - Não verifica o trafego de retorno pois reconheçe que é o mesmo pacote
+
+
+### **Virtual Private Network(VPN)**
 
 ### **Direct Connect**
 
