@@ -225,75 +225,108 @@ https://aws.amazon.com/pt/quicksight/
 
 ### **Simple Storage Service (S3)**
 
-https://aws.amazon.com/pt/s3/storage-classes/
+https://aws.amazon.com/s3/
+
+
 
 ![image-20211102173111307](./Imagans/image-20211102173111307.png)
 
-- Armazenamento a nivel de objeto
+- Armazenamento a nível de objeto
 
 - Upload de arquivos de até 5 TB
 
-- Sites estaticos
+- Sites estáticos
+
+- S3 Access Logs
+
+- Serviço regional mas com o nome global
+
+- Pode usar com o CloudFront, Redshift, Athena, Mobile applications
 
 - Regional
 
-  
+- **AWS S3 Transfer Acceleration**
 
-- **S3 Standard**
+  - Transferências rápidas e seguras em longas distancias para bucket utilizando os pontos de presenças.
 
-  - 11 - 9 - Durabilidade
-  - Replicas em 3 az´s
+- **Classses de Armazenamento**
 
-  
+- https://aws.amazon.com/pt/s3/storage-classes/
 
-  
+  - **S3 Standard**
 
-- **S3 IA**
+    - 11 - 9 - Durabilidade
 
-  - Rapidez quando necessário
-  - Acesso infrequente
+    - Replicas em multi-az
 
+    - **Recomentado para Acesso Frequente**
 
-
-
-- **S3 One Zone-Infrequent Access (S3 One Zone – IA)**
-  - Armazena dados em uma única zona de disponibilidade
-  - Tem um preço de armazenamento menor do que o S3 Standard – IA
+      
 
 
+  - **S3 Intelligent-Tiering (Estratificação inteligente do S3)**
 
-- **S3 Intelligent-Tiering (Estratificação inteligente do S3)**
-  - Ideal para dados com padrões de acesso desconhecidos ou em alteração
-  - Requer uma pequena taxa mensal de monitoramento e automação por objeto
+    - Ideal para dados com padrões de acesso desconhecidos ou em alteração
 
+    - Requer uma pequena taxa mensal de monitoramento e automação por objeto
+    - Rapidez quando necessário
+    - Replicas em multi-az
 
+    - **Recomentado para quando não se sabe o tipo de acesso**
 
--  **AWS S3 Transfer Acceleration**
+      
 
-  - Tranferencias rapidas e seguras em longas distanticas para bucket utilizando os pontos de presenças.
+  - **S3 Standard Infrequent Access (IA)**
 
-    
+    - Armazena dados em uma única zona de disponibilidade
 
-
-- **S3 Glacier**
-
-  - Arquivamento e backup de dados
-
-  - Criar cofres
-
-  - Controles de escritas e leituras
-
-  - Restore em minutos e horas
+    - Tem um preço de armazenamento menor do que o S3 Standard – IA
+    - **Recomentado para Acesso Infrequente**
 
     
 
-- **AWS S3 Glacier Deep** Archive
-  - Armazenamento mais barato 
-  - Não faz upload de arquivos pela Console
-  - Capaz de recuperar objetos em 12 horas
+  - **S3 One Zone-Infrequent Access (S3 One Zone – IA)**
+
+    - **Armazena dados em uma única zona de disponibilidade**
+
+    - Tem um preço de armazenamento menor do que o S3 Standard – IA
+    - **Recomentado para Acesso Infrequente**
+
+  
 
 
+  - **S3 Glacier**
 
+    - Arquivamento e backup de dados
+
+    - Criar cofres
+
+    - Controles de escritas e leituras
+
+    - Restore em minutos e horas
+
+      
+
+  - **AWS S3 Glacier Deep** **Archive**
+
+    - Armazenamento mais barato 
+
+    - Não faz upload de arquivos pela Console
+
+    - Capaz de recuperar objetos em 12 horas ou 48 horas
+
+      
+
+
+  - **S3 Outposts**
+    
+    - Local S3
+    
+      
+    
+      
+    
+      
 
 
 
