@@ -132,6 +132,12 @@ https://learn.acloud.guru/course/aws-certified-cloud-practitioner/dashboard
 
 
 
+## UDEMY
+
+[NEW] Ultimate AWS Certified Cloud Practitioner - 2021
+
+
+
 # **Workshops**
 
 https://maturitymodel.security.aws.dev/en/
@@ -808,6 +814,8 @@ https://aws.amazon.com/pt/config/
 
 - Ambiente Web
 
+- Acesso via root ou user IAM
+
   
 
 ### **Interface de linha de comando (CLI)**
@@ -1185,17 +1193,24 @@ https://aws.amazon.com/pt/directconnect/
 
 - MFA
 
+- Serviço Global
+
 - Analise de acesso
 
-- Por padrão um usuário não tem permissões - tudo negado por default
+- Por padrão um usuário não tem permissões - **tudo negado por default**
+
+- **Usuários** 
+
+  - Podemos ter um usuário em mais de um grupo.
 
 - **Policy** 
 
   - json
-  
+
 - **Grupos** 
 
   - Agurpamentos de usuários com permissões em comum
+  - Grupos só tem usuários e não pode ter outros Grupos
 
 - **Roles** 
 
@@ -1211,7 +1226,7 @@ https://aws.amazon.com/compliance/shared-responsibility-model/
 
 ![image-20211102181239562](./Imagans/image-20211102181239562.png)
 
-- Infraestrutura Global não faz parte dos controles compartilhados entre Cliente e AWS
+- **Infraestrutura Global** não faz parte dos controles compartilhados entre Cliente e AWS.
 
 
 
