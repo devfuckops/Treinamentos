@@ -687,9 +687,17 @@ https://docs.aws.amazon.com/codedeploy/latest/userguide/welcome.html
 
 - Acesso programático
 - Acesso por um terminal ou comando
-- SDK - Java, Python, C++ e etc
+- SDK 
+  - Java, Python, C++ e etc
+  - Mobile SDM
+  - IoT Device SDK
 
 
+
+
+### **AWS CloudShell**
+
+- Terminal shell da AWS
 
 
 
@@ -1193,13 +1201,23 @@ https://aws.amazon.com/pt/directconnect/
 
 - MFA
 
+  - Virtual MFA Devices (Google Autenticator or Authy)
+
+  - Universal 2nd Factor (U2F) Security Key - **Phisical Device**
+
+  - Hardware Key Fob MFA Device
+
+  - Hardware Key Fob MFA Device for AWS GovCloud (US)
+
+    
+
 - Serviço Global
 
 - Analise de acesso
 
 - Por padrão um usuário não tem permissões - **tudo negado por default**
 
-- **Usuários** 
+- **Users** 
 
   - Podemos ter um usuário em mais de um grupo.
 
@@ -1207,18 +1225,48 @@ https://aws.amazon.com/pt/directconnect/
 
   - json
 
+  - Estrutura de uma Policy
+
+    ![image-20211207201651694](./Imagans/image-20211207201651694.png)
+
 - **Grupos** 
 
-  - Agurpamentos de usuários com permissões em comum
+  - Agrupamentos de usuários com permissões em comum
+
   - Grupos só tem usuários e não pode ter outros Grupos
+
+    
 
 - **Roles** 
 
   - Identidades que podem assumir
-  - assumidas temporária
-  - permissoes associadas 
 
-  
+  - Assumidas temporária
+
+  - Permissões associadas 
+
+  - Não podem ser utilizadas por usuários, somente por **AWS Services**
+
+    
+
+
+- **Security Tools**
+
+  - IAM Credentials Report (account-level)
+
+    - Report que lista todos os usuários de sua conta e o status de suas várias credenciais.
+
+    - É armazenado por até quatro horas.
+
+      
+
+  - AIM Access Advisor (user-level)
+
+    - Mostra os serviços que este usuário pode acessar e quando esses serviços foram acessados pela última vez
+
+    - Lista atividades de ate 4 horas
+
+      
 
 ### **Shared Responsability  (Modelo de Responsabilidade Compartilhada)**
 
