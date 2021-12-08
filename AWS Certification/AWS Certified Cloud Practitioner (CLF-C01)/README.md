@@ -128,7 +128,7 @@ https://d1.awsstatic.com/pt_BR/training-and-certification/docs-cloud-practitione
 
 ## ACLOUDGURU
 
-https://learn.acloud.guru/course/aws-certified-cloud-practitioner/dashboard
+https://learn.acloud.guru/course/aws-certified-cloud-practitioner/dashboard **✔**
 
 
 
@@ -141,6 +141,8 @@ https://learn.acloud.guru/course/aws-certified-cloud-practitioner/dashboard
 # **Workshops**
 
 https://maturitymodel.security.aws.dev/en/
+
+
 
 # **Simulados**
 
@@ -164,7 +166,7 @@ https://aws.amazon.com/pt/about-aws/global-infrastructure/regions_az/?p=ngi&loc=
 
 - Pode ter 2 ou mais AZ´s em uma região
 
-- 
+  
 
   
 
@@ -219,7 +221,7 @@ https://aws.amazon.com/pt/quicksight/
 
 - Data warehouse
 
-- PBs
+- PBs (Petabytes)
 
   
 
@@ -327,10 +329,6 @@ https://aws.amazon.com/s3/
   - **S3 Outposts**
     
     - Local S3
-    
-      
-    
-      
     
       
 
@@ -526,21 +524,120 @@ https://aws.amazon.com/batch/
 ### **EC2 (Elastic Compute Cloud)**
 
 - Serviço que vc tem controle total
-- **Benefícios da EC2** - Elasticidade, Flexível, Integração com demais serviços, Confiável, Seguro, Baixo Custo
-- **Tipos de Instancias** - General Purpose, Compute Optimized, Memory Optimized, Accelerated Computing, Storage Optimized
-- **Hosts Dedicados** - Podem utilizar licenças de software existentes no cliente.
+
+- **EC2 Instance Connect** 
+
+  - Connecta na EC2 via console AWS
+
+    
+
+- **EC2 UserData**
+
+  - bootstrap
+
+  - executa no primeiro boot
+
+    
+
+- **SO** 
+
+  - Linux, Windows e MAcOS
+
+    
+
+- **Benefícios da EC2** 
+
+  - Elasticidade, Flexível
+
+  - Integração com demais serviços
+
+  - Confiável
+
+  - Seguro
+
+  - Baixo Custo
+
+    
+
+- **Tipos de Instâncias** 
+
+  https://aws.amazon.com/pt/ec2/instance-types/
+
+  - **General Purpose**
+
+    - Instâncias de uso geral fornecem um equilíbrio de recursos de computação, memória e rede e podem ser usadas para diversas cargas de trabalho. 
+
+      
+
+  - **Compute Optimized**
+
+    - As instâncias otimizadas para computação são ideais para aplicativos vinculados a computação que se beneficiam de processadores de alto desempenho. 
+
+      - Batch
+
+      - Media
+
+      - HPC
+
+      - Machine Learning
+
+        
+
+  - **Memory Optimized**
+
+    - As instâncias otimizadas de memória são projetadas para fornecer desempenho rápido para cargas de trabalho que processam grandes conjuntos de dados na memória.
+
+      
+
+  - **Accelerated Computing**
+
+    - Instâncias de computação aceleradas usam aceleradores de hardware, ou coprocessadores, para executar funções, como cálculos de número de ponto flutuante, processamento de gráficos ou correspondência de padrões de dados, mais eficientemente do que é possível no software em execução nas CPUs.
+
+      
+
+  - **Storage Optimized**
+
+    - As instâncias otimizadas para armazenamento são projetadas para cargas de trabalho que exigem acesso de leitura e gravação sequencial alto a conjuntos de dados muito grandes no armazenamento local. Elas
+
+      
+
+  - **Instances Features**
+
+  - **Measuring Instance Performance**
+
+    
+
+- **EC2 Dedicated Hosts**
+
+  - https://aws.amazon.com/pt/ec2/dedicated-hosts/
+  - Podem utilizar licenças de software existentes no cliente - BYOL
+
+
+
+
+- **EC2 Dedicated Instances**
+
+  - https://aws.amazon.com/pt/ec2/pricing/dedicated-instances/
+
+  - Roda em hardware dedicado mas vc não tem acesso 
+
+    
+
 - **Preços**
-- **Sob-Demanda** (por hora ou por segundo)
-- **Instancias Reservadas**
-  - **Instancias Spot**
-  - Aviso de até **2 minutos**
-  - até 90% de desconto comparado ao sob-demanda
-    - Cargas de trabalhos em lote
-  - **Saving Plans** 
-  
-  - 1 ou 3 anos 
-    - até 70% de desconto comparado ao sob-demanda
-  - EC2, Fargate e Lambda
+  - **Sob-Demanda** 
+    - por hora ou por segundo
+
+  - **Instancias Reservadas**
+    - **Instâncias Spot**
+      - Aviso de até **2 minutos**
+      - até 90% de desconto comparado ao sob-demanda
+      - Cargas de trabalhos em lote
+
+    - **Saving Plans** 
+      - 1 ou 3 anos 
+      - até 70% de desconto comparado ao sob-demanda
+      - EC2, Fargate e Lambda
+
 
 
 
@@ -574,7 +671,11 @@ https://aws.amazon.com/lightsail/
 
 https://aws.amazon.com/pt/elasticloadbalancing/
 
-- **Tipos** - Application, Network e Classic 
+- **Tipos** 
+  - Application
+  - Network
+  - Classic 
+
 - É regional
 - É altamente disponível 
 
@@ -1148,7 +1249,7 @@ https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy.html
 
   
 
-### **Virtual Private Cloud(VPC)**
+### **Virtual Private Cloud VPC)**
 
 - Uma rede virtual dedicada a sua conta
 
@@ -1163,22 +1264,33 @@ https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy.html
 - **Network ACL - NACL**
 
   - Pode ser configurada adcionalmente a nível de subnet para controlar o **tráfego de entrada e saida**. 
+
   - **Segurança a nivel da subnet**
+
   - Por padrão é tudo liberado 
+
   - **Stateless** - checa entrada e saída 
+
+    
 
 - **Security Group  (Grupo de Segurança)**
 
-  - **Segurança a nivel da instancia**
-
-
-  - Grupo de segurança default é todo bloqueado de entrada
-
-
-  - De saida é tudo liberado 
-
-
-  - **Stateful** - Não verifica o trafego de retorno pois reconheçe que é o mesmo pacote
+  - https://docs.aws.amazon.com/pt_br/vpc/latest/userguide/VPC_SecurityGroups.html
+  - **Segurança a nível da instância**
+  
+  
+    - Por default é **todo bloqueado de entrada (Inbound) e tudo liberado na saída (Outbound)**
+    - Pode ser atachado em multiplas instancias
+    - Baseado em Região/VPC
+  
+  
+    - **Stateful** - Não verifica o trafego de retorno pois reconhece que é o mesmo pacote
+  
+  
+    - Referencia IP ou Security Group
+  
+      ![image-20211207213551384](./Imagans/image-20211207213551384.png)
+  
 
 
 ### **Virtual Private Network(VPN)**
@@ -1219,7 +1331,9 @@ https://aws.amazon.com/pt/directconnect/
 
 - **Users** 
 
-  - Podemos ter um usuário em mais de um grupo.
+  - Podemos ter um usuário em mais de um grupo
+
+    
 
 - **Policy** 
 
@@ -1252,15 +1366,15 @@ https://aws.amazon.com/pt/directconnect/
 
 - **Security Tools**
 
-  - IAM Credentials Report (account-level)
+  - **IAM Credentials Report (account-level)**
 
-    - Report que lista todos os usuários de sua conta e o status de suas várias credenciais.
+    - Report que lista todos os usuários de sua conta e o status de suas várias credenciais
 
-    - É armazenado por até quatro horas.
+    - É armazenado por até quatro horas
 
       
 
-  - AIM Access Advisor (user-level)
+  - **IAM Access Advisor (user-level)**
 
     - Mostra os serviços que este usuário pode acessar e quando esses serviços foram acessados pela última vez
 
