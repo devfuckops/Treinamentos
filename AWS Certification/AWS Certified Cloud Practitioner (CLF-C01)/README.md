@@ -332,6 +332,29 @@ https://aws.amazon.com/s3/
     
       
 
+### **AMI**
+
+- Imagens customizadas para EC2
+- Podem ser copiadas entre regiões
+- Pode criar uma AMI através de um snapshot
+
+
+
+### **EC2 Image Builder**
+
+https://aws.amazon.com/pt/image-builder/
+
+- Automatiza a criação, manutenção, validação e teste de AMI´s
+- Para EC2 e Imagens de Containers
+
+
+
+### **EC2 Instance Store**
+
+- Ephemeral
+- Buffer, cache e dados temporários 
+- Melhor I/O
+
 
 
 
@@ -339,23 +362,26 @@ https://aws.amazon.com/s3/
 
 https://aws.amazon.com/pt/ebs/
 
-- Armazenamento a nivel de bloco
+- Armazenamento a nível de bloco
 
-- Independente da vida util da instancia
+- Independente da vida útil da instância
 
-- É automaticamente replicado entre AZ´s
+- É **automaticamente replicado** entre AZ´s
 
-- **Mas é armazenado em uma unica AZ** 
+- **Mas é armazenado em uma única AZ** 
 
-- Pode ser associado a uma unica instancia
+- Pode ser associado a uma única instancia
 
 - Snapshot point-in-time
 
 - Snapshots podem ser copiados entre Regiões
 
-- Replicação do mesmo volume entre AZ´s
-
 - Ate 16 TiB
+
+- Flag - Delete on Termination 
+
+  - Para deletar o EBS quando deleta a EC2
+  - Não vem ativado por default
 
   
 
@@ -365,21 +391,37 @@ https://aws.amazon.com/pt/ebs/
 
 ### **Elastic File System (EFS)**
 
+https://aws.amazon.com/pt/efs/
+
 - Compartilhamento de arquivos
-
 - Sistema de Arquivos Linux
-
+- Só funciona em SO Linux
 - Regional
+- NFS
+- Paga por uso
 
-  
+
+
+### **Amazon FSx**
+
+https://aws.amazon.com/pt/fsx/
+
+- **Lustre**
+  - HPC
+- **Windows File Server**
+  - Suporta SMB e Windows NTFS
+  - Windows File Server
+  - Integrado com Active Directory
+- **NetApp**
+- **OpenZFS**
+
+
+
+
 
 ### **Backup**
 
 ### **VMware Cloud on AWS**
-
-- - 
-
-  
 
 ### **Storage Gateway**
 
@@ -624,19 +666,40 @@ https://aws.amazon.com/batch/
     
 
 - **Preços**
+
   - **Sob-Demanda** 
+
     - por hora ou por segundo
 
-  - **Instancias Reservadas**
-    - **Instâncias Spot**
-      - Aviso de até **2 minutos**
-      - até 90% de desconto comparado ao sob-demanda
-      - Cargas de trabalhos em lote
+      
 
-    - **Saving Plans** 
-      - 1 ou 3 anos 
-      - até 70% de desconto comparado ao sob-demanda
-      - EC2, Fargate e Lambda
+  - **Saving Plans** 
+
+    - 1 ou 3 anos 
+
+    - até 70% de desconto comparado ao sob-demanda
+
+    - EC2, Fargate e Lambda
+
+      
+
+  - **Instancias Reservadas**
+
+    - 1 ou 3 Anos
+
+    - Standard, Convertable ou Scheduled
+
+      
+
+  - **Instâncias Spot**
+
+    - Aviso de até **2 minutos**
+    - até 90% de desconto comparado ao sob-demanda
+    - Cargas de trabalhos em lote
+
+    
+
+    
 
 
 
