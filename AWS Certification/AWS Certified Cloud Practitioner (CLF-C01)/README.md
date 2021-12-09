@@ -1365,6 +1365,15 @@ https://aws.amazon.com/pt/snow/
 
     
 
+    
+
+- **AWS OpsHub**
+
+  - Console de gerenciamento 
+  - Instala no computador 
+
+  
+
 - **AWS Snow Mobile**
 
   ![image-20211209205436193](./Imagans/image-20211209205436193.png)
