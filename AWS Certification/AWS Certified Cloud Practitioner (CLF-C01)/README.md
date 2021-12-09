@@ -1357,57 +1357,67 @@ https://aws.amazon.com/blogs/enterprise-strategy/6-strategies-for-migrating-appl
 
 https://aws.amazon.com/pt/snow/
 
-- Criptograia 256 Bits
+- **Anotações Gerais**
 
-- Pode usar KMS
+  - Criptografia 256 Bits
+
+  - Pode usar KMS
+
+    
 
 - **AWS Snow Mobile**
 
+  ![image-20211209205436193](./Imagans/image-20211209205436193.png)
+
   - Caminhão
+  - 100 PB - (100.000 TB)
 
-  - 100 PT - (100.000 TB)
 
-    
-
-- **AWS Snowball Edge**
-
-  - **Snowball Edge otimizado para armazenamento** 
-
-    são ideais para migrações de dados de grande escala e fluxos de trabalho de transferência recorrentes, em além da computação local com necessidades maiores de capacidade. 
-
-    - Armazenamento: **80 TB de capacidade HDD para volumes de blocos e armazenamento de objeto compatível com Amazon S3, além de 1 TB de SSD SATA para volumes de blocos.** 
-    - Computação: 40 vCPUs e 80 GiB de memória para dar suporte a instâncias sbe1 do Amazon EC2 (equivalente a C5).
-
-  -  **Snowball Edge otimizado para computação** 
-
-    fornece recursos de computação poderosos para casos de uso, como machine learning, análise de vídeo em movimento completo, análise e pilhas de computação locais. 
-
-    - Armazenamento: **capacidade de HDD utilizável de 42 TB** para armazenamento de objeto compatível com Amazon S3 ou volumes de blocos compatíveis com Amazon EBS e também 7,68 TB de capacidade de SSD NVMe utilizável para volumes de blocos compatíveis com Amazon EBS. 
-    - Computação: 52 vCPUs, 208 GiB de memória e uma GPU NVIDIA Tesla V100 opcional. Os dispositivos executam as instâncias sbe-c e sbe-g do Amazon EC2, que são equivalentes às instâncias C5, M5a, G3 e P3.
-
-  - Otimizado para Armazenamento
-
-  - Encaixa em Rack Existente
-
-  - Pode usar Lamba
-
-  - EC2 e IoT
-
-  - Captura de IoT, Compressão de imagem, Sinalização industrial
-
-    
 
 - **AWS Snowcone**
 
+  ![image-20211209205405568](./Imagans/image-20211209205405568.png)
+
   - 8 TB
 
-  - Edge Compute (EC2 - IoT)
+
+  - Edge Compute (EC2 - IoT) - 2cpu/4GB
+
 
   - Copia para um bucket S3
+  - Você coleta os dados até offline e depois transfere para AWS
+  - Pode utilizar o AWS DataSync para copia
+
+  
+
+- **AWS Snowball Edge**
+
+  ![image-20211209205424331](./Imagans/image-20211209205424331.png)
+
+  - **Snowball Edge Storage Optimzed**
+
+    - São ideais para migrações de dados de grande escala e fluxos de trabalho de transferência recorrentes, em além da computação local com necessidades maiores de capacidade. 
+
+      - Armazenamento: **80 TB de capacidade HDD para volumes de blocos e armazenamento de objeto compatível com Amazon S3, além de 1 TB de SSD SATA para volumes de blocos.** 
+      - Computação: 40 vCPUs e 80 GiB de memória para dar suporte a instâncias sbe1 do Amazon EC2 (equivalente a C5).
+
+      
+
+  - **Snowball Edge Compute Otimized** 
+
+    - Fornece recursos de computação poderosos para casos de uso, como machine learning, análise de vídeo em movimento completo, análise e pilhas de computação locais. 
+      - Armazenamento: **capacidade de HDD utilizável de 42 TB** para armazenamento de objeto compatível com Amazon S3 ou volumes de blocos compatíveis com Amazon EBS e também 7,68 TB de capacidade de SSD NVMe utilizável para volumes de blocos compatíveis com Amazon EBS. 
+      - Computação: 52 vCPUs, 208 GiB de memória e uma GPU NVIDIA Tesla V100 opcional. Os dispositivos executam as instâncias sbe-c e sbe-g do Amazon EC2, que são equivalentes às instâncias C5, M5a, G3 e P3.
+    - Otimizado para Armazenamento
+    - Encaixa em Rack Existente
+    - Pode usar Lamba
+    - EC2 e IoT
+    - Captura de IoT, Compressão de imagem, Sinalização industrial
+
 
     
 
-
+  
 
 ## **Content Delivery**
 
