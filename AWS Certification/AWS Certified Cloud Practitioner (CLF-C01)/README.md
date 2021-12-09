@@ -239,98 +239,213 @@ https://aws.amazon.com/s3/
 
 ![image-20211102173111307](./Imagans/image-20211102173111307.png)
 
-- Armazenamento a nível de objeto
+- **Anotações Gerais**
 
-- Upload de arquivos de até 5 TB
+  - Armazenamento a nível de objeto
+  - **key - Prefix + Object Name**
+    - s3://my-bucket/my_file.txt
 
-- Sites estáticos
+  - Upload de arquivos de até 5 TB
+  - Multipart upload - 5 GB
+  - Serviço regional mas com o nome global
+  - Regional
+  - Pode usar com o CloudFront, Redshift, Athena, Mobile applications
 
-- S3 Access Logs
+- **Casos de Uso**
 
-- Serviço regional mas com o nome global
+  - Backup - Storage
+  - DR
+  - Archive
+  - Hybrid Cloud Stporgae
+  - App Hosting
+  - Media Hosting
+  - DataLakes
+  - Software delivery
+  - Static websites
 
-- Pode usar com o CloudFront, Redshift, Athena, Mobile applications
+  
 
-- Regional
+- **S3 Encryption**
+
+  - **No Encryption**
+
+    - O arquivo não é 
+
+  - **Server-Side Encryption**
+
+    - O arquivo é Encryptado  depois de recebe-lo
+
+  - **Client-Side Encryption**
+
+    - O arquivo é Encryptado antes de envia-lo
+
+      
+
+- **S3 Replication (CRR & SRR)**
+  - CRR - Cross Region Replication
+  - SRR - Same Region Replication
+  - Copia assincrona
+  - Buckets devem estar em diferentes contas
+  - Enable Versioning
+
+
+
+- **S3 Access Logs**
+  - Auditoria
+  - Salva em outro S3
+
+
+
+- **S3 Versioning**
+
+  - Best Practice
+
+  - Suspender o versionamento não deleta o arquivo
+
+    
+
+- **S3 Websites**
+
+  - URL
+    - <bucket-name>.s3-website-<aws-region>.amazonaws.com
+    - <bucket-name>.s3-website.<aws-region>.amazonaws.com
+
+- **S3 Security**
+
+  - **User based**
+    - IAM Policies
+    - IAM Roles
+
+  - **Resource Based**
+
+    - Bucket polices
+
+      - Object Access control list - ACL
+
+      - Bucket Access control list - ACL
+
+  - **Encryption**
+
+
+
+
 
 - **AWS S3 Transfer Acceleration**
 
   - Transferências rápidas e seguras em longas distancias para bucket utilizando os pontos de presenças.
 
+
+
+- **S3 Object Lock & Glacier Vault Lock**
+
+  - **Object Lock** 
+
+    - WORM (Write Onde Read Many)
+
+    - Bloqueia a deleção do objeto
+
+      
+
+  - **Glacier Vault Lock**
+
+    - WORM (Write Onde Read Many)
+    - Compliance
+
+    
+
 - **Classses de Armazenamento**
 
-- https://aws.amazon.com/pt/s3/storage-classes/
+  https://aws.amazon.com/pt/s3/storage-classes/
 
-  - **S3 Standard**
+  ![S3 Storage Classes Performance](./Imagans/S3-Storage-Classes-Performance.png)
 
-    - 11 - 9 - Durabilidade
+  - **S3 Standard - General Purpose**
+
+    - 99,99% Availability
 
     - Replicas em multi-az
 
     - **Recomentado para Acesso Frequente**
 
       
-
-
-  - **S3 Intelligent-Tiering (Estratificação inteligente do S3)**
-
-    - Ideal para dados com padrões de acesso desconhecidos ou em alteração
-
-    - Requer uma pequena taxa mensal de monitoramento e automação por objeto
-    - Rapidez quando necessário
-    - Replicas em multi-az
-
-    - **Recomentado para quando não se sabe o tipo de acesso**
-
-      
-
+    
   - **S3 Standard Infrequent Access (IA)**
+
+    - 99,99% Availability
+
+    - Low cost compatado com S3 Standard
 
     - Armazena dados em uma única zona de disponibilidade
 
     - Tem um preço de armazenamento menor do que o S3 Standard – IA
+
     - **Recomentado para Acesso Infrequente**
 
-    
+      
 
-  - **S3 One Zone-Infrequent Access (S3 One Zone – IA)**
 
-    - **Armazena dados em uma única zona de disponibilidade**
+    - **S3 One Zone-Infrequent Access (S3 One Zone – IA)**
 
-    - Tem um preço de armazenamento menor do que o S3 Standard – IA
-    - **Recomentado para Acesso Infrequente**
+      - 99,5% Availability
+
+      - **Armazena dados em uma única zona de disponibilidade**
+
+      - Tem um preço de armazenamento menor do que o S3 Standard – IA
+      - **Recomentado para Acesso Infrequente**
+
 
   
 
 
-  - **S3 Glacier**
+    - **S3 Intelligent-Tiering (Estratificação inteligente do S3)**
 
-    - Arquivamento e backup de dados
 
-    - Criar cofres
-
-    - Controles de escritas e leituras
-
-    - Restore em minutos e horas
-
-      
-
-  - **AWS S3 Glacier Deep** **Archive**
-
-    - Armazenamento mais barato 
-
-    - Não faz upload de arquivos pela Console
-
-    - Capaz de recuperar objetos em 12 horas ou 48 horas
+      - 99,99% Availability
+      - Move os arquivos para Acesso Frequente ou Acesso Infrequente automaticamente
+      - Ideal para dados com padrões de acesso desconhecidos ou em alteração
+      - Requer uma pequena taxa mensal de monitoramento e automação por objeto
+      - Rapidez quando necessário
+      - Replicas em multi-az
+      - **Recomentado para quando não se sabe o tipo de acesso**
 
       
 
 
-  - **S3 Outposts**
-    
-    - Local S3
-    
+    - **S3 Glacier**
+
+      - Arquivamento e backup de dados
+      - Baixo custo
+      - **Restore**
+        - Expedited - 1 a 5 min
+        - Standard - 3 a 5 Horas
+        - Bulk - 5 a 12 horas
+      - Criar cofres
+      - Controles de escritas e leituras
+      - Restore em minutos e horas
+
       
+
+    - **AWS S3 Glacier Deep** **Archive**
+
+      - **Armazenamento mais barato**
+
+      - Não faz upload de arquivos pela Console
+
+      - **Restore**
+
+        - Standard 12 horas 
+        - Bulk 48 horas
+
+        
+
+    - **S3 Outposts**
+
+
+      - Local S3
+
+        
+
+
 
 ### **AMI**
 
