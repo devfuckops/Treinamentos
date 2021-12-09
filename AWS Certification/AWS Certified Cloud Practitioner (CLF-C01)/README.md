@@ -551,9 +551,45 @@ https://docs.aws.amazon.com/autoscaling/plans/userguide/what-is-aws-auto-scaling
 
 ![image-20211109195133948](./Imagans/image-20211109195133948.png)
 
+
+
+- **Scaling Strategies** 
+
+  - **Dynamic Scaling**
+
+    - **Simple/Step Scaling**
+
+      - Quando utilizamos alarmes do CloudWatch (CPU > 70%)
+
+    - **Target Tracking Scaling**
+
+      - Quando utilizamos a média de consumo do ASG
+
+    - **Scheduled Scaling**
+
+      - Quando o scheduler é feito por agendamento
+
+    - **Predictive Scaling**
+
+      - Utiliza Machine Learning
+
+        
+
+  - **Manual Scaling**
+
+    - Quando alteramos na mão
+
+
+
 - **Scaling-up** adciona mais recursos a uma instancia e **scaling-out** adciona mais instancias 
-- **scaling-up** - vertical scaling
-- **scaling-out** - horizontal scaling
+- **Scaling-up** - **Vertical Scaling** - Aumentar o tamanho da instancia
+- **Scaling-out** - **Horizontal Scaling** - Aumenta o numero de instancias 
+
+
+
+
+
+
 
 ### **Batch**
 
@@ -735,9 +771,15 @@ https://aws.amazon.com/lightsail/
 https://aws.amazon.com/pt/elasticloadbalancing/
 
 - **Tipos** 
-  - Application
-  - Network
-  - Classic 
+  - **Gateway** 
+  - **Application** 
+    - (http/https only) 
+    - Layer 7
+  - **Network** 
+    - (ultra-high performance / TCP) 
+    - Layer 4
+  - **Classic** 
+    - (Layer 4 and Layer 7)
 
 - É regional
 - É altamente disponível 
