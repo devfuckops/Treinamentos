@@ -233,19 +233,18 @@ O AWS Local Zones é uma espécie de implantação de infraestrutura posiciona a
       - ORC
       - AvroParquet
 
-### 
+
 
 ### **CloudSearch**
 
 ### **ElasticSearch**
 
-### 
-
-- - 
-
-    
-
 ### **Kinesis**
+
+- **Summary**
+  - Real time big data streaming
+
+
 
 ### **QuickSight**
 
@@ -260,12 +259,6 @@ https://aws.amazon.com/pt/quicksight/
   - Integra: RDS, S3, Athena, RedShift
 
     
-
-
-
-
-
-
 
 
 
@@ -371,10 +364,7 @@ https://aws.amazon.com/s3/
 
 
 
-
-
 - **AWS S3 Transfer Acceleration**
-
   - Transferências rápidas e seguras em longas distancias para bucket utilizando os pontos de presenças.
   - Edge Locations 
   - Usa rede interna AWS
@@ -1663,11 +1653,23 @@ https://wa.aws.amazon.com/index.pt_BR.html
 
 ### **AppSync**
 
+### **Step Functions** 
+
 ### **EventBridge**
 
-### **MQ**
+### **Amazon MQ**
 
-**Step Functions** 
+https://aws.amazon.com/pt/amazon-mq
+
+O Amazon MQ é um serviço gerenciado de agente de mensagens para o [Apache ActiveMQ](http://activemq.apache.org/components/classic/) e [RabbitMQ](https://www.rabbitmq.com/) que facilita a configuração e a operação de agentes de mensagens na AWS. 
+
+- **Summary**
+  - MQTT, AMQP, STOMP, Opensire, Wss
+  - **Managed Apache ActiveMQ**
+  - run dedicaded machine
+  - SQS/SNS
+
+### 
 
 
 
@@ -1675,23 +1677,45 @@ https://wa.aws.amazon.com/index.pt_BR.html
 
 ## **Messaging and Integration** 
 
-### **SNS**	
+### **Simple Notification Service (SNS)**	
 
-- Envia notificações aos usuários finais
+- **Summary**
 
-  
+  - Envia notificações aos usuários finais
 
-### **SQS**
+  - Publishers
+
+  - HTTP/HTTPS, E-mail, SMS, SQS, Lambda
+
+    
+    
+    
+
+
+### **Simple Queue Service (SQS)**
 
 https://aws.amazon.com/pt/sqs/
 
-- Envia, armazena e receba sem perder a mensagem em qualquer volume
+- **Summary**
 
-- Mensagens são colocadas até que sejam processadas
+  - Envia, armazena e receba sem perder a mensagem em qualquer volume
+  - Mensagens são colocadas até que sejam processadas
+
+- **Standard Queue**
+
+  - Default Retention - 4 days
+  - Max Retention - 14 days
+  - Mensagens são deletadas depois que são lidas
+
+- **FIFO Queue**
 
   
 
-### 
+  
+
+  
+
+
 
 
 
