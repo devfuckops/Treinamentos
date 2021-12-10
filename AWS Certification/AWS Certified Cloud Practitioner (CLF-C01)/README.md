@@ -418,16 +418,16 @@ https://aws.amazon.com/s3/
 
 
     - **S3 One Zone-Infrequent Access (S3 One Zone – IA)**
-
+    
       - 99,5% Availability
-
+    
       - **Armazena dados em uma única zona de disponibilidade**
-
+    
       - Tem um preço de armazenamento menor do que o S3 Standard – IA
       - **Recomentado para Acesso Infrequente**
 
 
-  
+
 
 
     - **S3 Intelligent-Tiering (Estratificação inteligente do S3)**
@@ -441,11 +441,12 @@ https://aws.amazon.com/s3/
       - Replicas em multi-az
       - **Recomentado para quando não se sabe o tipo de acesso**
 
-      
+
+​      
 
 
     - **S3 Glacier**
-
+    
       - Arquivamento e backup de dados
       - Baixo custo
       - **Restore**
@@ -456,27 +457,30 @@ https://aws.amazon.com/s3/
       - Controles de escritas e leituras
       - Restore em minutos e horas
 
-      
+
+​      
 
     - **AWS S3 Glacier Deep** **Archive**
-
+    
       - **Armazenamento mais barato**
-
+    
       - Não faz upload de arquivos pela Console
-
+    
       - **Restore**
-
+    
         - Standard 12 horas 
         - Bulk 48 horas
 
-        
+
+​        
 
     - **S3 Outposts**
 
 
       - Local S3
 
-        
+
+​        
 
 
 
@@ -1248,11 +1252,25 @@ Connect
 
 ### **Cloud9**
 
+- Cloud IDE
+
+- Escrever o código
+
+- Colaboração in real-time
+
+  
+
 ### **CodeArtifact**
+
+
 
 ### **CodeBuild**
 
 https://docs.aws.amazon.com/codebuild/latest/userguide/welcome.html
+
+- Build Code
+
+  
 
 
 
@@ -1262,19 +1280,41 @@ https://aws.amazon.com/pt/codecommit/
 
 - Armazenamento de código fonte
 
+- Use Git technology
+
+  
+  
   
 
 ### **CodeDeploy**
 
 https://docs.aws.amazon.com/codedeploy/latest/userguide/welcome.html
 
-- Automatizar a instalação de um conjunto de aplications em EC2 e em Servidores Locais
+- Automatizar a instalação de um conjunto de aplications em **EC2 e em Servidores Locais**
 
+- Deploy da aplicação automaticamente
+
+- **Hybrid Service**
+
+- Precisa CodeDeploy agent para instancias ou servidores locais
+
+  
+  
   
 
 ### **CodePipeline**
 
+- Orquestrador de diversos "steps"
+
+- Code=>Build=>Test=>Provision=>Deploy
+
+- Basis CICD
+
+  
+
 ### **CodeStar**
+
+- Tudos os Codes em um único lugar
 
 
 
@@ -1338,8 +1378,19 @@ https://aws.amazon.com/cloudformation/features/
 
 - **Cloudformation Change Sets** 
   - Pode ser usado para visualizar as alterações nos recursos
+- Infraestrutura como código - JSON/YAML
+- Formato Declarativo
+
+
+
+### **CDK**
+
+- Javascript, Typescript, JAVA, .NET
 - Infraestrutura como codigo - JSON/YAML
-- Formato declarativo
+- Lambda, ECS, EKS
+- CDK CLI --> Transforma em um Cloudformation Template
+
+
 
 
 
@@ -1350,6 +1401,12 @@ https://aws.amazon.com/elasticbeanstalk/?p=tile
 - Implemantação rápida de recursos que podem usar diferentes linguagens de programação como .NET e JAVA
 - Baseado em EC2
 - Controle dos recursos 
+- **Para Desenvolvedores**
+- PaaS
+- Pode definir a estratégia de Deploy
+- Muito Fácil
+- Go, JAVA, Tomcat, Docker, Ruby, Python, Packer
+- Tem pacote de monitoramento na console do Beanstalk
 
 
 
@@ -1463,7 +1520,19 @@ https://aws.amazon.com/pt/organizations/
 
 https://aws.amazon.com/systems-manager/
 
-- Permite que os usurios controlem seus recursos unificando serviços onde ele podem visualizar, monitorar e automatizar
+- Permite que os usuários controlem seus recursos unificando serviços onde ele podem visualizar, monitorar e automatizar
+
+- **EC2 e On-Premisses**
+
+- Patching
+
+- run comandos
+
+- store parameter 
+
+- Windows e Linux
+
+- SSM agent
 
   
 
@@ -1696,7 +1765,7 @@ https://aws.amazon.com/pt/snow/
     - Captura de IoT, Compressão de imagem, Sinalização industrial
 
 
-    
+​    
 
   
 
