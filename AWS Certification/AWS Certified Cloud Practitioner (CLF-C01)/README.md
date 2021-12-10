@@ -197,7 +197,7 @@ https://aws.amazon.com/pt/about-aws/global-infrastructure/regions_az/?p=ngi&loc=
 
 ### **Athena**
 
-- **Anotações Gerais**
+- **Summary**
 
   - É um serviço de consulta interativo que facilita a análise de dados no Amazon S3 usando SQL padrão. 
   - Serveless
@@ -238,7 +238,7 @@ https://aws.amazon.com/pt/about-aws/global-infrastructure/regions_az/?p=ngi&loc=
 
 https://aws.amazon.com/pt/quicksight/
 
-- **Anotações Gerais**
+- **Summary**
 
   - Criação de relatórios inteligentes
 
@@ -267,7 +267,7 @@ https://aws.amazon.com/s3/
 
 ![image-20211102173111307](./Imagans/image-20211102173111307.png)
 
-- **Anotações Gerais**
+- **Summary**
 
   - Armazenamento a nível de objeto
   - **key - Prefix + Object Name**
@@ -311,6 +311,8 @@ https://aws.amazon.com/s3/
 
 - **S3 Replication (CRR & SRR)**
   - CRR - Cross Region Replication
+    - Setup em cada região
+    - Read Only
   - SRR - Same Region Replication
   - Copia assincrona
   - Buckets devem estar em diferentes contas
@@ -361,6 +363,8 @@ https://aws.amazon.com/s3/
 - **AWS S3 Transfer Acceleration**
 
   - Transferências rápidas e seguras em longas distancias para bucket utilizando os pontos de presenças.
+  - Edge Locations 
+  - Usa rede interna AWS
 
 
 
@@ -571,7 +575,7 @@ https://aws.amazon.com/pt/fsx/
 
 ### **Storage Gateway**
 
-- **Anotações Gerais**
+- **Summary**
 
   - Storage Hibrido
 
@@ -639,7 +643,7 @@ https://aws.amazon.com/pt/fsx/
 
 ### **Aurora**
 
-- **Anotações Gerais**
+- **Summary**
 
   - Forcene poder computacional até 5x mais rápido que bd mysql tradicional
 
@@ -662,7 +666,7 @@ https://aws.amazon.com/pt/fsx/
 
 ### **DocumentDB**
 
-- **Anotações Gerais**
+- **Summary**
 
   - Banco de dados NoSQL
 
@@ -678,7 +682,7 @@ https://aws.amazon.com/pt/fsx/
 
 ### **DynamoDB**
 
-- **Anotações Gerais**
+- **Summary**
 
   - Banco de dados NoSQL
   - key/value database
@@ -732,7 +736,7 @@ https://aws.amazon.com/pt/fsx/
 
 ### **Neptune**
 
-- **Anotações Gerais**
+- **Summary**
   - Banco de dados em Grafos
   - Social Network
   - Replica 3 AZ
@@ -743,7 +747,7 @@ https://aws.amazon.com/pt/fsx/
 
 ### **Glue**
 
-- **Anotações Gerais**
+- **Summary**
 
   - ETL
   - Extract, transform e load 
@@ -765,7 +769,7 @@ https://aws.amazon.com/pt/fsx/
 
 ### **Redshift**
 
-- **Anotações Gerais**
+- **Summary**
 
   - Data Warehouse
 
@@ -783,7 +787,7 @@ https://aws.amazon.com/pt/fsx/
 
 ### **Elastic MapReduce (EMR)**
 
-- **Anotações Gerais**
+- **Summary**
 
   - Hadoop 
 
@@ -801,7 +805,7 @@ https://aws.amazon.com/pt/fsx/
 
 ### **Amazon Managed Blockchain**
 
-- **Anotações Gerais**
+- **Summary**
   - É um serviço totalmente gerenciado que facilita a criação e o gerenciamento de redes blockchain escalonáveis
   - Ele permite que várias partes executem transações sem a necessidade de uma autoridade central confiável.
   - **Existe um aspecto de descentralização**
@@ -811,7 +815,7 @@ https://aws.amazon.com/pt/fsx/
 
 ### **Amazon Quantum Ledger Database (QLDB)**
 
-- **Anotações Gerais**
+- **Summary**
 
   - É um banco de dados de contabilidade totalmente gerenciado que fornece um log de transações transparente, imutável e criptograficamente verificável de propriedade de uma autoridade central confiável. 
 
@@ -833,7 +837,7 @@ https://aws.amazon.com/pt/fsx/
 
 ### **Database Migration Service (DMS)**
 
-- **Anotações Gerais**
+- **Summary**
 
   - Migra bd do local para AWS
 
@@ -883,11 +887,15 @@ https://aws.amazon.com/pt/fsx/
 
 ### **EC2 Auto Scaling**
 
+
+
 ### **AWS Outposts**
 
 https://aws.amazon.com/outposts/
 
 - Infraestrutura da AWS no cliente
+- Hybrid Cloud
+- Você é responsável pela infra, segurança e etc
 
 
 
@@ -943,7 +951,7 @@ https://docs.aws.amazon.com/autoscaling/plans/userguide/what-is-aws-auto-scaling
 
 https://aws.amazon.com/batch/
 
-- **Anotações Gerais**
+- **Summary**
   - Executar milhares de jobs
   - Ele gerancia as EC2 ou Spot
   - Docker Images e roda no ECS
@@ -1111,7 +1119,7 @@ https://d1.awsstatic.com/whitepapers/aws_cloud_adoption_framework.pdf
 
 https://aws.amazon.com/lightsail/
 
-- **Anotações Gerais**
+- **Summary**
 
   - Projetos pequenos
   - Sem experiencia em Cloud
@@ -1194,7 +1202,7 @@ https://aws.amazon.com/pt/lambda/
 
 https://aws.amazon.com/pt/eks/
 
-- **Anotações Gerais**
+- **Summary**
 
   - Ferramenta de orquestração de container
 
@@ -1208,7 +1216,7 @@ https://aws.amazon.com/pt/eks/
 
 https://aws.amazon.com/fargate/
 
-- **Anotações Gerais**
+- **Summary**
 
   - **Serveless**
 
@@ -1225,7 +1233,7 @@ https://aws.amazon.com/fargate/
 
 ### **API Gateway**	
 
-- **Anotações Gerais**
+- **Summary**
   - Expõe API´s
   - Serverless
   - RestFull e Websocket
@@ -1234,7 +1242,7 @@ https://aws.amazon.com/fargate/
 
 ### **App Runner** 
 
-- **Anotações Gerais**
+- **Summary**
 
 
 
@@ -1252,6 +1260,8 @@ Connect
 
 ### **Cloud9**
 
+- É um ambiente de desenvolvimento integrado (IDE) baseado em nuvem que permite escrever, executar e depurar seu código com apenas um navegador.
+
 - Cloud IDE
 
 - Escrever o código
@@ -1262,11 +1272,16 @@ Connect
 
 ### **CodeArtifact**
 
+- É um serviço de repositório de artefato totalmente gerenciado (também chamado de dependências de código) que torna mais fácil para organizações  qualquer tamanho armazenar, publicar e compartilhar com segurança pacotes de software usados em seu processo de desenvolvimento de software.
+
 
 
 ### **CodeBuild**
 
 https://docs.aws.amazon.com/codebuild/latest/userguide/welcome.html
+
+- É um serviço de integração contínua totalmente gerenciado que compila o código-fonte, executa testes e produz pacotes de software prontos para implantação. 
+- Com CodeBuild, você não precisa provisionar, gerenciar e dimensionar seus próprios servidores de construção, ele não tem servidor.
 
 - Build Code
 
@@ -1277,6 +1292,8 @@ https://docs.aws.amazon.com/codebuild/latest/userguide/welcome.html
 ### **CodeCommit**
 
 https://aws.amazon.com/pt/codecommit/
+
+- É um serviço de controle de origem gerenciado, seguro e altamente escalonável que torna mais fácil para as equipes colaborarem no código. Ele também fornece controle de versão de software.
 
 - Armazenamento de código fonte
 
@@ -1289,6 +1306,8 @@ https://aws.amazon.com/pt/codecommit/
 ### **CodeDeploy**
 
 https://docs.aws.amazon.com/codedeploy/latest/userguide/welcome.html
+
+-  É um serviço que automatiza implantações de código para qualquer instância, incluindo instâncias do Amazon EC2 e instâncias em execução no local.
 
 - Automatizar a instalação de um conjunto de aplications em **EC2 e em Servidores Locais**
 
@@ -1304,6 +1323,8 @@ https://docs.aws.amazon.com/codedeploy/latest/userguide/welcome.html
 
 ### **CodePipeline**
 
+- É um serviço de entrega contínua totalmente gerenciado que ajuda a automatizar seus pipelines de lançamento para aplicativos rápidos e confiáveis e atualizações de infraestrutura. 
+
 - Orquestrador de diversos "steps"
 
 - Code=>Build=>Test=>Provision=>Deploy
@@ -1314,7 +1335,8 @@ https://docs.aws.amazon.com/codedeploy/latest/userguide/welcome.html
 
 ### **CodeStar**
 
-- Tudos os Codes em um único lugar
+- É usado para desenvolver, construir e implantar rapidamente aplicativos na AWS.
+- Todos os Codes em um único lugar
 
 
 
@@ -1376,15 +1398,22 @@ https://docs.aws.amazon.com/codedeploy/latest/userguide/welcome.html
 
 https://aws.amazon.com/cloudformation/features/
 
+- **Summary**
+  - Fornece uma linguagem comum para você modelar e provisionar AWS e recursos de aplicativos de terceiros em seu ambiente de nuvem. 
+  - Ele permite que você implante a infraestrutura como um código.
+  - Infraestrutura como código - JSON/YAML
+  - Formato Declarativo
+
 - **Cloudformation Change Sets** 
   - Pode ser usado para visualizar as alterações nos recursos
-- Infraestrutura como código - JSON/YAML
-- Formato Declarativo
+  
+  
 
 
 
-### **CDK**
+### **AWS Cloud Development Kit (AWS CDK)**
 
+- É uma estrutura de desenvolvimento de software de código aberto para definir seus recursos de aplicativo em nuvem usando linguagens de programação familiares.
 - Javascript, Typescript, JAVA, .NET
 - Infraestrutura como codigo - JSON/YAML
 - Lambda, ECS, EKS
@@ -1412,10 +1441,15 @@ https://aws.amazon.com/elasticbeanstalk/?p=tile
 
 ### **OpsWorks**
 
+- É um serviço de gerenciamento de configuração que fornece instâncias gerenciadas de **Chef e Puppet**.
+
 - Gerencia aplicativos no datacenter através de SO Linux conectados em **Endpoints públicos** AWS
+
 - Agent do OpsWorks instalados nas instancias Linux
+
 - Automatizar a configuração de um software e replicar **em outras 400**
-- **Chef and Puppet**
+
+  
 
 
 
@@ -1517,12 +1551,13 @@ https://aws.amazon.com/pt/organizations/
 
 ### **AWS Service Catalog** 
 
-### **AWS System Manager** 
+### **AWS Systems Manager** 
 
 https://aws.amazon.com/systems-manager/
 
-- **Anotações Gerais**
+- **Summary**
 
+  -  Oferece visibilidade e controle de sua infraestrutura na AWS. É usado para corrigir sistemas em grande escala.
   - Permite que os usuários controlem seus recursos unificando serviços onde ele podem visualizar, monitorar e automatizar
 
   - **EC2 e On-Premisses**
@@ -1705,7 +1740,7 @@ https://aws.amazon.com/blogs/enterprise-strategy/6-strategies-for-migrating-appl
 
 https://aws.amazon.com/pt/snow/
 
-- **Anotações Gerais**
+- **Summary**
 
   - Criptografia 256 Bits
 
@@ -1784,19 +1819,31 @@ https://aws.amazon.com/pt/snow/
 
 https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html
 
-- Pode usar TTL para habilitar o cache de conteudo dinamico
+- **Summary**
 
-- Pode ser S3, EC2, ELB, Route 53
+  - Pode usar **TTL** para habilitar o cache de conteudo dinâmico
+  - 216 Point Of Presense (Edge Location)
+  - DDoS Protection
+  - Integrado com Shield e AWS WAF
+  - Pode ser S3, EC2, ELB, Route 53
+  - Usa **Edge Location** para distribuir conteudo 
+  - Dados, vídeos aplicações e API
+  - CDN
+  - Arquivos estáticos 
+  - **NÃO usa UNICAST**
 
-- Usa **Edge Location** para distribuir conteudo 
+- **CloudFront Origins**
 
-- Dados, vídeos aplicações e API
+  - S3 Bucket
+    - OAI (Origin Access identity) + S3 Bucket Policy
+    - Upload S3
 
-- CDN
 
-- Arquivos estáticos 
-
-- **NÃO usa UNICAST**
+  - Custom Origin (HTTP)
+    - ALB
+    - EC2
+    - S3 website
+    - Any HTTP backend
 
   
 
@@ -1807,6 +1854,11 @@ https://aws.amazon.com/global-accelerator/faqs/
 - Usam a rede global AWS de alta velocidade e as técnicas de roteamento **Anycast** para melhorar a disponibilidade e desempenho do app do cliente
 - Não inclui recursos de cache de conteudo
 - São adequados para VOIP, MTTQ e Jogos
+- Edge Locations envia trafego para ambiente
+- 2 IP Anycast
+- DDoS e AWS Shield
+- **No Cache**
+- TCP/UDP/HTTP
 
 
 
@@ -1820,23 +1872,50 @@ https://aws.amazon.com/global-accelerator/faqs/
 
 https://aws.amazon.com/pt/route53/
 
-https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy.html
+- **Summary**
 
-- Pode registrar nomes de domínios
+  - Pode registrar nomes de domínios
 
-- **Roteamento de Latência** 
+  - DNS
 
-  - Para melhor performance de usuários globais
+- **Routing Pocilies**
 
-- **Roteamento de Geolocalização**
+  https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy.html
 
-- **Roteamento de Ponderado**
+  - **Simple routing policy** (Política de roteamento simples)
 
-- **Roteamento de Geoproximidade**
+    - Use para um único recurso que executa uma determinada função para seu domínio, por exemplo, um servidor Web que oferece conteúdo para o site example.com.
+    - No health checks
 
-  
+  - **Failover routing policy** (Política de roteamento de failover)
 
-  
+    - Use quando quiser configurar o failover **ativo-passivo**.
+    - **Yes health checks**
+
+  - **Geolocation routing policy** (Política de roteamento de localização geográfica)
+
+    - Use quando quiser encaminhar o tráfego com base na localização dos usuários.
+
+  - **Geoproximity routing policy** (Política de roteamento de proximidade geográfica)
+
+    - Use quando quiser encaminhar o tráfego com base no local de seus recursos e, opcionalmente, alternar o tráfego de recursos em um local para recursos em outro local.
+
+  - **Latency routing policy** (Política de roteamento de latência): 
+
+    - Use quando você tiver recursos em várias regiões da AWS e quiser encaminhar o tráfego para a região que fornece o menor tempo de ida e volta.
+    - Para melhor performance de usuários globais
+
+  - **Multivalue answer routing policy** (Política de roteamento de resposta com vários valores): 
+
+    - Use quando quiser que o Route 53 responda a consultas de DNS com até oito registros íntegros selecionados aleatoriamente.
+
+  - **Weighted routing policy** (Política de roteamento ponderado): 
+
+    - Use para encaminhar o tráfego para vários recursos nas proporções que você especificar.
+
+    
+
+    
 
 ### **Virtual Private Cloud VPC)**
 
