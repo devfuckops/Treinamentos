@@ -197,15 +197,53 @@ https://aws.amazon.com/pt/about-aws/global-infrastructure/regions_az/?p=ngi&loc=
 
 ### **Athena**
 
-### **Glue**
+- **Anotações Gerais**
+
+  - Serveless
+
+  - SQL Languege
+
+    - Casos de uso
+
+      - BI
+
+      - Analytics
+
+      - Report and Analyze
+
+        
+
+  - Support
+    - CVS
+      - JSON
+      - ORC
+      - AvroParquet
+
+### 
 
 ### **CloudSearch**
 
 ### **ElasticSearch**
 
-### **EMR**
+### 
 
 ### **Glue**
+
+- **Anotações Gerais**
+
+  - ETL
+
+  - Glue Data Catalog
+
+    - Athena
+    - Redshift 
+    - EMR
+
+  - Extract, transform e load 
+
+  - Serverless
+
+    
 
 ### **Kinesis**
 
@@ -213,17 +251,20 @@ https://aws.amazon.com/pt/about-aws/global-infrastructure/regions_az/?p=ngi&loc=
 
 https://aws.amazon.com/pt/quicksight/
 
-- Criação de relatórios inteligentes
+- **Anotações Gerais**
 
-  
+  - Criação de relatórios inteligentes
 
-### **Redshift**
+  - BI
 
-- Data warehouse
+  - Integra: RDS, S3, Athena, RedShift
 
-- PBs (Petabytes)
+    
 
-  
+
+
+
+
 
 
 
@@ -340,6 +381,8 @@ https://aws.amazon.com/s3/
 
   - **Object Lock** 
 
+    -  É usado para evitar que um objeto seja excluído ou sobrescrito por um período de tempo fixo ou indefinidamente. 
+
     - WORM (Write Onde Read Many)
 
     - Bloqueia a deleção do objeto
@@ -348,6 +391,9 @@ https://aws.amazon.com/s3/
 
   - **Glacier Vault Lock**
 
+    - Permite que você implemente e aplique facilmente controles de conformidade para cofres S3 Glacier individuais com uma política de bloqueio de cofre.
+    - Pode especificar controles como “escrever uma vez, ler várias” (WORM) em uma política de bloqueio de cofre e bloquear a política de edições futuras. 
+    - **Uma vez bloqueada, a política não pode mais ser alterada.**
     - WORM (Write Onde Read Many)
     - Compliance
 
@@ -532,13 +578,25 @@ https://aws.amazon.com/pt/fsx/
 
 
 
+### **Storage Gateway**
+
+- **Anotações Gerais**
+
+  - Storage Hibrido
+
+  
+
+- **Tipos de Storage Gateway**
+
+  - File Gateway
+  - Volume Gateway
+  - Tape Gateway
+
 
 
 ### **Backup**
 
 ### **VMware Cloud on AWS**
-
-### **Storage Gateway**
 
 ### **AWS Ground Station** 
 
@@ -546,31 +604,122 @@ https://aws.amazon.com/pt/fsx/
 
 ## **Database (Banco de Dados)** 	
 
+### **RDS**
+
+- São beneficios Patches e backups automatizados
+
+- São beneficios o redimencionamento da capacidade de acordo com uso
+
+- MySQL, Oracle, PostgreSQL, Microsoft SQL
+
+- Deploy Multi-Region
+
+  - Read Replicas
+
+  - Varias AZs
+
+  - DR
+
+  - Local Performance
+
+    
+
+- Read Replicas
+
+  - Pode criar até 5 Read Replicas
+
+- Multi-AZ
+
+  - Failover
+
+  - Alta Disponibilidade
+
+  - Replica para outra AZ
+
+    
+
+  
+
+  
+
+
+
 ### **Aurora**
 
-- Forcene poder computacional até 5x mais rápido que m bd mysql tradicional
-- banco de dados relacional
-- Mysql e PostgreSQL
-- 6 Cópias
-- 15 replicas de leitura
-- Bkp continuo no S3
+- **Anotações Gerais**
+
+  - Forcene poder computacional até 5x mais rápido que bd mysql tradicional
+
+  - Forcene poder computacional até 3x mais rápido que bd postgreSQL tradicional
+
+  - Banco de dados relacional
+
+  - Aumenta o storage automaticamente de 10 GB até 64 Tb
+
+  - Mysql e PostgreSQL
+
+  - 6 Cópias
+
+  - 15 replicas de leitura
+
+  - Bkp continuo no S3
 
 
 
 
+### **DocumentDB**
+
+- **Anotações Gerais**
+
+  - Banco de dados NoSQL
+
+  - MongoDB
+
+  - Replication acroos 3 AZ
+
+  - Aumenta o storage automaticamente de 10 GB até 64 Tb
+
+    
+
+  
 
 ### **DynamoDB**
 
-- Banco de dados NOSQL
-- Serverless
+- **Anotações Gerais**
+
+  - Banco de dados NoSQL
+  - key/value database
+
+  - Replication em 3 AZ
+
+  - Serverless
+
+  - Não suportam um esquema pre-definido
+
+  - Oferecem atomicidade
+
+  - Modelo de dados flexiveis e latencia de milissegundos de um digito
+
+  - Para jogo on-line
+
+  - Fortimente Consistente
+
+    
+
+
+- **Global Table**
+  - Acesso a tabelas em multiplas regions com low latency
+  - Tabelas globais
+  - Replicação ativa/ativa
+
+
+
+
 - **DynamoDB Accelerator(DAX)** 
   - Aprimora o desempenho de leitura, leitura pesada
+  - 10x mais performance
+  - Uso exclusivo para DynamoDB
   - Cache
-
-- Não suportam um esquema pre-definido
-- Oferecem atomicidade
-- Modelo de dados flexiveis e latencia de milissegundos de um digito
-- Para jogo on-line, Fortimente Consistente
 
 
 
@@ -578,7 +727,9 @@ https://aws.amazon.com/pt/fsx/
 
 ### **ElastiCache**
 
-- Cache
+- Cache in Memory
+
+- Low Latency
 
 - Pode colocar na frente do banco
 
@@ -588,41 +739,105 @@ https://aws.amazon.com/pt/fsx/
 
 ### **Neptune**
 
-- Banco de dados em Grafos
+- **Anotações Gerais**
+  - Banco de dados em Grafos
+  - Social Network
+  - Replica 3 AZ
+  - 15 Read replicas
+
+
+
+
+### **Redshift**
+
+- **Anotações Gerais**
+
+  - Data warehouse
+
+  - PBs (Petabytes)
+
+  - OLAP - Online analytical Processing
+
+  - 10x mais performance
+
+  - MPP - Massive Parallel Query Excecution
+
+  - Integrado - AWS Quicksight ou Tableau 
+
+
+
+### **Elastic MapReduce (EMR)**
+
+- **Anotações Gerais**
+
+  - Hadoop 
+
+  - Apache Spark, HBase, Presto, Flink
+
+  - Usa Spot Instance
+
+  - Casos de uso
+    - Data Processing
+      - Machine Learnig
+      - Web Indexing
+      - Big Data
 
 
 
 ### **Amazon Managed Blockchain**
 
-
+- **Anotações Gerais**
+  - Existe um aspecto de descentralização
+  - Ethereum / Hyperledger Fabric
 
 
 
 ### **Amazon Quantum Ledger Database (QLDB)**
 
-- Imutavel 
+- **Anotações Gerais**
+
+  - Imutável 
+
+  - Recording finacial transactions
+
+  - Replica em 3AZ
+
+  - Criptografado
+
+  - SQL
+
+  - Não há conceito de descentralização
+
+    
 
 
 
 
+### **Database Migration Service (DMS)**
 
-### **RDS**
+- **Anotações Gerais**
 
-- São beneficios Patches e backups automatizados
+  - Migra bd do local para AWS
 
-- São beneficios o redimencionamento da capacidade de acordo com uso
+  - Migra bd da AWS para Local
 
-- MySQL, Oracle, PostgreSQL
+  - Migra bd do EC2 para RDS
 
-  
+  - Migra Redshift para DynamoDB
 
-  
+  - **O banco de dados de origem permanece operacional durante a migração**
+
+  - Consolidação de banco de dados
+
+  - DR
+
+
 
 
 
 ## **Planos de suporte AWS**
 
-- 
+
 
 
 
@@ -1329,15 +1544,7 @@ https://aws.amazon.com/blogs/enterprise-strategy/6-strategies-for-migrating-appl
 
 
 
-### **Database Migration Service (DMS)**
-
-- Migra bd do local para AWS
-- Migra bd da AWS para Local
-- Migra bd do EC2 para RDS
-- Migra Redshift para DynamoDB
-- O banco de dados de origem permanece operacional durante a migração
-- Consolidação de banco de dados
-- DR
+### **Database Mi
 
 
 
@@ -1365,8 +1572,6 @@ https://aws.amazon.com/pt/snow/
 
     
 
-    
-
 - **AWS OpsHub**
 
   - Console de gerenciamento 
@@ -1375,6 +1580,8 @@ https://aws.amazon.com/pt/snow/
   
 
 - **AWS Snow Mobile**
+
+  - É usado para mover **exabytes** de dados para dentro ou para fora do AWS (1 EB = 1.000 PBs = 1.000.000 TBs)
 
   ![image-20211209205436193](./Imagans/image-20211209205436193.png)
 
@@ -1400,6 +1607,8 @@ https://aws.amazon.com/pt/snow/
   
 
 - **AWS Snowball Edge**
+
+  - É mais adequado para mover **petabytes** de dados e oferece recursos de computação. 
 
   ![image-20211209205424331](./Imagans/image-20211209205424331.png)
 
