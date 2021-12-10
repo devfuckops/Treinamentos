@@ -1140,11 +1140,19 @@ https://aws.amazon.com/pt/lambda/
 
 - Escalável e disponível 
 
+- **Pagamento  por Requisições de tempo de computação**
+
+- Execuções curtas
+
 - Executar em até **15 minutos** (timeout)
 
 - Resposta a eventos (trigger)
 
-- Free Tier - 1 Million rrequest each month 
+- Free Tier - 1 Million request each month 
+
+- Event-Driver - Reativo por triggers
+
+- 10 GB de RAM
 
   
 
