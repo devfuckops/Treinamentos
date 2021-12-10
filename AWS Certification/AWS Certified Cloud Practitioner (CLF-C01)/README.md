@@ -939,7 +939,11 @@ https://docs.aws.amazon.com/autoscaling/plans/userguide/what-is-aws-auto-scaling
 
 https://aws.amazon.com/batch/
 
-- Executar milhares de jobs
+- **Anotações Gerais**
+  - Executar milhares de jobs
+  - Ele gerancia as EC2 ou Spot
+  - Docker Images e roda no ECS
+
 
 
 
@@ -1103,10 +1107,19 @@ https://d1.awsstatic.com/whitepapers/aws_cloud_adoption_framework.pdf
 
 https://aws.amazon.com/lightsail/
 
-- Projetos pequenos
-- Deployments rápidos
-- wordpress por exemplo
-- Similar ao Quick Starts
+- **Anotações Gerais**
+
+  - Projetos pequenos
+  - Sem experiencia em Cloud
+  - EC2, Storage, Database e Rede
+
+  - Deployments rápidos
+
+  - LAMP, Nginx, Plesk, Wordpress
+  - Dev/Test
+
+  - Similar ao Quick Starts
+
 
 
 
@@ -1140,7 +1153,7 @@ https://aws.amazon.com/pt/lambda/
 
 - Escalável e disponível 
 
-- **Pagamento  por Requisições de tempo de computação**
+- **Pagamento  por Requisições e Duração**
 
 - Execuções curtas
 
@@ -1150,7 +1163,7 @@ https://aws.amazon.com/pt/lambda/
 
 - Free Tier - 1 Million request each month 
 
-- Event-Driver - Reativo por triggers
+- **Event-Driver** - Reativo por triggers
 
 - 10 GB de RAM
 
@@ -1177,27 +1190,47 @@ https://aws.amazon.com/pt/lambda/
 
 https://aws.amazon.com/pt/eks/
 
-- Ferramenta de orquestração de container
+- **Anotações Gerais**
 
-- Gerencia a EC2
+  - Ferramenta de orquestração de container
 
-  
+
+  - Gerencia a EC2
+
+    
+
 
 ### **Fargate**
 
 https://aws.amazon.com/fargate/
 
-- **Serveless**
-- Para ECS e EKS
-- Escala automaticamente
-- **Não Gerencia a EC2**
-- Especifica CPU/RAM para container
+- **Anotações Gerais**
+
+  - **Serveless**
+
+  - Para ECS e EKS
+
+  - Escala automaticamente
+
+  - **Não Gerencia a EC2**
+
+  - Especifica CPU/RAM para container
+
 
 
 
 ### **API Gateway**	
 
+- **Anotações Gerais**
+  - Expõe API´s
+  - Serverless
+  - RestFull e Websocket
+
+
+
 ### **App Runner** 
+
+- **Anotações Gerais**
 
 
 
