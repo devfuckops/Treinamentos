@@ -199,6 +199,7 @@ https://aws.amazon.com/pt/about-aws/global-infrastructure/regions_az/?p=ngi&loc=
 
 - **Anotações Gerais**
 
+  - É um serviço de consulta interativo que facilita a análise de dados no Amazon S3 usando SQL padrão. 
   - Serveless
 
   - SQL Languege
@@ -594,11 +595,13 @@ https://aws.amazon.com/pt/fsx/
 
 - São beneficios Patches e backups automatizados
 
+- OLTP
+
 - São beneficios o redimencionamento da capacidade de acordo com uso
 
 - MySQL, Oracle, PostgreSQL, Microsoft SQL
 
-- Deploy Multi-Region
+- **Deploy Multi-Region**
 
   - Read Replicas
 
@@ -610,11 +613,11 @@ https://aws.amazon.com/pt/fsx/
 
     
 
-- Read Replicas
+- **Read Replicas**
 
   - Pode criar até 5 Read Replicas
 
-- Multi-AZ
+- **Multi-AZ**
 
   - Failover
 
@@ -739,16 +742,20 @@ https://aws.amazon.com/pt/fsx/
 - **Anotações Gerais**
 
   - ETL
-
-  - Glue Data Catalog
-
-    - Athena
-    - Redshift 
-    - EMR
-
   - Extract, transform e load 
-
   - Serverless
+
+  
+
+- **Glue Data Catalog**
+
+  - É um repositório central para armazenar metadados estruturais e operacionais para todos os seus ativos de dados.
+
+  - Athena
+
+  - Redshift 
+
+  - EMR
 
     
 
@@ -791,7 +798,9 @@ https://aws.amazon.com/pt/fsx/
 ### **Amazon Managed Blockchain**
 
 - **Anotações Gerais**
-  - Existe um aspecto de descentralização
+  - É um serviço totalmente gerenciado que facilita a criação e o gerenciamento de redes blockchain escalonáveis
+  - Ele permite que várias partes executem transações sem a necessidade de uma autoridade central confiável.
+  - **Existe um aspecto de descentralização**
   - Ethereum / Hyperledger Fabric
 
 
@@ -799,6 +808,8 @@ https://aws.amazon.com/pt/fsx/
 ### **Amazon Quantum Ledger Database (QLDB)**
 
 - **Anotações Gerais**
+
+  - É um banco de dados de contabilidade totalmente gerenciado que fornece um log de transações transparente, imutável e criptograficamente verificável de propriedade de uma autoridade central confiável. 
 
   - Imutável 
 
@@ -813,7 +824,6 @@ https://aws.amazon.com/pt/fsx/
   - Não há conceito de descentralização
 
     
-
 
 
 
@@ -1138,18 +1148,24 @@ https://aws.amazon.com/pt/lambda/
 
   
 
-### **App Runner** 
+### 
 
-### **ECR Elastic Container Registry** 
+### **Elastic Container Registry (ECR)** 
 
-### **ECS Elastic Container Service** 
+- Armazena as imagens docker
+- Privado
+
+
+
+### **Elastic Container Service (ECS)** 
 
 - Ferramenta de orquestração de container
+- Integra com ALB
 - Gerencia a EC2
 
 
 
-### **EKS Elastic Kubernets Service**
+### **Elastic Kubernets Service (EKS)**
 
 https://aws.amazon.com/pt/eks/
 
@@ -1167,11 +1183,13 @@ https://aws.amazon.com/fargate/
 - Para ECS e EKS
 - Escala automaticamente
 - **Não Gerencia a EC2**
-- 
+- Especifica CPU/RAM para container
+
+
 
 ### **API Gateway**	
 
-
+### **App Runner** 
 
 
 
