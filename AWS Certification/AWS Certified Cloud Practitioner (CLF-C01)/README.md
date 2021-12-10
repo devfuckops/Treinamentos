@@ -227,21 +227,7 @@ https://aws.amazon.com/pt/about-aws/global-infrastructure/regions_az/?p=ngi&loc=
 
 ### 
 
-### **Glue**
-
-- **Anotações Gerais**
-
-  - ETL
-
-  - Glue Data Catalog
-
-    - Athena
-    - Redshift 
-    - EMR
-
-  - Extract, transform e load 
-
-  - Serverless
+- - 
 
     
 
@@ -719,7 +705,7 @@ https://aws.amazon.com/pt/fsx/
   - Aprimora o desempenho de leitura, leitura pesada
   - 10x mais performance
   - Uso exclusivo para DynamoDB
-  - Cache
+  - **Cache para DynamoDB**
 
 
 
@@ -748,11 +734,29 @@ https://aws.amazon.com/pt/fsx/
 
 
 
+### **Glue**
+
+- **Anotações Gerais**
+
+  - ETL
+
+  - Glue Data Catalog
+
+    - Athena
+    - Redshift 
+    - EMR
+
+  - Extract, transform e load 
+
+  - Serverless
+
+    
+
 ### **Redshift**
 
 - **Anotações Gerais**
 
-  - Data warehouse
+  - Data Warehouse
 
   - PBs (Petabytes)
 
