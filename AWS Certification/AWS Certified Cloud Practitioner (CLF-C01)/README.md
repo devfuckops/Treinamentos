@@ -242,6 +242,12 @@ O AWS Local Zones é uma espécie de implantação de infraestrutura posiciona a
 ### **Kinesis**
 
 - **Summary**
+  - Torna mais fácil coletar, processar e analisar dados de streaming em tempo real para que você possa obter insights oportunos e reagir rapidamente a novas informações. 
+  - Kinesis oferece quatro serviços: 
+    - Data Firehose
+    - Data Analytics
+    - Data Streams
+    - Video Streams
   - Real time big data streaming
 
 
@@ -1476,9 +1482,20 @@ https://aws.amazon.com/elasticbeanstalk/?p=tile
 
 https://aws.amazon.com/pt/cloudtrail/
 
-- Auditoria de API
-- Savla log´s em bucket S3
+- **Summary**
+  - Auditoria de API
+  - Salva log´s em bucket S3 ou Cloudwatch Logs
+  - É habilitado por default
+  - Eventos salvos por 90 dias
+  - Após esse período pode enviar para S3 e depois Athena
 
+- **CloudTrail Events**
+  - **CloudTrails Insights Events**
+  - **Data Events**
+    - AWS Lambda
+
+  - **Management Events**
+    - Separa Read Events from Write Events
 
 
 
@@ -1487,18 +1504,104 @@ https://aws.amazon.com/pt/cloudtrail/
 
 https://aws.amazon.com/pt/xray/
 
-- Monitorar microserviços 
-- Detecta problemas de desempenho em app no Lambda
+- **Summary**
+
+  - Monitorar microserviços 
+  - bottlenecks
+
+  - Detecta problemas de desempenho em app no Lambda
+
+
+
+
+### **Amazon CodeGuru**
+
+**Summary**
+
+- Recomendações para aplicações
+
+- **Amazon Code Guru Profiler**
+
+  - runtime
+  - Anomaly Detection
+  - Hybrid 
+
+- **Amazon Code Guru Reviewer**
+
+  - Usa Machine Learning
+
+  - Suporta JAVA, Python
+
+    
+
+  
+
+
 
 
 
 ### **CloudWatch**
 
-- Coleta métricas e Logs 
+- **Summary**
 
-- Coleta On-premisse
+  - Coleta métricas e Logs 
+
+  - Coleta On-premisse
+
+- **CloudWatch Events**
+
+  - Cron Jobs
+
+  - Schedule
+
+  - Event Pattern
+
+  - Trigger
+
+    
+
+- **CloudWatch Logs**
+
+  - Real-Time Monitoring
+  - **Coleta On-premisse através de agent**
+  - Ajust Retention
+  - Logs From
+    - ECS
+    - Lambda
+    - Cloudtrail
+    - Cloudwatch agent
+    - Beanstalk
+    - Route53
+
+- **CloudWatch Alarms**
+
+  - Actions
+    - Auto Scaling
+    - EC2
+    - SNS
+  - Utilizado como trigger
+  - Alarm State
+    - OK
+    - INSUFFICIENT_DATA
+    - ALARM
+
+- **CloudWatch Metrics**
+
+  - Timestamps
+  - Dashboards
+  - Não tem métricas de RAM para EC2
+  - Default 5 minutes
+  - Detailed Monitoring - 1 min
+  - Custom Metrics
 
 
+
+
+### **EventBridge**
+
+- **Summary**
+  - Custom Event buses
+  - Schema registry
 
 
 
@@ -1591,17 +1694,25 @@ https://aws.amazon.com/systems-manager/
 - **SSM Session Manager**
 
   - Linux, Windows e MacOs
+  
   - Send log S3 ou CloudWatch Logs
   
+    
+  
+
+### **AWS Service Health Dashboard**
+
+- Painel do status dos serviços de todas as regiões
+
   
 
 ### **AWS Personal Health Dashboard**
 
 https://aws.amazon.com/premiumsupport/technology/personal-health-dashboard/
 
-- Visão sobre a disponibilidade e desenpenho dos servios AWS
+- Visão sobre a disponibilidade e desempenho dos serviços AWS **na sua infraestrutura** 
 
-- Avisa o usuário com alertas e notificações sobre atividades agendadas
+- Avisa o usuário com **alertas e notificações** sobre atividades agendadas
 
   
 
@@ -1655,8 +1766,6 @@ https://wa.aws.amazon.com/index.pt_BR.html
 
 ### **Step Functions** 
 
-### **EventBridge**
-
 ### **Amazon MQ**
 
 https://aws.amazon.com/pt/amazon-mq
@@ -1698,8 +1807,15 @@ https://aws.amazon.com/pt/sqs/
 
 - **Summary**
 
+  - É um serviço de enfileiramento de mensagens totalmente gerenciado que permite desacoplar e dimensionar microsserviços, sistemas distribuídos e aplicativos sem servidor. 
+
+  - **Ele usa um sistema baseado em pull.**
+
   - Envia, armazena e receba sem perder a mensagem em qualquer volume
+
   - Mensagens são colocadas até que sejam processadas
+
+    
 
 - **Standard Queue**
 
@@ -1739,6 +1855,8 @@ https://aws.amazon.com/pt/augmented-ai/
 
 - Alexa
 
+  
+
 ### **Textract**
 
 - Extração de texto
@@ -1766,10 +1884,6 @@ https://aws.amazon.com/blogs/enterprise-strategy/6-strategies-for-migrating-appl
 - Retire - Aposentar
 
 
-
-
-
-### **Database Mi
 
 
 
