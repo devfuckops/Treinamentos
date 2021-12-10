@@ -1415,6 +1415,7 @@ https://aws.amazon.com/elasticbeanstalk/?p=tile
 - Gerencia aplicativos no datacenter através de SO Linux conectados em **Endpoints públicos** AWS
 - Agent do OpsWorks instalados nas instancias Linux
 - Automatizar a configuração de um software e replicar **em outras 400**
+- **Chef and Puppet**
 
 
 
@@ -1520,20 +1521,28 @@ https://aws.amazon.com/pt/organizations/
 
 https://aws.amazon.com/systems-manager/
 
-- Permite que os usuários controlem seus recursos unificando serviços onde ele podem visualizar, monitorar e automatizar
+- **Anotações Gerais**
 
-- **EC2 e On-Premisses**
+  - Permite que os usuários controlem seus recursos unificando serviços onde ele podem visualizar, monitorar e automatizar
 
-- Patching
+  - **EC2 e On-Premisses**
 
-- run comandos
+  - Patching
 
-- store parameter 
+  - run comandos
 
-- Windows e Linux
+  - store parameter 
 
-- SSM agent
+  - Windows e Linux
 
+  - SSM agent
+
+
+- **SSM Session Manager**
+
+  - Linux, Windows e MacOs
+  - Send log S3 ou CloudWatch Logs
+  
   
 
 ### **AWS Personal Health Dashboard**
