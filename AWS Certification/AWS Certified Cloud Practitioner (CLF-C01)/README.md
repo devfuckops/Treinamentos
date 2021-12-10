@@ -193,6 +193,19 @@ https://aws.amazon.com/pt/about-aws/global-infrastructure/regions_az/?p=ngi&loc=
 
 
 
+
+
+### **AWS Local Zones**
+
+https://aws.amazon.com/pt/about-aws/global-infrastructure/localzones/
+
+O AWS Local Zones é uma espécie de implantação de infraestrutura posiciona a computação, armazenamento, banco de dados e outros produtos seletos da AWS perto do público em geral e dos centros industriais.
+
+- **Summary**
+  - Extent your VPC
+
+
+
 ## **Analytics (Análise)**	
 
 ### **Athena**
@@ -896,6 +909,18 @@ https://aws.amazon.com/outposts/
 - Infraestrutura da AWS no cliente
 - Hybrid Cloud
 - Você é responsável pela infra, segurança e etc
+- EC2, EBS, S3,EKS ECS, RDS e EMR
+
+
+
+### **AWS WaveLength**
+
+O AWS Wavelength incorpora serviços de computação e armazenamento da AWS em redes 5G, fornecendo infraestrutura de computação de borda móvel para desenvolvimento, implantação e escalabilidade de aplicações de latência ultrabaixa.
+
+https://aws.amazon.com/pt/wavelength/
+
+- **Summary**
+  - Telecom 5G network
 
 
 
