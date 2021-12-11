@@ -2082,17 +2082,69 @@ https://aws.amazon.com/pt/route53/
 
 ### **Virtual Private Cloud VPC)**
 
-- Uma rede virtual dedicada a sua conta
+- **Summary**
 
-- Subnets - Publica e Privada
+  - Uma rede virtual dedicada a sua conta
 
-- route-tables
+  - Subnets - Publica e Privada
 
-- Virtual Private Gateway - VPN
+  - Route-Tables
 
-- vpc-flowlogs - Captura trafego da vpc, subnet e armazena no cloudwatch logs
+  - Virtual Private Gateway - VPN
+
+  - vpc-flowlogs - Captura trafego da vpc, subnet e armazena no cloudwatch logs
+
+    
+
+- **Internet Gateway**
+
+  - Provê acesso a internet 
+
+- **NAT Instances**
+
+  - Permitem que suas instâncias em suas sub-redes privadas acessem a Internet enquanto permanecem privadas 
+
+  - **NÃO são gerenciadas pela AWS.**
+
+  - Provê acesso a Internet da Subnet Privada
+
+    
+
+- **Nat Gateway**
+
+  - Permitem que suas instâncias em suas sub-redes privadas acessem a Internet enquanto permanecem privadas 
+
+  - **São gerenciadas pela AWS.**
+
+  - Provê acesso a Internet da Subnet Privada
+
+    
+
+- **VPC Peering**
+
+  - Conecta 2 VPCs
+
+  - Overlapping 
+
+    
+
+- **VPC Endpoint**
+
+  - Provê acesso privado da VPC a serviços AWS
+
+    
+
+- **VPC Flow Logs**
+
+  - Logs do trafego da VPC
+
+    
 
 - **Network ACL - NACL**
+
+  - É uma camada opcional de segurança para seu VPC que atua como um firewall para controlar o tráfego de entrada e saída de uma ou mais sub-redes. 
+
+  - Eles têm regras ALLOW e DENY.
 
   - Pode ser configurada adcionalmente a nível de subnet para controlar o **tráfego de entrada e saida**. 
 
@@ -2107,24 +2159,43 @@ https://aws.amazon.com/pt/route53/
 - **Security Group  (Grupo de Segurança)**
 
   - https://docs.aws.amazon.com/pt_br/vpc/latest/userguide/VPC_SecurityGroups.html
-  - **Segurança a nível da instância**
-  
-  
+  - **Segurança a nível da instância ou ENI**
+
+
     - Por default é **todo bloqueado de entrada (Inbound) e tudo liberado na saída (Outbound)**
     - Pode ser atachado em multiplas instancias
     - Baseado em Região/VPC
-  
-  
+
+
     - **Stateful** - Não verifica o trafego de retorno pois reconhece que é o mesmo pacote
-  
-  
+
+
     - Referencia IP ou Security Group
-  
+
       ![image-20211207213551384](./Imagans/image-20211207213551384.png)
-  
 
 
-### **Virtual Private Network(VPN)**
+
+
+
+
+### **VPN Site to Site**
+
+- **Summary**
+
+  - Acesso seguro AWS á On Premisse
+
+  - Acesso Publico
+
+    
+
+### **Transit Gateway**
+
+- **Summary**
+  - Conecta milhares de redes VPC e locais em um único gateway.
+  - Conecta varias VPC´s e On Premisses juntos
+
+
 
 ### **Direct Connect**
 
