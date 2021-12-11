@@ -866,7 +866,7 @@ https://aws.amazon.com/pt/fsx/
 
 
 
-## **Planos de suporte AWS**
+## **AWS Support Plans**
 
 
 
@@ -878,17 +878,23 @@ https://aws.amazon.com/pt/fsx/
 
 
 
-### **Plano de suporte Enterprise**
+- Support Plans Types
 
-- Acesso a todos os itens do Trust Advidor
+  - **Basic**
+  - **Developer**
+  - **Business**
+    - Acesso a todos os itens do Trust Advidor
+    - API Access
 
-- TAM
+  - **Enterprise**
+    - Acesso a todos os itens do Trust Advidor
+    - TAM
+    - Concierge
+    - < 15 minutos
+    - API Access
+
 
   
-
-### **Plano de suporte Bussines**
-
-- Acesso a todos os itens do Trust Advidor
 
 
 
@@ -1402,11 +1408,13 @@ https://docs.aws.amazon.com/codedeploy/latest/userguide/welcome.html
 
 ## **Gerenciamento Financeiro** 	
 
-### **Budgets**
+### **AWS Budgets**
 
 - Pode configurar alertas de orçamentos
 
 - Usa informações fornecidas pelo AWS Cost Explorer
+
+- Pode criar Usage, Cost e Reservation
 
   
 
@@ -1416,7 +1424,9 @@ https://docs.aws.amazon.com/codedeploy/latest/userguide/welcome.html
 
 - Fornece previsões baseadas no uso de custos estimados de faturamento e uso para os proximos meses
 
-- 12 meses de dados historicos
+- 12 meses de dados históricos
+
+- **Forecast**
 
   
 
@@ -1695,6 +1705,8 @@ https://aws.amazon.com/pt/organizations/
 
 - **Service Control Polices (SCP)**
 
+  - Política da organização que você pode usar para gerenciar permissões em sua organização. 
+  - Um SCP abrange todos os usuários, grupos e funções do IAM, incluindo o usuário raiz da conta da AWS.
   - Whitelist e Black List
   - Apply OU ou Account level
   - Não é aplicado na conta Master
@@ -1772,14 +1784,37 @@ https://aws.amazon.com/pt/premiumsupport/technology/trusted-advisor/
 
 - Recomendações de Segurança e Otimização de custos
 
-- Para receber notificações deve-se configura-las na console
+- Para receber notificações deve-se configura-ls na console
 
-- Cost Optimization, Performance, Secutiry, Fault Tolerance and Service Limits
+- 5 categorias
+
+  - Cost Optimization
+  - Performance
+  - Secutiry
+  - Fault Tolerance
+  - Service Limits
 
 - Algumas verificações são gratuitas
 
+- Checks de acordo com Plano de Suportes
+
+  - **Basic e Developer Supports Plan**
+    - S3 Bucket
+    - Security Group
+    - IAM use
+    - MFA
+    - EBS Public Snapshot
+    - RDS Public Snapshot
+    - Service Limits
+
+  - **Business e Enterprise Supports Plan**
+    - Full checks
+    - Pode habilitar o CloudWatch Alarm
+    - AWS Support API
+
+
   
-  
+
   
 
 ### **AWS Well-Architected Framework**
@@ -2410,6 +2445,17 @@ https://aws.amazon.com/compliance/shared-responsibility-model/
 
 
 
+### **AWS Security Token Service (STS)**
+
+- Cria acesso temporário, limitado a serviços AWS
+- Configura para expirar
+- Casos de uso
+  - Identity Federation
+  - IAM Role cross/same account
+  - IAM Roles EC2
+
+
+
 ### Artifact
 
 https://aws.amazon.com/pt/artifact/
@@ -2509,7 +2555,12 @@ https://aws.amazon.com/security/penetration-testing/
 
 https://aws.amazon.com/cognito/
 
-- Federação de identidade web   Facebook
+- Federação de Identidade 
+
+  - Web   Facebook
+  - Mobile
+
+  
 
 
 
