@@ -2567,6 +2567,7 @@ https://aws.amazon.com/cognito/
 - **Summary**
 
   - SAML 2.0
+  - Login em múltiplas contas
 
 - **Integrado com**
 
@@ -2582,7 +2583,7 @@ https://aws.amazon.com/cognito/
 ### **AWS Directory Services**
 
 - **Summary**
-- Tipos 
+- **Tipos** 
   - **AWS Managed Microsoft AD**
     - Cria o seu AD na AWS
     - Gerencia usuários
@@ -2695,6 +2696,28 @@ https://docs.aws.amazon.com/waf/latest/developerguide/waf-chapter.html
 - WebACL
 
 
+
+## **Demais Serviços**	
+
+### **Amazon Workspaces**
+
+- Managed Desktop as a Service
+- VDI
+
+
+
+### **Amazon AppStream 2.0**
+
+- Desktop Applicaiotn Streaming Service
+- Para Web Browsers
+- Entrega a aplicação 
+
+
+
+### **Amazon Sumerian**
+
+- Para Virtual Reality 
+- 3D
 
 
 
