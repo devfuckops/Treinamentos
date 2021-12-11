@@ -1086,7 +1086,7 @@ https://aws.amazon.com/batch/
 
   - **Sob-Demanda** 
 
-    - por hora ou por segundo
+    - Por hora ou por segundo
 
       
 
@@ -1094,29 +1094,46 @@ https://aws.amazon.com/batch/
 
     - 1 ou 3 anos 
 
-    - até 70% de desconto comparado ao sob-demanda
+    - Até 70% de desconto comparado ao sob-demanda
 
-    - EC2, Fargate e Lambda
+    - **EC2 Saving Plans**
+
+      - Até 72% de desncons
+      - Individual instances
+  
+    - **Compute Saving Plans**
+  
+      - Mais flexível
+      - EC2, Fargate e Lambda
 
       
 
-  - **instâncias Reservadas**
+  - **Instâncias Reservadas**
 
     - 1 ou 3 Anos
-
+  
     - Standard, Convertable ou Scheduled
 
       
 
   - **Instâncias Spot**
-
+  
     - Aviso de até **2 minutos**
     - até 90% de desconto comparado ao sob-demanda
     - Cargas de trabalhos em lote
-
+  
     
+  
 
-    
+### **AWS Compute Optimizer**
+
+- Recomendações de custos e performance
+- Usa machine learning
+- Recursos Suportados
+  - EC2
+  - EC2 AutoScaling Groups
+  - EBS
+  - Lambda
 
 
 
@@ -1657,25 +1674,48 @@ https://aws.amazon.com/pt/organizations/
 
 
 
-- Global Service
+- **Summary**
 
-- Para automatizar a criação de AWS Accounts
+  - Global Service
+  - Para automatizar a criação de AWS Accounts
+  - Gerenciamento centralizado de todas as contas
+  - Agrupamento - OU
+  - Controle de serviços/API por conta 
+  - Habilita CloudTrail em todas as contas para enviar os Log´s para um Bucket S3 central
+  - Envia todos os CloudWatch Logs para uma conta central
 
-- Gerenciamento centralizado de todas as contas
+- **Consolidated Billing**
 
-- **Faturamento consolidado e desconto em massa**
+  - Descontos
+    - Volume
+    - Reserved Instances
+    - Saving Plans
 
-- Agrupamento - OU
+  - Uma invoice
 
-- Controle de serviços/API por conta 
+- **Service Control Polices (SCP)**
 
-- SCP´s
+  - Whitelist e Black List
+  - Apply OU ou Account level
+  - Não é aplicado na conta Master
+  - Aplica em todos os usuários e roles, incluindo o root
+  - Deve ter a permissão  **Explicito** 
+
+  
+
+  
 
   
 
 
 
 ### **AWS Service Catalog** 
+
+### **AWS Control Tower**
+
+- Setup multi account
+
+
 
 ### **AWS Systems Manager** 
 
