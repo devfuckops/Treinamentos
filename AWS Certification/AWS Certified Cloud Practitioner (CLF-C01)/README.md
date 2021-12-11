@@ -958,9 +958,9 @@ https://docs.aws.amazon.com/autoscaling/plans/userguide/what-is-aws-auto-scaling
 
 
 
-- **Scaling-up** adciona mais recursos a uma instancia e **scaling-out** adciona mais instancias 
+- **Scaling-up** adciona mais recursos a uma instancia e **scaling-out** adciona mais instâncias 
 - **Scaling-up** - **Vertical Scaling** - Aumentar o tamanho da instancia
-- **Scaling-out** - **Horizontal Scaling** - Aumenta o numero de instancias 
+- **Scaling-out** - **Horizontal Scaling** - Aumenta o numero de instâncias 
 
 
 
@@ -1100,7 +1100,7 @@ https://aws.amazon.com/batch/
 
       
 
-  - **Instancias Reservadas**
+  - **instâncias Reservadas**
 
     - 1 ou 3 Anos
 
@@ -1336,7 +1336,7 @@ https://docs.aws.amazon.com/codedeploy/latest/userguide/welcome.html
 
 - **Hybrid Service**
 
-- Precisa CodeDeploy agent para instancias ou servidores locais
+- Precisa CodeDeploy agent para instâncias ou servidores locais
 
   
   
@@ -1466,7 +1466,7 @@ https://aws.amazon.com/elasticbeanstalk/?p=tile
 
 - Gerencia aplicativos no datacenter através de SO Linux conectados em **Endpoints públicos** AWS
 
-- Agent do OpsWorks instalados nas instancias Linux
+- Agent do OpsWorks instalados nas instâncias Linux
 
 - Automatizar a configuração de um software e replicar **em outras 400**
 
@@ -1623,7 +1623,13 @@ https://aws.amazon.com/pt/xray/
 
 https://aws.amazon.com/pt/config/
 
-- Controla as alterações de configuração nos recuros 
+- Controla as alterações de configuração nos recursos 
+
+- É um serviço que permite que você avalie, audite e avalie as configurações de seus recursos da AWS.
+
+- Grava todas as alterações no recurso
+
+- Pode salvar os dados no S3 e analisar pelo Athena
 
   
 
@@ -1839,9 +1845,45 @@ https://aws.amazon.com/pt/sqs/
 
 ### **Forecast**
 
+### **AWS Rekognition**
+
+- Automate analise de vídeos com machine learning
+
+  
+
+### **Amazon Transcribe**
+
+- Transcreve áudio em texto
+
+
+
+### **Amazon Polly**
+
+- Transforma texto em áudio
+
+
+
+### **Amazon Translate**
+
+- Traduz textos 
+
+
+
+### **Amazon Comprehend**
+
+- Natural Language Processing - NLP
+- Serveless
+- Usa machine learning para analisar textos
+
+
+
 ### **Fraud Detector** 
 
-### **SageMaker**
+### **Amazon SageMaker**
+
+- Cria modelos de Machine Learning
+
+
 
 ### **Augmented AI**
 
@@ -1854,8 +1896,17 @@ https://aws.amazon.com/pt/augmented-ai/
 ### **Amazon Lex**
 
 - Alexa
+- Automatic Speech Recognition (ASR)
+- Call Center Bots
 
-  
+
+
+### **Amazon Connect**
+
+- Contact Center
+- Integrado com CRM
+
+
 
 ### **Textract**
 
@@ -2163,7 +2214,7 @@ https://aws.amazon.com/pt/route53/
 
 
     - Por default é **todo bloqueado de entrada (Inbound) e tudo liberado na saída (Outbound)**
-    - Pode ser atachado em multiplas instancias
+    - Pode ser atachado em multiplas instâncias
     - Baseado em Região/VPC
 
 
@@ -2298,27 +2349,77 @@ https://aws.amazon.com/compliance/shared-responsibility-model/
 
 https://aws.amazon.com/pt/artifact/
 
-- Acesso aos relatorios emitidos pelo auditor da AWS
+- Acesso aos relatórios emitidos pelo auditor da AWS
+- Não é um serviço AWS
 
 
 
 ### **Audit Manager**
 
-### **KMS**
+### **Security Hub**
+
+- **Summary**
+  - Tem que habilitar o AWS Config
+- **Integra com**
+  - Guardduty
+  - Inspector
+  - Macie
+  - IAM Access Analiser
+  - AWS Systems Manager
+  - AWS Firewall Manager
+  - AWS Partner Network Solutions
+
+
+
+### **CloudHSM**
+
+- Criptografia utilizando hardware
+
+- Dedicaded hardware
+
+  
+
+### **Key Management Service (KMS)**
 
 https://aws.amazon.com/kms/features/
 
-- Usa Envelope Encryption
+- **Summary**
+  - Usa Envelope Encryption
+  - EBS, RDS, EFS, S3, Redshift
+
+- **Customer Master Key(CMK)**
+  - **Customer Managed CMK**
+    - Create, Manage and used  
+    - Enable and Disabe
+
+  - **AWS managed CMK**
+    - Used AWS Services
+    - Create, Manage and used  
+
+  - **AWS owned CMK**
+    - utilzado em multiplas contas
+    - Você não vê as Keys
+
+  - **CloudHMS Keys**
+    - Keys generated from CloudHSM hardware device
 
 
 
-### **Certificate Manager**
 
-É um serviço que permite provisionar, gerenciar e implantar facilmente certificados Secure Sockets Layer (SSL)/Transport Layer Security (TLS) para uso com os serviços da AWS e os recursos internos conectados. 
+### **Certificate Manager** (ACM)
+
+É um serviço que permite provisionar, gerenciar e implantar facilmente certificados **Secure Sockets Layer (SSL)/Transport Layer Security (TLS)** para uso com os serviços da AWS e os recursos internos conectados. 
 
 https://aws.amazon.com/pt/certificate-manager/
 
-- Pode atualizar e renover certificados
+- Pode atualizar e renover certificados HTTPS
+- Renovação automática
+- SSL/TSL
+- Integra
+  - ELB
+  - Cloudfornt
+  - API Gateway
+
 
 
 
@@ -2327,10 +2428,17 @@ https://aws.amazon.com/pt/certificate-manager/
 https://aws.amazon.com/security/penetration-testing/
 
 - Pode ser executado, desde que a AWS autorize. 
+- Somente em 8 serviços
+  - EC2
+  - RDS
+  - Aurora
+  - Beanstalk
+  - API Gateway
 
 
 
-### **Certificate Manager**
+
+### 
 
 ### **Cognito**
 
@@ -2344,11 +2452,15 @@ https://aws.amazon.com/cognito/
 
 ### **AWS Inspector**
 
-- Realiza verificações nas instancias EC2 em relação a modelos de segurança
+- É um serviço automatizado de avaliação de segurança que ajuda a melhorar a segurança e a conformidade dos aplicativos implantados na AWS. 
+
+- Ele ajuda a testar a acessibilidade de rede de suas instâncias do Amazon EC2 e o estado de segurança de seus aplicativos em execução nas instâncias.
+
+- Realiza verificações nas **instâncias EC2** em relação a modelos de segurança
 
 - Analisa vulnerabilidades
 
-- Agente AWS na EC2
+- **Agente AWS na EC2**
 
   
 
@@ -2357,26 +2469,49 @@ https://aws.amazon.com/cognito/
 https://aws.amazon.com/pt/guardduty/
 
 - Detecção de ameaças
-- Logs DNS, flow logs e cloudtrail
+- Logs DNS, Flow Logs e Cloudtrail Logs
+- Usa Machine Learning
 
 
-
-### **Key Management Service**	
-
-- Gerencia chave de criptografia
-
-  
 
 ### **Macie**
 
+- Usa machine learning
 
+- Analisa dados no S3
+
+- PII data
+
+- Dados sensíveis
+
+  
+
+### **Amazon Abuse**
+
+https://aws.amazon.com/pt/premiumsupport/knowledge-center/report-aws-abuse/
+
+- Report suspeito e ilegal para AWS
+
+- Report por e-mail
+
+  
 
 ### **Amazon Detective**
 
 https://docs.aws.amazon.com/detective/latest/adminguide/what-is-detective.html
 
+-  Torna mais fácil analisar, investigar e identificar rapidamente a **causa raiz** de possíveis problemas de segurança ou atividades suspeitas.
+
 - Serviço persistente orientado a **Machine Learning**
 
+- Analisa, investiga e mstra a causa raiz do problema
+
+- Coleta automático
+
+  - Cloudtaul
+  - Guardduty
+  - VPC Flow Logs
+  
   
 
 ### **Network Firewall**
@@ -2387,9 +2522,18 @@ https://docs.aws.amazon.com/detective/latest/adminguide/what-is-detective.html
 
 ### **Secrets Manager**
 
+- Rotação de secrets
+- Integra com RDS
+- criptografia com KMS
+
+
+
 ### **Shield and Shield Advanced**
 
 - Usa machine learning
+- Protege contra Ataque DDoS
+- Layer 3 / Layer 4
+- **No shield advanced vc tem acesso ao time AWS DDoS** 
 
 
 
@@ -2398,6 +2542,10 @@ https://docs.aws.amazon.com/detective/latest/adminguide/what-is-detective.html
 https://docs.aws.amazon.com/waf/latest/developerguide/waf-chapter.html
 
 - Firewall aplicação web
+- Protege contra Ataque DDoS
+- Layer 7 (HTTP)
+- Deploy in ALB, API GW e CloudFront
+- WebACL
 
 
 
