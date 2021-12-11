@@ -2551,16 +2551,47 @@ https://aws.amazon.com/security/penetration-testing/
 
 ### 
 
-### **Cognito**
+### **Amazon Cognito**
 
 https://aws.amazon.com/cognito/
 
 - Federação de Identidade 
-
-  - Web   Facebook
+  - Web   Facebook, Google
   - Mobile
 
+
+
+
+### **AWS Single Sing-On**
+
+- **Summary**
+
+  - SAML 2.0
+
+- **Integrado com**
+
+  - AD On Premises
+  - AWS Organizations
+  - Business app - Dropbox, Slack, Office 365
+  - Custom App
+
   
+
+
+
+### **AWS Directory Services**
+
+- **Summary**
+- Tipos 
+  - **AWS Managed Microsoft AD**
+    - Cria o seu AD na AWS
+    - Gerencia usuários
+    - MFA
+  - **AD Connector**
+    - Conecta no AD on-premise
+  - **SimpleAD**
+
+
 
 
 
