@@ -1657,11 +1657,13 @@ https://aws.amazon.com/pt/organizations/
 
 
 
+- Global Service
+
 - Para automatizar a criação de AWS Accounts
 
 - Gerenciamento centralizado de todas as contas
 
-- Faturamento consolidado e desconto em massa
+- **Faturamento consolidado e desconto em massa**
 
 - Agrupamento - OU
 
@@ -1843,7 +1845,19 @@ https://aws.amazon.com/pt/sqs/
 
 ## **Machine Learning**	
 
-### **Forecast**
+### **Amazon Forecast**
+
+- Utiliza Machine learning para entregar Forecasts
+- Para planejamentos 
+
+
+
+### **Amazon Kendra**
+
+- HTML, PDF, PPT, Word, Google Drive
+- Pesquisa em documentos utilizando Machine Learning
+
+
 
 ### **AWS Rekognition**
 
@@ -1854,6 +1868,12 @@ https://aws.amazon.com/pt/sqs/
 ### **Amazon Transcribe**
 
 - Transcreve áudio em texto
+
+
+
+### **Amazon Personalize**
+
+- Real-time recomendações personalizadas
 
 
 
@@ -1882,6 +1902,7 @@ https://aws.amazon.com/pt/sqs/
 ### **Amazon SageMaker**
 
 - Cria modelos de Machine Learning
+- Cientista de Dados
 
 
 
@@ -1890,6 +1911,8 @@ https://aws.amazon.com/pt/sqs/
 https://aws.amazon.com/pt/augmented-ai/
 
 - Fornece fluxos de trabalho de revisão humana integrados para casos de uso comuns de machine learning, como moderação de conteúdo e extração de texto de documentos
+
+  
 
 ### **AWS Deep Racer**
 
@@ -1971,10 +1994,11 @@ https://aws.amazon.com/pt/snow/
 
 - **AWS Snow Mobile**
 
-  - É usado para mover **exabytes** de dados para dentro ou para fora do AWS (1 EB = 1.000 PBs = 1.000.000 TBs)
+  
 
   ![image-20211209205436193](./Imagans/image-20211209205436193.png)
 
+  - É usado para mover **exabytes** de dados para dentro ou para fora do AWS (1 EB = 1.000 PBs = 1.000.000 TBs)
   - Caminhão
   - 100 PB - (100.000 TB)
 
@@ -1984,9 +2008,10 @@ https://aws.amazon.com/pt/snow/
 
   ![image-20211209205405568](./Imagans/image-20211209205405568.png)
 
+  
+
+
   - 8 TB
-
-
   - Edge Compute (EC2 - IoT) - 2cpu/4GB
 
 
