@@ -468,6 +468,7 @@ https://aws.amazon.com/s3/
         - Standard - 3 a 5 Horas
         - Bulk - 5 a 12 horas
       - Criar cofres
+      - Criptografia habilitada por padrão
       - Controles de escritas e leituras
       - Restore em minutos e horas
 
@@ -532,6 +533,8 @@ https://aws.amazon.com/pt/ebs/
 
 - Independente da vida útil da instância
 
+- **Snapshots são armazenados de forma incremental, é cobrado pelos blocos alterados armazenados**
+
 - É **automaticamente replicado** entre AZ´s
 
 - **Mas é armazenado em uma única AZ** 
@@ -566,9 +569,11 @@ https://aws.amazon.com/pt/efs/
 - Compartilhamento de arquivos
 - Sistema de Arquivos Linux
 - Só funciona em SO Linux
+- Suporte a alta disponibilidade 
 - Regional
 - NFS
-- Paga por uso
+- **As instâncias EC2 podem acessar arquivos em um sistema de arquivos EFS em muitas zonas de disponibilidade, regiões e VPCs**
+- **Paga por uso de ler ou gravar dados**
 
 
 
@@ -883,18 +888,37 @@ https://aws.amazon.com/dynamodb
 
 
 - **Support Plans Types**
+
   - **Basic**
+  
     - **Não** oferecem suporte ao acesso a orientação, configuração e solução de problemas de interoperabilidade da AWS com software de terceiros.
+  
+      
+
   - **Developer**
+  
     - **Não** oferecem suporte ao acesso a orientação, configuração e solução de problemas de interoperabilidade da AWS com software de terceiros.
+  
     - Permite que um contato abra casos ilimitados
+  
+      
+  
   - **Business**
+  
     - Acesso a todos os itens do Trust Advidor
+  
     - API Access
+  
     - Orientação, configuração e solução de problemas de interoperabilidade AWS com muitos sistemas operacionais comuns
+  
     - Você obtém acesso ao Gerenciamento de eventos de infraestrutura por uma taxa adicional.
-    - Orientação arquitetônica no contexto de seus casos de uso específicos.
+  
+    - **Orientação arquitetônica no contexto de seus casos de uso específicos.**
+  
+      
+  
   - **Enterprise**
+  
     - Acesso a todos os itens do Trust Advidor
     - Orientação, configuração e solução de problemas de interoperabilidade AWS com muitos sistemas operacionais comuns
     - TAM
@@ -1117,11 +1141,11 @@ https://aws.amazon.com/batch/
 
     - 1 ou 3 anos 
 
-    - Até 70% de desconto comparado ao sob-demanda
+    - **Até 72% de desconto comparado ao sob-demanda**
   
     - **EC2 Saving Plans**
   
-      - Até 72% de desncons
+      - **Até 72% de descontos**
       - Individual instances
   
     - **Compute Saving Plans**
@@ -1233,6 +1257,8 @@ https://aws.amazon.com/pt/lambda/
 - **Pagamento  por Requisições e Duração**
 
 - Execuções curtas
+
+- **Regional**
 
 - Executar em até **15 minutos** (timeout)
 
@@ -1807,7 +1833,7 @@ https://aws.amazon.com/pt/premiumsupport/technology/trusted-advisor/
 
 - Checar os softlimits 
 
-- Recomendações de Segurança e Otimização de custos
+- **Recomendações de Segurança e Otimização de custos**
 
 - Para receber notificações deve-se configura-ls na console
 
@@ -2018,6 +2044,9 @@ https://aws.amazon.com/pt/sqs/
 
 ### **Amazon Kendra**
 
+https://aws.amazon.com/kendra/
+
+- É um serviço de pesquisa inteligente desenvolvido com  Machine Learning
 - HTML, PDF, PPT, Word, Google Drive
 - Pesquisa em documentos utilizando Machine Learning
 
@@ -2030,6 +2059,8 @@ https://aws.amazon.com/pt/sqs/
 - Automate analise de vídeos com machine learning
 
 - Rotula objetos
+
+- Regional
 
 - Identifica pessoas
 
@@ -2390,7 +2421,9 @@ https://aws.amazon.com/pt/route53/
 
 - **VPC Peering**
 
-  - Conecta 2 VPCs
+  https://docs.aws.amazon.com/vpc/latest/peering/invalid-peering-configurations.html
+
+  - **Conecta 2 VPCs**
 
   - Overlapping 
 
@@ -2710,8 +2743,8 @@ https://aws.amazon.com/pt/certificate-manager/
 
 https://aws.amazon.com/security/penetration-testing/
 
-- Pode ser executado, desde que a AWS autorize. 
-- Somente em 8 serviços
+- Os clientes da AWS podem realizar avaliações de segurança ou testes de penetração em sua infraestrutura da AWS sem aprovação prévia em oito serviços, listados na próxima seção como “Serviços permitidos”.
+- Serviços permitidos
   - EC2
   - RDS
   - Aurora
