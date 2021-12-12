@@ -928,6 +928,8 @@ https://aws.amazon.com/pt/wavelength/
 
 ### **AWS Auto Scaling**
 
+https://aws.amazon.com/autoscaling/
+
 https://docs.aws.amazon.com/autoscaling/plans/userguide/what-is-aws-auto-scaling.html
 
 ![image-20211109195133948](./Imagans/image-20211109195133948.png)
@@ -1238,12 +1240,17 @@ https://aws.amazon.com/pt/lambda/
 
 ### **Elastic Container Registry (ECR)** 
 
+https://aws.amazon.com/ecr/
+
+- É ser usado para armazenar, gerenciar e implantar imagens de contêiner Docker. 
 - Armazena as imagens docker
 - Privado
 
 
 
 ### **Elastic Container Service (ECS)** 
+
+https://aws.amazon.com/ecs/
 
 - Ferramenta de orquestração de container
 - Integra com ALB
@@ -1256,8 +1263,7 @@ https://aws.amazon.com/pt/lambda/
 https://aws.amazon.com/pt/eks/
 
 - **Summary**
-
-  - Ferramenta de orquestração de container
+- Ferramenta de orquestração de container
 
 
   - Gerencia a EC2
@@ -1269,6 +1275,8 @@ https://aws.amazon.com/pt/eks/
 
 https://aws.amazon.com/fargate/
 
+![img](./Imagans/Product-Page-Diagram_Fargate@2x.a20fb2b15c2aebeda3a44dbbb0b10b82fb89aa6a.png)
+
 - **Summary**
 
   - **Serveless**
@@ -1277,7 +1285,7 @@ https://aws.amazon.com/fargate/
 
   - Escala automaticamente
 
-  - **Não Gerencia a EC2**
+  - **Não gerencia a EC2**
 
   - Especifica CPU/RAM para container
 
@@ -1480,6 +1488,7 @@ https://aws.amazon.com/elasticbeanstalk/?p=tile
 
 - Implemantação rápida de recursos que podem usar diferentes linguagens de programação como .NET e JAVA
 - Baseado em EC2
+- Pode acessar o SO da EC2
 - Controle dos recursos 
 - **Para Desenvolvedores**
 - PaaS
@@ -1760,6 +1769,12 @@ https://aws.amazon.com/systems-manager/
 
 ### **AWS Service Health Dashboard**
 
+[https://status.aws.amazon .com /](https://status.aws.amazon.com/) 
+
+![img](./Imagans/pt2-q6-i1.jpg)
+
+- O AWS Service Health Dashboard publica as informações mais atualizadas sobre o status e a disponibilidade de todos os serviços da AWS em forma tabular para todas as regiões em que a AWS está presente. 
+
 - Painel do status dos serviços de todas as regiões
 
   
@@ -1767,6 +1782,8 @@ https://aws.amazon.com/systems-manager/
 ### **AWS Personal Health Dashboard**
 
 https://aws.amazon.com/premiumsupport/technology/personal-health-dashboard/
+
+![img](./Imagans/pt2-q6-i2.jpg)
 
 - Visão sobre a disponibilidade e desempenho dos serviços AWS **na sua infraestrutura** 
 
@@ -1815,7 +1832,7 @@ https://aws.amazon.com/pt/premiumsupport/technology/trusted-advisor/
 
 
 
-### **AWS Well-Architected**
+### **AWS Well-Architected Framework**
 
 https://wa.aws.amazon.com/index.pt_BR.html
 
@@ -1826,13 +1843,17 @@ https://d1.awsstatic.com/whitepapers/architecture/AWS_Well-Architected_Framework
   - Obter insights sobre suas operações
 
 - [Segurança](https://wa.aws.amazon.com/wat.pillar.security.pt_BR.html)
-- [Confiabilidade](https://wa.aws.amazon.com/wat.pillar.reliability.pt_BR.html)
+
+- **Realibility - [Confiabilidade]**
+
+  https://wa.aws.amazon.com/wat.pillar.reliability.pt_BR.html
+
   - Concentra na capacidade de uma carga de trabalho executar de forma consistente e correta as funções pretendidas.
   - Ferramentas para ajudar
     - AWS Config
     - AWS CloudTrail
     - Amazon CloudWatch
-  
+
 - [Eficiência de performance](https://wa.aws.amazon.com/wat.pillar.performance.pt_BR.html)
   - Concentra no uso eficiente dos recursos de computação para atender aos requisitos do sistema 
   - Manter essa eficiência à medida que a demanda muda e as tecnologias evoluem.
@@ -1856,7 +1877,7 @@ O Amazon MQ é um serviço gerenciado de agente de mensagens para o [Apache Acti
 - **Summary**
   - MQTT, AMQP, STOMP, Opensire, Wss
   - **Managed Apache ActiveMQ**
-  - run dedicaded machine
+  - Run dedicaded machine
   - SQS/SNS
 
 
@@ -1930,9 +1951,19 @@ https://aws.amazon.com/pt/sqs/
 
 
 
-### **AWS Rekognition**
+### **Amazon Rekognition**
+
+ https://aws.amazon.com/rekognition/
 
 - Automate analise de vídeos com machine learning
+
+- Rotula objetos
+
+- Identifica pessoas
+
+- Detecta texto em uma foto
+
+- SaaS
 
   
 
@@ -2161,9 +2192,10 @@ https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.
 
 ### **Global Accelerator**
 
-https://aws.amazon.com/global-accelerator/faqs/
+https://aws.amazon.com/global-accelerator/
 
-- Usam a rede global AWS de alta velocidade e as técnicas de roteamento **Anycast** para melhorar a disponibilidade e desempenho do app do cliente
+- Usam a rede global AWS de alta velocidade e as técnicas de roteamento **Anycast** 
+- Para melhorar **a disponibilidade e desempenho** do app do cliente
 - Não inclui recursos de cache de conteudo
 - São adequados para VOIP, MTTQ e Jogos
 - Edge Locations envia trafego para ambiente
@@ -2519,6 +2551,10 @@ https://aws.amazon.com/pt/artifact/
 
 ### **CloudHSM**
 
+https://aws.amazon.com/cloudhsm/
+
+- É um módulo de segurança de hardware (HSM) baseado em nuvem que permite gerar e usar facilmente suas chaves de criptografia na nuvem AWS.
+
 - Criptografia utilizando hardware
 
 - Dedicaded hardware
@@ -2534,6 +2570,7 @@ https://aws.amazon.com/kms/features/
   - EBS, RDS, EFS, S3, Redshift
 
 - **Customer Master Key(CMK)**
+  
   - **Customer Managed CMK**
     - Uma chave mestra do cliente (CMK) é uma representação lógica de uma chave mestra. 
     
