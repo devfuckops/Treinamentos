@@ -179,7 +179,7 @@ https://aws.amazon.com/pt/about-aws/global-infrastructure/regions_az/?p=ngi&loc=
 ![image-20211109204810592](./Imagans/image-20211109204810592.png)
 
 - Interconectas por uma fibra
-- Um ou mais DataCenters
+- Um ou mais DataCenters no mesmo local
 - **Pode ter 1 ou mais AZ´s em uma região**
 - As AZ´s são vinculadas a uma única região
 - Conectividade redundante de baixa latência 
@@ -286,8 +286,7 @@ https://aws.amazon.com/s3/
     - s3://my-bucket/my_file.txt
   - Upload de arquivos de até 5 TB
   - Multipart upload - 5 GB
-  - Serviço regional mas com o nome global
-  - Regional
+  - **Serviço regional mas com o nome global**
   - **Cópia de dados de uma instância EC2 para um bucket S3 na mesma região, não tem custo.**
   - Pode usar com o CloudFront, Redshift, Athena, Mobile applications
   - **Não suporta operações de acréscimo de arquivo**
@@ -414,31 +413,30 @@ https://aws.amazon.com/s3/
 
     - **Recomentado para Acesso Frequente**
 
-      
+    - **Não cobra Restore**
     
+    -  O S3 Standard **não tem restrição de duração mínima** de armazenamento para objetos.
+  
+      
+  
   - **S3 Standard Infrequent Access (IA)**
 
     - 99,99% Availability
-
-    - Low cost compatado com S3 Standard
-
+- Low cost compatado com S3 Standard
     - Armazena dados em uma única zona de disponibilidade
-
-    - Tem um preço de armazenamento menor do que o S3 Standard – IA
-
+- Tem um preço de armazenamento menor do que o S3 Standard – IA
     - **Recomentado para Acesso Infrequente**
 
-      
 
 
-    - **S3 One Zone-Infrequent Access (S3 One Zone – IA)**
-    
-      - 99,5% Availability
-    
-      - **Armazena dados em uma única zona de disponibilidade**
-    
-      - Tem um preço de armazenamento menor do que o S3 Standard – IA
-      - **Recomentado para Acesso Infrequente**
+
+- **S3 One Zone-Infrequent Access (S3 One Zone – IA)**
+  - 99,5% Availability
+
+  - **Armazena dados em uma única zona de disponibilidade**
+
+  - Tem um preço de armazenamento menor do que o S3 Standard – IA
+  - **Recomentado para Acesso Infrequente**
 
 
 
@@ -454,6 +452,8 @@ https://aws.amazon.com/s3/
       - Rapidez quando necessário
       - Replicas em multi-az
       - **Recomentado para quando não se sabe o tipo de acesso**
+      - **não tem restrição de duração mínima** de armazenamento para objetos.
+      **Não cobra Restore**
 
 
 ​      
@@ -570,6 +570,7 @@ https://aws.amazon.com/pt/efs/
 - Sistema de Arquivos Linux
 - Só funciona em SO Linux
 - Suporte a alta disponibilidade 
+- Para acessar os sistemas de arquivos EFS no local, você deve ter um AWS Direct Connect ou conexão VPN da AWS entre o datacenter local e o Amazon VPC.
 - Regional
 - NFS
 - **As instâncias EC2 podem acessar arquivos em um sistema de arquivos EFS em muitas zonas de disponibilidade, regiões e VPCs**
@@ -639,8 +640,11 @@ https://aws.amazon.com/pt/fsx/
 - **Read Replicas**
 
   - Pode criar até 5 Read Replicas
+  - **Você pode usar réplicas de leitura para melhorar o desempenho de leitura e também para recuperação de desastres**
 
 - **Multi-AZ**
+
+  https://aws.amazon.com/rds/features/multi-az/
 
   - Failover
 
@@ -651,7 +655,7 @@ https://aws.amazon.com/pt/fsx/
     
 
   
-
+  
   
 
 ### **Aurora**
@@ -1398,7 +1402,7 @@ https://aws.amazon.com/pt/codecommit/
 
 https://docs.aws.amazon.com/codedeploy/latest/userguide/welcome.html
 
--  É um serviço que automatiza implantações de código para qualquer instância, incluindo instâncias do Amazon EC2 e instâncias em execução no local.
+-  É um serviço que automatiza **implantações de código** para qualquer instância, incluindo instâncias do Amazon EC2 e instâncias em execução no local.
 
 - Automatizar a instalação de um conjunto de aplications em **EC2 e em Servidores Locais**
 
@@ -1748,8 +1752,9 @@ https://aws.amazon.com/pt/organizations/
   - Descontos
     - Volume
     - Reserved Instances
+      - **Só recebe os descontos se as EC2 estiverem na mesma AZ**
     - Saving Plans
-
+    
   - Uma invoice
 
 - **Service Control Polices (SCP)**
@@ -2090,6 +2095,8 @@ https://aws.amazon.com/kendra/
 
 ### **Amazon Translate**
 
+https://aws.amazon.com/translate/
+
 - Traduz textos 
 
 
@@ -2429,7 +2436,7 @@ https://aws.amazon.com/pt/route53/
 
     
 
-- **VPC Endpoint**
+- **VPC Interface Endpoint**
 
   https://docs.aws.amazon.com/vpc/latest/userguide/vpc-endpoints.html
 
@@ -2878,11 +2885,19 @@ https://docs.aws.amazon.com/detective/latest/adminguide/what-is-detective.html
 ### **AWS Shield**
 
 - **Shield Standard**
+
   - Usa machine learning
+
   - Protege contra Ataque DDoS
+
   - Layer 3 / Layer 4
 
+  - Está sob a responsabilidade da AWS no Shared Responsability Model
+
+    
+
 - **Shield Advanced**
+
   - **No shield advanced vc tem acesso ao time AWS DDoS** 
   - Fornece proteção extendida para:
     - Amazon Elastic Compute Cloud
@@ -2894,13 +2909,14 @@ https://docs.aws.amazon.com/detective/latest/adminguide/what-is-detective.html
 
 
 
-### **WAF**
+### **AWS WEB APPLICATION FIREWALL (WAF)**
 
 https://docs.aws.amazon.com/waf/latest/developerguide/waf-chapter.html
 
 - Firewall aplicação web
 - Protege contra Ataque DDoS
 - Layer 7 (HTTP)
+- **Pode bloquear todas as solicitações, exceto aquelas que você especificar** 
 - Deploy in ALB, API GW e CloudFront
 - WebACL
 
@@ -2959,10 +2975,25 @@ https://docs.aws.amazon.com/waf/latest/developerguide/waf-chapter.html
 
 ### **Disaster Recovery Strategies**
 
+https://aws.amazon.com/blogs/architecture/disaster-recovery-dr-architecture-on-aws-part-iii-pilot-light-and-warm-standby/
+
+![img](./Imagans/pt4-q56-i1.jpg)
+
 - **Backup e Restore**
   - Mas barato
+  - Estão associados a RTO (objetivo de tempo de recuperação) e RPO (objetivo de ponto de recuperação) mais altos. 
+  - Isso resulta em tempos de inatividade mais longos e maior perda de dados entre o momento em que o evento de desastre ocorre e a recuperação. 
+  
 - **Pilot Ligth**
+
+  - Replica dados da região primária para recursos de dados na região de recuperação, como instâncias de banco de dados do Amazon Relational Database Service (Amazon RDS) ou tabelas do Amazon DynamoDB. 
+
+  - Porém, a região de DR em uma estratégia de luz piloto (ao contrário do modo de espera passivo) não pode atender a solicitações até que etapas adicionais sejam executadas. 
+
+    
+
 - **Warm Standby**
+
 - **Multisite/Hot-site**
   - Full Size
   - Mais caro
