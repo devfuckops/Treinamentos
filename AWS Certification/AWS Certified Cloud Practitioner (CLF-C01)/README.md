@@ -134,7 +134,7 @@ https://learn.acloud.guru/course/aws-certified-cloud-practitioner/dashboard **�
 
 ## UDEMY
 
-[NEW] Ultimate AWS Certified Cloud Practitioner - 2021
+[NEW] Ultimate AWS Certified Cloud Practitioner - 2021✔
 
 
 
@@ -164,10 +164,12 @@ https://www.whizlabs.com/learn/course/aws-certified-cloud-practitioner/219
 
 https://aws.amazon.com/pt/about-aws/global-infrastructure/regions_az/?p=ngi&loc=2
 
-- Pode ter 2 ou mais AZ´s em uma região
+- **Pode ter 2 ou mais AZ´s em uma região**
 
   
 
+  
+  
   
 
 ### **Zonas de disponibilidades (AZ)**
@@ -178,7 +180,7 @@ https://aws.amazon.com/pt/about-aws/global-infrastructure/regions_az/?p=ngi&loc=
 
 - Interconectas por uma fibra
 - Um ou mais DataCenters
-- Pode ter 2 ou mais AZ´s em uma região
+- **Pode ter 1 ou mais AZ´s em uma região**
 - As AZ´s são vinculadas a uma única região
 - Conectividade redundante de baixa latência 
 
@@ -284,12 +286,13 @@ https://aws.amazon.com/s3/
   - Armazenamento a nível de objeto
   - **key - Prefix + Object Name**
     - s3://my-bucket/my_file.txt
-
   - Upload de arquivos de até 5 TB
   - Multipart upload - 5 GB
   - Serviço regional mas com o nome global
   - Regional
+  - **Cópia de dados de uma instância EC2 para um bucket S3 na mesma região, não tem custo.**
   - Pode usar com o CloudFront, Redshift, Athena, Mobile applications
+  - **Não suporta operações de acréscimo de arquivo**
 
 - **Casos de Uso**
 
@@ -309,7 +312,7 @@ https://aws.amazon.com/s3/
 
   - **No Encryption**
 
-    - O arquivo não é 
+    - O arquivo não é Encryptado  
 
   - **Server-Side Encryption**
 
@@ -542,6 +545,8 @@ https://aws.amazon.com/pt/ebs/
 - Snapshots podem ser copiados entre Regiões
 
 - Ate 16 TiB
+
+- **Pode ser anexado a uma única instância na mesma Zona de disponibilidade**
 
 - Flag - Delete on Termination 
 
@@ -878,23 +883,28 @@ https://aws.amazon.com/pt/fsx/
 
 
 
-- Support Plans Types
-
+- **Support Plans Types**
   - **Basic**
+    - **Não** oferecem suporte ao acesso a orientação, configuração e solução de problemas de interoperabilidade da AWS com software de terceiros.
   - **Developer**
+    - **Não** oferecem suporte ao acesso a orientação, configuração e solução de problemas de interoperabilidade da AWS com software de terceiros.
   - **Business**
     - Acesso a todos os itens do Trust Advidor
     - API Access
-
+    - Orientação, configuração e solução de problemas de interoperabilidade AWS com muitos sistemas operacionais comuns
+    - Você obtém acesso ao Gerenciamento de eventos de infraestrutura por uma taxa adicional.
+    - Orientação arquitetônica no contexto de seus casos de uso específicos.
   - **Enterprise**
     - Acesso a todos os itens do Trust Advidor
+    - Orientação, configuração e solução de problemas de interoperabilidade AWS com muitos sistemas operacionais comuns
     - TAM
     - Concierge
     - < 15 minutos
     - API Access
+    - Acesso a treinamento online com laboratórios individualizados.
 
 
-  
+
 
 
 
@@ -1074,7 +1084,10 @@ https://aws.amazon.com/batch/
 
 - **EC2 Dedicated Hosts**
 
-  - https://aws.amazon.com/pt/ec2/dedicated-hosts/
+  https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/dedicated-hosts-overview.html
+  
+  https://aws.amazon.com/pt/ec2/dedicated-hosts/
+  
   - Podem utilizar licenças de software existentes no cliente - BYOL
 
 
@@ -1082,7 +1095,7 @@ https://aws.amazon.com/batch/
 
 - **EC2 Dedicated Instances**
 
-  - https://aws.amazon.com/pt/ec2/pricing/dedicated-instances/
+  https://aws.amazon.com/pt/ec2/pricing/dedicated-instances/
 
   - Roda em hardware dedicado mas vc não tem acesso 
 
@@ -1092,7 +1105,11 @@ https://aws.amazon.com/batch/
 
   - **Sob-Demanda** 
 
+    https://aws.amazon.com/blogs/aws/new-per-second-billing-for-ec2-instances-and-ebs-volumes/
+
     - Por hora ou por segundo
+
+    - **60 segundos é a cobrança mínima** 
 
       
 
@@ -1101,9 +1118,9 @@ https://aws.amazon.com/batch/
     - 1 ou 3 anos 
 
     - Até 70% de desconto comparado ao sob-demanda
-
+  
     - **EC2 Saving Plans**
-
+  
       - Até 72% de desncons
       - Individual instances
   
@@ -1113,25 +1130,29 @@ https://aws.amazon.com/batch/
       - EC2, Fargate e Lambda
 
       
-
+  
   - **Instâncias Reservadas**
 
     - 1 ou 3 Anos
-  
+
     - Standard, Convertable ou Scheduled
-
+  
       
-
+  
   - **Instâncias Spot**
   
+    https://aws.amazon.com/ec2/spot/
+    
     - Aviso de até **2 minutos**
-    - até 90% de desconto comparado ao sob-demanda
+    - **Até 90% de desconto comparado ao sob-demanda**
     - Cargas de trabalhos em lote
-  
+    
     
   
 
 ### **AWS Compute Optimizer**
+
+https://aws.amazon.com/compute-optimizer/
 
 - Recomendações de custos e performance
 - Usa machine learning
@@ -1432,7 +1453,7 @@ https://docs.aws.amazon.com/codedeploy/latest/userguide/welcome.html
 
 
 
-### **Faturamento consolidado**
+### **Consolidated Billing**
 
 - Usa bucket s3 direto da conta mestre
 
@@ -1693,6 +1714,7 @@ https://aws.amazon.com/pt/organizations/
   - Controle de serviços/API por conta 
   - Habilita CloudTrail em todas as contas para enviar os Log´s para um Bucket S3 central
   - Envia todos os CloudWatch Logs para uma conta central
+  - **Para remover uma conta, a conta AWS deve ser capaz de operar como uma conta autônoma. Só então ele pode ser removido das organizações AWS**
 
 - **Consolidated Billing**
 
@@ -1813,22 +1835,28 @@ https://aws.amazon.com/pt/premiumsupport/technology/trusted-advisor/
     - AWS Support API
 
 
-  
 
-  
 
-### **AWS Well-Architected Framework**
+
+
+### **AWS Well-Architected**
 
 https://wa.aws.amazon.com/index.pt_BR.html
 
+https://d1.awsstatic.com/whitepapers/architecture/AWS_Well-Architected_Framework.pdf
+
 - [Excelência operacional](https://wa.aws.amazon.com/wat.pillar.operationalExcellence.pt_BR.html)
   - Executar cargas de trabalho de forma eficaz
-  - obter insights sobre suas operaçõe
+  - Obter insights sobre suas operações
 
 - [Segurança](https://wa.aws.amazon.com/wat.pillar.security.pt_BR.html)
 - [Confiabilidade](https://wa.aws.amazon.com/wat.pillar.reliability.pt_BR.html)
-  - concentra na capacidade de uma carga de trabalho executar de forma consistente e correta as funções pretendidas.
-
+  - Concentra na capacidade de uma carga de trabalho executar de forma consistente e correta as funções pretendidas.
+  - Ferramentas para ajudar
+    - AWS Config
+    - AWS CloudTrail
+    - Amazon CloudWatch
+  
 - [Eficiência de performance](https://wa.aws.amazon.com/wat.pillar.performance.pt_BR.html)
   - Concentra no uso eficiente dos recursos de computação para atender aos requisitos do sistema 
   - Manter essa eficiência à medida que a demanda muda e as tecnologias evoluem.
@@ -2190,7 +2218,7 @@ https://aws.amazon.com/global-accelerator/faqs/
 
 
 
-### **Route 53**
+### **Route53**
 
 https://aws.amazon.com/pt/route53/
 
@@ -2207,36 +2235,52 @@ https://aws.amazon.com/pt/route53/
   - **Simple routing policy** (Política de roteamento simples)
 
     - Use para um único recurso que executa uma determinada função para seu domínio, por exemplo, um servidor Web que oferece conteúdo para o site example.com.
+  
     - No health checks
-
+  
+      
+  
   - **Failover routing policy** (Política de roteamento de failover)
 
     - Use quando quiser configurar o failover **ativo-passivo**.
+
     - **Yes health checks**
+
+      
 
   - **Geolocation routing policy** (Política de roteamento de localização geográfica)
 
     - Use quando quiser encaminhar o tráfego com base na localização dos usuários.
 
+      
+  
   - **Geoproximity routing policy** (Política de roteamento de proximidade geográfica)
-
+  
     - Use quando quiser encaminhar o tráfego com base no local de seus recursos e, opcionalmente, alternar o tráfego de recursos em um local para recursos em outro local.
-
+  
+      
+  
   - **Latency routing policy** (Política de roteamento de latência): 
-
+  
     - Use quando você tiver recursos em várias regiões da AWS e quiser encaminhar o tráfego para a região que fornece o menor tempo de ida e volta.
+  
     - Para melhor performance de usuários globais
-
+  
+      
+  
   - **Multivalue answer routing policy** (Política de roteamento de resposta com vários valores): 
-
+  
     - Use quando quiser que o Route 53 responda a consultas de DNS com até oito registros íntegros selecionados aleatoriamente.
-
+  
+      
+  
   - **Weighted routing policy** (Política de roteamento ponderado): 
-
+  
     - Use para encaminhar o tráfego para vários recursos nas proporções que você especificar.
-
+    - Permite associar vários recursos a um único nome de domínio (example.com) ou nome de subdomínio (acme.example.com) e escolher quanto tráfego é roteado para cada recurso. 
     
-
+    
+    
     
 
 ### **Virtual Private Cloud VPC)**
@@ -2289,9 +2333,34 @@ https://aws.amazon.com/pt/route53/
 
 - **VPC Endpoint**
 
+  https://docs.aws.amazon.com/vpc/latest/userguide/vpc-endpoints.html
+
   - Provê acesso privado da VPC a serviços AWS
 
+  - Utiliza subnet c/ IP privado
+
+  - É cobrado
+
+  - Serviços suportados
+
+    - S3
     
+    - DynamoDB
+    
+      
+
+- **VPC Endpoint Gateway**
+
+  https://docs.aws.amazon.com/vpc/latest/userguide/vpc-endpoints.html
+
+  - Provê acesso privado da VPC a serviços AWS
+  - Utiliza route-tables
+  - Não tem cobrança
+  - Serviços suportados
+    - S3
+    - DynamoDB
+
+  
 
 - **VPC Flow Logs**
 
@@ -2330,7 +2399,7 @@ https://aws.amazon.com/pt/route53/
 
 
     - Referencia IP ou Security Group
-
+    
       ![image-20211207213551384](./Imagans/image-20211207213551384.png)
 
 
@@ -2508,17 +2577,44 @@ https://aws.amazon.com/kms/features/
 
 - **Customer Master Key(CMK)**
   - **Customer Managed CMK**
-    - Create, Manage and used  
+    - Uma chave mestra do cliente (CMK) é uma representação lógica de uma chave mestra. 
+    
+    - O CMK inclui metadados, como ID da chave, data de criação, descrição e estado da chave. 
+    
+    - O CMK também contém o material chave usado para criptografar e descriptografar dados. 
+    
+    - **Eles são criados e gerenciados pelo cliente AWS.** 
+    
+    - O acesso a eles pode ser controlado usando o serviço AWS IAM.
+    
+    - Create, Manage and used 
+    
     - Enable and Disabe
-
-  - **AWS managed CMK**
+    
+      
+    
+  - **AWS Managed CMK**
+    
+    - São CMKs em sua conta que são criados, **gerenciados e usados em seu nome por um serviço AWS** que está integrado com AWS KMS.
+  
     - Used AWS Services
+    
     - Create, Manage and used  
-
+    
+      
+    
   - **AWS owned CMK**
-    - utilzado em multiplas contas
-    - Você não vê as Keys
-
+  
+    - São uma coleção de CMKs que um serviço da AWS possui e gerencia para uso em várias contas da AWS. 
+  
+    - Não estão em sua conta da AWS. 
+  
+    - **Você não pode visualizar ou gerenciar esses CMKs.**
+  
+    - Utilzado em multiplas contas
+  
+      
+  
   - **CloudHMS Keys**
     - Keys generated from CloudHSM hardware device
 
@@ -2557,7 +2653,7 @@ https://aws.amazon.com/security/penetration-testing/
 
 
 
-### 
+
 
 ### **Amazon Cognito**
 
@@ -2684,12 +2780,22 @@ https://docs.aws.amazon.com/detective/latest/adminguide/what-is-detective.html
 
 
 
-### **Shield and Shield Advanced**
+### **AWS Shield**
 
-- Usa machine learning
-- Protege contra Ataque DDoS
-- Layer 3 / Layer 4
-- **No shield advanced vc tem acesso ao time AWS DDoS** 
+- **Shield Standard**
+  - Usa machine learning
+  - Protege contra Ataque DDoS
+  - Layer 3 / Layer 4
+
+- **Shield Advanced**
+  - **No shield advanced vc tem acesso ao time AWS DDoS** 
+  - Fornece proteção extendida para:
+    - Amazon Elastic Compute Cloud
+    - Elastic Load Balancing (ELB)
+    - Amazon CloudFront
+    - Amazon Route 53
+    - AWS Global Accelerator
+
 
 
 
