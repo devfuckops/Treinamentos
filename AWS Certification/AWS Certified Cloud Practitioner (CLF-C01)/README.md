@@ -2040,7 +2040,15 @@ https://aws.amazon.com/blogs/enterprise-strategy/6-strategies-for-migrating-appl
 
 ### **DataSync**
 
-- Maneira mais simples e rápida de migrar grandes quantidades de dados entre o local e S3, EFS ou FSx. 
+- Maneira mais simples e rápida de migrar grandes quantidades de dados entre o local e para AWS
+- Serviços
+  - S3
+  - EFS
+  - FSx
+
+- Pode agendar 
+- Tem que ter um agent instalado no on-premises
+- Incremental
 
 
 
@@ -2718,6 +2726,45 @@ https://docs.aws.amazon.com/waf/latest/developerguide/waf-chapter.html
 
 - Para Virtual Reality 
 - 3D
+
+
+
+### **Amazon Elastic Transcoder**
+
+- Convert media files in S3
+- Em outros formatos
+
+
+
+### **AWS IoT Core**
+
+### **AWS Backup**
+
+- Gerencia backups
+- Cria Backup Plan
+- Salva no S3
+
+
+
+### **AWS Device Farm**
+
+- Testa aplicações na AWS
+- Bugs
+- Gera reports, logs 
+
+
+
+
+
+### **Disaster Recovery Strategies**
+
+- **Backup e Restore**
+  - Mas barato
+- **Pilot Ligth**
+- **Warm Standby**
+- **Multisite/Hot-site**
+  - Full Size
+  - Mais caro
 
 
 
