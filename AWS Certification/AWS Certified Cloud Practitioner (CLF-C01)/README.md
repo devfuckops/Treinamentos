@@ -212,9 +212,11 @@ O AWS Local Zones é uma espécie de implantação de infraestrutura posiciona a
 
 ### **Athena**
 
+https://aws.amazon.com/athena/
+
 - **Summary**
 
-  - É um serviço de consulta interativo que facilita a análise de dados no Amazon S3 usando SQL padrão. 
+  - **É um serviço de consulta interativo que facilita a análise de dados no Amazon S3 usando SQL padrão.** 
   - Serveless
 
   - SQL Languege
@@ -559,6 +561,8 @@ https://aws.amazon.com/pt/ebs/
 
 https://aws.amazon.com/pt/efs/
 
+![img](./Imagans/product-page-diagram-Amazon-EFS-Launch_How-It-Works.cf947858f0ef3557b9fc14077bdf3f65b3f9ff43.png)
+
 - Compartilhamento de arquivos
 - Sistema de Arquivos Linux
 - Só funciona em SO Linux
@@ -686,25 +690,30 @@ https://aws.amazon.com/pt/fsx/
 
 ### **DynamoDB**
 
+https://aws.amazon.com/dynamodb
+
 - **Summary**
 
   - Banco de dados NoSQL
+  
+  - Permite que um banco de dados tenha um **esquema flexível** e ofereça suporte a modelos de dados de documentos
+  
   - key/value database
-
+  
   - Replication em 3 AZ
-
+  
   - Serverless
-
-  - Não suportam um esquema pre-definido
-
+  
+  - **Não suportam um esquema pré-definido**
+  
   - Oferecem atomicidade
-
-  - Modelo de dados flexiveis e latencia de milissegundos de um digito
-
+  
+  - Modelo de dados flexíveis e latência de milissegundos de um digito
+  
   - Para jogo on-line
-
+  
   - Fortimente Consistente
-
+  
     
 
 
@@ -878,6 +887,7 @@ https://aws.amazon.com/pt/fsx/
     - **Não** oferecem suporte ao acesso a orientação, configuração e solução de problemas de interoperabilidade da AWS com software de terceiros.
   - **Developer**
     - **Não** oferecem suporte ao acesso a orientação, configuração e solução de problemas de interoperabilidade da AWS com software de terceiros.
+    - Permite que um contato abra casos ilimitados
   - **Business**
     - Acesso a todos os itens do Trust Advidor
     - API Access
@@ -1836,30 +1846,77 @@ https://aws.amazon.com/pt/premiumsupport/technology/trusted-advisor/
 
 https://wa.aws.amazon.com/index.pt_BR.html
 
-https://d1.awsstatic.com/whitepapers/architecture/AWS_Well-Architected_Framework.pdf
+https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html
 
-- [Excelência operacional](https://wa.aws.amazon.com/wat.pillar.operationalExcellence.pt_BR.html)
+- **Operational Excellence (Excelência operacional)**
+  
+  https://docs.aws.amazon.com/wellarchitected/latest/framework/operational-excellence.html
+
+  - A capacidade de apoiar o desenvolvimento e executar cargas de trabalho de forma eficaz, obter uma visão sobre suas operações e melhorar continuamente os processos e procedimentos de suporte para agregar valor aos negócios.
+  
   - Executar cargas de trabalho de forma eficaz
+  
   - Obter insights sobre suas operações
+  
+    
+  
+- **Security (Segurança)**
 
-- [Segurança](https://wa.aws.amazon.com/wat.pillar.security.pt_BR.html)
+  https://docs.aws.amazon.com/pt_br/wellarchitected/latest/framework/security.html
 
-- **Realibility - [Confiabilidade]**
+  - O pilar de segurança descreve como aproveitar as vantagens das tecnologias de nuvem para proteger dados, sistemas e ativos de uma forma que possa melhorar sua postura de segurança.
+
+    
+
+- **Realibility (Confiabilidade)**
 
   https://wa.aws.amazon.com/wat.pillar.reliability.pt_BR.html
 
+  - O pilar de confiabilidade abrange a capacidade de uma carga de trabalho de executar sua função pretendida de forma correta e consistente quando é esperado. 
+
+  - Isso inclui a capacidade de operar e testar a carga de trabalho em todo o seu ciclo de vida. 
+
   - Concentra na capacidade de uma carga de trabalho executar de forma consistente e correta as funções pretendidas.
+
+  - Refere-se à capacidade de um sistema de se recuperar de interrupções de infraestrutura ou serviço, adquirindo dinamicamente recursos de computação para atender à demanda e mitigar interrupções.
+
   - Ferramentas para ajudar
+
     - AWS Config
     - AWS CloudTrail
     - Amazon CloudWatch
 
-- [Eficiência de performance](https://wa.aws.amazon.com/wat.pillar.performance.pt_BR.html)
+    
+
+- **Performance Efficiency (Eficiência de performance)**
+
+  https://docs.aws.amazon.com/wellarchitected/latest/framework/performance-efficiency.html
+
+  - A capacidade de usar recursos de computação com eficiência para atender aos requisitos do sistema e manter essa eficiência conforme a demanda muda e as tecnologias evoluem.
+
   - Concentra no uso eficiente dos recursos de computação para atender aos requisitos do sistema 
+
   - Manter essa eficiência à medida que a demanda muda e as tecnologias evoluem.
 
-- [Otimização de custos](https://wa.aws.amazon.com/wat.pillar.costOptimization.pt_BR.html)
+    
+
+- **Cost Optimization (Otimização de custos)**
+
+  https://docs.aws.amazon.com/wellarchitected/latest/framework/cost-optimization.html
+
+  - A capacidade de executar sistemas para agregar valor ao negócio com o menor preço.
+
   - concentra na capacidade de executar sistemas para fornecer valor comercial com o preço mais baixo.
+
+    
+
+- **Sustainability (Sustentabilidade)**
+
+  https://docs.aws.amazon.com/pt_br/wellarchitected/latest/sustainability-pillar/sustainability-pillar.html
+
+  - A capacidade de melhorar continuamente os impactos da sustentabilidade reduzindo o consumo de energia e aumentando a eficiência em todos os componentes de uma carga de trabalho, maximizando os benefícios dos recursos provisionados e minimizando os recursos totais necessários.
+
+    
 
 
 
