@@ -539,7 +539,7 @@ https://aws.amazon.com/pt/ebs/
 
 - **Mas é armazenado em uma única AZ** 
 
-- Pode ser associado a uma única instancia
+- É cobrado pelo Tipo e pelo IOPS provisionado.
 
 - Snapshot point-in-time
 
@@ -766,13 +766,14 @@ https://aws.amazon.com/dynamodb
 
 
 
-
 ### **Glue**
+
+https://aws.amazon.com/glue/
 
 - **Summary**
 
-  - ETL
-  - Extract, transform e load 
+  - AWS Glue é um serviço de **extração, transformação e carregamento (ETL)** totalmente gerenciado que torna mais fácil para os clientes preparar e carregar seus dados para análise. 
+  - O trabalho AWS Glue deve ser usado para processamento de dados ETL em lote.
   - Serverless
 
   
@@ -1133,9 +1134,9 @@ https://aws.amazon.com/batch/
 
   - **Sob-Demanda** 
 
-    https://aws.amazon.com/blogs/aws/new-per-second-billing-for-ec2-instances-and-ebs-volumes/
+    **https://aws.amazon.com/blogs/aws/new-per-second-billing-for-ec2-instances-and-ebs-volumes/**
 
-    - Por hora ou por segundo
+    - **Por hora ou por segundo**
 
     - **60 segundos é a cobrança mínima** 
 
@@ -1459,6 +1460,16 @@ https://docs.aws.amazon.com/codedeploy/latest/userguide/welcome.html
 
 ## **Gerenciamento Financeiro** 	
 
+### **AWS Cost & Usage Reports**
+
+https://aws.amazon.com/aws-cost-management/aws-cost-and-usage-reporting/
+
+- **Contêm o conjunto mais abrangente de dados de custo e uso disponíveis.** 
+- Você pode usar relatórios de custo e uso para publicar seus relatórios de cobrança da AWS em um bucket do Amazon Simple Storage Service (Amazon S3) de sua propriedade.
+- Você pode receber relatórios que detalham seus custos por hora ou mês, por produto ou recurso de produto, ou por tags que você mesmo define.
+
+
+
 ### **AWS Budgets**
 
 - Pode configurar alertas de orçamentos
@@ -1471,11 +1482,15 @@ https://docs.aws.amazon.com/codedeploy/latest/userguide/welcome.html
 
 ### **Cost Explorer** 
 
+https://aws.amazon.com/aws-cost-management/aws-cost-explorer/
+
 ![Exemplo do painel do AWS Cost Explorer, exibindo custos mensais para instâncias do Amazon EC2 em um período de seis meses](./Imagans/VhcqUjh9EBPpO6NY_pS6DLACY5OOiDZZb.png)
 
-- Fornece previsões baseadas no uso de custos estimados de faturamento e uso para os proximos meses
+- Fornece previsões baseadas no uso de custos estimados de faturamento e uso para os próximos meses
 
 - 12 meses de dados históricos
+
+- Os clientes podem receber recomendações de planos de economia no nível da conta do membro (vinculado), além das recomendações existentes no nível da organização da AWS no AWS Cost Explorer.
 
 - **Forecast**
 
@@ -1587,27 +1602,32 @@ https://aws.amazon.com/pt/xray/
 
   - Monitorar microserviços 
   - bottlenecks
-
-  - Detecta problemas de desempenho em app no Lambda
-
+- Detecta problemas de desempenho em app no Lambda
 
 
 
 ### **Amazon CodeGuru**
 
+https://aws.amazon.com/codeguru/
+
 **Summary**
+
+-  Amazon CodeGuru é uma ferramenta de desenvolvedor que fornece recomendações inteligentes para melhorar a qualidade do código e identificar as linhas de código mais caras de um aplicativo. 
+
+- Integre CodeGuru em seu fluxo de trabalho de desenvolvimento de software existente para automatizar revisões de código durante o desenvolvimento de aplicativos, monitorar continuamente o desempenho do aplicativo na produção, fornecer recomendações e dicas visuais para melhorar a qualidade do código e o desempenho do aplicativo e reduzir o custo geral.
 
 - Recomendações para aplicações
 
 - **Amazon Code Guru Profiler**
 
+  - Aponta as linhas de código mais caras de um aplicativo, ajudando os desenvolvedores a entender o comportamento de tempo de execução de seus aplicativos, identificar e remover ineficiências de código, melhorar o desempenho e reduzir significativamente os custos de computação.
   - runtime
   - Anomaly Detection
   - Hybrid 
 
 - **Amazon Code Guru Reviewer**
 
-  - Usa Machine Learning
+  - Usa **Machine Learning** e raciocínio automatizado para identificar problemas críticos, vulnerabilidades de segurança e bugs difíceis de encontrar durante o desenvolvimento de aplicativos e fornece recomendações para melhorar a qualidade do código.
 
   - Suporta JAVA, Python
 
@@ -1784,19 +1804,14 @@ https://aws.amazon.com/systems-manager/
 - **Summary**
 
   -  Oferece visibilidade e controle de sua infraestrutura na AWS. É usado para corrigir sistemas em grande escala.
-  - Permite que os usuários controlem seus recursos unificando serviços onde ele podem visualizar, monitorar e automatizar
-
-  - **EC2 e On-Premisses**
-
-  - Patching
-
-  - run comandos
-
-  - store parameter 
-
-  - Windows e Linux
-
-  - SSM agent
+  -  É usado para obter insights operacionais
+-  Permite que os usuários controlem seus recursos unificando serviços onde ele podem visualizar, monitorar e automatizar
+  -  **EC2 e On-Premisses**
+-  Patching
+  -  run comandos
+-  store parameter 
+  -  Windows e Linux
+- SSM agent
 
 
 - **SSM Session Manager**
@@ -1818,6 +1833,8 @@ https://aws.amazon.com/systems-manager/
 
 - Painel do status dos serviços de todas as regiões
 
+- **Você pode assinar um Feed RSS**
+
   
 
 ### **AWS Personal Health Dashboard**
@@ -1837,11 +1854,9 @@ https://aws.amazon.com/premiumsupport/technology/personal-health-dashboard/
 https://aws.amazon.com/pt/premiumsupport/technology/trusted-advisor/
 
 - Checar os softlimits 
-
+- Não é usado para obter **insights operacionais**
 - **Recomendações de Segurança e Otimização de custos**
-
 - Para receber notificações deve-se configura-ls na console
-
 - 5 categorias
 
   - Cost Optimization
@@ -1849,9 +1864,7 @@ https://aws.amazon.com/pt/premiumsupport/technology/trusted-advisor/
   - Secutiry
   - Fault Tolerance
   - Service Limits
-
 - Algumas verificações são gratuitas
-
 - Checks de acordo com Plano de Suportes
 
   - **Basic e Developer Supports Plan**
@@ -1888,6 +1901,10 @@ https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html
   - Executar cargas de trabalho de forma eficaz
   
   - Obter insights sobre suas operações
+  
+  - **Antecipar o Fracasso**
+  
+  - **Faça alterações frequentes, pequenas e reversíveis** 
   
     
   
@@ -2083,7 +2100,15 @@ https://aws.amazon.com/kendra/
 
 ### **Amazon Personalize**
 
+https://aws.amazon.com/personalize/
+
+- O Amazon Personalize permite que os desenvolvedores criem aplicativos com a mesma tecnologia de aprendizado de máquina (ML) usada pela Amazon.com para recomendações personalizadas em tempo real.
 - Real-time recomendações personalizadas
+- O Amazon Personalize oferece suporte aos seguintes casos de uso principais:
+  1. Recomendações personalizadas
+  2. Itens similares
+  3. Rerank personalizado, ou seja, rerank de uma lista de itens para um usuário
+  4. Promoções / notificações personalizadas
 
 
 
@@ -2111,6 +2136,9 @@ https://aws.amazon.com/translate/
 
 ### **Amazon SageMaker**
 
+https://aws.amazon.com/sagemaker/
+
+- É uma plataforma totalmente gerenciada que permite que desenvolvedores e cientistas de dados criem, treinem e implantem modelos de aprendizado de máquina de maneira rápida e fácil em qualquer escala.
 - Cria modelos de Machine Learning
 - Cientista de Dados
 
@@ -2173,12 +2201,14 @@ https://aws.amazon.com/blogs/enterprise-strategy/6-strategies-for-migrating-appl
 
 ### **DataSync**
 
+https://aws.amazon.com/datasync/
+
+- O AWS DataSync é um serviço de **transferência de dados online** seguro que simplifica, automatiza e acelera a cópia de terabytes de dados de e para os serviços de armazenamento da AWS
 - Maneira mais simples e rápida de migrar grandes quantidades de dados entre o local e para AWS
 - Serviços
   - S3
   - EFS
   - FSx
-
 - Pode agendar 
 - Tem que ter um agent instalado no on-premises
 - Incremental
@@ -2328,7 +2358,7 @@ https://aws.amazon.com/pt/route53/
 - **Summary**
 
   - Pode registrar nomes de domínios
-
+- Pode monitorar a saúde e o desempenho de seu aplicativo, bem como de seus servidores da web e outros recursos.
   - DNS
 
 - **Routing Pocilies**
@@ -2607,6 +2637,8 @@ https://aws.amazon.com/pt/directconnect/
 
     - É armazenado por até quatro horas
 
+    - Não é usado para revisar as permissões concedidas a um usuário.
+
       
 
   - **IAM Access Advisor (user-level)**
@@ -2614,7 +2646,9 @@ https://aws.amazon.com/pt/directconnect/
     - Mostra os serviços que este usuário pode acessar e quando esses serviços foram acessados pela última vez
 
     - Lista atividades de ate 4 horas
-
+  
+    - Você pode identificar permissões desnecessárias para que possa revisar suas políticas de IAM de acordo
+    
       
 
 ### **Shared Responsability  (Modelo de Responsabilidade Compartilhada)**
