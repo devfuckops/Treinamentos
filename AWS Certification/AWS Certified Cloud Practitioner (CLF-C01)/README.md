@@ -237,10 +237,6 @@ O AWS Local Zones é uma espécie de implantação de infraestrutura posiciona a
 
 
 
-### **CloudSearch**
-
-### **ElasticSearch**
-
 ### **Kinesis**
 
 - **Summary**
@@ -603,11 +599,7 @@ https://aws.amazon.com/pt/fsx/
 
 
 
-### **Backup**
-
-### **VMware Cloud on AWS**
-
-### **AWS Ground Station** 
+### 
 
 
 
@@ -652,8 +644,6 @@ https://aws.amazon.com/pt/fsx/
   
 
   
-
-
 
 ### **Aurora**
 
@@ -909,8 +899,6 @@ https://aws.amazon.com/pt/fsx/
 
 
 ## **Compute (Computação)**	
-
-### **EC2 Auto Scaling**
 
 
 
@@ -1246,7 +1234,7 @@ https://aws.amazon.com/pt/lambda/
 
   
 
-### 
+
 
 ### **Elastic Container Registry (ECR)** 
 
@@ -1305,15 +1293,9 @@ https://aws.amazon.com/fargate/
 
 
 
-### **App Runner** 
-
-- **Summary**
 
 
 
-## **Envolvimento Cliente** 	
-
-Connect 
 
 ### **SES Simple Email Services**
 
@@ -1739,12 +1721,6 @@ https://aws.amazon.com/pt/organizations/
 
   
 
-  
-
-
-
-### **AWS Service Catalog** 
-
 ### **AWS Control Tower**
 
 - Setup multi account
@@ -1871,12 +1847,6 @@ https://d1.awsstatic.com/whitepapers/architecture/AWS_Well-Architected_Framework
 
 ## **Integração** 	
 
-### **AppFlow**
-
-### **AppSync**
-
-### **Step Functions** 
-
 ### **Amazon MQ**
 
 https://aws.amazon.com/pt/amazon-mq
@@ -1888,8 +1858,6 @@ O Amazon MQ é um serviço gerenciado de agente de mensagens para o [Apache Acti
   - **Managed Apache ActiveMQ**
   - run dedicaded machine
   - SQS/SNS
-
-### 
 
 
 
@@ -2000,8 +1968,6 @@ https://aws.amazon.com/pt/sqs/
 
 
 
-### **Fraud Detector** 
-
 ### **Amazon SageMaker**
 
 - Cria modelos de Machine Learning
@@ -2016,8 +1982,6 @@ https://aws.amazon.com/pt/augmented-ai/
 - Fornece fluxos de trabalho de revisão humana integrados para casos de uso comuns de machine learning, como moderação de conteúdo e extração de texto de documentos
 
   
-
-### **AWS Deep Racer**
 
 ### **Amazon Lex**
 
@@ -2079,8 +2043,6 @@ https://aws.amazon.com/blogs/enterprise-strategy/6-strategies-for-migrating-appl
 - Incremental
 
 
-
-### **Server Migration Service**
 
 
 
@@ -2213,8 +2175,6 @@ https://aws.amazon.com/global-accelerator/faqs/
 
 
 ## **Networking (Rede)**	
-
-### **Cloud Map**
 
 
 
@@ -2542,8 +2502,6 @@ https://aws.amazon.com/pt/artifact/
 
 
 
-### **Audit Manager**
-
 ### **Security Hub**
 
 - **Summary**
@@ -2700,8 +2658,6 @@ https://aws.amazon.com/cognito/
 
 
 
-### **Firewall Manager**
-
 ### **AWS Inspector**
 
 - É um serviço automatizado de avaliação de segurança que ajuda a melhorar a segurança e a conformidade dos aplicativos implantados na AWS. 
@@ -2765,10 +2721,6 @@ https://docs.aws.amazon.com/detective/latest/adminguide/what-is-detective.html
   - VPC Flow Logs
   
   
-
-### **Network Firewall**
-
-### **Resource Access Manager**
 
 
 
