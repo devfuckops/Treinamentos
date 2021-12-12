@@ -1874,17 +1874,27 @@ https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html
 
   - O pilar de confiabilidade abrange a capacidade de uma carga de trabalho de executar sua função pretendida de forma correta e consistente quando é esperado. 
 
+  - **Fornece orientação sobre a construção de aplicativos baseados em nuvem usando as práticas recomendadas** 
+
   - Isso inclui a capacidade de operar e testar a carga de trabalho em todo o seu ciclo de vida. 
 
   - Concentra na capacidade de uma carga de trabalho executar de forma consistente e correta as funções pretendidas.
 
   - Refere-se à capacidade de um sistema de se recuperar de interrupções de infraestrutura ou serviço, adquirindo dinamicamente recursos de computação para atender à demanda e mitigar interrupções.
 
+  - **Princípios de design**
+
+    - **Recuperar automaticamente após uma falha**
+    - **Procedimentos de recuperação de teste**
+    - **Escalar horizontalmente para aumentar a disponibilidade agregada da carga de trabalho**
+    - **Parar de tentar adivinhar a capacidade**
+    - **Gerencie as alterações na automação**
+
   - Ferramentas para ajudar
 
-    - AWS Config
-    - AWS CloudTrail
-    - Amazon CloudWatch
+    - Amazon VPC
+    - AWS Trusted Advisor
+    - AWS Service Quotas
 
     
 
@@ -1906,7 +1916,9 @@ https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html
 
   - A capacidade de executar sistemas para agregar valor ao negócio com o menor preço.
 
-  - concentra na capacidade de executar sistemas para fornecer valor comercial com o preço mais baixo.
+  - Concentra na capacidade de executar sistemas para fornecer valor comercial com o preço mais baixo.
+
+  - **Fornece orientação sobre a construção de aplicativos baseados em nuvem usando as práticas recomendadas** 
 
     
 
@@ -1929,9 +1941,12 @@ https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html
 
 https://aws.amazon.com/pt/amazon-mq
 
+![img](./Imagans/Amazon MQ HIW Diagram.78e380e8a97064c8f751c1569481a304644490b5.jpg)
+
 O Amazon MQ é um serviço gerenciado de agente de mensagens para o [Apache ActiveMQ](http://activemq.apache.org/components/classic/) e [RabbitMQ](https://www.rabbitmq.com/) que facilita a configuração e a operação de agentes de mensagens na AWS. 
 
 - **Summary**
+  - Se você estiver usando mensagens com aplicativos existentes e quiser mover a funcionalidade de mensagens para a nuvem de forma rápida e fácil, a AWS recomenda que você considere o Amazon MQ. 
   - MQTT, AMQP, STOMP, Opensire, Wss
   - **Managed Apache ActiveMQ**
   - Run dedicaded machine
@@ -2223,6 +2238,7 @@ https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.
 
   - Pode usar **TTL** para habilitar o cache de conteudo dinâmico
   - 216 Point Of Presense (Edge Location)
+  - **Serviço Global**
   - DDoS Protection
   - Integrado com Shield e AWS WAF
   - Pode ser S3, EC2, ELB, Route 53
@@ -2239,7 +2255,7 @@ https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.
     - Upload S3
 
 
-  - Custom Origin (HTTP)
+  - **Custom Origin (HTTP)**
     - ALB
     - EC2
     - S3 website
@@ -2502,7 +2518,7 @@ https://aws.amazon.com/pt/directconnect/
 
     
 
-- Serviço Global
+- **Serviço Global**
 
 - Analise de acesso
 
