@@ -1558,7 +1558,7 @@ https://aws.amazon.com/elasticbeanstalk/?p=tile
 
 - É um serviço de gerenciamento de configuração que fornece instâncias gerenciadas de **Chef e Puppet**.
 
-- Gerencia aplicativos no datacenter através de SO Linux conectados em **Endpoints públicos** AWS
+- Gerencia aplicativos no datacenter através de **SO Linux** conectados em **Endpoints públicos** AWS
 
 - Agent do OpsWorks instalados nas instâncias Linux
 
