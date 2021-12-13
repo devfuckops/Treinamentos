@@ -1486,13 +1486,15 @@ https://aws.amazon.com/aws-cost-management/aws-cost-explorer/
 
 ![Exemplo do painel do AWS Cost Explorer, exibindo custos mensais para instâncias do Amazon EC2 em um período de seis meses](./Imagans/VhcqUjh9EBPpO6NY_pS6DLACY5OOiDZZb.png)
 
-- Fornece previsões baseadas no uso de custos estimados de faturamento e uso para os próximos meses
+- Fornece previsões baseadas no uso de **custos estimados** de faturamento e uso para os próximos meses
 
 - 12 meses de dados históricos
 
 - Os clientes podem receber recomendações de planos de economia no nível da conta do membro (vinculado), além das recomendações existentes no nível da organização da AWS no AWS Cost Explorer.
 
 - **Forecast**
+
+- **Prevê gastos**
 
   
 
