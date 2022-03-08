@@ -8,19 +8,11 @@
 
 
 
-## acloudguru✔
-
-- https://learn.acloud.guru/course/aws-certified-security-specialty/overview
-
-  
-
-  
-
 ## AWS
 
-https://aws.amazon.com/pt/certification/certified-security-specialty/
+https://aws.amazon.com/pt/certification/certified-security-specialty/✔
 
-https://d1.awsstatic.com/training-and-certification/ramp-up_guides/Ramp-Up_Guide_Security.pdf
+https://d1.awsstatic.com/training-and-certification/ramp-up_guides/Ramp-Up_Guide_Security.pdf✔
 
 https://github.com/brunokktro/auladobruno#security-engineering-on-aws
 
@@ -75,6 +67,12 @@ https://www.youtube.com/watch?v=KJiCfPXOW-U
 https://www.youtube.com/watch?v=Zvz-qYYhvMk&list=PL2yQDdvlhXf9Ub-ekxAq0wMJpslV562SP&index=25
 
 
+
+## acloudguru
+
+- https://learn.acloud.guru/course/aws-certified-security-specialty/overview
+
+  
 
 ## vários
 
@@ -294,4 +292,10 @@ https://jayendrapatil.com/aws-certified-security-speciality-scs-c01-exam-learnin
 
 ## **Security IN AWS**
 
-### AWS Config
+### **AWS Config**
+
+### **AWS CloudTrail**
+
+### **AWS KMS**
+
+### **AWS CloudHSM**
