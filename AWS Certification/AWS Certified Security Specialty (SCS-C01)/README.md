@@ -288,8 +288,10 @@ https://jayendrapatil.com/aws-certified-security-speciality-scs-c01-exam-learnin
 
 ### **Shared Responsability Model**
 
-![image-20220307212426434](C:\Users\brik\AppData\Roaming\Typora\typora-user-images\image-20220307212426434.png)
+![image-20220307212426434](./imagens/image-20220307212426434.png)
 
 
 
 ## **Security IN AWS**
+
+### AWS Config
