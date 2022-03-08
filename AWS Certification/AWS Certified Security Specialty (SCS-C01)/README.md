@@ -14,12 +14,6 @@ https://aws.amazon.com/pt/certification/certified-security-specialty/✔
 
 https://d1.awsstatic.com/training-and-certification/ramp-up_guides/Ramp-Up_Guide_Security.pdf✔
 
-https://github.com/brunokktro/auladobruno#security-engineering-on-aws
-
-https://explore.skillbuilder.aws/learn/course/internal/view/elearning/11612/exam-readiness-aws-certified-security-specialty-portuguese
-
-https://explore.skillbuilder.aws/learn/course/internal/view/elearning/97/exam-readiness-aws-certified-security-specialty
-
 https://explore.skillbuilder.aws/learn/course/internal/view/elearning/101/getting-started-with-aws-security-identity-and-compliance?ss=sec&sec=prep
 
 https://explore.skillbuilder.aws/learn/course/internal/view/elearning/485/aws-foundations-securing-your-aws-cloud?trk=c750fe34-f44f-43e1-bcc0-6219228839b9&sc_channel=el
@@ -33,6 +27,12 @@ https://explore.skillbuilder.aws/learn/course/internal/view/elearning/85/authent
 https://explore.skillbuilder.aws/learn/course/internal/view/elearning/2045/aws-well-architected?trk=c750fe34-f44f-43e1-bcc0-6219228839b9&sc_channel=el
 
 https://aws.amazon.com/training/classroom/aws-security-essentials/?trk=c750fe34-f44f-43e1-bcc0-6219228839b9&sc_channel=el
+
+https://github.com/brunokktro/auladobruno#security-engineering-on-aws
+
+https://explore.skillbuilder.aws/learn/course/internal/view/elearning/11612/exam-readiness-aws-certified-security-specialty-portuguese
+
+https://explore.skillbuilder.aws/learn/course/internal/view/elearning/97/exam-readiness-aws-certified-security-specialty
 
 
 
@@ -274,9 +274,108 @@ https://jayendrapatil.com/aws-certified-security-speciality-scs-c01-exam-learnin
 
 
 
+Top 10 security items to improve in your AWS account
+
+https://aws.amazon.com/blogs/security/top-10-security-items-to-improve-in-your-aws-account/
+
 
 
 # Estudos
+
+
+
+## Serviços
+
+
+
+### AWS Identity ans Access Management (IAM)
+
+![image-20220308200241055](./imagens/image-20220308200241055.png)
+
+
+
+
+
+#### IAM Authorization
+
+![image-20220308200456395](./imagens/image-20220308200456395.png)
+
+
+
+#### IAM Authentication
+
+![image-20220308200343938](./imagens/image-20220308200343938.png)
+
+
+
+#### IAM Policies
+
+**Simple Policy**
+
+![image-20220308200552643](./imagens/image-20220308200552643.png)
+
+
+
+#### IAM Roles
+
+![image-20220308200732209](./imagens/image-20220308200732209.png)
+
+
+
+
+
+
+
+AWS Single Sign-On
+
+Amazon Cognito
+
+AWS Directory Service
+
+
+
+## Top 10 security items to improve in your AWS account
+
+## ![10 most important security tips](./imagens/10-Security-Itemsb-Figure-1.png)
+
+
+
+
+
+## The AWS Well-Architected Framework
+
+
+
+### Operational Excellence
+
+### Security
+
+#### Identity and Access Management
+
+##### Serviços
+
+- Amazon Cognito
+- AWS Directory Service
+- AWS Identity ans Access Management (IAM)
+- AWS Single Sign-On
+
+
+
+#### Detective Controls
+
+#### Infrastructure Protection
+
+#### Data Protection
+
+#### Incident Reponse
+
+### Reliability
+
+### Performance Efficiency
+
+### Cost Optimization
+
+
 
 
 
@@ -286,7 +385,9 @@ https://jayendrapatil.com/aws-certified-security-speciality-scs-c01-exam-learnin
 
 ### **Shared Responsability Model**
 
-![image-20220307212426434](./imagens/image-20220307212426434.png)
+https://aws.amazon.com/pt/compliance/shared-responsibility-model/
+
+![Shared_Responsibility_Model_V2](./imagens/Shared_Responsibility_Model_V2.59d1eccec334b366627e9295b304202faf7b899b.jpg)
 
 
 
