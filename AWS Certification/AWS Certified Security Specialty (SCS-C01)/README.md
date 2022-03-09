@@ -292,6 +292,88 @@ https://aws.amazon.com/blogs/security/top-10-security-items-to-improve-in-your-a
 
 https://docs.aws.amazon.com/iam/index.html
 
+#### Summary
+
+- Controle de acesso para recursos
+- MFA
+  - Virtual MFA Devices (Google Autenticator or Authy)
+  - Universal 2nd Factor (U2F) Security Key - **Phisical Device**
+  - Hardware Key Fob MFA Device
+  - Hardware Key Fob MFA Device for AWS GovCloud (US)
+- **Serviço Global**
+- Analise de acesso
+- Por padrão um usuário não tem permissões - **tudo negado por default**
+
+
+
+#### IAM Users
+
+- **Users**
+  - Podemos ter um usuário em mais de um grupo
+
+
+
+#### IAM Policies
+
+- json
+
+- Estrutura de uma Policy
+
+  [![image-20211207201651694](./imagens/image-20211207201651694.png)
+
+  
+
+**Simple Policy**
+
+![image-20220308200552643](./imagens/image-20220308200552643.png)
+
+
+
+
+
+#### IAM Roles
+
+- Identidades que podem assumir
+- Assumidas temporária
+- Permissões associadas
+- Não podem ser utilizadas por usuários, somente por **AWS Services**
+
+![image-20220308200732209](./imagens/image-20220308200732209.png)
+
+
+
+
+
+#### IAM Groups
+
+- Agrupamentos de usuários com permissões em comum
+
+- Grupos só tem usuários e não pode ter outros Grupos
+
+  
+
+
+
+#### **Security Tools**
+
+- **IAM Credentials Report (account-level)**
+
+  - Report que lista todos os usuários de sua conta e o status de suas várias credenciais
+
+  - É armazenado por até quatro horas
+
+  - Não é usado para revisar as permissões concedidas a um usuário.
+
+    
+
+- **IAM Access Advisor (user-level)**
+
+  - Mostra os serviços que este usuário pode acessar e quando esses serviços foram acessados pela última vez
+  - Lista atividades de ate 4 horas
+  - Você pode identificar permissões desnecessárias para que possa revisar suas políticas de IAM de acordo
+
+
+
 ![image-20220308200241055](./imagens/image-20220308200241055.png)
 
 
@@ -316,23 +398,21 @@ https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html
 
 
 
-#### IAM Policies
-
-**Simple Policy**
-
-![image-20220308200552643](./imagens/image-20220308200552643.png)
-
-
-
-#### IAM Roles
-
-![image-20220308200732209](./imagens/image-20220308200732209.png)
-
 
 
 
 
 ### Amazon Cognito
+
+https://aws.amazon.com/cognito/
+
+- Federação de Identidade
+
+  - Web Facebook, Google
+
+  - Mobile
+
+    
 
 ![image-20220308201541755](./imagens/image-20220308201541755.png)
 
@@ -368,9 +448,154 @@ https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html
 
 
 
-### AWS Single Sign-On
+
+
+
 
 ### AWS Directory Service
+
+https://docs.aws.amazon.com/directoryservice/latest/admin-guide/what_is.html
+
+O AWS Directory Service oferece várias maneiras de usar o Microsoft Active Directory (AD) com outros serviços da AWS. Os diretórios armazenam informações sobre usuários, grupos e dispositivos, e os administradores os usam para gerenciar o acesso a informações e recursos.
+
+
+
+#### AWS Managed Microsoft AD
+
+https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ms_ad_use_cases.html
+
+Também conhecido como AWS Managed Microsoft AD, o AWS Directory Service for Microsoft Active Directory é desenvolvido por um Microsoft Windows Server Active Directory (AD) real, gerenciado pela AWS na Nuvem AWS. Ele permite que você migre uma ampla variedade de aplicativos com reconhecimento do Active Directory para a Nuvem AWS. 
+
+
+
+#### Active Directory Connector
+
+O AD Connector é um serviço de proxy que oferece uma maneira fácil de conectar aplicativos compatíveis da AWS, como Amazon WorkSpaces, Amazon QuickSight e [Amazon EC2](https://aws.amazon.com/ec2/)para instâncias do Windows Server, para o Microsoft Active Directory local existente. Com o AD Connector, você pode simplesmente [adicionar uma conta de serviço](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/prereq_connector.html#connect_delegate_privileges) ao seu Active Directory. O AD Connector também elimina a necessidade de sincronização de diretórios ou o custo e a complexidade de hospedar uma infraestrutura de federação.
+
+
+
+#### Simple Active Directory
+
+*O Simple AD é um diretório compatível* com o Microsoft Active Directory do AWS Directory Service que é desenvolvido pelo Samba 4. O Simple AD oferece suporte a recursos básicos do Active Directory, como contas de usuário, associações a grupos, ingresso em um domínio Linux ou instâncias EC2 baseadas em Windows, SSO baseado em Kerberos e políticas de grupo. A AWS fornece monitoramento, instantâneos diários e recuperação como parte do serviço.
+
+
+
+### AWS Single Sign-On
+
+- **Summary**
+
+  - SAML 2.0
+  - Login em múltiplas contas
+
+- **Integrado com**
+
+  - AD On Premises
+
+  - AWS Organizations
+
+  - Business app - Dropbox, Slack, Office 365
+
+  - Custom App
+
+    
+
+### AWS Security Hub
+
+https://aws.amazon.com/security-hub/?c=sc&sec=srv&aws-security-hub-blogs.sort-by=item.additionalFields.createdDate&aws-security-hub-blogs.sort-order=desc
+
+
+
+### AWS GuardDuty
+
+https://aws.amazon.com/pt/guardduty/
+
+- Detecção de ameaças
+
+- **DNS Logs, Flow Logs e Cloudtrail Logs**
+
+- Usa Machine Learning
+
+  
+
+### **Amazon Inspector**
+
+- É um serviço automatizado de avaliação de segurança que ajuda a melhorar a segurança e a conformidade dos aplicativos implantados na AWS.
+
+- Ele ajuda a testar a acessibilidade de rede de suas instâncias do Amazon EC2 e o estado de segurança de seus aplicativos em execução nas instâncias.
+
+- Realiza verificações nas **instâncias EC2** em relação a modelos de segurança
+
+- Analisa vulnerabilidades
+
+- **Agente AWS na EC2**
+
+  
+
+### Amazon Detective
+
+https://docs.aws.amazon.com/detective/latest/adminguide/what-is-detective.html
+
+- Torna mais fácil analisar, investigar e identificar rapidamente a **causa raiz** de possíveis problemas de segurança ou atividades suspeitas.
+
+- Serviço persistente orientado a **Machine Learning**
+
+- Analisa, investiga e mstra a causa raiz do problema
+
+- Coleta automático
+
+  - Cloudtaul
+
+  - Guardduty
+
+  - VPC Flow Logs
+
+    
+
+### Amazon Macie
+
+- Usa machine learning
+- Analisa dados no S3
+- PII data
+- Dados sensíveis
+
+### 
+
+### **Secrets Manager**
+
+- Rotação de secrets
+
+- Integra com RDS
+
+- criptografia com KMS
+
+  
+
+### **AWS Shield**
+
+- **Shield Standard**
+  - Usa machine learning
+  - Protege contra Ataque DDoS
+  - Layer 3 / Layer 4
+  - Está sob a responsabilidade da AWS no Shared Responsability Model
+- **Shield Advanced**
+  - **No shield advanced vc tem acesso ao time AWS DDoS**
+  - Fornece proteção extendida para:
+    - Amazon Elastic Compute Cloud
+    - Elastic Load Balancing (ELB)
+    - Amazon CloudFront
+    - Amazon Route 53
+    - AWS Global Accelerator
+
+### **AWS WEB APPLICATION FIREWALL (WAF)**
+
+https://docs.aws.amazon.com/waf/latest/developerguide/waf-chapter.html
+
+- Firewall aplicação web
+- Protege contra Ataque DDoS
+- Layer 7 (HTTP)
+- **Pode bloquear todas as solicitações, exceto aquelas que você especificar**
+- Deploy in ALB, API GW e CloudFront
+- WebACL
 
 
 
@@ -428,6 +653,10 @@ https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html
 https://aws.amazon.com/pt/compliance/shared-responsibility-model/
 
 ![Shared_Responsibility_Model_V2](./imagens/Shared_Responsibility_Model_V2.59d1eccec334b366627e9295b304202faf7b899b.jpg)
+
+- **Infraestrutura Global** não faz parte dos controles compartilhados entre Cliente e AWS.
+
+
 
 
 
