@@ -280,17 +280,25 @@ https://aws.amazon.com/blogs/security/top-10-security-items-to-improve-in-your-a
 
 
 
-# Estudos
+# Studies
 
 
 
-## Serviços
+## Services
 
 
 
 ### AWS Identity ans Access Management (IAM)
 
+https://docs.aws.amazon.com/iam/index.html
+
 ![image-20220308200241055](./imagens/image-20220308200241055.png)
+
+
+
+#### Best Practices
+
+https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html
 
 
 
@@ -324,13 +332,45 @@ https://aws.amazon.com/blogs/security/top-10-security-items-to-improve-in-your-a
 
 
 
+### Amazon Cognito
+
+![image-20220308201541755](./imagens/image-20220308201541755.png)
 
 
-AWS Single Sign-On
 
-Amazon Cognito
 
-AWS Directory Service
+
+#### User Identity
+
+![image-20220308201708426](./imagens/image-20220308201708426.png)
+
+
+
+
+
+#### Cognito User Pools
+
+![image-20220308201818567](C:\Users\brik\AppData\Roaming\Typora\typora-user-images\image-20220308201818567.png)
+
+
+
+#### Cognito Identity Pools
+
+![image-20220308201817319](C:\Users\brik\AppData\Roaming\Typora\typora-user-images\image-20220308201817319.png)
+
+
+
+
+
+#### Federetion with User Pools
+
+![image-20220308201854827](C:\Users\brik\AppData\Roaming\Typora\typora-user-images\image-20220308201854827.png)
+
+
+
+### AWS Single Sign-On
+
+### AWS Directory Service
 
 
 
