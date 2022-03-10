@@ -315,11 +315,35 @@ https://docs.aws.amazon.com/iam/index.html
 
 #### IAM Policies
 
+https://docs.aws.amazon.com/pt_br/IAM/latest/UserGuide/access_policies.html
+
 - json
+
+- **3 tipos de policies**
+
+  - **AWS Managed Policies**
+
+    - Políticas gerenciadas que são criadas e gerenciadas pela AWS.
+    - Você pode alterar
+
+  - **Customer Managed Policies**
+
+    - Políticas gerenciadas que você criar e gerenciar em sua conta da AWS. 
+    - As políticas gerenciadas pelo cliente oferecem um controle mais preciso de suas políticas do que as políticas gerenciadas pela AWS.
+
+  - **Inline Policies**
+
+    - Políticas adicionadas diretamente a um único usuário, grupo ou função. 
+
+    - As políticas em linha mantêm um relacionamento estrito de um para um entre uma política e uma identidade. 
+
+    - Elas são excluídas quando você exclui a identidade.
+
+      
 
 - Estrutura de uma Policy
 
-  [![image-20211207201651694](./imagens/image-20211207201651694.png)
+  ![image-20211207201651694](./imagens/image-20211207201651694.png)
 
   
 
