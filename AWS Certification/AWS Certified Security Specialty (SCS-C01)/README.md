@@ -324,12 +324,18 @@ https://docs.aws.amazon.com/pt_br/IAM/latest/UserGuide/access_policies.html
   - **AWS Managed Policies**
 
     - Políticas gerenciadas que são criadas e gerenciadas pela AWS.
+
     - Você pode alterar
+
+      
 
   - **Customer Managed Policies**
 
     - Políticas gerenciadas que você criar e gerenciar em sua conta da AWS. 
+
     - As políticas gerenciadas pelo cliente oferecem um controle mais preciso de suas políticas do que as políticas gerenciadas pela AWS.
+
+      
 
   - **Inline Policies**
 
