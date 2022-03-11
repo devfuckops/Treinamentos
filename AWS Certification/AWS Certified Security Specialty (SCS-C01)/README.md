@@ -98,7 +98,7 @@ https://aws.amazon.com/pt/certification/certified-security-specialty/
 
 https://d1.awsstatic.com/training-and-certification/docs-security-spec/AWS-Certified-Security-Specialty_Exam-Guide.pdf
 
-![image-20210913210128871](C:\Users\brik\AppData\Roaming\Typora\typora-user-images\image-20210913210128871.png)
+![image-20210913210128871](./imagens/image-20210913210128871.png)
 
 
 
@@ -292,6 +292,8 @@ https://aws.amazon.com/blogs/security/top-10-security-items-to-improve-in-your-a
 
 https://docs.aws.amazon.com/iam/index.html
 
+![image-20220308200241055](./imagens/image-20220308200241055.png)
+
 #### Summary
 
 - Controle de acesso para recursos
@@ -404,7 +406,7 @@ https://docs.aws.amazon.com/pt_br/IAM/latest/UserGuide/access_policies.html
 
 
 
-![image-20220308200241055](./imagens/image-20220308200241055.png)
+
 
 
 
@@ -616,7 +618,7 @@ https://docs.aws.amazon.com/detective/latest/adminguide/what-is-detective.html
     - Amazon Route 53
     - AWS Global Accelerator
 
-### **AWS WEB APPLICATION FIREWALL (WAF)**
+### **AWS Web Application Firewall (WAF)**
 
 https://docs.aws.amazon.com/waf/latest/developerguide/waf-chapter.html
 
@@ -626,6 +628,136 @@ https://docs.aws.amazon.com/waf/latest/developerguide/waf-chapter.html
 - **Pode bloquear todas as solicitações, exceto aquelas que você especificar**
 - Deploy in ALB, API GW e CloudFront
 - WebACL
+
+
+
+
+
+### S3 Bucket
+
+https://aws.amazon.com/s3/
+
+
+
+#### Cross Region Replication
+
+- Por default usa SSL
+- Replica em uma direção 
+- Uma vez replicado o objeto não é replicado novamante
+- habilitar versionamento
+
+
+
+#### Encryption S3
+
+- aws:SecureTransport
+
+- Exemplo
+
+  ```yaml
+  {"Version": "2012-10-17",
+      "Statement": [
+          {
+              "Sid": "PublicReadGetObject",
+              "Effect": "Allow",
+              "Principal": {
+                  "AWS": "*"
+              },
+              "Action": "s3:GetObject",
+              "Resource": "arn:aws:s3:::yourbucketnamehere/*"
+          },
+          {
+              "Sid": "PublicReadGetObject",
+              "Effect": "Deny",
+              "Principal": {
+                  "AWS": "*"
+              },
+              "Action": "s3:GetObject",
+              "Resource": "arn:aws:s3:::yourbucketnamehere/*",
+              "Condition":{
+                  "Bool":
+                  { "aws:SecureTransport": false } 
+              } 
+          } 
+      ]
+  }
+  ```
+
+  
+
+
+
+#### S3 ACL´s
+
+https://docs.aws.amazon.com/pt_br/AmazonS3/latest/userguide/acl-overview.html
+
+- **Aplicado a nível de arquivos (objetos)**
+- Não veem habilitado por padrão, tem que habilitar manualmente
+
+
+
+
+
+
+
+#### IAM S3 bucket policies
+
+https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-policy-language-overview.html
+
+- Suporta bucket policies maior que 20 kb
+
+- ***Deny explicito SEMPRE subistitui um Allow***
+
+- **Aplicado a nível de Bucket**
+
+- AWS Policy Generator
+
+- **Resource:** Buckets, objetos, pontos de acesso e trabalhos são os recursos do Amazon S3 para os quais você pode permitir ou negar permissões. Em uma política, você usa o nome de recurso da Amazon (ARN) para identificar o recurso. 
+
+- **Actions:** Para cada recurso, o Amazon S3 oferece suporte a um conjunto de operações. Você identifica as operações de recursos que permitirão (ou negarão) usando palavras-chave de ação.
+
+  Por exemplo, a permissão `s3:ListBucket` autoriza o usuário a empregar a operação [GET Bucket (List Objects)](https://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketGET.html) do Amazon S3. 
+
+- **Effect**: Qual será o efeito quando o usuário solicitar a ação específica - pode ser *permitir* ou *negar*.
+
+  Se você não conceder (permitir) explicitamente acesso a um recurso, o acesso estará implicitamente negado. Você também pode negar acesso explicitamente a um recurso. Você poderia fazer isso para garantir que um usuário não possa acessar o recurso, mesmo se uma política diferente conceder acesso. 
+
+- **Principal**:  A conta ou usuário que tem permissão de acesso a ações e recursos na instrução. Em uma política de bucket, o principal é o usuário, a conta, o serviço ou outra entidade que receba essa permissão. 
+
+- **Condition**: Condições para quando uma política está em vigor. Você pode usar chaves de toda a AWS e chaves específicas do Amazon S3 para especificar condições em uma política de acesso do Amazon S3. 
+
+- Exemplo:
+
+  ```yaml
+  {
+      "Version": "2012-10-17",
+      "Id": "ExamplePolicy01",
+      "Statement": [
+          {
+              "Sid": "ExampleStatement01",
+              "Effect": "Allow",
+              "Principal": {
+                  "AWS": "arn:aws:iam::123456789012:user/Dave"
+              },
+              "Action": [
+                  "s3:GetObject",
+                  "s3:GetBucketLocation",
+                  "s3:ListBucket"
+              ],
+              "Resource": [
+                  "arn:aws:s3:::awsexamplebucket1/*",
+                  "arn:aws:s3:::awsexamplebucket1"
+              ]
+          }
+      ]
+  }
+  ```
+
+  #### 
+
+#### Conflitos de Policies
+
+![image-20220310205109404](./imagens/image-20220310205109404.png)
 
 
 
