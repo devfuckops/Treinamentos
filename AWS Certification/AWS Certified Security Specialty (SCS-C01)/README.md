@@ -618,6 +618,8 @@ https://docs.aws.amazon.com/detective/latest/adminguide/what-is-detective.html
     - Amazon Route 53
     - AWS Global Accelerator
 
+
+
 ### **AWS Web Application Firewall (WAF)**
 
 https://docs.aws.amazon.com/waf/latest/developerguide/waf-chapter.html
@@ -631,6 +633,23 @@ https://docs.aws.amazon.com/waf/latest/developerguide/waf-chapter.html
 
 
 
+### CloudFront
+
+#### Segurança no S3
+
+- Restrict access bucket vem DENY por padrão
+- Origin
+  - Restric bucket Access - Yes
+  - Origin Access Identity - Create a new Identity
+- SSL Certificates
+  - Default Cloudfront
+    - Veem c/ nome aleatório
+    - domínio cloudfront.net
+  - Custom SSL
+    -  Tem que importar certificado
+    - seu domínio
+    - ACM somente em us-east-1
+
 
 
 ### S3 Bucket
@@ -639,12 +658,45 @@ https://aws.amazon.com/s3/
 
 
 
+#### Pre-signed URL´s
+
+
+
+
+
 #### Cross Region Replication
 
+https://aws.amazon.com/about-aws/whats-new/2019/09/amazon-s3-introduces-same-region-replication/
+
+https://aws.amazon.com/blogs/aws/new-amazon-s3-replication-adds-support-for-multiple-destination-buckets/
+
+https://docs.aws.amazon.com/AmazonS3/latest/userguide/replication-what-is-isnot-replicated.html
+
+https://docs.aws.amazon.com/AmazonS3/latest/userguide/replication.html
+
+
+
 - Por default usa SSL
+
 - Replica em uma direção 
+
 - Uma vez replicado o objeto não é replicado novamante
+
 - habilitar versionamento
+
+- Usa Amazon S3 managed keys (SSE-S3) ou AWS KMS managed keys (SSE-KMS), mas não é habilitado por default
+
+- aws:SecureTransport é default no CRR
+
+- Delete markers é replicado
+
+- versões deletadas dos arquivos não
+
+- Versionamento deve estar habilitado
+
+- Ambas as contas devem ter o IAM Role configurado
+
+  
 
 
 
