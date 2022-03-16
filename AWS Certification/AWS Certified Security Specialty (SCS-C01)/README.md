@@ -462,15 +462,74 @@ https://aws.amazon.com/cognito/
 
 #### Cognito User Pools
 
-![image-20220308201818567](C:\Users\brik\AppData\Roaming\Typora\typora-user-images\image-20220308201818567.png)
+https://docs.aws.amazon.com/pt_br/cognito/latest/developerguide/cognito-user-identity-pools.html
+
+https://aws.amazon.com/premiumsupport/knowledge-center/cognito-user-pools-identity-pools/
+
+https://tutorialsdojo.com/amazon-cognito-user-pools-and-identity-pools-explained/
+
+**São utilizados para autenticação.**
+
+User Pools é um diretório de usuários no Amazon Cognito. Com um grupo de usuários, seus usuários podem fazer login em aplicações Web ou móveis por meio do Amazon Cognito. 
+
+Os usuários também podem fazer login por meio de provedores de identidade social, como o Google, o Facebook, a Amazon ou a Apple, e por meio de provedores de identidade SAML. 
+
+Quer os usuários façam login diretamente ou por meio de terceiros, todos os membros do grupo de usuários têm um perfil de diretório que você pode acessar por meio de um Kit de desenvolvimento de software (SDK).
+
+Os grupos de usuários fornecem:
+
+- Serviços de cadastro e login.
+- Uma interface do usuário da web integrada e personalizável para login de usuários.
+- Login social com Facebook, Google, Login with Amazon e Iniciar sessão com a Apple, além de login com provedores de identidade SAML a partir do seu grupo de usuários.
+- Gerenciamento de diretório de usuários e perfis de usuário.
+- Recursos de segurança como a autenticação multifator (MFA) verifica a existência de credenciais comprometidas, proteção de aquisição de conta e verificação de e-mail e telefone.
+- Fluxos de trabalho personalizados e migração de usuários por meio de triggers do AWS Lambda.
+
+Após autenticar com êxito um usuário, o Amazon Cognito emite JSON Web Tokens (JWT) que você pode usar para proteger e autorizar o acesso às suas próprias APIs ou trocar por credenciais da AWS.
+
+![image-20220316200450242](./imagens/image-20220316200450242.png)
+
+1. Os usuários enviam solicitações de autenticação para os grupos de usuários do Cognito. 
+
+2. O grupo de usuários do Cognito verifica a identidade do usuário ou envia a solicitação para provedores de identidade, como Facebook, Google, Amazon ou autenticação SAML (com Microsoft AD).
+
+3. O token do grupo de usuários do Cognito é enviado de volta ao usuário. 
+
+4. A pessoa pode usar esse token para acessar suas APIs de back-end hospedadas em seus clusters do EC2 ou no API Gateway e Lambda.
+
+   
+
+**Casos de uso**
+
+- [Crie páginas da Web de inscrição e login para seu aplicativo](https://aws.amazon.com/premiumsupport/knowledge-center/cognito-hosted-web-ui/) .
+- [Acesse e gerencie os dados do usuário](https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-settings-attributes.html) .
+- Rastreie o dispositivo, a localização e o endereço IP do usuário e [adapte-se às solicitações de entrada de diferentes níveis de risco](https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pool-settings-adaptive-authentication.html) .
+- Use um [fluxo de autenticação personalizado](https://docs.aws.amazon.com/cognito/latest/developerguide/amazon-cognito-user-pools-authentication-flow.html#amazon-cognito-user-pools-custom-authentication-flow) para seu aplicativo.
 
 
 
-#### Cognito Identity Pools
+#### **Cognito Identity Pools**
 
-![image-20220308201817319](C:\Users\brik\AppData\Roaming\Typora\typora-user-images\image-20220308201817319.png)
+https://docs.aws.amazon.com/pt_br/cognito/latest/developerguide/identity-pools.html
+
+**São utilizados para autorização.**
+
+Identity Pools do Amazon Cognito fornecem credenciais temporárias da AWS para usuários que são convidados (não autenticados) e para usuários que foram autenticados e receberam um token.
+
+ Um Identity Pools é um repositório de dados de identidade de usuários específicos para sua conta.
+
+**Casos de uso**
+
+- Dê a seus usuários [acesso a recursos da AWS](https://docs.aws.amazon.com/cognito/latest/developerguide/iam-roles.html) , como um bucket do Amazon Simple Storage Service (Amazon S3) ou uma tabela do Amazon DynamoDB.
+- Gere [credenciais temporárias da AWS para usuários não autenticados](https://docs.aws.amazon.com/cognito/latest/developerguide/switching-identities.html) .
+
+![image-20220316200503325](./imagens/image-20220316200503325.png)
 
 
+
+1. O aplicativo Web ou aplicativo móvel envia seu token de autenticação para Cognito Identity Pools. O token pode vir de um provedor de identidade válido, como Cognito User Pools, Amazon ou Facebook. 
+2. O Cognito Identity Pool troca o token de autenticação do usuário por credenciais temporárias da AWS para acessar recursos como S3 ou DynamoDB. As credenciais da AWS são enviadas de volta ao usuário. 
+3. As credenciais temporárias da AWS serão usadas para acessar os recursos da AWS. 
 
 
 
@@ -479,6 +538,8 @@ https://aws.amazon.com/cognito/
 ![image-20220308201854827](C:\Users\brik\AppData\Roaming\Typora\typora-user-images\image-20220308201854827.png)
 
 
+
+#### **Web Identity Federation**
 
 
 
@@ -534,6 +595,32 @@ O AD Connector é um serviço de proxy que oferece uma maneira fácil de conecta
 ### AWS Security Hub
 
 https://aws.amazon.com/security-hub/?c=sc&sec=srv&aws-security-hub-blogs.sort-by=item.additionalFields.createdDate&aws-security-hub-blogs.sort-order=desc
+
+
+
+### **AWS Security Token Service (STS)**
+
+https://docs.aws.amazon.com/pt_br/IAM/latest/UserGuide/id_credentials_temp_enable-regions.html
+
+
+
+Acesso limitado e temporario a recursos da AWS.
+
+- Federetion (typically Active Directory)
+  - use SALM
+- Federetion with Mobile Apps
+- Cross Account Access
+- Key Terms
+  - Federation
+  - Identity Broker
+  - Identity Store - Serviços como AD, Facebook, Google e etc.
+  - Indentities
+
+![image-20220316193942213](./imagens/image-20220316193942213.png)
+
+
+
+#### 
 
 
 
