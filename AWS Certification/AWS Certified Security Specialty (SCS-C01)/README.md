@@ -430,7 +430,43 @@ https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html
 
 
 
+#### **IAM Credential Report**
 
+https://docs.aws.amazon.com/pt_br/IAM/latest/UserGuide/id_credentials_getting-report.html
+
+- Report que lista todos os **usuários** de sua conta e o status de suas várias credenciais
+- É armazenado por até quatro horas
+- Não é usado para revisar as permissões concedidas a um usuário.
+- **Usuários, Passwords, Access Keys, MFA**
+- Exemplo
+
+![image-20220316203248072](./imagens/image-20220316203248072.png)
+
+
+
+##### **Obter relatórios de credenciais (AWS CLI)**
+
+**Para fazer download um relatório de credenciais (AWS CLI)**
+
+1. Gere um relatório de credenciais. O AWS armazena um único relatório. Se um relatório existir, a geração de um relatório de credenciais substituirá o relatório anterior. [`aws iam generate-credential-report`](https://docs.aws.amazon.com/cli/latest/reference/iam/generate-credential-report.html)
+2. Exibir o último relatório gerado: [`aws iam get-credential-report`](https://docs.aws.amazon.com/cli/latest/reference/iam/get-credential-report.html)
+
+
+
+##### **Obter relatórios de credenciais (API da AWS)**
+
+**Para fazer download de um relatório de credenciais (API AWS)**
+
+1. Gere um relatório de credenciais. O AWS armazena um único relatório. Se um relatório existir, a geração de um relatório de credenciais substituirá o relatório anterior. [`GenerateCredentialReport`](https://docs.aws.amazon.com/IAM/latest/APIReference/API_GenerateCredentialReport.html)
+2. Exibir o último relatório gerado: [`GetCredentialReport`](https://docs.aws.amazon.com/IAM/latest/APIReference/API_GetCredentialReport.html)
+
+
+
+##### **Permissões necessárias**
+
+p/ criar - generatecredentialreport
+
+p/ download - getcredentialreport
 
 
 
@@ -489,11 +525,11 @@ Após autenticar com êxito um usuário, o Amazon Cognito emite JSON Web Tokens 
 
 ![image-20220316200450242](./imagens/image-20220316200450242.png)
 
-1. Os usuários enviam solicitações de autenticação para os grupos de usuários do Cognito. 
+1. Os usuários enviam solicitações de autenticação para os User Pool do Cognito. 
 
-2. O grupo de usuários do Cognito verifica a identidade do usuário ou envia a solicitação para provedores de identidade, como Facebook, Google, Amazon ou autenticação SAML (com Microsoft AD).
+2. O  User Pool do Cognito verifica a identidade do usuário ou envia a solicitação para Identity Providers, como Facebook, Google, Amazon ou autenticação SAML (com Microsoft AD).
 
-3. O token do grupo de usuários do Cognito é enviado de volta ao usuário. 
+3. O token do  User Pool do Cognito é enviado de volta ao usuário. 
 
 4. A pessoa pode usar esse token para acessar suas APIs de back-end hospedadas em seus clusters do EC2 ou no API Gateway e Lambda.
 
@@ -595,6 +631,39 @@ O AD Connector é um serviço de proxy que oferece uma maneira fácil de conecta
 ### AWS Security Hub
 
 https://aws.amazon.com/security-hub/?c=sc&sec=srv&aws-security-hub-blogs.sort-by=item.additionalFields.createdDate&aws-security-hub-blogs.sort-order=desc
+
+
+
+### **AWS Organizations**
+
+https://aws.amazon.com/pt/organizations/
+
+![image-20211115182718982](./imagens/image-20211115182718982.png)
+
+- **Summary**
+  - Global Service
+  - Para automatizar a criação de AWS Accounts
+  - Gerenciamento centralizado de todas as contas
+  - Agrupamento - OU
+  - Controle de serviços/API por conta
+  - Habilita CloudTrail em todas as contas para enviar os Log´s para um Bucket S3 central
+  - Envia todos os CloudWatch Logs para uma conta central
+  - **Para remover uma conta, a conta AWS deve ser capaz de operar como uma conta autônoma. Só então ele pode ser removido das organizações AWS**
+- **Consolidated Billing**
+  - Descontos
+    - Volume
+    - Reserved Instances
+      - **Só recebe os descontos se as EC2 estiverem na mesma AZ**
+    - Saving Plans
+  - Uma invoice
+- **Service Control Polices (SCP)**
+  - Política da organização que você pode usar para gerenciar permissões em sua organização.
+  - Um SCP abrange todos os usuários, grupos e funções do IAM, incluindo o usuário raiz da conta da AWS.
+  - Whitelist e Black List
+  - Apply OU ou Account level
+  - Não é aplicado na conta Master
+  - Aplica em todos os usuários e roles, incluindo o root
+  - Deve ter a permissão **Explicito**
 
 
 
@@ -747,7 +816,21 @@ https://aws.amazon.com/s3/
 
 #### Pre-signed URL´s
 
+#### **Glacier**
 
+Baixo custo
+
+##### Glacier Vault Lock Policies
+
+https://docs.aws.amazon.com/pt_br/amazonglacier/latest/dev/vault-lock-policy.html
+
+Similar a IAM policy
+
+Configure WORM (Write once read many)
+
+Tem até 24 horas para validar a police
+
+**Lock Policies são imutáveis** 
 
 
 
