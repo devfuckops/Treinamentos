@@ -2,6 +2,8 @@
 
 # **AWS Certified Security – Specialty (SCS-C01)**
 
+https://aws.amazon.com/pt/certification/certified-security-specialty/
+
 
 
 # **Treinamentos**
@@ -33,6 +35,12 @@ https://github.com/brunokktro/auladobruno#security-engineering-on-aws
 https://explore.skillbuilder.aws/learn/course/internal/view/elearning/11612/exam-readiness-aws-certified-security-specialty-portuguese
 
 https://explore.skillbuilder.aws/learn/course/internal/view/elearning/97/exam-readiness-aws-certified-security-specialty
+
+https://aws.amazon.com/pt/blogs/aws-brasil/dicas-para-a-certificacao-de-especialista-em-seguranca-na-aws/
+
+https://aws.amazon.com/training/learn-about/security/
+
+https://www.youtube.com/watch?v=QMBkq6MrT2w&list=PLWY0DzS7zQeMPwpQvke2j94sxgFI2o3NM
 
 
 
@@ -85,6 +93,8 @@ https://www.udemy.com/user/cybercorp/
 https://www.udemy.com/course/aws-certified-security-specialty-exam/
 
 https://www.udemy.com/course/aws-certified-security-specialty/
+
+https://www.youtube.com/watch?v=VjVpqC0o4oQ&list=PLeLcvrwLe184Q24ljho5Md3Z38VY0keNt
 
 
 
@@ -628,6 +638,158 @@ O AD Connector é um serviço de proxy que oferece uma maneira fácil de conecta
 
     
 
+### AWS CloudHSM (Hardware Security Module)
+
+https://aws.amazon.com/pt/cloudhsm/
+
+O AWS CloudHSM é um Hardware Security Module (HSM – Módulo de segurança de hardware) baseado na nuvem que permite gerar e usar facilmente suas próprias chaves de criptografia na Nuvem AWS. Com o CloudHSM, você pode gerenciar suas próprias chaves de criptografia usando HSMs validados pelo FIPS 140-2 nível 3. O CloudHSM oferece a flexibilidade de integrar-se aos seus aplicativos usando APIs padrão do setor, como bibliotecas Microsoft CryptoNG (CNG), PKCS#11 e Java Cryptography Extensions (JCE).
+
+- AWS não tem acesso as suas keys
+
+
+
+![image-20220317212341526](./imagens/image-20220317212341526.png)
+
+
+
+### **AWS Config**
+
+https://aws.amazon.com/pt/config/
+
+https://aws.amazon.com/pt/config/faq/
+
+É um serviço que permite acessar, auditar e avaliar as configurações dos recursos da AWS.
+
+#### **Summary**
+
+- Controla as alterações de configuração nos recursos
+- É um serviço que permite que você avalie, audite e avalie as configurações de seus recursos da AWS.
+- Grava todas as alterações no recurso
+- Pode salvar os dados no S3 e analisar pelo Athena
+
+#### **Conformance Packs**
+
+https://docs.aws.amazon.com/pt_br/config/latest/developerguide/conformance-packs.html
+
+É uma coleção de regras do AWS Config e ações de correção que podem ser facilmente implantadas como uma única entidade em uma conta e em uma região, ou em uma organização no AWS Organizations.
+
+Os pacotes de conformidade são criados usando um modelo YAML criado por você que contenha a lista de regras gerenciadas ou personalizadas do AWS Config e as ações de correção. É possível implantar o modelo usando o console do AWS Config ou a AWS CLI. Para começar rapidamente e avaliar o ambiente da AWS, use um dos modelos do pacote de conformidade de exemplo.
+
+
+
+#### **Aggegator**
+
+https://docs.aws.amazon.com/pt_br/config/latest/developerguide/aggregate-data.html
+
+
+
+#### **AWS Config Rules**
+
+Only Admins
+
+- ##### **AWS Managed Rules**
+
+  - https://docs.aws.amazon.com/pt_br/config/latest/developerguide/evaluate-config_use-managed-rules.html
+
+- ##### **Customer managed Rules**
+
+  - https://docs.aws.amazon.com/pt_br/config/latest/developerguide/evaluate-config_develop-rules.html
+
+
+
+### AWS CloudWatch
+
+https://aws.amazon.com/pt/cloudwatch/
+
+https://aws.amazon.com/cloudwatch/faqs/
+
+- **Summary**
+  - Coleta métricas e Logs
+  - Coleta On-premisse
+  - Real Time
+  - Custom metrics
+  - Notificações
+  - Alarmes
+  - Métricas
+
+
+
+#### **CloudWatch Events**
+
+https://docs.aws.amazon.com/pt_br/AmazonCloudWatch/latest/events/WhatIsCloudWatchEvents.html
+
+- Cron Jobs
+- Schedule
+- Event Pattern
+- Trigger
+
+
+
+#### CloudWatch Logs
+
+https://docs.aws.amazon.com/pt_br/AmazonCloudWatch/latest/logs/WhatIsCloudWatchLogs.html
+
+- Real-Time Monitoring
+
+- Inclui CloudTrail
+
+- **Coleta On-premisse através de agent**
+
+- Ajust Retention
+
+- Logs From
+
+  - ECS, Lambda, Cloudtrail, Cloudwatch agent, Beanstalk, Route53
+
+    
+
+#### CloudWatch Alarms
+
+https://docs.aws.amazon.com/pt_br/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html
+
+- Actions
+
+  - Auto Scaling
+  - EC2
+  - SNS
+
+- Utilizado como trigger
+
+- Alarm State
+
+  - OK
+
+  - INSUFFICIENT_DATA
+
+  - ALARM
+
+    
+
+#### CloudWatch Metrics
+
+https://docs.aws.amazon.com/pt_br/AmazonCloudWatch/latest/monitoring/working_with_metrics.html
+
+- Timestamps
+- Dashboards
+- Não tem métricas de RAM para EC2
+- Default 5 minutes
+- Detailed Monitoring - 1 min
+- Custom Metrics
+
+
+
+### **EventBridge**
+
+- Summary
+  - Custom Event buses
+  - Schema registry
+
+## 
+
+
+
+
+
 ### AWS Security Hub
 
 https://aws.amazon.com/security-hub/?c=sc&sec=srv&aws-security-hub-blogs.sort-by=item.additionalFields.createdDate&aws-security-hub-blogs.sort-order=desc
@@ -775,6 +937,70 @@ https://docs.aws.amazon.com/detective/latest/adminguide/what-is-detective.html
     - AWS Global Accelerator
 
 
+
+### AWS CloudTrail
+
+https://aws.amazon.com/pt/cloudtrail/
+
+- **Summary**
+
+  - Auditoria de API
+
+  - Salva log´s em **Bucket S3** ou **Cloudwatch Logs**
+
+  - No bucket é configurado a retenção
+
+  - É habilitado por default ( por 7 dias )
+
+  - O que é "logado"
+
+    - Metadata
+    - Identidade
+    - Time
+    - Source IP
+    - Parametros
+    - Elementos do serviço
+
+  - **Notificações por SNS**
+
+  - Pode agregar regiões e contas 
+
+  - Logs a cada 5 minutos (pode chegar a 15 minutos)
+
+  - Previnir que os logs sejam deletados
+
+    - Restrição de acesso c/ IAM e Bucket Policies
+    - Configuração S3 MFA Delete
+
+  - Use **SSE-S3 ou SSE-KMS** p/ criptografar logs
+
+  - Eventos salvos por 90 dias - **Event History**
+
+    - https://docs.aws.amazon.com/awscloudtrail/latest/userguide/view-cloudtrail-events.html
+
+  - Após esse período pode enviar para S3 e depois Athena
+
+  - Logs API call details
+
+  - Serviços não suportados pelo CloudTrail
+
+    - https://docs.aws.amazon.com/pt_br/awscloudtrail/latest/userguide/cloudtrail-unsupported-aws-services.html
+
+    
+
+- **CloudTrail Events**
+
+  - **CloudTrails Insights Events**
+
+  - **Data Events**
+
+    - AWS Lambda
+
+  - **Management Events**
+
+    - Separa Read Events from Write Events
+
+      
 
 ### **AWS Web Application Firewall (WAF)**
 
@@ -980,6 +1206,30 @@ https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-policy-language-ove
 #### Conflitos de Policies
 
 ![image-20220310205109404](./imagens/image-20220310205109404.png)
+
+
+
+## **Incident Management**
+
+### How to Setup an Alert if the Root user login
+
+https://aws.amazon.com/blogs/mt/monitor-and-notify-on-aws-account-root-user-activity/
+
+https://aws.amazon.com/blogs/security/how-to-receive-notifications-when-your-aws-accounts-root-access-keys-are-used/
+
+- Utilizar o AWS Cloudtrail e habilita os eventos para o CloudWatch Logs
+
+- Cria um metric filter no CloudWatch 
+
+- Cria um Alarm a partir do metric filter 
+
+  
+
+
+
+
+
+
 
 
 
