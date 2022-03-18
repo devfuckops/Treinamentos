@@ -686,11 +686,19 @@ https://aws.amazon.com/pt/premiumsupport/technology/trusted-advisor/
 
 https://aws.amazon.com/pt/inspector/
 
+https://docs.aws.amazon.com/inspector/v1/userguide/inspector_cis.html
+
 - É um serviço automatizado de avaliação de segurança que ajuda a melhorar a segurança e a conformidade dos aplicativos implantados na AWS.
 - Ele ajuda a testar a acessibilidade de rede de suas instâncias do Amazon EC2 e o estado de segurança de seus aplicativos em execução nas instâncias.
 - Realiza verificações nas **instâncias EC2** em relação a modelos de segurança
+- Severity Level
+  - High
+  - Medium
+  - Low
+  - Informational
 - Analisa vulnerabilidades
 - **Agente AWS na EC2**
+  - https://docs.aws.amazon.com/inspector/v1/userguide/inspector_installing-uninstalling-agents.html
 - 2 tipos de assessments
   - Network Assessments
     - Agent opcional
