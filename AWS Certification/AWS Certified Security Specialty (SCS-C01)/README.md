@@ -638,6 +638,69 @@ O AD Connector é um serviço de proxy que oferece uma maneira fácil de conecta
 
     
 
+### **AWS Trusted Advisor**
+
+https://aws.amazon.com/pt/premiumsupport/technology/trusted-advisor/
+
+- Checar os softlimits
+
+- Não é usado para obter **insights operacionais**
+
+- **Recomendações de Segurança e Otimização de custos**
+
+- Para receber notificações deve-se configura-ls na console
+
+- 5 categorias
+
+  - Cost Optimization
+  - Performance
+  - Secutiry
+  - Fault Tolerance
+  - Service Limits
+
+- Algumas verificações são gratuitas
+
+- Checks de acordo com Plano de Suportes
+
+  - **Basic e Developer Supports Plan**
+
+    - S3 Bucket
+    - Security Group
+    - IAM use
+    - MFA
+    - EBS Public Snapshot
+    - RDS Public Snapshot
+    - Service Limits
+
+  - **Business e Enterprise Supports Plan**
+
+    - Full checks
+
+    - Pode habilitar o CloudWatch Alarm
+
+    - AWS Support API
+
+      
+
+### **AWS Inspector**
+
+https://aws.amazon.com/pt/inspector/
+
+- É um serviço automatizado de avaliação de segurança que ajuda a melhorar a segurança e a conformidade dos aplicativos implantados na AWS.
+- Ele ajuda a testar a acessibilidade de rede de suas instâncias do Amazon EC2 e o estado de segurança de seus aplicativos em execução nas instâncias.
+- Realiza verificações nas **instâncias EC2** em relação a modelos de segurança
+- Analisa vulnerabilidades
+- **Agente AWS na EC2**
+- 2 tipos de assessments
+  - Network Assessments
+    - Agent opcional
+  - Host Assessments 
+    - Precisa de agents
+
+
+
+
+
 ### AWS CloudHSM (Hardware Security Module)
 
 https://aws.amazon.com/pt/cloudhsm/
