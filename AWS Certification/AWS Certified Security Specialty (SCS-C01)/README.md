@@ -1129,6 +1129,7 @@ O AWS Key Management Service (KMS) oferece a você controle centralizado das cha
       https://docs.aws.amazon.com/pt_br/kms/latest/developerguide/importing-keys.html#importing-keys-considerations
 
       - **Encrypted key material and import token**
+      - Pode setar a expiração da key
 
     - Custom key store (CloudHSM)
 
