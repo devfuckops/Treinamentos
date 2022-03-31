@@ -80,11 +80,28 @@ https://www.youtube.com/watch?v=Zvz-qYYhvMk&list=PL2yQDdvlhXf9Ub-ekxAq0wMJpslV56
 
 - https://learn.acloud.guru/course/aws-certified-security-specialty/overview
 
-  
+
+
+
+## Dojo
+
+https://portal.tutorialsdojo.com/courses/exam-readiness-aws-certified-security-specialty-scs-c01/
+
+
 
 ## vários
 
 https://www.udemy.com/course/aws-certified-security-specialty/
+
+https://www.youtube.com/watch?v=QMBkq6MrT2w&list=PLWY0DzS7zQeMPwpQvke2j94sxgFI2o3NM
+
+https://www.youtube.com/watch?v=kIZIkUnF3ow
+
+https://www.youtube.com/watch?v=VjVpqC0o4oQ&list=PLeLcvrwLe184Q24ljho5Md3Z38VY0keNt
+
+https://maturitymodel.security.aws.dev/en/
+
+http://dfr20cpm485ln.cloudfront.net/SecEng_HLS_index.html
 
 https://learn.cantrill.io/
 
@@ -652,11 +669,11 @@ https://aws.amazon.com/pt/premiumsupport/technology/trusted-advisor/
 
 - 5 categorias
 
-  - Cost Optimization
-  - Performance
-  - Secutiry
-  - Fault Tolerance
-  - Service Limits
+  - *Cost Optimization*
+  - *Performance*
+  - *Secutiry*
+  - *Fault Tolerance*
+  - *Service Limits*
 
 - Algumas verificações são gratuitas
 
@@ -692,10 +709,10 @@ https://docs.aws.amazon.com/inspector/v1/userguide/inspector_cis.html
 - Ele ajuda a testar a acessibilidade de rede de suas instâncias do Amazon EC2 e o estado de segurança de seus aplicativos em execução nas instâncias.
 - Realiza verificações nas **instâncias EC2** em relação a modelos de segurança
 - Severity Level
-  - High
-  - Medium
-  - Low
-  - Informational
+  - *High*
+  - *Medium*
+  - *Low*
+  - *Informational*
 - Analisa vulnerabilidades
 - **Agente AWS na EC2**
   - https://docs.aws.amazon.com/inspector/v1/userguide/inspector_installing-uninstalling-agents.html
@@ -709,17 +726,25 @@ https://docs.aws.amazon.com/inspector/v1/userguide/inspector_cis.html
 
 
 
-### AWS CloudHSM (Hardware Security Module)
+### AWS CloudHSM 
+
+### (Hardware Security Module – Módulo de segurança de hardware) 
 
 https://aws.amazon.com/pt/cloudhsm/
 
-O AWS CloudHSM é um Hardware Security Module (HSM – Módulo de segurança de hardware) baseado na nuvem que permite gerar e usar facilmente suas próprias chaves de criptografia na Nuvem AWS. Com o CloudHSM, você pode gerenciar suas próprias chaves de criptografia usando HSMs validados pelo FIPS 140-2 nível 3. O CloudHSM oferece a flexibilidade de integrar-se aos seus aplicativos usando APIs padrão do setor, como bibliotecas Microsoft CryptoNG (CNG), PKCS#11 e Java Cryptography Extensions (JCE).
+O AWS CloudHSM é baseado na nuvem que permite gerar e usar facilmente suas próprias chaves de criptografia na Nuvem AWS. 
 
-- AWS não tem acesso as suas keys
+Com o CloudHSM, você pode gerenciar suas próprias chaves de criptografia usando HSMs validados pelo FIPS 140-2 nível 3. 
+
+O CloudHSM oferece a flexibilidade de integrar-se aos seus aplicativos usando APIs padrão do setor, como bibliotecas Microsoft CryptoNG (CNG), PKCS#11 e Java Cryptography Extensions (JCE).
+
+- **AWS não tem acesso as suas keys**
 
 
 
 ![image-20220317212341526](./imagens/image-20220317212341526.png)
+
+
 
 
 
@@ -737,6 +762,9 @@ https://aws.amazon.com/pt/config/faq/
 - É um serviço que permite que você avalie, audite e avalie as configurações de seus recursos da AWS.
 - Grava todas as alterações no recurso
 - Pode salvar os dados no S3 e analisar pelo Athena
+- Publish for SNS
+
+
 
 #### **Conformance Packs**
 
@@ -756,10 +784,11 @@ https://docs.aws.amazon.com/pt_br/config/latest/developerguide/aggregate-data.ht
 
 #### **AWS Config Rules**
 
-Only Admins
+**Only Admins**
 
 - ##### **AWS Managed Rules**
 
+  - basic
   - https://docs.aws.amazon.com/pt_br/config/latest/developerguide/evaluate-config_use-managed-rules.html
 
 - ##### **Customer managed Rules**
@@ -773,6 +802,8 @@ Only Admins
 https://aws.amazon.com/pt/cloudwatch/
 
 https://aws.amazon.com/cloudwatch/faqs/
+
+O Amazon CloudWatch é um serviço de monitoramento e observabilidade criado para engenheiros de DevOps, desenvolvedores, engenheiros de confiabilidade de sites (SREs), gerentes de TI e proprietários de produtos.
 
 - **Summary**
   - Coleta métricas e Logs
@@ -922,8 +953,6 @@ Acesso limitado e temporario a recursos da AWS.
 
 
 
-#### 
-
 
 
 ### AWS GuardDuty
@@ -1013,6 +1042,8 @@ https://docs.aws.amazon.com/detective/latest/adminguide/what-is-detective.html
 
 https://aws.amazon.com/pt/cloudtrail/
 
+O AWS CloudTrail monitora e registra a atividade da conta por toda a infraestrutura da AWS, oferecendo controle sobre o armazenamento, análise e ações de remediação. Rastreie atividades dos usuários e uso de APIs.
+
 - **Summary**
 
   - Auditoria de API
@@ -1025,12 +1056,12 @@ https://aws.amazon.com/pt/cloudtrail/
 
   - O que é "logado"
 
-    - Metadata
-    - Identidade
-    - Time
-    - Source IP
-    - Parametros
-    - Elementos do serviço
+    - *Metadata* 
+    - *Identidade*
+    - *Time*
+    - *Source IP*
+    - *Parametros*
+    - *Elementos do serviço*
 
   - **Notificações por SNS**
 
@@ -1038,7 +1069,7 @@ https://aws.amazon.com/pt/cloudtrail/
 
   - Logs a cada 5 minutos (pode chegar a 15 minutos)
 
-  - Previnir que os logs sejam deletados
+  - Prevenir que os logs sejam deletados
 
     - Restrição de acesso c/ IAM e Bucket Policies
     - Configuração S3 MFA Delete
@@ -1059,19 +1090,152 @@ https://aws.amazon.com/pt/cloudtrail/
 
     
 
-- **CloudTrail Events**
+- **CloudTrail Events Logs**
 
   - **CloudTrails Insights Events**
-
+  - Envia para S3
+  - Retenção é no S3
+  - Entrega a cada 5 min c/ 15 min de delay
   - **Data Events**
 
     - AWS Lambda
-
   - **Management Events**
-
+  
     - Separa Read Events from Write Events
+  
 
-      
+
+
+### **AWS KMS (Key Management Service)**
+
+https://aws.amazon.com/kms/features/
+
+https://aws.amazon.com/pt/kms/faqs/
+
+O AWS Key Management Service (KMS) oferece a você controle centralizado das chaves criptográficas usadas para proteger seus dados.
+
+- **Summary**
+
+  - Usa Envelope Encryption
+
+  - Key material origin
+
+    https://docs.aws.amazon.com/pt_br/kms/latest/developerguide/concepts.html#key-origin
+
+    - KMS
+
+    - External
+
+      https://docs.aws.amazon.com/pt_br/kms/latest/developerguide/importing-keys.html#importing-keys-considerations
+
+      - **Encrypted key material and import token**
+
+    - Custom key store (CloudHSM)
+
+  - Com **Admin** é possível acessar arquivos criptografados 
+
+  - É Regional
+
+  - Pode trazer sua própria key
+
+  - Serviços integrados 
+
+    - EBS, RDS, EFS, S3, Redshift
+    - https://aws.amazon.com/pt/kms/features/#AWS_Service_Integration
+
+  - Schedule key deletion
+
+    - Mínimo de 7 dias e máximo de 30 para deletar a key
+
+  - Deleting a key makes all data encrypted under that key unrecoverable
+
+    - https://docs.aws.amazon.com/pt_br/kms/latest/developerguide/deleting-keys.html#deleting-keys-how-it-works
+
+  - Create an Amazon CloudWatch alarm that alerts you about any attempts to use the key(s) during the waiting period
+
+    - https://docs.aws.amazon.com/pt_br/kms/latest/developerguide/deleting-keys-creating-cloudwatch-alarm.html
+
+  - Pode habilitar o uso da key em outras contas durante a criação
+
+  - Key Deletetion
+
+    - Vem habilitado por padrão
+    - Allow key administrators to delete this key.
+
+  - 2 tipos de keys
+
+    - Symmetric
+    - Asymmetric
+
+  
+
+  
+
+- **Regionality**
+
+  https://docs.aws.amazon.com/pt_br/kms/latest/developerguide/multi-region-keys-overview.html
+
+  - Single-Region key
+  - Multi-Region key
+
+  
+
+- **Customer Master Key(CMK)**
+
+  
+
+  - **Customer Managed CMK**
+
+    - Uma chave mestra do cliente (CMK) é uma representação lógica de uma chave mestra.
+    - O CMK inclui metadados, como ID da chave, data de criação, descrição e estado da chave.
+    - O CMK também contém o material chave usado para criptografar e descriptografar dados.
+    - **Eles são criados e gerenciados pelo cliente AWS.**
+    - O acesso a eles pode ser controlado usando o serviço AWS IAM.
+    - Create, Manage and used
+    - Enable and Disable
+
+    
+
+  - **AWS Managed CMK**
+
+    - São CMKs em sua conta que são criados, **gerenciados e usados em seu nome por um serviço AWS** que está integrado com AWS KMS.
+    - Used AWS Services
+    - Create, Manage and used
+
+    
+
+  - **AWS owned CMK**
+
+    - São uma coleção de CMKs que um serviço da AWS possui e gerencia para uso em várias contas da AWS.
+    - Não estão em sua conta da AWS.
+    - **Você não pode visualizar ou gerenciar esses CMKs.**
+    - Utilzado em multiplas contas
+
+    
+
+  - **CloudHMS Keys**
+
+    - Keys generated from CloudHSM hardware device
+
+
+
+### **AWS Certificate Manager** (ACM)
+
+É um serviço que permite provisionar, gerenciar e implantar facilmente certificados **Secure Sockets Layer (SSL)/Transport Layer Security (TLS)** para uso com os serviços da AWS e os recursos internos conectados.
+
+https://aws.amazon.com/pt/certificate-manager/
+
+- Pode atualizar e renover certificados HTTPS
+- Renovação automática
+- SSL/TSL
+- Integra
+  - ELB
+  - Cloudfornt
+  - API Gateway
+
+- - 
+
+  
 
 ### **AWS Web Application Firewall (WAF)**
 
@@ -1298,7 +1462,17 @@ https://aws.amazon.com/blogs/security/how-to-receive-notifications-when-your-aws
 
 
 
+### **Penetration Testing**
 
+https://aws.amazon.com/security/penetration-testing/
+
+- Os clientes da AWS podem realizar avaliações de segurança ou testes de penetração em sua infraestrutura da AWS sem aprovação prévia em oito serviços, listados na próxima seção como “Serviços permitidos”.
+- Serviços permitidos
+  - EC2
+  - RDS
+  - Aurora
+  - Beanstalk
+  - API Gateway
 
 
 
