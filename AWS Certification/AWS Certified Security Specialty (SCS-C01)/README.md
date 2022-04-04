@@ -1020,22 +1020,6 @@ https://docs.aws.amazon.com/detective/latest/adminguide/what-is-detective.html
 
   
 
-### **AWS Shield**
-
-- **Shield Standard**
-  - Usa machine learning
-  - Protege contra Ataque DDoS
-  - Layer 3 / Layer 4
-  - Está sob a responsabilidade da AWS no Shared Responsability Model
-- **Shield Advanced**
-  - **No shield advanced vc tem acesso ao time AWS DDoS**
-  - Fornece proteção extendida para:
-    - Amazon Elastic Compute Cloud
-    - Elastic Load Balancing (ELB)
-    - Amazon CloudFront
-    - Amazon Route 53
-    - AWS Global Accelerator
-
 
 
 ### AWS CloudTrail
@@ -1178,6 +1162,22 @@ O AWS Key Management Service (KMS) oferece a você controle centralizado das cha
 
   
 
+- **Key Rotation Options**
+
+  https://docs.aws.amazon.com/kms/latest/developerguide/rotate-keys.html
+
+  https://d1.awsstatic.com/whitepapers/aws-kms-best-practices.pdf
+
+  
+
+  - Best Pratice
+  - Rotação com frequência (a cada 3 anos)
+  - AWS Managed, Customer Managed with imported key material
+  - AWS Managed Keys não podem ser deletadas
+
+
+
+
 - **Regionality**
 
   https://docs.aws.amazon.com/pt_br/kms/latest/developerguide/multi-region-keys-overview.html
@@ -1194,11 +1194,11 @@ O AWS Key Management Service (KMS) oferece a você controle centralizado das cha
   - **Customer Managed CMK**
 
     - Uma chave mestra do cliente (CMK) é uma representação lógica de uma chave mestra.
-  
+
     - O CMK inclui metadados, como Alias, ID da chave, Data de criação, Descrição e key state.
-  
+
     - O CMK também contém o material chave usado para criptografar e descriptografar dados.
-  
+
     - **Eles são criados e gerenciados pelo cliente AWS.**
 
     - O acesso a eles pode ser controlado usando o serviço AWS IAM.
@@ -1206,7 +1206,7 @@ O AWS Key Management Service (KMS) oferece a você controle centralizado das cha
     - Create, Manage and used
 
     - Enable and Disable
-  
+
     - **NUNCA PODE SER EXPORTADA**
 
       
@@ -1214,24 +1214,24 @@ O AWS Key Management Service (KMS) oferece a você controle centralizado das cha
     
 
   - **AWS Managed CMK**
-  
+
     - São CMKs em sua conta que são criados, **gerenciados e usados em seu nome por um serviço AWS** que está integrado com AWS KMS.
     - Used AWS Services
     - Create, Manage and used
-  
+
     
-  
+
   - **AWS Owned CMK**
-  
+
     - São uma coleção de CMKs que um serviço da AWS possui e gerencia para uso em várias contas da AWS.
     - Não estão em sua conta da AWS.
     - **Você não pode visualizar ou gerenciar esses CMKs.**
     - Utilzado em multiplas contas
-  
+
     
-  
+
   - **CloudHMS Keys**
-  
+
     - Keys generated from CloudHSM hardware device
 
 
@@ -1243,15 +1243,18 @@ O AWS Key Management Service (KMS) oferece a você controle centralizado das cha
 https://aws.amazon.com/pt/certificate-manager/
 
 - Pode atualizar e renover certificados HTTPS
+
 - Renovação automática
+
 - SSL/TSL
+
 - Integra
   - ELB
   - Cloudfornt
   - API Gateway
 
-- - 
-
+  
+  
   
 
 ### **AWS Web Application Firewall (WAF)**
@@ -1262,8 +1265,43 @@ https://docs.aws.amazon.com/waf/latest/developerguide/waf-chapter.html
 - Protege contra Ataque DDoS
 - Layer 7 (HTTP)
 - **Pode bloquear todas as solicitações, exceto aquelas que você especificar**
-- Deploy in ALB, API GW e CloudFront
-- WebACL
+- **Add Assossiation - Deploy in ALB, API GW e CloudFront**
+- WebACL - Use as regras em uma web ACL para definir como inspecionar e manipular solicitações da web HTTP (S) com base em critérios como o seguinte:
+  - Scripts que provavelmente são mal-intencionados. Os invasores incorporam scripts que podem explorar vulnerabilidades nas aplicações web. Isso é conhecido como script entre sites (XSS).
+  - Endereços IP ou intervalos de endereços IP dos quais as solicitações se originam. /8, /16, /24 e /32
+  - País ou localização geográfica de origem das solicitações.
+  - Comprimento da parte específica da solicitação, como a string de consulta.
+  - Código SQL que provavelmente é mal-intencionado. Os invasores tentam extrair dados do seu banco de dados ao incorporarem código SQL mal-intencionado a uma solicitação da web. Isso é conhecido como SQL injection.
+  - Strings que aparecem na solicitação, por exemplo, valores que aparecem no cabeçalho `User-Agent` ou strings de texto que aparecem na string de consulta. Você também pode usar expressões regulares (regex) para especificar essas strings.
+  - Etiquetas que as regras anteriores na ACL da Web adicionaram à solicitação.
+
+
+
+### **AWS Shield**
+
+- **Shield Standard**
+
+  - Usa machine learning
+
+  - Protege contra Ataque DDoS
+
+  - Layer 3 / Layer 4
+
+  - Está sob a responsabilidade da AWS no **Shared Responsability Model** 
+
+    
+
+- **Shield Advanced**
+
+  - **No shield advanced vc tem acesso ao time AWS DDoS**
+  - Fornece proteção extendida para:
+    - Amazon Elastic Compute Cloud
+    - Elastic Load Balancing (ELB)
+    - Amazon CloudFront
+    - Amazon Route 53
+    - AWS Global Accelerator
+
+
 
 
 
