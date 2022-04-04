@@ -1108,6 +1108,8 @@ O AWS CloudTrail monitora e registra a atividade da conta por toda a infraestrut
 
 ### **AWS KMS (Key Management Service)**
 
+**`Caiu muito`**
+
 https://aws.amazon.com/kms/features/
 
 https://aws.amazon.com/pt/kms/faqs/
@@ -1158,6 +1160,10 @@ O AWS Key Management Service (KMS) oferece a você controle centralizado das cha
 
   - Pode habilitar o uso da key em outras contas durante a criação
 
+  - 265-bit
+
+  - Não tem rotação automática das keys
+
   - Key Deletetion
 
     - Vem habilitado por padrão
@@ -1188,34 +1194,44 @@ O AWS Key Management Service (KMS) oferece a você controle centralizado das cha
   - **Customer Managed CMK**
 
     - Uma chave mestra do cliente (CMK) é uma representação lógica de uma chave mestra.
-    - O CMK inclui metadados, como ID da chave, data de criação, descrição e estado da chave.
+  
+    - O CMK inclui metadados, como Alias, ID da chave, Data de criação, Descrição e key state.
+  
     - O CMK também contém o material chave usado para criptografar e descriptografar dados.
+  
     - **Eles são criados e gerenciados pelo cliente AWS.**
+
     - O acesso a eles pode ser controlado usando o serviço AWS IAM.
+
     - Create, Manage and used
+
     - Enable and Disable
+  
+    - **NUNCA PODE SER EXPORTADA**
+
+      
 
     
 
   - **AWS Managed CMK**
-
+  
     - São CMKs em sua conta que são criados, **gerenciados e usados em seu nome por um serviço AWS** que está integrado com AWS KMS.
     - Used AWS Services
     - Create, Manage and used
-
+  
     
-
-  - **AWS owned CMK**
-
+  
+  - **AWS Owned CMK**
+  
     - São uma coleção de CMKs que um serviço da AWS possui e gerencia para uso em várias contas da AWS.
     - Não estão em sua conta da AWS.
     - **Você não pode visualizar ou gerenciar esses CMKs.**
     - Utilzado em multiplas contas
-
+  
     
-
+  
   - **CloudHMS Keys**
-
+  
     - Keys generated from CloudHSM hardware device
 
 
