@@ -315,6 +315,124 @@ https://aws.amazon.com/blogs/security/top-10-security-items-to-improve-in-your-a
 
 
 
+### **EC2 (Elastic Compute Cloud)**
+
+- Serviço que vc tem controle total
+
+- **EC2 Instance Connect**
+
+  - Connecta na EC2 via console AWS
+
+- **EC2 UserData**
+
+  - bootstrap
+  - executa no primeiro boot
+
+- **SO**
+
+  - Linux, Windows e MAcOS
+
+- **Benefícios da EC2**
+
+  - Elasticidade, Flexível
+  - Integração com demais serviços
+  - Confiável
+  - Seguro
+  - Baixo Custo
+
+- **Tipos de Instâncias**
+
+  https://aws.amazon.com/pt/ec2/instance-types/
+
+  - **General Purpose**
+
+    - Instâncias de uso geral fornecem um equilíbrio de recursos de computação, memória e rede e podem ser usadas para diversas cargas de trabalho.
+
+  - **Compute Optimized**
+
+    - As instâncias otimizadas para computação são ideais para aplicativos vinculados a computação que se beneficiam de processadores de alto desempenho.
+      - Batch
+      - Media
+      - HPC
+      - Machine Learning
+
+  - **Memory Optimized**
+
+    - As instâncias otimizadas de memória são projetadas para fornecer desempenho rápido para cargas de trabalho que processam grandes conjuntos de dados na memória.
+
+  - **Accelerated Computing**
+
+    - Instâncias de computação aceleradas usam aceleradores de hardware, ou coprocessadores, para executar funções, como cálculos de número de ponto flutuante, processamento de gráficos ou correspondência de padrões de dados, mais eficientemente do que é possível no software em execução nas CPUs.
+
+  - **Storage Optimized**
+
+    - As instâncias otimizadas para armazenamento são projetadas para cargas de trabalho que exigem acesso de leitura e gravação sequencial alto a conjuntos de dados muito grandes no armazenamento local. Elas
+
+  - **Instances Features**
+
+  - **Measuring Instance Performance**
+
+    
+
+- **EC2 Dedicated Hosts**
+
+  https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/dedicated-hosts-overview.html
+
+  https://aws.amazon.com/pt/ec2/dedicated-hosts/
+
+  - Podem utilizar licenças de software existentes no cliente - BYOL
+
+  - Tudo no mesmo servidor, deploys
+
+    
+
+- **EC2 Dedicated Instances**
+
+  https://aws.amazon.com/pt/ec2/pricing/dedicated-instances/
+
+  - Roda em hardware dedicado mas vc não tem acesso
+
+    
+
+- **EC2 Dedicated Instances vs EC2 Dedicated Hosts**
+
+![image-20220404204836175](./imagens/image-20220404204836175.png)
+
+- **Preços**
+
+  - **Sob-Demanda**
+
+    **https://aws.amazon.com/blogs/aws/new-per-second-billing-for-ec2-instances-and-ebs-volumes/**
+
+    - **Por hora ou por segundo**
+    - **60 segundos é a cobrança mínima**
+
+  - **Saving Plans**
+
+    - 1 ou 3 anos
+    - **Até 72% de desconto comparado ao sob-demanda**
+    - **EC2 Saving Plans**
+      - **Até 72% de descontos**
+      - Individual instances
+    - **Compute Saving Plans**
+      - Mais flexível
+      - EC2, Fargate e Lambda
+
+  - **Instâncias Reservadas**
+
+    - 1 ou 3 Anos
+    - Standard, Convertable ou Scheduled
+
+  - **Instâncias Spot**
+
+    https://aws.amazon.com/ec2/spot/
+
+    - Aviso de até **2 minutos**
+    - **Até 90% de desconto comparado ao sob-demanda**
+    - Cargas de trabalhos em lote
+
+
+
 ### AWS Identity ans Access Management (IAM)
 
 https://docs.aws.amazon.com/iam/index.html
@@ -1266,6 +1384,7 @@ https://docs.aws.amazon.com/waf/latest/developerguide/waf-chapter.html
 - Layer 7 (HTTP)
 - **Pode bloquear todas as solicitações, exceto aquelas que você especificar**
 - **Add Assossiation - Deploy in ALB, API GW e CloudFront**
+- Pode ser utilizado para proteger sites fora da AWS c/ Cloudfront
 - WebACL - Use as regras em uma web ACL para definir como inspecionar e manipular solicitações da web HTTP (S) com base em critérios como o seguinte:
   - Scripts que provavelmente são mal-intencionados. Os invasores incorporam scripts que podem explorar vulnerabilidades nas aplicações web. Isso é conhecido como script entre sites (XSS).
   - Endereços IP ou intervalos de endereços IP dos quais as solicitações se originam. /8, /16, /24 e /32
@@ -1278,6 +1397,8 @@ https://docs.aws.amazon.com/waf/latest/developerguide/waf-chapter.html
 
 
 ### **AWS Shield**
+
+https://aws.amazon.com/pt/shield/?whats-new-cards.sort-by=item.additionalFields.postDateTime&whats-new-cards.sort-order=desc
 
 - **Shield Standard**
 
@@ -1294,6 +1415,7 @@ https://docs.aws.amazon.com/waf/latest/developerguide/waf-chapter.html
 - **Shield Advanced**
 
   - **No shield advanced vc tem acesso ao time AWS DDoS**
+  - $3000 p/ mês - se vc for vitima de um ataque vc não paga 
   - Fornece proteção extendida para:
     - Amazon Elastic Compute Cloud
     - Elastic Load Balancing (ELB)
@@ -1321,6 +1443,12 @@ https://docs.aws.amazon.com/waf/latest/developerguide/waf-chapter.html
     -  Tem que importar certificado
     - seu domínio
     - ACM somente em us-east-1
+
+
+
+
+
+
 
 
 
