@@ -301,7 +301,7 @@ https://jayendrapatil.com/aws-certified-security-speciality-scs-c01-exam-learnin
 
 
 
-Top 10 security items to improve in your AWS account
+**Top 10 security items to improve in your AWS account**
 
 https://aws.amazon.com/blogs/security/top-10-security-items-to-improve-in-your-aws-account/
 
@@ -1253,6 +1253,24 @@ O AWS CloudTrail monitora e registra a atividade da conta por toda a infraestrut
 
 
 
+### **Container Security**
+
+https://aws.amazon.com/blogs/compute/maintaining-transport-layer-security-all-the-way-to-your-container-part-2-using-aws-certificate-manager-private-certificate-authority/
+
+#### Best Pratices
+
+- Não compartilhe Secrets and Passwords dentro do containers
+- não executar contiainer com root
+- Use roles
+- Encryption In Transit using TLS
+- Use Amazon Certificate Manager
+- Use Secret Manager
+- Evite usar
+  - Imagens publicas
+  - Bibliotecas desnecessárias 
+
+
+
 ### **AWS KMS (Key Management Service)**
 
 **`Caiu muito`**
@@ -1263,154 +1281,165 @@ https://aws.amazon.com/pt/kms/faqs/
 
 O AWS Key Management Service (KMS) oferece a você controle centralizado das chaves criptográficas usadas para proteger seus dados.
 
-- **Summary**
+#### Summary
 
-  - Usa Envelope Encryption
+- Usa Envelope Encryption
 
-  - Key material origin
+- Com **Admin** é possível acessar arquivos criptografados 
 
-    https://docs.aws.amazon.com/pt_br/kms/latest/developerguide/concepts.html#key-origin
+- É Regional
 
-    - KMS
+- Pode trazer sua própria key
 
-    - External
+- Serviços integrados 
 
-      https://docs.aws.amazon.com/pt_br/kms/latest/developerguide/importing-keys.html#importing-keys-considerations
+  - EBS, RDS, EFS, S3, Redshift
+  - https://aws.amazon.com/pt/kms/features/#AWS_Service_Integration
 
-      - **Encrypted key material and import token**
-      - Pode setar a expiração da key
+- Schedule key deletion
 
-    - Custom key store (CloudHSM)
+  - Mínimo de 7 dias e máximo de 30 para deletar a key
 
-  - Com **Admin** é possível acessar arquivos criptografados 
+- Deleting a key makes all data encrypted under that key unrecoverable
 
-  - É Regional
+  - https://docs.aws.amazon.com/pt_br/kms/latest/developerguide/deleting-keys.html#deleting-keys-how-it-works
 
-  - Pode trazer sua própria key
+- Create an Amazon CloudWatch alarm that alerts you about any attempts to use the key(s) during the waiting period
 
-  - Serviços integrados 
+  - https://docs.aws.amazon.com/pt_br/kms/latest/developerguide/deleting-keys-creating-cloudwatch-alarm.html
 
-    - EBS, RDS, EFS, S3, Redshift
-    - https://aws.amazon.com/pt/kms/features/#AWS_Service_Integration
+- Pode habilitar o uso da key em outras contas durante a criação
 
-  - Schedule key deletion
+- 265-bit
 
-    - Mínimo de 7 dias e máximo de 30 para deletar a key
+- Não tem rotação automática das keys
 
-  - Deleting a key makes all data encrypted under that key unrecoverable
+- Key Deletetion
 
-    - https://docs.aws.amazon.com/pt_br/kms/latest/developerguide/deleting-keys.html#deleting-keys-how-it-works
+  - Vem habilitado por padrão
+  - Allow key administrators to delete this key.
 
-  - Create an Amazon CloudWatch alarm that alerts you about any attempts to use the key(s) during the waiting period
+- 2 tipos de keys
 
-    - https://docs.aws.amazon.com/pt_br/kms/latest/developerguide/deleting-keys-creating-cloudwatch-alarm.html
+  - Symmetric
+  - Asymmetric
 
-  - Pode habilitar o uso da key em outras contas durante a criação
 
-  - 265-bit
 
-  - Não tem rotação automática das keys
+#### **Key material origin**
 
-  - Key Deletetion
+https://docs.aws.amazon.com/pt_br/kms/latest/developerguide/concepts.html#key-origin
 
-    - Vem habilitado por padrão
-    - Allow key administrators to delete this key.
+- KMS
 
-  - 2 tipos de keys
+- Mínimo de 7 dias e máximo de 30 para deletar a key
 
-    - Symmetric
-    - Asymmetric
+- Não tem rotação automática
+
+- External
+
+  https://docs.aws.amazon.com/pt_br/kms/latest/developerguide/importing-keys.html#importing-keys-considerations
+
+  - **Encrypted key material and import token**
+  - Pode setar a expiração da key
+
+- Custom key store (CloudHSM)
+
+
+
+#### **Grants**
+
+https://docs.aws.amazon.com/pt_br/kms/latest/developerguide/grants.html
+
+- Acesso temporário 
+
+- Exemplos
+
+  ```shell
+  #Create a new key and make a note of the region you are working in 
+  aws kms create-key
+  
+  #Test encrypting plain text using my new key: 
+  aws kms encrypt --plaintext "hello" --key-id <key_arn>
+  
+  #Create a new user called Dave and generate access key / secret access key
+  aws iam create-user --user-name dave
+  aws iam create-access-key --user-name dave
+  
+  #Run aws configure using Dave's credentials creating a CLI profile for him
+  aws configure --profile dave
+  aws kms encrypt --plaintext "hello" --key-id <key_arn> --profile dave
+  
+  #Create a grant for user called Dave
+  aws iam get-user --user-name dave
+  aws kms create-grant --key-id <key_arn> --grantee-principal <Dave's_arn> --operations "Encrypt"
+  
+  #Encrypt plain text as user Dave: 
+  aws kms encrypt --plaintext "hello" --key-id <key_arn> --grant-tokens <grant_token_from_previous_command> --profile dave
+  
+  #Revoke the grant:
+  aws kms list-grants --key-id <key_arn>
+  aws kms revoke-grant --key-id <key_arn> --grant-id <grant_id>
+  
+  #Check that the revoke was successful:
+  aws kms encrypt --plaintext "hello" --key-id <key_arn> --profile dave
+  
+  https://docs.aws.amazon.com/cli/latest/reference/kms/create-grant.html
+  ```
 
   
 
-- **Grants**
+#### **Cross Account Access**
 
-  https://docs.aws.amazon.com/pt_br/kms/latest/developerguide/grants.html
+https://docs.aws.amazon.com/pt_br/kms/latest/developerguide/key-policy-modifying-external-accounts.html
 
-  - Acesso temporário 
 
-  - Exemplos
 
-    ```shell
-    #Create a new key and make a note of the region you are working in 
-    aws kms create-key
-    
-    #Test encrypting plain text using my new key: 
-    aws kms encrypt --plaintext "hello" --key-id <key_arn>
-    
-    #Create a new user called Dave and generate access key / secret access key
-    aws iam create-user --user-name dave
-    aws iam create-access-key --user-name dave
-    
-    #Run aws configure using Dave's credentials creating a CLI profile for him
-    aws configure --profile dave
-    aws kms encrypt --plaintext "hello" --key-id <key_arn> --profile dave
-    
-    #Create a grant for user called Dave
-    aws iam get-user --user-name dave
-    aws kms create-grant --key-id <key_arn> --grantee-principal <Dave's_arn> --operations "Encrypt"
-    
-    #Encrypt plain text as user Dave: 
-    aws kms encrypt --plaintext "hello" --key-id <key_arn> --grant-tokens <grant_token_from_previous_command> --profile dave
-    
-    #Revoke the grant:
-    aws kms list-grants --key-id <key_arn>
-    aws kms revoke-grant --key-id <key_arn> --grant-id <grant_id>
-    
-    #Check that the revoke was successful:
-    aws kms encrypt --plaintext "hello" --key-id <key_arn> --profile dave
-    
-    https://docs.aws.amazon.com/cli/latest/reference/kms/create-grant.html
+
+
+
+
+#### **Policy Conditions**
+
+https://docs.aws.amazon.com/pt_br/kms/latest/developerguide/policy-conditions.html
+
+- kms: viaservice
+
+  - Allow or Deny pear Service
+
+  - https://docs.aws.amazon.com/pt_br/kms/latest/developerguide/policy-conditions.html#conditions-kms-via-service
+
+  - Exemplo
+
+  - ```yaml
+    {
+      "Effect": "Allow",
+      "Principal": {
+        "AWS": "arn:aws:iam::111122223333:user/ExampleUser"
+      },
+      "Action": [
+        "kms:Encrypt",
+        "kms:Decrypt",
+        "kms:ReEncrypt*",
+        "kms:GenerateDataKey*",
+        "kms:CreateGrant",
+        "kms:ListGrants",
+        "kms:DescribeKey"
+      ],
+      "Resource": "*",
+      "Condition": {
+        "StringEquals": {
+          "kms:ViaService": [
+            "ec2.us-west-2.amazonaws.com",
+            "rds.us-west-2.amazonaws.com"
+          ]
+        }
+      }
+    }
     ```
 
     
 
-  
-
-
-
-- **Policy Conditions**
-
-  https://docs.aws.amazon.com/pt_br/kms/latest/developerguide/policy-conditions.html
-
-  - kms: viaservice
-
-    - Allow or Deny pear Service
-
-    - https://docs.aws.amazon.com/pt_br/kms/latest/developerguide/policy-conditions.html#conditions-kms-via-service
-
-    - Exemplo
-
-    - ```yaml
-      {
-        "Effect": "Allow",
-        "Principal": {
-          "AWS": "arn:aws:iam::111122223333:user/ExampleUser"
-        },
-        "Action": [
-          "kms:Encrypt",
-          "kms:Decrypt",
-          "kms:ReEncrypt*",
-          "kms:GenerateDataKey*",
-          "kms:CreateGrant",
-          "kms:ListGrants",
-          "kms:DescribeKey"
-        ],
-        "Resource": "*",
-        "Condition": {
-          "StringEquals": {
-            "kms:ViaService": [
-              "ec2.us-west-2.amazonaws.com",
-              "rds.us-west-2.amazonaws.com"
-            ]
-          }
-        }
-      }
-      ```
-
-      
-
-  
 
 
 
@@ -1418,75 +1447,77 @@ O AWS Key Management Service (KMS) oferece a você controle centralizado das cha
 
 
 
-- **Key Rotation Options**
 
-  https://docs.aws.amazon.com/kms/latest/developerguide/rotate-keys.html
+#### **Key Rotation Options**
 
-  https://d1.awsstatic.com/whitepapers/aws-kms-best-practices.pdf
+https://docs.aws.amazon.com/kms/latest/developerguide/rotate-keys.html
 
-  - Best Pratice
-  - Rotação com frequência (a cada 3 anos)
-  - AWS Managed, Customer Managed with imported key material
-  - AWS Managed Keys não podem ser deletadas
+https://d1.awsstatic.com/whitepapers/aws-kms-best-practices.pdf
+
+- Best Pratice
+- Rotação com frequência (a cada 3 anos)
+- AWS Managed, Customer Managed with imported key material
+- AWS Managed Keys não podem ser deletadas
 
 
 
+#### **Regionality**
 
-- **Regionality**
+https://docs.aws.amazon.com/pt_br/kms/latest/developerguide/multi-region-keys-overview.html
 
-  https://docs.aws.amazon.com/pt_br/kms/latest/developerguide/multi-region-keys-overview.html
+- Single-Region key
+- Multi-Region key
 
-  - Single-Region key
-  - Multi-Region key
 
-  
 
-- **Customer Master Key(CMK)**
+#### **The Customer Master Key(CMK)**
 
-  
 
-  - **Customer Managed CMK**
 
-    - Uma chave mestra do cliente (CMK) é uma representação lógica de uma chave mestra.
+- **Customer Managed CMK**
 
-    - O CMK inclui metadados, como Alias, ID da chave, Data de criação, Descrição e key state.
+  - Uma chave mestra do cliente (CMK) é uma representação lógica de uma chave mestra.
 
-    - O CMK também contém o material chave usado para criptografar e descriptografar dados.
+  - O CMK inclui metadados, como Alias, ID da chave, Data de criação, Descrição e key state.
 
-    - **Eles são criados e gerenciados pelo cliente AWS.**
+  - O CMK também contém o material chave usado para criptografar e descriptografar dados.
 
-    - O acesso a eles pode ser controlado usando o serviço AWS IAM.
+  - **Eles são criados e gerenciados pelo cliente AWS.**
 
-    - Create, Manage and used
+  - O acesso a eles pode ser controlado usando o serviço AWS IAM.
 
-    - Enable and Disable
+  - Create, Manage and used
 
-    - **NUNCA PODE SER EXPORTADA**
+  - Enable and Disable
 
-      
+  - **NUNCA PODE SER EXPORTADA**
 
     
-
-  - **AWS Managed CMK**
-
-    - São CMKs em sua conta que são criados, **gerenciados e usados em seu nome por um serviço AWS** que está integrado com AWS KMS.
-    - Used AWS Services
-    - Create, Manage and used
-
+    
     
 
-  - **AWS Owned CMK**
+  
 
-    - São uma coleção de CMKs que um serviço da AWS possui e gerencia para uso em várias contas da AWS.
-    - Não estão em sua conta da AWS.
-    - **Você não pode visualizar ou gerenciar esses CMKs.**
-    - Utilzado em multiplas contas
+- **AWS Managed CMK**
 
-    
+  - São CMKs em sua conta que são criados, **gerenciados e usados em seu nome por um serviço AWS** que está integrado com AWS KMS.
+  - Used AWS Services
+  - Create, Manage and used
 
-  - **CloudHMS Keys**
+  
 
-    - Keys generated from CloudHSM hardware device
+- **AWS Owned CMK**
+
+  - São uma coleção de CMKs que um serviço da AWS possui e gerencia para uso em várias contas da AWS.
+  - Não estão em sua conta da AWS.
+  - **Você não pode visualizar ou gerenciar esses CMKs.**
+  - Utilzado em multiplas contas
+
+  
+
+- **CloudHMS Keys**
+
+  - Keys generated from CloudHSM hardware device
 
 
 
