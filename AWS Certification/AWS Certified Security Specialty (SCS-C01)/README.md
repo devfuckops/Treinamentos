@@ -433,6 +433,51 @@ https://aws.amazon.com/blogs/security/top-10-security-items-to-improve-in-your-a
 
 
 
+### **AWS Hypervisor**
+
+https://aws.amazon.com/pt/ec2/nitro/
+
+VMM
+
+
+
+
+
+### **Elastic Block Store (EBS)**
+
+https://aws.amazon.com/pt/ebs/
+
+- Armazenamento a nível de bloco
+
+- Independente da vida útil da instância
+
+- **Snapshots são armazenados de forma incremental, é cobrado pelos blocos alterados armazenados**
+
+- É **automaticamente replicado** entre AZ´s
+
+- **Mas é armazenado em uma única AZ**
+
+- É cobrado pelo Tipo e pelo IOPS provisionado.
+
+- Snapshot point-in-time
+
+- Snapshots podem ser copiados entre Regiões
+
+- Memory scrubbing
+
+  https://d1.awsstatic.com/whitepapers/Security/Security_Compute_Services_Whitepaper.pdf
+
+- Ate 16 TiB
+
+- **Pode ser anexado a uma única instância na mesma Zona de disponibilidade**
+
+- Flag - Delete on Termination
+
+  - Para deletar o EBS quando deleta a EC2
+  - Não vem ativado por default
+
+  
+
 ### AWS Identity ans Access Management (IAM)
 
 https://docs.aws.amazon.com/iam/index.html
@@ -1278,15 +1323,106 @@ O AWS Key Management Service (KMS) oferece a você controle centralizado das cha
 
   
 
+- **Grants**
+
+  https://docs.aws.amazon.com/pt_br/kms/latest/developerguide/grants.html
+
+  - Acesso temporário 
+
+  - Exemplos
+
+    ```shell
+    #Create a new key and make a note of the region you are working in 
+    aws kms create-key
+    
+    #Test encrypting plain text using my new key: 
+    aws kms encrypt --plaintext "hello" --key-id <key_arn>
+    
+    #Create a new user called Dave and generate access key / secret access key
+    aws iam create-user --user-name dave
+    aws iam create-access-key --user-name dave
+    
+    #Run aws configure using Dave's credentials creating a CLI profile for him
+    aws configure --profile dave
+    aws kms encrypt --plaintext "hello" --key-id <key_arn> --profile dave
+    
+    #Create a grant for user called Dave
+    aws iam get-user --user-name dave
+    aws kms create-grant --key-id <key_arn> --grantee-principal <Dave's_arn> --operations "Encrypt"
+    
+    #Encrypt plain text as user Dave: 
+    aws kms encrypt --plaintext "hello" --key-id <key_arn> --grant-tokens <grant_token_from_previous_command> --profile dave
+    
+    #Revoke the grant:
+    aws kms list-grants --key-id <key_arn>
+    aws kms revoke-grant --key-id <key_arn> --grant-id <grant_id>
+    
+    #Check that the revoke was successful:
+    aws kms encrypt --plaintext "hello" --key-id <key_arn> --profile dave
+    
+    https://docs.aws.amazon.com/cli/latest/reference/kms/create-grant.html
+    ```
+
+    
+
   
+
+
+
+- **Policy Conditions**
+
+  https://docs.aws.amazon.com/pt_br/kms/latest/developerguide/policy-conditions.html
+
+  - kms: viaservice
+
+    - Allow or Deny pear Service
+
+    - https://docs.aws.amazon.com/pt_br/kms/latest/developerguide/policy-conditions.html#conditions-kms-via-service
+
+    - Exemplo
+
+    - ```yaml
+      {
+        "Effect": "Allow",
+        "Principal": {
+          "AWS": "arn:aws:iam::111122223333:user/ExampleUser"
+        },
+        "Action": [
+          "kms:Encrypt",
+          "kms:Decrypt",
+          "kms:ReEncrypt*",
+          "kms:GenerateDataKey*",
+          "kms:CreateGrant",
+          "kms:ListGrants",
+          "kms:DescribeKey"
+        ],
+        "Resource": "*",
+        "Condition": {
+          "StringEquals": {
+            "kms:ViaService": [
+              "ec2.us-west-2.amazonaws.com",
+              "rds.us-west-2.amazonaws.com"
+            ]
+          }
+        }
+      }
+      ```
+
+      
+
+  
+
+
+
+
+
+
 
 - **Key Rotation Options**
 
   https://docs.aws.amazon.com/kms/latest/developerguide/rotate-keys.html
 
   https://d1.awsstatic.com/whitepapers/aws-kms-best-practices.pdf
-
-  
 
   - Best Pratice
   - Rotação com frequência (a cada 3 anos)
