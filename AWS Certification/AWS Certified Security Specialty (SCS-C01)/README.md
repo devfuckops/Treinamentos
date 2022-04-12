@@ -1171,7 +1171,7 @@ https://docs.aws.amazon.com/detective/latest/adminguide/what-is-detective.html
 - PII data
 - Dados sensíveis
 
-### 
+
 
 ### **Secrets Manager**
 
@@ -1250,6 +1250,157 @@ O AWS CloudTrail monitora e registra a atividade da conta por toda a infraestrut
   
     - Separa Read Events from Write Events
   
+
+
+
+
+
+### **Virtual Private Cloud VPC)**
+
+#### **Summary**
+
+- Uma rede virtual dedicada a sua conta
+- Subnets - Publica e Privada
+- Route-Tables
+- Virtual Private Gateway - VPN
+- vpc-flowlogs - Captura trafego da vpc, subnet e armazena no cloudwatch logs
+
+
+
+#### **Subnets**
+
+- Toda subnet default tem saída para internet
+- 1 subnet por AZ
+
+
+
+#### **Internet Gateway**
+
+- Provê acesso a internet
+- Tem que atachar na VPC
+
+
+
+#### **NAT Instances**
+
+- Permitem que suas instâncias em suas sub-redes privadas acessem a Internet enquanto permanecem privadas
+- **NÃO são gerenciadas pela AWS**
+- Provê acesso a Internet da Subnet Privada
+
+
+
+#### **Nat Gateway**
+
+- Permitem que suas instâncias em suas sub-redes privadas acessem a Internet enquanto permanecem privadas
+- **São gerenciadas pela AWS.**
+- Provê acesso a Internet da Subnet Privada
+
+
+
+#### **VPC Peering**
+
+https://docs.aws.amazon.com/vpc/latest/peering/invalid-peering-configurations.html
+
+- **Conecta 2 VPCs**
+- Overlapping
+- Não é transitivo, deve-se fechar o peer entre as vpcs
+
+
+
+#### **VPC Interface Endpoint**
+
+https://docs.aws.amazon.com/vpc/latest/userguide/vpc-endpoints.html
+
+- Provê acesso privado da VPC a serviços AWS
+
+- Utiliza subnet c/ IP privado
+
+  É cobrado
+
+- Serviços suportados
+
+  - S3
+  - DynamoDB
+
+  
+
+#### **VPC Endpoint Gateway**
+
+https://docs.aws.amazon.com/vpc/latest/userguide/vpc-endpoints.html
+
+- Provê acesso privado da VPC a serviços AWS
+
+- Utiliza route-tables
+
+- Não tem cobrança
+
+- Serviços suportados
+
+  - S3
+  - DynamoDB
+
+  
+
+#### **VPC Flow Logs**
+
+- Logs do trafego da VPC
+
+
+
+#### **Network ACL - NACL**
+
+- É uma camada opcional de segurança para seu VPC que atua como um firewall para controlar o tráfego de entrada e saída de uma ou mais sub-redes.
+- Eles têm regras ALLOW e DENY.
+- Pode ser configurada adcionalmente a nível de subnet para controlar o **tráfego de entrada e saida**.
+- **Segurança a nivel da subnet**
+- Por padrão é tudo liberado
+- **Stateless** - checa entrada e saída
+
+- **Security Group (Grupo de Segurança)**
+
+  - https://docs.aws.amazon.com/pt_br/vpc/latest/userguide/VPC_SecurityGroups.html
+
+  - **Segurança a nível da instância ou ENI**
+
+    - Por default é **todo bloqueado de entrada (Inbound) e tudo liberado na saída (Outbound)**
+
+    - Pode ser atachado em multiplas instâncias
+
+    - Baseado em Região/VPC
+
+    - **Stateful** - Não verifica o trafego de retorno pois reconhece que é o mesmo pacote
+
+    - Referencia IP ou Security Group
+
+      [![image-20211207213551384](https://github.com/devfuckops/Treinamentos/raw/main/AWS%20Certification/AWS%20Certified%20Cloud%20Practitioner%20(CLF-C01)/Imagans/image-20211207213551384.png)](https://github.com/devfuckops/Treinamentos/blob/main/AWS Certification/AWS Certified Cloud Practitioner (CLF-C01)/Imagans/image-20211207213551384.png)
+
+
+
+#### **VPN Site to Site**
+
+- **Summary**
+
+  - Acesso seguro AWS á On Premisse
+  - Acesso Publico
+
+  
+
+#### **Transit Gateway**
+
+- Summary
+
+  - Conecta milhares de redes VPC e locais em um único gateway.
+  - Conecta varias VPC´s e On Premisses juntos
+
+  
+
+#### **Direct Connect**
+
+https://aws.amazon.com/pt/directconnect/
+
+- Conexão dedicada com a AWS
+- Taxa de transferência alta
+- Estabelecer uma **conexão privada dedicada** entre o seu datacenter e a VPC.
 
 
 
