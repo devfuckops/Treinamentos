@@ -897,7 +897,7 @@ https://aws.amazon.com/pt/cloudhsm/
 
 O AWS CloudHSM é baseado na nuvem que permite gerar e usar facilmente suas próprias chaves de criptografia na Nuvem AWS. 
 
-Com o CloudHSM, você pode gerenciar suas próprias chaves de criptografia usando HSMs validados pelo FIPS 140-2 nível 3. 
+Com o CloudHSM, você pode gerenciar suas próprias chaves de criptografia usando HSMs validados pelo FIPS 140-2 nível 3 e EAL-4
 
 O CloudHSM oferece a flexibilidade de integrar-se aos seus aplicativos usando APIs padrão do setor, como bibliotecas Microsoft CryptoNG (CNG), PKCS#11 e Java Cryptography Extensions (JCE).
 
