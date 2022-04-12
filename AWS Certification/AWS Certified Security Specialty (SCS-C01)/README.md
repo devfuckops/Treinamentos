@@ -891,7 +891,7 @@ https://docs.aws.amazon.com/inspector/v1/userguide/inspector_cis.html
 
 ### AWS CloudHSM 
 
-### (Hardware Security Module – Módulo de segurança de hardware) 
+**(Hardware Security Module – Módulo de segurança de hardware)** 
 
 https://aws.amazon.com/pt/cloudhsm/
 
@@ -1310,39 +1310,36 @@ https://docs.aws.amazon.com/vpc/latest/peering/invalid-peering-configurations.ht
 
 
 
-#### **VPC Interface Endpoint**
+#### **VPC Endpoint**
 
 https://docs.aws.amazon.com/vpc/latest/userguide/vpc-endpoints.html
 
-- Provê acesso privado da VPC a serviços AWS
+- **VPC Interface Endpoint**
 
-- Utiliza subnet c/ IP privado
+  - Provê acesso privado da VPC a serviços AWS
+  - Utiliza subnet c/ IP privado
 
   É cobrado
 
-- Serviços suportados
-
-  - S3
-  - DynamoDB
-
-  
-
-#### **VPC Endpoint Gateway**
-
-https://docs.aws.amazon.com/vpc/latest/userguide/vpc-endpoints.html
-
-- Provê acesso privado da VPC a serviços AWS
-
-- Utiliza route-tables
-
-- Não tem cobrança
-
-- Serviços suportados
-
-  - S3
-  - DynamoDB
+  - Serviços suportados
+    - S3
+    - DynamoDB
 
   
+
+- **Gateway Load Balancer endpoints**
+
+
+
+- **VPC Endpoint Gateway**
+  - Provê acesso privado da VPC a serviços AWS
+  - Utiliza route-tables
+  - Não tem cobrança
+  - Serviços suportados
+    - S3
+    - DynamoDB
+
+
 
 #### **VPC Flow Logs**
 
@@ -1444,16 +1441,21 @@ https://aws.amazon.com/systems-manager/
 - Permite que os usuários controlem seus recursos unificando serviços onde ele podem visualizar, monitorar e automatizar
 - **EC2 e On-Premisses**
 - Patching
-- run comandos
 - store parameter
 - Windows e Linux
 - SSM agent
 
 
 
+#### **RUN Command**
+
+https://aws.amazon.com/pt/systems-manager/features/#Run_Command
+
 
 
 #### **SSM Session Manager**
+
+https://aws.amazon.com/pt/systems-manager/features/#Session_Manager
 
 - Linux, Windows e MacOs
 - Send log S3 ou CloudWatch Logs
