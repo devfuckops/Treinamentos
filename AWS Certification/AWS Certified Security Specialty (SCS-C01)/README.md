@@ -1281,19 +1281,23 @@ O AWS CloudTrail monitora e registra a atividade da conta por toda a infraestrut
 
 
 
-#### **NAT Instances**
+#### **NAT Instances & NAT Instances**
 
-- Permitem que suas instâncias em suas sub-redes privadas acessem a Internet enquanto permanecem privadas
-- **NÃO são gerenciadas pela AWS**
-- Provê acesso a Internet da Subnet Privada
+https://docs.aws.amazon.com/pt_br/vpc/latest/userguide/vpc-nat-comparison.html
 
+- **NAT Gateway**
 
+  - Permitem que suas instâncias em suas sub-redes privadas acessem a Internet enquanto permanecem privadas
 
-#### **Nat Gateway**
+  - **São gerenciadas pela AWS**
 
-- Permitem que suas instâncias em suas sub-redes privadas acessem a Internet enquanto permanecem privadas
-- **São gerenciadas pela AWS.**
-- Provê acesso a Internet da Subnet Privada
+    
+
+- **NAT Instances**
+  - Permitem que suas instâncias em suas sub-redes privadas acessem a Internet enquanto permanecem privadas
+  - **Não são gerenciadas pela AWS**
+  - Instâncias EC2 na subnet publica 
+  - **Tem que desabilitar - Source/destination checks**
 
 
 
@@ -1347,6 +1351,8 @@ https://docs.aws.amazon.com/vpc/latest/userguide/vpc-endpoints.html
 
 
 
+
+
 #### **Network ACL - NACL**
 
 - É uma camada opcional de segurança para seu VPC que atua como um firewall para controlar o tráfego de entrada e saída de uma ou mais sub-redes.
@@ -1356,23 +1362,27 @@ https://docs.aws.amazon.com/vpc/latest/userguide/vpc-endpoints.html
 - Por padrão é tudo liberado
 - **Stateless** - checa entrada e saída
 
-- **Security Group (Grupo de Segurança)**
 
-  - https://docs.aws.amazon.com/pt_br/vpc/latest/userguide/VPC_SecurityGroups.html
 
-  - **Segurança a nível da instância ou ENI**
+#### **Security Group**
 
-    - Por default é **todo bloqueado de entrada (Inbound) e tudo liberado na saída (Outbound)**
+https://docs.aws.amazon.com/pt_br/vpc/latest/userguide/VPC_SecurityGroups.html
 
-    - Pode ser atachado em multiplas instâncias
+- **Segurança a nível da instância ou ENI**
 
-    - Baseado em Região/VPC
+  - Por default é **todo bloqueado de entrada (Inbound) e tudo liberado na saída (Outbound)**
 
-    - **Stateful** - Não verifica o trafego de retorno pois reconhece que é o mesmo pacote
+  - Pode ser atachado em multiplas instâncias
 
-    - Referencia IP ou Security Group
+  - Baseado em Região/VPC
 
-      [![image-20211207213551384](https://github.com/devfuckops/Treinamentos/raw/main/AWS%20Certification/AWS%20Certified%20Cloud%20Practitioner%20(CLF-C01)/Imagans/image-20211207213551384.png)](https://github.com/devfuckops/Treinamentos/blob/main/AWS Certification/AWS Certified Cloud Practitioner (CLF-C01)/Imagans/image-20211207213551384.png)
+  - **Stateful** - Não verifica o trafego de retorno pois reconhece que é o mesmo pacote
+
+  - Referencia IP ou Security Group
+
+    [![image-20211207213551384](https://github.com/devfuckops/Treinamentos/raw/main/AWS%20Certification/AWS%20Certified%20Cloud%20Practitioner%20(CLF-C01)/Imagans/image-20211207213551384.png)](https://github.com/devfuckops/Treinamentos/blob/main/AWS Certification/AWS Certified Cloud Practitioner (CLF-C01)/Imagans/image-20211207213551384.png)
+
+
 
 
 
