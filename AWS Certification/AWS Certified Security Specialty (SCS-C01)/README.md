@@ -1191,65 +1191,64 @@ https://aws.amazon.com/pt/cloudtrail/
 
 O AWS CloudTrail monitora e registra a atividade da conta por toda a infraestrutura da AWS, oferecendo controle sobre o armazenamento, análise e ações de remediação. Rastreie atividades dos usuários e uso de APIs.
 
-- **Summary**
+#### **Summary**
 
-  - Auditoria de API
+- Auditoria de API
 
-  - Salva log´s em **Bucket S3** ou **Cloudwatch Logs**
+- Salva log´s em **Bucket S3** ou **Cloudwatch Logs**
 
-  - No bucket é configurado a retenção
+- No bucket é configurado a retenção
 
-  - É habilitado por default ( por 7 dias )
+- É habilitado por default ( por 7 dias )
 
-  - O que é "logado"
+- O que é "logado"
 
-    - *Metadata* 
-    - *Identidade*
-    - *Time*
-    - *Source IP*
-    - *Parametros*
-    - *Elementos do serviço*
+  - *Metadata* 
+  - *Identidade*
+  - *Time*
+  - *Source IP*
+  - *Parametros*
+  - *Elementos do serviço*
 
-  - **Notificações por SNS**
+- **Notificações por SNS**
 
-  - Pode agregar regiões e contas 
+- Pode agregar regiões e contas 
 
-  - Logs a cada 5 minutos (pode chegar a 15 minutos)
+- Logs a cada 5 minutos (pode chegar a 15 minutos)
 
-  - Prevenir que os logs sejam deletados
+- Prevenir que os logs sejam deletados
 
-    - Restrição de acesso c/ IAM e Bucket Policies
-    - Configuração S3 MFA Delete
+  - Restrição de acesso c/ IAM e Bucket Policies
+  - Configuração S3 MFA Delete
 
-  - Use **SSE-S3 ou SSE-KMS** p/ criptografar logs
+- Use **SSE-S3 ou SSE-KMS** p/ criptografar logs
 
-  - Eventos salvos por 90 dias - **Event History**
+- Eventos salvos por 90 dias - **Event History**
 
-    - https://docs.aws.amazon.com/awscloudtrail/latest/userguide/view-cloudtrail-events.html
+  - https://docs.aws.amazon.com/awscloudtrail/latest/userguide/view-cloudtrail-events.html
 
-  - Após esse período pode enviar para S3 e depois Athena
+- Após esse período pode enviar para S3 e depois Athena
 
-  - Logs API call details
+- Logs API call details
 
-  - Serviços não suportados pelo CloudTrail
+- Serviços não suportados pelo CloudTrail
 
-    - https://docs.aws.amazon.com/pt_br/awscloudtrail/latest/userguide/cloudtrail-unsupported-aws-services.html
+  - https://docs.aws.amazon.com/pt_br/awscloudtrail/latest/userguide/cloudtrail-unsupported-aws-services.html
 
-    
-
-- **CloudTrail Events Logs**
-
-  - **CloudTrails Insights Events**
-  - Envia para S3
-  - Retenção é no S3
-  - Entrega a cada 5 min c/ 15 min de delay
-  - **Data Events**
-
-    - AWS Lambda
-  - **Management Events**
   
-    - Separa Read Events from Write Events
-  
+
+#### **CloudTrail Events Logs**
+
+- **CloudTrails Insights Events**
+- Envia para S3
+- Retenção é no S3
+- Entrega a cada 5 min c/ 15 min de delay
+- **Data Events**
+
+  - AWS Lambda
+- **Management Events**
+
+  - Separa Read Events from Write Events
 
 
 
@@ -1347,7 +1346,19 @@ https://docs.aws.amazon.com/vpc/latest/userguide/vpc-endpoints.html
 
 #### **VPC Flow Logs**
 
+https://docs.aws.amazon.com/pt_br/vpc/latest/userguide/flow-logs.html
+
 - Logs do trafego da VPC
+
+- Tem como escolher no filtro - ALL, Accept or Deny
+
+- Levels
+
+  - VPC
+  - Subnet
+  - Network Interface
+
+  
 
 
 
@@ -1418,6 +1429,57 @@ https://aws.amazon.com/pt/directconnect/
 - Conexão dedicada com a AWS
 - Taxa de transferência alta
 - Estabelecer uma **conexão privada dedicada** entre o seu datacenter e a VPC.
+
+
+
+### **AWS Systems Manager**
+
+https://aws.amazon.com/systems-manager/
+
+#### **Summary**
+
+- Oferece visibilidade e controle de sua infraestrutura na AWS. É usado para corrigir sistemas em grande escala.
+- É usado para obter insights operacionais
+
+- Permite que os usuários controlem seus recursos unificando serviços onde ele podem visualizar, monitorar e automatizar
+- **EC2 e On-Premisses**
+- Patching
+- run comandos
+- store parameter
+- Windows e Linux
+- SSM agent
+
+
+
+
+
+#### **SSM Session Manager**
+
+- Linux, Windows e MacOs
+- Send log S3 ou CloudWatch Logs
+
+
+
+
+
+### **Elastic Load Balancing (ELB)**
+
+https://aws.amazon.com/pt/elasticloadbalancing/
+
+- **Tipos**
+  - **Gateway**
+  - **Application**
+    - (http/https only)
+    - Layer 7
+  - **Network**
+    - (ultra-high performance / TCP)
+    - Layer 4
+  - Classic
+    - (Layer 4 and Layer 7)
+- É regional
+- É altamente disponível
+
+
 
 
 
