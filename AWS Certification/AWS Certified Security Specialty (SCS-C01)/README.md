@@ -1353,15 +1353,20 @@ https://docs.aws.amazon.com/vpc/latest/userguide/vpc-endpoints.html
 
 
 
-#### **Network ACL - NACL vs Security Group**
+#### **Network ACL vs Security Group**
 
 - **Network ACL - NACL**
   - É uma camada opcional de segurança para seu VPC que atua como um firewall para controlar o tráfego de entrada e saída de uma ou mais sub-redes
   - Eles têm regras ALLOW e DENY
   - Incrementos na regra de 100 em 100
-  - Pode ser configurada adcionalmente a nível de subnet para controlar o **tráfego de entrada e saida**.
+  - Pode ser configurada adicionalmente a nível de subnet para controlar o **tráfego de entrada e saida**
+  - Tem que adicionar a subnet na ACL 
+  - As regras são executadas em sequencia 
+  - Ephemeral ports
+  - Bloqueia IP´s
   - **Segurança a nível da subnet**
-  - **Por padrão é tudo BLOQUEADO** - entrada e saída
+  - **NACL padrão é tudo Liberado** - entrada e saída 
+  - **NACL CRIADA é tudo BLOQUEADO** - entrada e saída
   - **Stateless** - checa entrada e saída
 
 
