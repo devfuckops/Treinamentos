@@ -42,6 +42,8 @@ https://aws.amazon.com/training/learn-about/security/
 
 https://www.youtube.com/watch?v=QMBkq6MrT2w&list=PLWY0DzS7zQeMPwpQvke2j94sxgFI2o3NM
 
+https://www.youtube.com/watch?v=BDeCVOpCsVo
+
 
 
 **AWS re:Inforce 2019: Best Practices for Choosing Identity Solutions for Applications (FND215)**
@@ -67,6 +69,8 @@ https://www.youtube.com/watch?v=fCH4r3s4THQ
 https://www.youtube.com/watch?v=KJiCfPXOW-U
 
 
+
+https://www.youtube.com/watch?v=9Nikqn_02Oc
 
 
 
@@ -95,7 +99,11 @@ https://www.udemy.com/course/aws-certified-security-specialty/
 
 https://www.youtube.com/watch?v=QMBkq6MrT2w&list=PLWY0DzS7zQeMPwpQvke2j94sxgFI2o3NM
 
+https://www.youtube.com/watch?v=HnoZS5jj7pk
+
 https://www.youtube.com/watch?v=kIZIkUnF3ow
+
+https://www.whizlabs.com/aws-certified-security-specialty/
 
 https://www.youtube.com/watch?v=VjVpqC0o4oQ&list=PLeLcvrwLe184Q24ljho5Md3Z38VY0keNt
 
@@ -1263,6 +1271,13 @@ O AWS CloudTrail monitora e registra a atividade da conta por toda a infraestrut
 - Route-Tables
 - Virtual Private Gateway - VPN
 - vpc-flowlogs - Captura trafego da vpc, subnet e armazena no cloudwatch logs
+- Sempre 5 ips reservados no CIDR range - ex: 10.0.0.0/16
+  - 10.0.0.0 - network address
+  - 10.0.0.1 - VPC router
+  - 10.0.0.2 - DNS
+  - 10.0.0.3 - Reserved 
+  - 10.0.0.255 - broadcast
+
 
 
 
@@ -1403,21 +1418,36 @@ https://docs.aws.amazon.com/pt_br/vpc/latest/userguide/flow-logs.html
 
 #### **VPN Site to Site**
 
-- **Summary**
+##### **Summary**
 
-  - Acesso seguro AWS á On Premisse
-  - Acesso Publico
+- Acesso seguro AWS á On Premisse
+- Acesso Publico
 
-  
+
 
 #### **Transit Gateway**
 
-- Summary
+https://aws.amazon.com/pt/transit-gateway/?whats-new-cards.sort-by=item.additionalFields.postDateTime&whats-new-cards.sort-order=desc
 
-  - Conecta milhares de redes VPC e locais em um único gateway.
-  - Conecta varias VPC´s e On Premisses juntos
+O AWS Transit Gateway conecta suas Amazon Virtual Private Clouds (VPCs) e redes on-premises por meio de um hub central.
 
-  
+Sua rede é agilizada e escalável. 
+
+O AWS Transit Gateway roteia todo o tráfego de e para cada VPC ou VPN, e você só tem um lugar para gerenciar e monitorar todas as operações.
+
+![Com o AWS Transit Gateway](./imagens/tgw-after.d85d3e2cb67fd2ed1a3be645d443e9f5910409fd.png)
+
+##### **Summary**
+
+- Conecta milhares de redes VPC e locais em um único gateway
+- Suporta 1000 VPC em um Transit Gateway
+- Utiliza AWS Private Network para o trafego entre VPC´s
+- Controla por route-tables
+- Suporta Multicast
+- Conecta varias VPC´s e On Premisses juntos
+- 
+
+
 
 #### **Direct Connect**
 
@@ -1428,6 +1458,73 @@ https://aws.amazon.com/pt/directconnect/
 - Estabelecer uma **conexão privada dedicada** entre o seu datacenter e a VPC.
 
 
+
+### **Route53**
+
+https://aws.amazon.com/pt/route53/
+
+#### **Summary**
+
+- Pode registrar nomes de domínios
+
+- Pode monitorar a saúde e o desempenho de seu aplicativo, bem como de seus servidores da web e outros recursos.
+  - DNS
+
+
+
+#### Routing Policies
+
+https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy.html
+
+- **Simple routing policy** (Política de roteamento simples)
+
+  - Use para um único recurso que executa uma determinada função para seu domínio, por exemplo, um servidor Web que oferece conteúdo para o site example.com.
+
+  - No health checks
+
+    
+
+- **Failover routing policy** (Política de roteamento de failover)
+
+  - Use quando quiser configurar o failover **ativo-passivo**.
+
+  - **Yes health checks**
+
+    
+
+- **Geolocation routing policy** (Política de roteamento de localização geográfica)
+
+  - Use quando quiser encaminhar o tráfego com base na localização dos usuários.
+
+    
+
+- **Geoproximity routing policy** (Política de roteamento de proximidade geográfica)
+
+  - Use quando quiser encaminhar o tráfego com base no local de seus recursos e, opcionalmente, alternar o tráfego de recursos em um local para recursos em outro local.
+
+    
+
+- **Latency routing policy** (Política de roteamento de latência):
+
+  - Use quando você tiver recursos em várias regiões da AWS e quiser encaminhar o tráfego para a região que fornece o menor tempo de ida e volta.
+
+  - Para melhor performance de usuários globais
+
+    
+
+- **Multivalue answer routing policy** (Política de roteamento de resposta com vários valores):
+
+  - Use quando quiser que o Route 53 responda a consultas de DNS com até oito registros íntegros selecionados aleatoriamente.
+
+    
+
+- **Weighted routing policy** (Política de roteamento ponderado):
+
+  - Use para encaminhar o tráfego para vários recursos nas proporções que você especificar.
+
+  - Permite associar vários recursos a um único nome de domínio (example.com) ou nome de subdomínio (acme.example.com) e escolher quanto tráfego é roteado para cada recurso.
+
+    
 
 ### **AWS Systems Manager**
 
@@ -2057,6 +2154,31 @@ https://aws.amazon.com/security/penetration-testing/
   - API Gateway
 
 
+
+
+
+### **DDoS - Distributed Denial of Service**
+
+https://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-ddos-resiliency/aws-best-practices-ddos-resiliency.pdf
+
+https://aws.amazon.com/pt/shield/ddos-attack-protection/
+
+https://jayendrapatil.com/aws-ddos-resiliency-best-practices-whitepaper-overview/
+
+#### **Summary**
+
+- Tipos de Ataque
+
+  - Amplification
+
+  - Reflection
+
+    
+
+- Como minimizar o ataque
+
+  - Minimize a área do ataque
+    - Use jumpbox/bastion host
 
 
 
