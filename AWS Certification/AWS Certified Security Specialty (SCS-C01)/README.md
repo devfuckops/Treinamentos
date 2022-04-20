@@ -1535,13 +1535,23 @@ https://aws.amazon.com/systems-manager/
 
 - Oferece visibilidade e controle de sua infraestrutura na AWS. É usado para corrigir sistemas em grande escala.
 - É usado para obter insights operacionais
-
 - Permite que os usuários controlem seus recursos unificando serviços onde ele podem visualizar, monitorar e automatizar
 - **EC2 e On-Premisses**
 - Patching
-- store parameter
 - Windows e Linux
 - SSM agent
+
+
+
+#### **Parameter Store**
+
+https://docs.aws.amazon.com/pt_br/systems-manager/latest/userguide/systems-manager-parameter-store.html
+
+- Types
+  - String
+  - String List
+  - Secure String
+    - KMS Key ID / Value
 
 
 
@@ -1855,18 +1865,27 @@ https://docs.aws.amazon.com/pt_br/kms/latest/developerguide/multi-region-keys-ov
 
 https://aws.amazon.com/pt/certificate-manager/
 
+https://docs.aws.amazon.com/acm/latest/userguide/managed-renewal.html
+
 É um serviço que permite provisionar, gerenciar e implantar facilmente certificados **Secure Sockets Layer (SSL)/Transport Layer Security (TLS)** para uso com os serviços da AWS e os recursos internos conectados.
 
 - Pode atualizar e renovar certificados HTTPS
 
+- Não pode exportar certificados gerenciados pela AWS
+
 - Pode importar o seu certificado
+
+  - Não renova certificados importados automaticamente 
 
 - 2 tipos de validação
 
   - DNS
     - Add CNAME na zona de DNS criada
 
+    - Renova o certificado automático
+
   - E-mail
+    - Envia um e-mail
 
 - Renovação automática
 
@@ -1899,6 +1918,16 @@ https://docs.aws.amazon.com/waf/latest/developerguide/waf-chapter.html
   - Código SQL que provavelmente é mal-intencionado. Os invasores tentam extrair dados do seu banco de dados ao incorporarem código SQL mal-intencionado a uma solicitação da web. Isso é conhecido como SQL injection.
   - Strings que aparecem na solicitação, por exemplo, valores que aparecem no cabeçalho `User-Agent` ou strings de texto que aparecem na string de consulta. Você também pode usar expressões regulares (regex) para especificar essas strings.
   - Etiquetas que as regras anteriores na ACL da Web adicionaram à solicitação.
+
+
+
+### **API Gateway**
+
+#### Summary
+
+- Expõe API´s
+- Serverless
+- RestFull e Websocket
 
 
 
@@ -2203,6 +2232,16 @@ https://aws.amazon.com/blogs/security/what-to-do-if-you-inadvertently-expose-an-
 
 
 ### **Reading CloudTrail Logs**
+
+
+
+### **API Gateway - Throttling**
+
+https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-request-throttling.html
+
+- Limits - 10,000 requests per second 
+- Enable API Caching
+  - TTL = cache disabled
 
 
 
