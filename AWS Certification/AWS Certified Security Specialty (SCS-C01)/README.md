@@ -1941,6 +1941,14 @@ https://aws.amazon.com/pt/shield/?whats-new-cards.sort-by=item.additionalFields.
 
   - Protege contra Ataque DDoS
 
+  - Fornece proteção para:
+
+    - ELBS
+
+    - Cloudfront
+
+    - Route 53
+
   - Layer 3 / Layer 4
 
   - Está sob a responsabilidade da AWS no **Shared Responsability Model** 
@@ -1949,7 +1957,7 @@ https://aws.amazon.com/pt/shield/?whats-new-cards.sort-by=item.additionalFields.
 
 - **Shield Advanced**
 
-  - **No shield advanced vc tem acesso ao time AWS DDoS**
+  - **No shield advanced vc tem acesso ao time AWS DDoS Response Team (DRT)**
   - $3000 p/ mês - se vc for vitima de um ataque vc não paga 
   - Fornece proteção extendida para:
     - Amazon Elastic Compute Cloud
