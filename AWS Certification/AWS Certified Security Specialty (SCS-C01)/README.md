@@ -1466,6 +1466,7 @@ https://aws.amazon.com/pt/route53/
 #### **Summary**
 
 - Pode registrar nomes de domínios
+- Você pode comprar e registrar os domínios e  pode entender o período 
 
 - Pode monitorar a saúde e o desempenho de seu aplicativo, bem como de seus servidores da web e outros recursos.
   - DNS
@@ -1852,11 +1853,20 @@ https://docs.aws.amazon.com/pt_br/kms/latest/developerguide/multi-region-keys-ov
 
 ### **AWS Certificate Manager** (ACM)
 
-É um serviço que permite provisionar, gerenciar e implantar facilmente certificados **Secure Sockets Layer (SSL)/Transport Layer Security (TLS)** para uso com os serviços da AWS e os recursos internos conectados.
-
 https://aws.amazon.com/pt/certificate-manager/
 
-- Pode atualizar e renover certificados HTTPS
+É um serviço que permite provisionar, gerenciar e implantar facilmente certificados **Secure Sockets Layer (SSL)/Transport Layer Security (TLS)** para uso com os serviços da AWS e os recursos internos conectados.
+
+- Pode atualizar e renovar certificados HTTPS
+
+- Pode importar o seu certificado
+
+- 2 tipos de validação
+
+  - DNS
+    - Add CNAME na zona de DNS criada
+
+  - E-mail
 
 - Renovação automática
 
@@ -1868,7 +1878,7 @@ https://aws.amazon.com/pt/certificate-manager/
   - API Gateway
 
   
-  
+
   
 
 ### **AWS Web Application Firewall (WAF)**
@@ -2123,7 +2133,7 @@ https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-policy-language-ove
 
 
 
-## **Incident Management**
+## **Incident Response**
 
 ### How to Setup an Alert if the Root user login
 
@@ -2179,6 +2189,39 @@ https://jayendrapatil.com/aws-ddos-resiliency-best-practices-whitepaper-overview
 
   - Minimize a área do ataque
     - Use jumpbox/bastion host
+
+
+
+
+
+### **Expose AWS Access Keys**
+
+https://aws.amazon.com/blogs/security/what-to-do-if-you-inadvertently-expose-an-aws-access-key/
+
+- Inativar/deletar a Access Keys
+
+
+
+### **Reading CloudTrail Logs**
+
+
+
+### **Penetration Testing**
+
+https://aws.amazon.com/security/penetration-testing/
+
+- Os clientes da AWS podem realizar avaliações de segurança ou testes de penetração em sua infraestrutura da AWS sem aprovação prévia em oito serviços, listados na próxima seção como “**Serviços permitidos**”.
+- Serviços permitidos
+  - EC2
+  - RDS
+  - Aurora
+  - Beanstalk
+  - API Gateway
+- Serviços proibidos
+  - DDoS
+  - Port Flooting
+  - Protocol Flooting
+- Autorização deve ser solicitada via e-mail 
 
 
 
