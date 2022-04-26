@@ -121,6 +121,32 @@ https://www.udemy.com/course/aws-certified-security-specialty/
 
 https://www.youtube.com/watch?v=VjVpqC0o4oQ&list=PLeLcvrwLe184Q24ljho5Md3Z38VY0keNt
 
+https://www.youtube.com/watch?v=Ek1oQKtp5eU
+
+https://www.youtube.com/watch?v=d5V6kfCa9xY
+
+https://www.pluralsight.com/courses/demystifying-aws-security-specialty-exam?aid=7010a000002BWqBAAW&promo=&utm_source=non_branded&utm_medium=digital_paid_search_google&utm_campaign=NASA_Dynamic&utm_content=&cq_cmp=846117097&gclid=CjwKCAjwsJ6TBhAIEiwAfl4TWMbnBA7k0R0GX_yHdGGyCW6H9bf-iZxHN2c3qCUCw0xanYii6Y0ZDxoCWtYQAvD_BwE
+
+https://www.scalefactory.com/events/webinars/2020/07/30/architecture-for-security-on-aws/
+
+https://www.youtube.com/watch?v=YQsK4MtsELU
+
+https://wellarchitectedlabs.com/
+
+https://wellarchitectedlabs.com/security/
+
+https://scalefactory.com/blog/2021/01/31/how-i-passed-the-aws-security-specialty-exam/
+
+https://explore.skillbuilder.aws/learn/course/internal/view/elearning/353/the-aws-certification-quiz-show-security-specialty-exam-episode-1
+
+https://explore.skillbuilder.aws/learn/course/external/view/elearning/323/the-aws-certification-quiz-show-security-specialty-exam-episode-2
+
+https://explore.skillbuilder.aws/learn/course/external/view/elearning/300/the-aws-certification-quiz-show-security-specialty-exam-episode-3
+
+https://www.twitch.tv/aws/video/467770461
+
+https://explore.skillbuilder.aws/learn/course/internal/view/elearning/300/the-aws-certification-quiz-show-security-specialty-exam-episode-3
+
 
 
 # **Documentação Oficial**
@@ -872,6 +898,8 @@ https://aws.amazon.com/pt/premiumsupport/technology/trusted-advisor/
 
 ### **AWS Inspector**
 
+*****Cai muito*****
+
 https://aws.amazon.com/pt/inspector/
 
 https://docs.aws.amazon.com/inspector/v1/userguide/inspector_cis.html
@@ -965,6 +993,40 @@ https://docs.aws.amazon.com/pt_br/config/latest/developerguide/aggregate-data.ht
 - ##### **Customer managed Rules**
 
   - https://docs.aws.amazon.com/pt_br/config/latest/developerguide/evaluate-config_develop-rules.html
+
+
+
+### **Athena**
+
+https://aws.amazon.com/athena/
+
+#### **Summary**
+
+- **É um serviço de consulta interativo que facilita a análise de dados no Amazon S3 usando SQL padrão.**
+
+- Utiliza diretamente o S3
+
+- Serveless
+
+- SQL Languege
+
+- Casos de uso
+
+  - BI
+  - Analytics
+  - Report and Analyze
+
+- Support
+
+  - CVS
+
+  - JSON
+
+  - ORC
+
+  - AvroParquet
+
+    
 
 
 
@@ -1174,14 +1236,33 @@ https://docs.aws.amazon.com/detective/latest/adminguide/what-is-detective.html
 
 ### Amazon Macie
 
+https://aws.amazon.com/pt/macie/
+
+O Amazon Macie é um serviço de segurança e privacidade de dados totalmente gerenciado que usa machine learning e correspondência de padrões para descobrir e proteger seus dados confidenciais na AWS.
+
+#### **Summary**
+
 - Usa machine learning
+- Usa NLP 
+- Pode analisar logs CloudTrail
 - Analisa dados no S3
 - PII data
+  - Personally Identifiable Information
+    - home address, e-mail, Driver Licence 
+
 - Dados sensíveis
+- Classificação dos dados
+  - Por tipo de conteúdo
+  - Por Tema
+  - Por extensão arquivos
+  - Por Expressão Regular 
+
 
 
 
 ### **Secrets Manager**
+
+#### **Summary**
 
 - Rotação de secrets
 
