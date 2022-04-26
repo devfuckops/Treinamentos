@@ -1,7 +1,6 @@
 # Treinamentos
 
 
-
 1. **[Kubernetes](https://github.com/devfuckops/Treinamentos/tree/main/Kubernetes)**
 2. **[Cheatsheet](https://github.com/devfuckops/Treinamentos/tree/main/Cheatsheet)**
 3. **[Git](https://github.com/devfuckops/Treinamentos/tree/main/Git)**
