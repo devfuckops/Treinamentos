@@ -996,6 +996,19 @@ https://docs.aws.amazon.com/pt_br/config/latest/developerguide/aggregate-data.ht
 
 
 
+### **SES Simple Email Services**
+
+#### **Summary**
+
+- Configurar um **VPC Endpoint com AWS PrivateLink** para alcançar dentro da VPC
+- Access SES to EC2
+  - Configure SG for communication SMTP endpoint
+    - 3 endpoints 
+  - Portas 587 or 2587
+  - Port 25 default - Throttles 
+
+
+
 ### **Athena**
 
 https://aws.amazon.com/athena/
@@ -1119,7 +1132,7 @@ https://docs.aws.amazon.com/pt_br/AmazonCloudWatch/latest/monitoring/working_wit
   - Custom Event buses
   - Schema registry
 
-## 
+
 
 
 
@@ -1127,7 +1140,40 @@ https://docs.aws.amazon.com/pt_br/AmazonCloudWatch/latest/monitoring/working_wit
 
 ### AWS Security Hub
 
-https://aws.amazon.com/security-hub/?c=sc&sec=srv&aws-security-hub-blogs.sort-by=item.additionalFields.createdDate&aws-security-hub-blogs.sort-order=desc
+https://aws.amazon.com/pt/security-hub/?nc=sn&loc=0
+
+#### **Summary**
+
+- **Tem que habilitar o AWS Config**
+- CloudWatch Events
+  - - SIEM
+    - Notification
+    - Chat
+    - Lambda
+
+
+
+- Automated checks - habilita durante o setup
+  - PCI-DDS
+  - CIS
+
+- Integra com
+
+  - Guardduty
+
+  - Inspector
+
+  - Macie
+
+  - IAM Access Analiser
+
+  - AWS Systems Manager
+
+  - AWS Firewall Manager
+
+  - AWS Partner Network Solutions
+
+    
 
 
 
@@ -1192,15 +1238,37 @@ Acesso limitado e temporario a recursos da AWS.
 
 https://aws.amazon.com/pt/guardduty/
 
+#### **Summary**
+
 - Detecção de ameaças
 
 - **DNS Logs, Flow Logs e Cloudtrail Logs**
 
+- Tem que habilitar o service role 
+
 - Usa Machine Learning
+
+- Update findings notification
+
+  - 6 hours (default)
+  
+  - 1 hour
+  
+  - 15 min
+  
+- Centraliza detecçao de multiple accounts
+
+- Respostas automáticas - CloudWatch Events e Lambda
+
+- 7 a 14 dias para configurar no baseline
+
+- 30 dias free
 
   
 
 ### **Amazon Inspector**
+
+#### **Summary**
 
 - É um serviço automatizado de avaliação de segurança que ajuda a melhorar a segurança e a conformidade dos aplicativos implantados na AWS.
 
@@ -1217,6 +1285,8 @@ https://aws.amazon.com/pt/guardduty/
 ### Amazon Detective
 
 https://docs.aws.amazon.com/detective/latest/adminguide/what-is-detective.html
+
+#### **Summary**
 
 - Torna mais fácil analisar, investigar e identificar rapidamente a **causa raiz** de possíveis problemas de segurança ou atividades suspeitas.
 
@@ -1262,13 +1332,49 @@ O Amazon Macie é um serviço de segurança e privacidade de dados totalmente ge
 
 ### **Secrets Manager**
 
+https://aws.amazon.com/pt/secrets-manager/
+
 #### **Summary**
 
 - Rotação de secrets
 
 - Integra com RDS
 
-- criptografia com KMS
+- **In-trasit and at rest using KMS**
+
+- Schedule Delete Secret
+
+  - Between 7 - 30 days
+  - default 7
+  
+- You Pay
+
+- Language app 
+
+  - Java
+  - Javascript
+  - C#
+  - Python3
+  - Ruby
+  - Go
+
+- Enable automatic rotation 
+
+  - Vem desativado por padrão
+  - Seleciona o intervalo de rotação (default - 30 dias)
+  - Cria uma lambda function para rotação
+
+- Casos de uso
+
+  - Database credentials
+
+  - RDS credentials
+
+  - Outros (API Key)
+
+  - **Rotation secrets**
+
+    
 
   
 
