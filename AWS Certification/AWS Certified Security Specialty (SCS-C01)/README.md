@@ -2359,6 +2359,19 @@ https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-policy-language-ove
 
 ## **Incident Response**
 
+### **Network Packet Inspection**
+
+https://docs.aws.amazon.com/vpc/latest/userguide/network-firewall.html
+
+https://docs.aws.amazon.com/network-firewall/latest/developerguide/rule-groups.html
+
+#### **Summary**
+
+- Tools
+  - Utilize ferramentas de terceiros 
+
+
+
 ### How to Setup an Alert if the Root user login
 
 https://aws.amazon.com/blogs/mt/monitor-and-notify-on-aws-account-root-user-activity/
