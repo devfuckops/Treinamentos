@@ -898,7 +898,7 @@ https://aws.amazon.com/pt/premiumsupport/technology/trusted-advisor/
 
 ### **AWS Inspector**
 
-*****Cai muito*****
+***Cai muito***
 
 https://aws.amazon.com/pt/inspector/
 
@@ -996,7 +996,9 @@ https://docs.aws.amazon.com/pt_br/config/latest/developerguide/aggregate-data.ht
 
 
 
-### **SES Simple Email Services**
+### **AWS SES - Simple Email Services**
+
+https://aws.amazon.com/pt/ses/
 
 #### **Summary**
 
@@ -1314,11 +1316,13 @@ O Amazon Macie é um serviço de segurança e privacidade de dados totalmente ge
 
 - Usa machine learning
 - Usa NLP 
+- Dashboards
 - Pode analisar logs CloudTrail
 - Analisa dados no S3
+- PCI-DSS
 - PII data
   - Personally Identifiable Information
-    - home address, e-mail, Driver Licence 
+    - Home address, e-mail, Driver Licence 
 
 - Dados sensíveis
 - Classificação dos dados
@@ -1372,7 +1376,7 @@ https://aws.amazon.com/pt/secrets-manager/
 
   - Outros (API Key)
 
-  - **Rotation secrets**
+  - **Rotation secrets** // But be careful
 
     
 
@@ -1548,6 +1552,8 @@ https://docs.aws.amazon.com/vpc/latest/userguide/vpc-endpoints.html
 https://docs.aws.amazon.com/pt_br/vpc/latest/userguide/flow-logs.html
 
 - Logs do trafego da VPC
+
+- **Não inspeciona os pacotes** 
 
 - Tem como escolher no filtro - ALL, Accept or Deny
 
@@ -2093,6 +2099,7 @@ https://docs.aws.amazon.com/waf/latest/developerguide/waf-chapter.html
 
 - Firewall aplicação web
 - Protege contra Ataque DDoS
+- **Não inspeciona os pacotes**
 - Layer 7 (HTTP)
 - **Pode bloquear todas as solicitações, exceto aquelas que você especificar**
 - **Add Assossiation - Deploy in ALB, API GW e CloudFront**
@@ -2115,6 +2122,20 @@ https://docs.aws.amazon.com/waf/latest/developerguide/waf-chapter.html
 - Expõe API´s
 - Serverless
 - RestFull e Websocket
+
+
+
+### AWS Artifact
+
+https://aws.amazon.com/pt/artifact/
+
+#### **Summary**
+
+- Acesso aos relatórios emitidos pelo auditor da AWS
+  - ISO
+  - PCI
+  - SOC Reports
+- **Não é um serviço AWS**
 
 
 
@@ -2369,6 +2390,7 @@ https://docs.aws.amazon.com/network-firewall/latest/developerguide/rule-groups.h
 
 - Tools
   - Utilize ferramentas de terceiros 
+  - **Flow Logs e AWS WAF não inspecionam os pacotes**
 
 
 
