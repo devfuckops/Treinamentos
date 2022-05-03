@@ -6,6 +6,24 @@ https://aws.amazon.com/pt/certification/certified-security-specialty/
 
 
 
+# Dicas sobre a prova
+
+- https://aws.amazon.com/pt/blogs/aws-brasil/dicas-para-a-certificacao-de-especialista-em-seguranca-na-aws/
+
+- https://jayendrapatil.com/aws-certified-security-speciality-scs-c01-exam-learning-path/
+
+- https://www.youtube.com/watch?v=kIZIkUnF3ow
+
+- https://www.youtube.com/watch?v=d5V6kfCa9xY
+
+- https://scalefactory.com/blog/2021/01/31/how-i-passed-the-aws-security-specialty-exam/
+
+- **Prepare for AWS Certified Security – Specialty | Cloud Security | AWS Training | Infosectrain**
+
+  https://www.youtube.com/watch?v=Ek1oQKtp5eU
+
+
+
 # **Treinamentos**
 
 
@@ -16,107 +34,124 @@ https://aws.amazon.com/pt/certification/certified-security-specialty/
 
 
 
-
-
 ## AWS
 
-https://aws.amazon.com/pt/certification/certified-security-specialty/✔
+- https://aws.amazon.com/pt/certification/certified-security-specialty/✔
 
-https://d1.awsstatic.com/training-and-certification/ramp-up_guides/Ramp-Up_Guide_Security.pdf✔
-
-https://explore.skillbuilder.aws/learn/course/internal/view/elearning/101/getting-started-with-aws-security-identity-and-compliance?ss=sec&sec=prep
-
-https://explore.skillbuilder.aws/learn/course/internal/view/elearning/485/aws-foundations-securing-your-aws-cloud?trk=c750fe34-f44f-43e1-bcc0-6219228839b9&sc_channel=el
-
-https://explore.skillbuilder.aws/learn/course/internal/view/elearning/101/getting-started-with-aws-security-identity-and-compliance?trk=c750fe34-f44f-43e1-bcc0-6219228839b9&sc_channel=el
-
-https://explore.skillbuilder.aws/learn/course/internal/view/elearning/48/aws-security-fundamentals-second-edition?trk=c750fe34-f44f-43e1-bcc0-6219228839b9&sc_channel=el
-
-https://explore.skillbuilder.aws/learn/course/internal/view/elearning/85/authentication-and-authorization-with-aws-identity-and-access-management?trk=c750fe34-f44f-43e1-bcc0-6219228839b9&sc_channel=el
-
-https://explore.skillbuilder.aws/learn/course/internal/view/elearning/2045/aws-well-architected?trk=c750fe34-f44f-43e1-bcc0-6219228839b9&sc_channel=el
-
-https://aws.amazon.com/training/classroom/aws-security-essentials/?trk=c750fe34-f44f-43e1-bcc0-6219228839b9&sc_channel=el
-
-https://github.com/brunokktro/auladobruno#security-engineering-on-aws
-
-https://explore.skillbuilder.aws/learn/course/internal/view/elearning/11612/exam-readiness-aws-certified-security-specialty-portuguese
-
-https://explore.skillbuilder.aws/learn/course/internal/view/elearning/97/exam-readiness-aws-certified-security-specialty
-
-https://aws.amazon.com/pt/blogs/aws-brasil/dicas-para-a-certificacao-de-especialista-em-seguranca-na-aws/
-
-https://aws.amazon.com/training/learn-about/security/
+- https://d1.awsstatic.com/training-and-certification/ramp-up_guides/Ramp-Up_Guide_Security.pdf✔
 
 
 
-### **AWS Reivent** 
+### AWS Skill Builder
+
+- https://explore.skillbuilder.aws/learn/course/internal/view/elearning/101/getting-started-with-aws-security-identity-and-compliance?ss=sec&sec=prep
+
+- https://explore.skillbuilder.aws/learn/course/internal/view/elearning/485/aws-foundations-securing-your-aws-cloud?trk=c750fe34-f44f-43e1-bcc0-6219228839b9&sc_channel=el
+
+- https://explore.skillbuilder.aws/learn/course/internal/view/elearning/101/getting-started-with-aws-security-identity-and-compliance?trk=c750fe34-f44f-43e1-bcc0-6219228839b9&sc_channel=el
+
+- https://explore.skillbuilder.aws/learn/course/internal/view/elearning/48/aws-security-fundamentals-second-edition?trk=c750fe34-f44f-43e1-bcc0-6219228839b9&sc_channel=el
+
+- https://explore.skillbuilder.aws/learn/course/internal/view/elearning/85/authentication-and-authorization-with-aws-identity-and-access-management?trk=c750fe34-f44f-43e1-bcc0-6219228839b9&sc_channel=el
+
+- https://explore.skillbuilder.aws/learn/course/internal/view/elearning/2045/aws-well-architected?trk=c750fe34-f44f-43e1-bcc0-6219228839b9&sc_channel=el
+
+- https://aws.amazon.com/training/learn-about/security/
 
 
 
-**AWS re:Inforce 2019: Best Practices for Choosing Identity Solutions for Applications (FND215)**
 
-https://www.youtube.com/watch?v=-xTs4MmQOo4
-
-
-
-**AWS re:Invent 2017: A Deep Dive into AWS Encryption Services (SID329)**
-
-https://www.youtube.com/watch?v=gTZgxsCTfbk
+### **AWS Videos** 
 
 
 
-**AWS re:Invent 2015 | (SEC201) How Should We All Think About Security?**
+- **AWS re:Inforce 2019: Best Practices for Choosing Identity Solutions for Applications (FND215)**
 
-https://www.youtube.com/watch?v=fCH4r3s4THQ
-
-
-
-**AWS re:Invent 2017: The AWS Philosophy of Security (SID322)**
-
-https://www.youtube.com/watch?v=KJiCfPXOW-U
+  - https://www.youtube.com/watch?v=-xTs4MmQOo4
 
 
+  
 
-https://www.youtube.com/watch?v=9Nikqn_02Oc
+- **AWS re:Invent 2017: A Deep Dive into AWS Encryption Services (SID329)**
+
+  - https://www.youtube.com/watch?v=gTZgxsCTfbk
+
+
+  
+
+- **AWS re:Invent 2015 | (SEC201) How Should We All Think About Security?**
+
+  - https://www.youtube.com/watch?v=fCH4r3s4THQ
+
+
+  
+
+- **AWS re:Invent 2017: The AWS Philosophy of Security (SID322)**
+
+  - https://www.youtube.com/watch?v=KJiCfPXOW-U
+
+  
+
+- **AWS re:Invent 2019: [REPEAT 1] AWS Transit Gateway reference architectures for many VPCs (NET406-R1)**
+
+  - https://www.youtube.com/watch?v=9Nikqn_02Oc
+
+
+  
+
+- **AWS re:Invent 2019: [REPEAT 1] Getting started with AWS identity (SEC209-R1)**
+
+  - https://www.youtube.com/watch?v=Zvz-qYYhvMk&list=PL2yQDdvlhXf9Ub-ekxAq0wMJpslV562SP&index=25
+
+    
+
+- **AWS re:Invent 2019: [REPEAT 2] The fundamentals of AWS cloud security (SEC205-R2**)
+
+  - https://www.youtube.com/watch?v=QMBkq6MrT2w&list=PLWY0DzS7zQeMPwpQvke2j94sxgFI2o3NM
+
+  
+
+- **Best Practices for DDoS Mitigation on AWS**
+
+  - https://www.youtube.com/watch?v=HnoZS5jj7pk
+
+  
+
+  **AWS re:Invent 2018: [REPEAT 1] Become an IAM Policy Master in 60 Minutes or Less (SEC316-R1)**
+
+- https://www.youtube.com/watch?v=YQsK4MtsELU
 
 
 
-**AWS re:Invent 2019: [REPEAT 1] Getting started with AWS identity (SEC209-R1)**
+- **Advanced Security Best Practices Masterclass**
+  - https://www.youtube.com/watch?v=zU1x5SfKEzs
 
-https://www.youtube.com/watch?v=Zvz-qYYhvMk&list=PL2yQDdvlhXf9Ub-ekxAq0wMJpslV562SP&index=25
 
-https://www.youtube.com/watch?v=VjVpqC0o4oQ&list=PLeLcvrwLe184Q24ljho5Md3Z38VY0keNt
 
-https://www.youtube.com/watch?v=QMBkq6MrT2w&list=PLWY0DzS7zQeMPwpQvke2j94sxgFI2o3NM
+- **AWS re:Invent 2018: Your Virtual Data Center: VPC Fundamentals and Connectivity Options (NET201)**
+  - https://www.youtube.com/watch?v=jZAvKgqlrjY
 
-https://www.youtube.com/watch?v=HnoZS5jj7pk
 
-https://www.youtube.com/watch?v=kIZIkUnF3ow
 
-https://www.youtube.com/watch?v=QMBkq6MrT2w&list=PLWY0DzS7zQeMPwpQvke2j94sxgFI2o3NM
+- **AWS re:Invent 2019: [REPEAT 1] AWS Transit Gateway reference architectures for many VPCs (NET406-R1)**
 
-https://www.youtube.com/watch?v=BDeCVOpCsVo
+  - https://www.youtube.com/watch?v=9Nikqn_02Oc
 
-https://www.youtube.com/watch?v=YQsK4MtsELU
+  
 
-https://www.youtube.com/watch?v=zU1x5SfKEzs
+- **AWS re:Invent 2018: [REPEAT 1] Become an IAM Policy Master in 60 Minutes or Less (SEC316-R1)**
 
-https://www.youtube.com/watch?v=jZAvKgqlrjY
+  - https://www.youtube.com/watch?v=YQsK4MtsELU
 
-https://www.youtube.com/watch?v=9Nikqn_02Oc
 
-https://www.youtube.com/watch?v=VjVpqC0o4oQ&list=PLeLcvrwLe184Q24ljho5Md3Z38VY0keNt
 
-https://www.youtube.com/watch?v=Ek1oQKtp5eU
+- **AWS re:invent 2017: Best Practices for Implementing AWS Key Management Service (SID330)**
+  - https://www.youtube.com/watch?v=X1eZjXQ55ec
 
-https://www.youtube.com/watch?v=d5V6kfCa9xY
 
-https://www.youtube.com/watch?v=YQsK4MtsELU
 
-https://www.youtube.com/watch?v=X1eZjXQ55ec
-
-https://www.youtube.com/watch?v=gTZgxsCTfbk
+- **AWS re:Invent 2017: A Deep Dive into AWS Encryption Services (SID329)**
+  - https://www.youtube.com/watch?v=gTZgxsCTfbk
 
 
 
@@ -127,6 +162,8 @@ https://maturitymodel.security.aws.dev/en/
 https://wellarchitectedlabs.com/
 
 https://wellarchitectedlabs.com/security/
+
+http://dfr20cpm485ln.cloudfront.net/SecEng_HLS_index.html
 
 
 
@@ -150,12 +187,6 @@ https://d1.awsstatic.com/whitepapers/compliance/AWS_Security_at_Scale_Logging_in
 
 
 
-
-
-
-
-
-
 ## The AWS Certification Quiz Show
 
 https://www.twitch.tv/aws/video/467770461
@@ -170,6 +201,14 @@ https://explore.skillbuilder.aws/learn/course/external/view/elearning/300/the-aw
 
 
 
+## **AWS Exam Readiness: AWS Certified Security - Specialty**
+
+https://explore.skillbuilder.aws/learn/course/internal/view/elearning/11612/exam-readiness-aws-certified-security-specialty-portuguese
+
+https://explore.skillbuilder.aws/learn/course/internal/view/elearning/97/exam-readiness-aws-certified-security-specialty
+
+
+
 
 ## Dojo
 
@@ -177,17 +216,27 @@ https://portal.tutorialsdojo.com/courses/exam-readiness-aws-certified-security-s
 
 
 
+## Zeal Vora
+
+https://www.udemy.com/course/aws-certified-security-specialty/
+
 
 
 ## Vários
 
-https://www.udemy.com/course/aws-certified-security-specialty/
+**AWS Certified Security – Specialty Exam Guide | 3. Access Management**
 
-http://dfr20cpm485ln.cloudfront.net/SecEng_HLS_index.html
+- https://www.youtube.com/watch?v=VjVpqC0o4oQ&list=PLeLcvrwLe184Q24ljho5Md3Z38VY0keNt
 
-https://learn.cantrill.io/
+  
 
-https://www.udemy.com/user/cybercorp/
+
+
+**AWS Shield Tutorial | AWS Shield Advanced DDOS mitigation theory and hands-on**
+
+- https://www.youtube.com/watch?v=BDeCVOpCsVo
+
+  
 
 https://www.udemy.com/course/aws-certified-security-specialty-exam/
 
@@ -197,7 +246,7 @@ https://www.pluralsight.com/courses/demystifying-aws-security-specialty-exam?aid
 
 https://www.scalefactory.com/events/webinars/2020/07/30/architecture-for-security-on-aws/
 
-https://scalefactory.com/blog/2021/01/31/how-i-passed-the-aws-security-specialty-exam/
+https://github.com/brunokktro/auladobruno#security-engineering-on-aws
 
 
 
@@ -208,6 +257,12 @@ https://scalefactory.com/blog/2021/01/31/how-i-passed-the-aws-security-specialty
 ### Whizlabs
 
 https://www.whizlabs.com/aws-certified-security-specialty/
+
+
+
+## Acloudguru
+
+- https://learn.acloud.guru/course/aws-certified-security-specialty/overview/
 
 
 
