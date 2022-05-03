@@ -10,6 +10,14 @@ https://aws.amazon.com/pt/certification/certified-security-specialty/
 
 
 
+## Acloudguru
+
+- https://learn.acloud.guru/course/aws-certified-security-specialty/overview/✔
+
+
+
+
+
 ## AWS
 
 https://aws.amazon.com/pt/certification/certified-security-specialty/✔
@@ -40,9 +48,9 @@ https://aws.amazon.com/pt/blogs/aws-brasil/dicas-para-a-certificacao-de-especial
 
 https://aws.amazon.com/training/learn-about/security/
 
-https://www.youtube.com/watch?v=QMBkq6MrT2w&list=PLWY0DzS7zQeMPwpQvke2j94sxgFI2o3NM
 
-https://www.youtube.com/watch?v=BDeCVOpCsVo
+
+### **AWS Reivent** 
 
 
 
@@ -78,11 +86,87 @@ https://www.youtube.com/watch?v=9Nikqn_02Oc
 
 https://www.youtube.com/watch?v=Zvz-qYYhvMk&list=PL2yQDdvlhXf9Ub-ekxAq0wMJpslV562SP&index=25
 
+https://www.youtube.com/watch?v=VjVpqC0o4oQ&list=PLeLcvrwLe184Q24ljho5Md3Z38VY0keNt
+
+https://www.youtube.com/watch?v=QMBkq6MrT2w&list=PLWY0DzS7zQeMPwpQvke2j94sxgFI2o3NM
+
+https://www.youtube.com/watch?v=HnoZS5jj7pk
+
+https://www.youtube.com/watch?v=kIZIkUnF3ow
+
+https://www.youtube.com/watch?v=QMBkq6MrT2w&list=PLWY0DzS7zQeMPwpQvke2j94sxgFI2o3NM
+
+https://www.youtube.com/watch?v=BDeCVOpCsVo
+
+https://www.youtube.com/watch?v=YQsK4MtsELU
+
+https://www.youtube.com/watch?v=zU1x5SfKEzs
+
+https://www.youtube.com/watch?v=jZAvKgqlrjY
+
+https://www.youtube.com/watch?v=9Nikqn_02Oc
+
+https://www.youtube.com/watch?v=VjVpqC0o4oQ&list=PLeLcvrwLe184Q24ljho5Md3Z38VY0keNt
+
+https://www.youtube.com/watch?v=Ek1oQKtp5eU
+
+https://www.youtube.com/watch?v=d5V6kfCa9xY
+
+https://www.youtube.com/watch?v=YQsK4MtsELU
+
+https://www.youtube.com/watch?v=X1eZjXQ55ec
+
+https://www.youtube.com/watch?v=gTZgxsCTfbk
 
 
-## acloudguru
 
-- https://learn.acloud.guru/course/aws-certified-security-specialty/overview
+### **AWS Workshops**
+
+https://maturitymodel.security.aws.dev/en/
+
+https://wellarchitectedlabs.com/
+
+https://wellarchitectedlabs.com/security/
+
+
+
+### AWS FAQ
+
+https://aws.amazon.com/faqs/
+
+
+
+### AWS Whitepapper
+
+https://d1.awsstatic.com/whitepapers/aws-kms-best-practices.pdf
+
+https://d1.awsstatic.com/whitepapers/KMS-Cryptographic-Details.pdf
+
+https://d1.awsstatic.com/whitepapers/Security/DDoS_White_Paper.pdf
+
+https://d1.awsstatic.com/whitepapers/compliance/AWS_Security_at_Scale_Logging_in_AWS_Whitepaper.pdf
+
+
+
+
+
+
+
+
+
+
+
+## The AWS Certification Quiz Show
+
+https://www.twitch.tv/aws/video/467770461
+
+https://explore.skillbuilder.aws/learn/course/internal/view/elearning/353/the-aws-certification-quiz-show-security-specialty-exam-episode-1
+
+https://explore.skillbuilder.aws/learn/course/external/view/elearning/323/the-aws-certification-quiz-show-security-specialty-exam-episode-2
+
+https://explore.skillbuilder.aws/learn/course/external/view/elearning/300/the-aws-certification-quiz-show-security-specialty-exam-episode-3
+
+
 
 
 
@@ -93,21 +177,11 @@ https://portal.tutorialsdojo.com/courses/exam-readiness-aws-certified-security-s
 
 
 
-## vários
+
+
+## Vários
 
 https://www.udemy.com/course/aws-certified-security-specialty/
-
-https://www.youtube.com/watch?v=QMBkq6MrT2w&list=PLWY0DzS7zQeMPwpQvke2j94sxgFI2o3NM
-
-https://www.youtube.com/watch?v=HnoZS5jj7pk
-
-https://www.youtube.com/watch?v=kIZIkUnF3ow
-
-https://www.whizlabs.com/aws-certified-security-specialty/
-
-https://www.youtube.com/watch?v=VjVpqC0o4oQ&list=PLeLcvrwLe184Q24ljho5Md3Z38VY0keNt
-
-https://maturitymodel.security.aws.dev/en/
 
 http://dfr20cpm485ln.cloudfront.net/SecEng_HLS_index.html
 
@@ -119,33 +193,21 @@ https://www.udemy.com/course/aws-certified-security-specialty-exam/
 
 https://www.udemy.com/course/aws-certified-security-specialty/
 
-https://www.youtube.com/watch?v=VjVpqC0o4oQ&list=PLeLcvrwLe184Q24ljho5Md3Z38VY0keNt
-
-https://www.youtube.com/watch?v=Ek1oQKtp5eU
-
-https://www.youtube.com/watch?v=d5V6kfCa9xY
-
 https://www.pluralsight.com/courses/demystifying-aws-security-specialty-exam?aid=7010a000002BWqBAAW&promo=&utm_source=non_branded&utm_medium=digital_paid_search_google&utm_campaign=NASA_Dynamic&utm_content=&cq_cmp=846117097&gclid=CjwKCAjwsJ6TBhAIEiwAfl4TWMbnBA7k0R0GX_yHdGGyCW6H9bf-iZxHN2c3qCUCw0xanYii6Y0ZDxoCWtYQAvD_BwE
 
 https://www.scalefactory.com/events/webinars/2020/07/30/architecture-for-security-on-aws/
 
-https://www.youtube.com/watch?v=YQsK4MtsELU
-
-https://wellarchitectedlabs.com/
-
-https://wellarchitectedlabs.com/security/
-
 https://scalefactory.com/blog/2021/01/31/how-i-passed-the-aws-security-specialty-exam/
 
-https://explore.skillbuilder.aws/learn/course/internal/view/elearning/353/the-aws-certification-quiz-show-security-specialty-exam-episode-1
 
-https://explore.skillbuilder.aws/learn/course/external/view/elearning/323/the-aws-certification-quiz-show-security-specialty-exam-episode-2
 
-https://explore.skillbuilder.aws/learn/course/external/view/elearning/300/the-aws-certification-quiz-show-security-specialty-exam-episode-3
 
-https://www.twitch.tv/aws/video/467770461
 
-https://explore.skillbuilder.aws/learn/course/internal/view/elearning/300/the-aws-certification-quiz-show-security-specialty-exam-episode-3
+## **Simulados**
+
+### Whizlabs
+
+https://www.whizlabs.com/aws-certified-security-specialty/
 
 
 
@@ -2557,10 +2619,10 @@ https://aws.amazon.com/pt/compliance/shared-responsibility-model/
 
 ## **Security IN AWS**
 
-### **AWS Config**
+**AWS Config**
 
-### **AWS CloudTrail**
+**AWS CloudTrail**
 
-### **AWS KMS**
+**AWS KMS**
 
-### **AWS CloudHSM**
+**AWS CloudHSM**
