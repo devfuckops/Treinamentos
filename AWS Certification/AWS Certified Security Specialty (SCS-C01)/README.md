@@ -14,15 +14,17 @@ https://aws.amazon.com/pt/certification/certified-security-specialty/
 
   
 
+- **AWS Certified Security – Speciality (SCS-C01) Exam Learning Path**
+
+  https://jayendrapatil.com/aws-certified-security-speciality-scs-c01-exam-learning-path/
+  
+  
+  
 - **Prepare for AWS Certified Security – Specialty | Cloud Security | AWS Training | Infosectrain**
 
   https://www.youtube.com/watch?v=Ek1oQKtp5eU
   
-  # 
   
-  **AWS Certified Security – Speciality (SCS-C01) Exam Learning Path**
-  
-  https://jayendrapatil.com/aws-certified-security-speciality-scs-c01-exam-learning-path/
   
   
   
@@ -471,6 +473,21 @@ https://aws.amazon.com/athena/
 
 
 
+### **Kinesis**
+
+- **Summary**
+  - Torna mais fácil coletar, processar e analisar dados de streaming em tempo real para que você possa obter insights oportunos e reagir rapidamente a novas informações.
+  - Kinesis oferece quatro serviços:
+    - Data Firehose
+    - Data Analytics
+    - Data Streams
+    - Video Streams
+  - Real time big data streaming
+
+
+
+
+
 
 ## Application Integration
 
@@ -479,6 +496,25 @@ https://aws.amazon.com/athena/
 - Summary
   - Custom Event buses
   - Schema registry
+
+
+
+## Business Applications
+
+### **AWS SES - Simple Email Services**
+
+https://aws.amazon.com/pt/ses/
+
+**Summary**
+
+- Configurar um **VPC Endpoint com AWS PrivateLink** para alcançar dentro da VPC
+- Access SES to EC2
+  - Configure SG for communication SMTP endpoint
+    - 3 endpoints 
+  - Portas 587 or 2587
+  - Port 25 default - Throttles 
+
+
 
 
 
@@ -646,6 +682,49 @@ https://aws.amazon.com/pt/ebs/
 
   - Para deletar o EBS quando deleta a EC2
   - Não vem ativado por default
+
+
+
+### **Elastic Load Balancing (ELB)**
+
+https://aws.amazon.com/pt/elasticloadbalancing/
+
+- **Tipos**
+  - **Gateway**
+  - **Application**
+    - (http/https only)
+    - Layer 7
+  - **Network**
+    - (ultra-high performance / TCP)
+    - Layer 4
+  - Classic
+    - (Layer 4 and Layer 7)
+- É regional
+- É altamente disponível
+
+
+
+
+
+## Containers
+
+### **Container Security**
+
+https://aws.amazon.com/blogs/compute/maintaining-transport-layer-security-all-the-way-to-your-container-part-2-using-aws-certificate-manager-private-certificate-authority/
+
+**Best Pratices**
+
+- Não compartilhe Secrets and Passwords dentro do containers
+- não executar contiainer com root
+- Use roles
+- Encryption In Transit using TLS
+- Use Amazon Certificate Manager
+- Use Secret Manager
+- Evite usar
+  - Imagens publicas
+  - Bibliotecas desnecessárias 
+
+
 
 
 
@@ -818,7 +897,7 @@ https://aws.amazon.com/pt/config/faq/
 
 É um serviço que permite acessar, auditar e avaliar as configurações dos recursos da AWS.
 
-#### **Summary**
+**Summary**
 
 - Controla as alterações de configuração nos recursos
 - É um serviço que permite que você avalie, audite e avalie as configurações de seus recursos da AWS.
@@ -829,7 +908,7 @@ https://aws.amazon.com/pt/config/faq/
 
 
 
-#### **Conformance Packs**
+**Conformance Packs**
 
 https://docs.aws.amazon.com/pt_br/config/latest/developerguide/conformance-packs.html
 
@@ -839,13 +918,13 @@ Os pacotes de conformidade são criados usando um modelo YAML criado por você q
 
 
 
-#### **Aggegator**
+**Aggegator**
 
 https://docs.aws.amazon.com/pt_br/config/latest/developerguide/aggregate-data.html
 
 
 
-#### **AWS Config Rules**
+**AWS Config Rules**
 
 **Only Admins**
 
@@ -950,6 +1029,53 @@ https://aws.amazon.com/pt/premiumsupport/technology/trusted-advisor/
     - AWS Support API
 
       
+
+
+
+### **AWS Systems Manager**
+
+https://aws.amazon.com/systems-manager/
+
+**Summary**
+
+- Oferece visibilidade e controle de sua infraestrutura na AWS. É usado para corrigir sistemas em grande escala.
+- É usado para obter insights operacionais
+- Permite que os usuários controlem seus recursos unificando serviços onde ele podem visualizar, monitorar e automatizar
+- **EC2 e On-Premisses**
+- Patching
+- Windows e Linux
+- SSM agent
+
+
+
+**Parameter Store**
+
+https://docs.aws.amazon.com/pt_br/systems-manager/latest/userguide/systems-manager-parameter-store.html
+
+- Types
+  - String
+  - String List
+  - Secure String
+    - KMS Key ID / Value
+
+
+
+**RUN Command**
+
+https://aws.amazon.com/pt/systems-manager/features/#Run_Command
+
+
+
+**SSM Session Manager**
+
+https://aws.amazon.com/pt/systems-manager/features/#Session_Manager
+
+- Linux, Windows e MacOs
+- Send log S3 ou CloudWatch Logs
+
+
+
+
 
 
 
@@ -1252,6 +1378,18 @@ https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy.html
 
 
 
+### **API Gateway**
+
+**Summary**
+
+- Expõe API´s
+- Serverless
+- RestFull e Websocket
+
+
+
+
+
 
 ## Security, Identity, & Compliance
 
@@ -1469,6 +1607,42 @@ https://docs.aws.amazon.com/pt_br/IAM/latest/UserGuide/id_credentials_getting-re
 p/ criar - generatecredentialreport
 
 p/ download - getcredentialreport
+
+
+
+**AWS Security Token Service (STS)**
+
+https://docs.aws.amazon.com/pt_br/IAM/latest/UserGuide/id_credentials_temp_enable-regions.html
+
+
+
+Acesso limitado e temporario a recursos da AWS.
+
+- Federetion (typically Active Directory)
+  - use SALM
+- Federetion with Mobile Apps
+- Cross Account Access
+- Key Terms
+  - Federation
+  - Identity Broker
+  - Identity Store - Serviços como AD, Facebook, Google e etc.
+  - Indentities
+
+![image-20220316193942213](./imagens/image-20220316193942213.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2188,13 +2362,13 @@ https://aws.amazon.com/pt/shield/?whats-new-cards.sort-by=item.additionalFields.
 
 ## Storage
 
-### S3 Bucket
+### AWS S3 Bucket
 
 https://aws.amazon.com/s3/
 
 
 
-#### S3 Encryption 
+**S3 Encryption** 
 
 https://guilhermeteles.com.br/criptografia-no-aws-s3/
 
@@ -2253,29 +2427,27 @@ Todo o SSE executado pelo Amazon S3 e pelo AWS Key Management Service (Amazon KM
 
     
 
-​	
+**S3 Object Lock legal hold**
 
-#### Pre-signed URL´s
+https://docs.aws.amazon.com/AmazonS3/latest/userguide/batch-ops-legal-hold.html
 
-#### **Glacier**
+Permite que você coloque uma retenção legal em uma versão de objeto. 
 
-- Baixo custo
+Assim como definir um período de retenção, uma retenção legal impede que uma versão de objeto seja substituída ou excluída. 
 
-- ##### Glacier Vault Lock Policies
+No entanto, uma retenção legal não tem um período de retenção associado e permanece em vigor até ser removida.
 
-  - https://docs.aws.amazon.com/pt_br/amazonglacier/latest/dev/vault-lock-policy.html
-
-- Similar a IAM policy
-
-- Configure WORM (Write once read many)
-
-- Tem até 24 horas para validar a police
-
-- **Lock Policies são imutáveis** 
+- O objeto pode ser deletado quando desativado
 
 
 
-#### Cross Region Replication
+
+
+**Pre-signed URL´s**
+
+
+
+**Cross Region Replication**
 
 https://aws.amazon.com/about-aws/whats-new/2019/09/amazon-s3-introduces-same-region-replication/
 
@@ -2311,7 +2483,7 @@ https://docs.aws.amazon.com/AmazonS3/latest/userguide/replication.html
 
 
 
-#### Encryption S3
+**Encryption S3**
 
 - aws:SecureTransport
 
@@ -2350,7 +2522,7 @@ https://docs.aws.amazon.com/AmazonS3/latest/userguide/replication.html
 
 
 
-#### S3 ACL´s
+**S3 ACL´s**
 
 https://docs.aws.amazon.com/pt_br/AmazonS3/latest/userguide/acl-overview.html
 
@@ -2363,7 +2535,7 @@ https://docs.aws.amazon.com/pt_br/AmazonS3/latest/userguide/acl-overview.html
 
 
 
-#### IAM S3 bucket policies
+**IAM S3 bucket policies**
 
 https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-policy-language-overview.html
 
@@ -2418,7 +2590,7 @@ https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-policy-language-ove
 
   
 
-#### Conflitos de Policies
+**Conflitos de Policies**
 
 ![image-20220310205109404](./imagens/image-20220310205109404.png)
 
@@ -2429,6 +2601,22 @@ https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-policy-language-ove
 
 
 
+
+### **S3 Glacier**
+
+- Baixo custo
+
+- ##### Glacier Vault Lock Policies
+
+  - https://docs.aws.amazon.com/pt_br/amazonglacier/latest/dev/vault-lock-policy.html
+
+- Similar a IAM policy
+
+- Configure WORM (Write once read many)
+
+- Tem até 24 horas para validar a police
+
+- **Lock Policies são imutáveis** 
 
 
 
@@ -2442,18 +2630,9 @@ https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-policy-language-ove
 
 
 
-### **AWS SES - Simple Email Services**
 
-https://aws.amazon.com/pt/ses/
 
-#### **Summary**
 
-- Configurar um **VPC Endpoint com AWS PrivateLink** para alcançar dentro da VPC
-- Access SES to EC2
-  - Configure SG for communication SMTP endpoint
-    - 3 endpoints 
-  - Portas 587 or 2587
-  - Port 25 default - Throttles 
 
 
 
@@ -2463,7 +2642,6 @@ https://aws.amazon.com/pt/ses/
 
 
 
-- - 
 
 
 
@@ -2471,157 +2649,6 @@ https://aws.amazon.com/pt/ses/
 
 
 
-- - 
-
-
-
-
-
-### **AWS Security Token Service (STS)**
-
-https://docs.aws.amazon.com/pt_br/IAM/latest/UserGuide/id_credentials_temp_enable-regions.html
-
-
-
-Acesso limitado e temporario a recursos da AWS.
-
-- Federetion (typically Active Directory)
-  - use SALM
-- Federetion with Mobile Apps
-- Cross Account Access
-- Key Terms
-  - Federation
-  - Identity Broker
-  - Identity Store - Serviços como AD, Facebook, Google e etc.
-  - Indentities
-
-![image-20220316193942213](./imagens/image-20220316193942213.png)
-
-
-
-
-
-
-
-- - 
-
-
-
-- - 
-
-    
-
-  
-
-
-
-
-
-- - 
-
-### **AWS Systems Manager**
-
-https://aws.amazon.com/systems-manager/
-
-#### **Summary**
-
-- Oferece visibilidade e controle de sua infraestrutura na AWS. É usado para corrigir sistemas em grande escala.
-- É usado para obter insights operacionais
-- Permite que os usuários controlem seus recursos unificando serviços onde ele podem visualizar, monitorar e automatizar
-- **EC2 e On-Premisses**
-- Patching
-- Windows e Linux
-- SSM agent
-
-
-
-#### **Parameter Store**
-
-https://docs.aws.amazon.com/pt_br/systems-manager/latest/userguide/systems-manager-parameter-store.html
-
-- Types
-  - String
-  - String List
-  - Secure String
-    - KMS Key ID / Value
-
-
-
-#### **RUN Command**
-
-https://aws.amazon.com/pt/systems-manager/features/#Run_Command
-
-
-
-#### **SSM Session Manager**
-
-https://aws.amazon.com/pt/systems-manager/features/#Session_Manager
-
-- Linux, Windows e MacOs
-- Send log S3 ou CloudWatch Logs
-
-
-
-
-
-### **Elastic Load Balancing (ELB)**
-
-https://aws.amazon.com/pt/elasticloadbalancing/
-
-- **Tipos**
-  - **Gateway**
-  - **Application**
-    - (http/https only)
-    - Layer 7
-  - **Network**
-    - (ultra-high performance / TCP)
-    - Layer 4
-  - Classic
-    - (Layer 4 and Layer 7)
-- É regional
-- É altamente disponível
-
-
-
-
-
-### **Container Security**
-
-https://aws.amazon.com/blogs/compute/maintaining-transport-layer-security-all-the-way-to-your-container-part-2-using-aws-certificate-manager-private-certificate-authority/
-
-#### Best Pratices
-
-- Não compartilhe Secrets and Passwords dentro do containers
-- não executar contiainer com root
-- Use roles
-- Encryption In Transit using TLS
-- Use Amazon Certificate Manager
-- Use Secret Manager
-- Evite usar
-  - Imagens publicas
-  - Bibliotecas desnecessárias 
-
-
-
-- - 
-
-
-
-- 
-  
-  
-
-- - 
-
-
-
-### **API Gateway**
-
-#### Summary
-
-- Expõe API´s
-- Serverless
-- RestFull e Websocket
 
 
 
@@ -2644,8 +2671,6 @@ https://aws.amazon.com/blogs/compute/maintaining-transport-layer-security-all-th
 https://docs.aws.amazon.com/vpc/latest/userguide/network-firewall.html
 
 https://docs.aws.amazon.com/network-firewall/latest/developerguide/rule-groups.html
-
-#### **Summary**
 
 - Tools
   - Utilize ferramentas de terceiros 
@@ -2692,8 +2717,6 @@ https://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-ddos-resilienc
 https://aws.amazon.com/pt/shield/ddos-attack-protection/
 
 https://jayendrapatil.com/aws-ddos-resiliency-best-practices-whitepaper-overview/
-
-#### **Summary**
 
 - Tipos de Ataque
 
