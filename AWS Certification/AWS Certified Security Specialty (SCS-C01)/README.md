@@ -190,8 +190,6 @@ https://catalog.us-east-1.prod.workshops.aws/workshops/c2f03000-cf61-42a6-8e62-9
 
 
 
-
-
 ### AWS FAQ
 
 https://aws.amazon.com/faqs/
@@ -218,9 +216,9 @@ https://www.twitch.tv/aws/video/467770461✔
 
 https://explore.skillbuilder.aws/learn/course/internal/view/elearning/353/the-aws-certification-quiz-show-security-specialty-exam-episode-1✔
 
-https://explore.skillbuilder.aws/learn/course/external/view/elearning/323/the-aws-certification-quiz-show-security-specialty-exam-episode-2
+https://explore.skillbuilder.aws/learn/course/external/view/elearning/323/the-aws-certification-quiz-show-security-specialty-exam-episode-2✔
 
-https://explore.skillbuilder.aws/learn/course/external/view/elearning/300/the-aws-certification-quiz-show-security-specialty-exam-episode-3
+https://explore.skillbuilder.aws/learn/course/external/view/elearning/300/the-aws-certification-quiz-show-security-specialty-exam-episode-3✔
 
 
 
@@ -264,10 +262,6 @@ https://www.udemy.com/course/aws-certified-security-specialty/
   
 
 https://www.udemy.com/course/aws-certified-security-specialty-exam/
-
-https://www.udemy.com/course/aws-certified-security-specialty/
-
-https://www.pluralsight.com/courses/demystifying-aws-security-specialty-exam?aid=7010a000002BWqBAAW&promo=&utm_source=non_branded&utm_medium=digital_paid_search_google&utm_campaign=NASA_Dynamic&utm_content=&cq_cmp=846117097&gclid=CjwKCAjwsJ6TBhAIEiwAfl4TWMbnBA7k0R0GX_yHdGGyCW6H9bf-iZxHN2c3qCUCw0xanYii6Y0ZDxoCWtYQAvD_BwE
 
 https://www.scalefactory.com/events/webinars/2020/07/30/architecture-for-security-on-aws/
 
@@ -1269,10 +1263,18 @@ https://docs.aws.amazon.com/pt_br/vpc/latest/userguide/flow-logs.html
 
 #### **VPN Site to Site**
 
-**Summary**
+- **Summary**
 
-- Acesso seguro AWS á On Premisse
-- Acesso Publico
+  - Acesso seguro AWS á On-Premisse
+
+  - Acesso Publico
+
+  - Trafego seguro entre on-premisse e AWS
+
+  - **Virtual Private Gateway** 
+
+    
+
 
 
 
@@ -1556,13 +1558,13 @@ https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html
 
 
 
-IAM Authorization
+**IAM Authorization**
 
 ![image-20220308200456395](./imagens/image-20220308200456395.png)
 
 
 
-IAM Authentication
+**IAM Authentication**
 
 ![image-20220308200343938](./imagens/image-20220308200343938.png)
 
@@ -2016,10 +2018,6 @@ https://docs.aws.amazon.com/pt_br/kms/latest/developerguide/key-policy-modifying
 
 
 
-
-
-
-
 **Policy Conditions**
 
 https://docs.aws.amazon.com/pt_br/kms/latest/developerguide/policy-conditions.html
@@ -2063,12 +2061,6 @@ https://docs.aws.amazon.com/pt_br/kms/latest/developerguide/policy-conditions.ht
 
 
 
-
-
-
-
-
-
 **Key Rotation Options**
 
 https://docs.aws.amazon.com/kms/latest/developerguide/rotate-keys.html
@@ -2093,8 +2085,6 @@ https://docs.aws.amazon.com/pt_br/kms/latest/developerguide/multi-region-keys-ov
 
 **The Customer Master Key(CMK)**
 
-
-
 - **Customer Managed CMK**
 
   - Uma chave mestra do cliente (CMK) é uma representação lógica de uma chave mestra.
@@ -2114,10 +2104,6 @@ https://docs.aws.amazon.com/pt_br/kms/latest/developerguide/multi-region-keys-ov
   - **NUNCA PODE SER EXPORTADA**
 
     
-
-    
-
-  
 
 - **AWS Managed CMK**
 
@@ -2617,46 +2603,6 @@ https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-policy-language-ove
 - Tem até 24 horas para validar a police
 
 - **Lock Policies são imutáveis** 
-
-
-
-
-
-##################
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
