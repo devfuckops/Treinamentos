@@ -47,7 +47,7 @@ https://aws.amazon.com/pt/certification/certified-security-specialty/
 
 - https://d1.awsstatic.com/training-and-certification/ramp-up_guides/Ramp-Up_Guide_Security.pdf✔
 
-
+  
 
 ### AWS Skill Builder
 
@@ -58,6 +58,12 @@ https://aws.amazon.com/pt/certification/certified-security-specialty/
 - https://explore.skillbuilder.aws/learn/course/internal/view/elearning/85/authentication-and-authorization-with-aws-identity-and-access-management?trk=c750fe34-f44f-43e1-bcc0-6219228839b9&sc_channel=el
 - https://explore.skillbuilder.aws/learn/course/internal/view/elearning/2045/aws-well-architected?trk=c750fe34-f44f-43e1-bcc0-6219228839b9&sc_channel=el
 - https://aws.amazon.com/training/learn-about/security/
+
+#### Security Learning Plan
+
+https://explore.skillbuilder.aws/learn/learning_plan/view/91/security-learning-plan?la=cta&cta=topbanner
+
+
 
 
 
@@ -261,11 +267,12 @@ https://www.udemy.com/course/aws-certified-security-specialty/
 
   
 
-https://www.udemy.com/course/aws-certified-security-specialty-exam/
+- https://www.udemy.com/course/aws-certified-security-specialty-exam/
 
-https://www.scalefactory.com/events/webinars/2020/07/30/architecture-for-security-on-aws/
+- https://www.scalefactory.com/events/webinars/2020/07/30/architecture-for-security-on-aws/
 
-https://github.com/brunokktro/auladobruno#security-engineering-on-aws
+- https://github.com/brunokktro/auladobruno#security-engineering-on-aws
+
 
 
 
@@ -1902,6 +1909,8 @@ https://aws.amazon.com/kms/features/
 
 https://aws.amazon.com/pt/kms/faqs/
 
+https://d0.awsstatic.com/whitepapers/aws-kms-best-practices.pdf
+
 O AWS Key Management Service (KMS) oferece a você controle centralizado das chaves criptográficas usadas para proteger seus dados.
 
 Summary
@@ -2110,6 +2119,8 @@ https://docs.aws.amazon.com/pt_br/kms/latest/developerguide/multi-region-keys-ov
   - São CMKs em sua conta que são criados, **gerenciados e usados em seu nome por um serviço AWS** que está integrado com AWS KMS.
   - Used AWS Services
   - Create, Manage and used
+  - Rotaciona a cada 3 anos automaticamante
+  - Não pode ser deletada
 
   
 
@@ -2133,18 +2144,45 @@ https://docs.aws.amazon.com/pt_br/kms/latest/developerguide/multi-region-keys-ov
 https://docs.aws.amazon.com/waf/latest/developerguide/waf-chapter.html
 
 - Firewall aplicação web
+
+- Actions 
+
+  - **Allow** all requests except ones you specify
+  - **Block** all requests except ones you specify - **Pode bloquear todas as solicitações, exceto aquelas que você especificar**
+  - **Count** requests you specify
+
+- Use cases
+
+  - Protect against SQL Injection attacks
+  - Protect against cross-site scripting 
+  - Block specific ip
+  - only allow traffic from specific ip 
+
 - Protege contra Ataque DDoS
+
 - **Não inspeciona os pacotes**
+
 - Layer 7 (HTTP)
-- **Pode bloquear todas as solicitações, exceto aquelas que você especificar**
-- **Add Assossiation - Deploy in ALB, API GW e CloudFront**
-- Pode ser utilizado para proteger sites fora da AWS c/ Cloudfront
+
+- **Deploy in ALB, API GW e CloudFront**
+
+- **Pode ser utilizado para proteger sites fora da AWS c/ Cloudfront**
+
+- Types of rules
+
+  - Regular rules
+  - Rate-based rules
+    - update a cada 5 min
+
+
+  
+
 - WebACL - Use as regras em uma web ACL para definir como inspecionar e manipular solicitações da web HTTP (S) com base em critérios como o seguinte:
   - Scripts que provavelmente são mal-intencionados. Os invasores incorporam scripts que podem explorar vulnerabilidades nas aplicações web. Isso é conhecido como script entre sites (XSS).
-  - Endereços IP ou intervalos de endereços IP dos quais as solicitações se originam. /8, /16, /24 e /32
+  - **Endereços IP ou intervalos de endereços IP** dos quais as solicitações se originam. /8, /16, /24 e /32
   - País ou localização geográfica de origem das solicitações.
   - Comprimento da parte específica da solicitação, como a string de consulta.
-  - Código SQL que provavelmente é mal-intencionado. Os invasores tentam extrair dados do seu banco de dados ao incorporarem código SQL mal-intencionado a uma solicitação da web. Isso é conhecido como SQL injection.
+  - Código SQL que provavelmente é mal-intencionado. Os invasores tentam extrair dados do seu banco de dados ao incorporarem código SQL mal-intencionado a uma solicitação da web. Isso é conhecido como **SQL injection**.
   - Strings que aparecem na solicitação, por exemplo, valores que aparecem no cabeçalho `User-Agent` ou strings de texto que aparecem na string de consulta. Você também pode usar expressões regulares (regex) para especificar essas strings.
   - Etiquetas que as regras anteriores na ACL da Web adicionaram à solicitação.
 
@@ -2156,22 +2194,50 @@ https://docs.aws.amazon.com/waf/latest/developerguide/waf-chapter.html
 
 https://aws.amazon.com/pt/security-hub/?nc=sn&loc=0
 
+https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-standards.html
+
+https://aws.amazon.com/blogs/security/nine-aws-security-hub-best-practices/
+
 **Summary**
 
-- **Tem que habilitar o AWS Config**
+Coleta dados se segurança
+
+Organiza e prioriza
+
+Visualiza os findings
+
+Compliance checks
+
+Enable for all accounts
+
+
+
+**Tem que habilitar o AWS Config**
+
 - CloudWatch Events
-  - - SIEM
-    - Notification
-    - Chat
-    - Lambda
+
+  - SIEM
+
+  - Notification
+
+  - Chat
+
+  - Lambda
 
 
 
 - Automated checks - habilita durante o setup
   - PCI-DDS
+  
   - CIS
-
+  
+    
+  
 - Integra com
+
+  - AWS Lambdas
+
+  - CloudWatch Events
 
   - Guardduty
 
@@ -2179,12 +2245,12 @@ https://aws.amazon.com/pt/security-hub/?nc=sn&loc=0
 
   - Macie
 
-  - IAM Access Analiser
+  - IAM Access Analizer
 
   - AWS Systems Manager
-
+  
   - AWS Firewall Manager
-
+  
   - AWS Partner Network Solutions
 
 
@@ -2273,7 +2339,7 @@ https://docs.aws.amazon.com/acm/latest/userguide/managed-renewal.html
 
 É um serviço que permite provisionar, gerenciar e implantar facilmente certificados **Secure Sockets Layer (SSL)/Transport Layer Security (TLS)** para uso com os serviços da AWS e os recursos internos conectados.
 
-- Pode atualizar e renovar certificados HTTPS
+- Pode atualizar e renovar certificados HTTPS (SSL´s)
 - Não pode exportar certificados gerenciados pela AWS
 - Pode importar o seu certificado
 
@@ -2293,6 +2359,8 @@ https://docs.aws.amazon.com/acm/latest/userguide/managed-renewal.html
   - ELB
   - Cloudfornt
   - API Gateway
+
+
 
 
 ### AWS Artifact
@@ -2321,7 +2389,7 @@ https://aws.amazon.com/pt/shield/?whats-new-cards.sort-by=item.additionalFields.
 
   - Fornece proteção para:
 
-    - ELBS
+    - ELB´s
 
     - Cloudfront
 
@@ -2343,6 +2411,12 @@ https://aws.amazon.com/pt/shield/?whats-new-cards.sort-by=item.additionalFields.
     - Amazon CloudFront
     - Amazon Route 53
     - AWS Global Accelerator
+
+
+
+
+
+![image-20220509205347725](./imagens/image-20220509205347725.png)
 
 
 
@@ -2663,6 +2737,8 @@ https://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-ddos-resilienc
 https://aws.amazon.com/pt/shield/ddos-attack-protection/
 
 https://jayendrapatil.com/aws-ddos-resiliency-best-practices-whitepaper-overview/
+
+https://d0.awsstatic.com/whitepapers/Security/DDoS_White_Paper.pdf
 
 - Tipos de Ataque
 
