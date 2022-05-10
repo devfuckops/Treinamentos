@@ -51,6 +51,14 @@ https://aws.amazon.com/pt/certification/certified-security-specialty/
 
 ### AWS Skill Builder
 
+#### Security Learning Plan
+
+https://explore.skillbuilder.aws/learn/learning_plan/view/91/security-learning-plan?la=cta&cta=topbanner
+
+
+
+**Vários**
+
 - https://explore.skillbuilder.aws/learn/course/internal/view/elearning/101/getting-started-with-aws-security-identity-and-compliance?ss=sec&sec=prep
 - https://explore.skillbuilder.aws/learn/course/internal/view/elearning/485/aws-foundations-securing-your-aws-cloud?trk=c750fe34-f44f-43e1-bcc0-6219228839b9&sc_channel=el
 - https://explore.skillbuilder.aws/learn/course/internal/view/elearning/101/getting-started-with-aws-security-identity-and-compliance?trk=c750fe34-f44f-43e1-bcc0-6219228839b9&sc_channel=el
@@ -59,9 +67,7 @@ https://aws.amazon.com/pt/certification/certified-security-specialty/
 - https://explore.skillbuilder.aws/learn/course/internal/view/elearning/2045/aws-well-architected?trk=c750fe34-f44f-43e1-bcc0-6219228839b9&sc_channel=el
 - https://aws.amazon.com/training/learn-about/security/
 
-#### Security Learning Plan
 
-https://explore.skillbuilder.aws/learn/learning_plan/view/91/security-learning-plan?la=cta&cta=topbanner
 
 
 
@@ -2258,7 +2264,7 @@ Enable for all accounts
 
 
 
-### **Secrets Manager**
+### **AWS Secrets Manager**
 
 https://aws.amazon.com/pt/secrets-manager/
 
@@ -2273,7 +2279,7 @@ https://aws.amazon.com/pt/secrets-manager/
 - Schedule Delete Secret
 
   - Between 7 - 30 days
-  - default 7
+  - Default 7
 
 - You Pay
 
@@ -2292,7 +2298,7 @@ https://aws.amazon.com/pt/secrets-manager/
   - Seleciona o intervalo de rotação (default - 30 dias)
   - Cria uma lambda function para rotação
 
-- Casos de uso
+- Use cases
 
   - Database credentials
 
@@ -2339,6 +2345,7 @@ https://docs.aws.amazon.com/acm/latest/userguide/managed-renewal.html
 
 É um serviço que permite provisionar, gerenciar e implantar facilmente certificados **Secure Sockets Layer (SSL)/Transport Layer Security (TLS)** para uso com os serviços da AWS e os recursos internos conectados.
 
+- Free Service
 - Pode atualizar e renovar certificados HTTPS (SSL´s)
 - Não pode exportar certificados gerenciados pela AWS
 - Pode importar o seu certificado
