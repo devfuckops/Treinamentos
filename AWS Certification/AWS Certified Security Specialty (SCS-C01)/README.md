@@ -266,6 +266,12 @@ https://portal.tutorialsdojo.com/courses/exam-readiness-aws-certified-security-s
 
 - https://www.youtube.com/watch?v=VjVpqC0o4oQ&list=PLeLcvrwLe184Q24ljho5Md3Z38VY0keNt
 
+
+
+**Amazon AUP**
+
+- https://aws.amazon.com/pt/aup/
+
   
 
 
@@ -471,6 +477,16 @@ https://d1.awsstatic.com/training-and-certification/docs-security-spec/AWS-Certi
 
 
 # Services
+
+
+
+### AWS Abuse Report
+
+https://aws.amazon.com/pt/aup/
+
+
+
+
 
 
 
@@ -1838,19 +1854,25 @@ O AD Connector é um serviço de proxy que oferece uma maneira fácil de conecta
 
 
 
-### AWS GuardDuty
+### AWS GuardDuty -- Medium
 
 https://aws.amazon.com/pt/guardduty/
 
+https://aws.amazon.com/guardduty/faqs/
+
 **Summary**
 
-- Detecção de ameaças
+- Rastreamento e Detecção de ameaças
 
 - **DNS Logs, Flow Logs e Cloudtrail Logs**
+
+- Monitora o Route53 pelo DNS Logs
 
 - Tem que habilitar o service role 
 
 - Usa Machine Learning
+
+- Categoriza os findings por severidade (High,Medium,Low)
 
 - Update findings notification
 
