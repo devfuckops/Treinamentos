@@ -26,12 +26,17 @@ https://aws.amazon.com/pt/certification/certified-security-specialty/
   
   
   
+  https://medium.com/@alexandre.gusson/prepa%C3%A7%C3%A3o-para-passar-no-exame-aws-certified-security-specialty-8b5085a075b1
   
-  
+- https://medium.com/@leticiamassae/preparing-for-the-aws-security-specialty-certification-exam-2640cb79f484
 
 
 
 # **Training**
+
+## Zeal Vora
+
+https://www.udemy.com/course/aws-certified-security-specialty/
 
 
 
@@ -251,9 +256,7 @@ https://portal.tutorialsdojo.com/courses/exam-readiness-aws-certified-security-s
 
 
 
-## Zeal Vora
 
-https://www.udemy.com/course/aws-certified-security-specialty/
 
 
 
@@ -292,6 +295,8 @@ https://www.whizlabs.com/aws-certified-security-specialty/
 
 
 
+
+
 ### Acloudguru
 
 - https://learn.acloud.guru/course/aws-certified-security-specialty/overview/
@@ -316,12 +321,22 @@ https://d1.awsstatic.com/training-and-certification/docs-security-spec/AWS-Certi
 
 - **1.1 Given an AWS abuse notice, evaluate the suspected compromised instance or exposed access keys.** 
   - Given an AWS Abuse report about an EC2 instance, securely isolate the instance as part of a forensic investigation. 
+  
   - Analyze logs relevant to a reported instance to verify a breach, and collect relevant data. 
+  
   - Capture a memory dump from a suspected instance for later deep analysis or for legal compliance reasons. 
+  
+    
+  
 - **1.2 Verify that the Incident Response plan includes relevant AWS services.** 
   - Determine if changes to baseline security configuration have been made. 
+  
   - Determine if list omits services, processes, or procedures which facilitate Incident Response. 
+  
   - Recommend services, processes, procedures to remediate gaps. 
+  
+    
+  
 - **1.3 Evaluate the configuration of automated alerting, and execute possible remediation of securityrelated incidents and emerging issues.** 
   - Automate evaluation of conformance with rules for new/changed/removed resources. 
   - Apply rule-based alerts for common infrastructure misconfigurations. 
@@ -334,9 +349,14 @@ https://d1.awsstatic.com/training-and-certification/docs-security-spec/AWS-Certi
 - **2.1 Design and implement security monitoring and alerting.** 
   
   - Analyze architecture and identify monitoring requirements and sources for monitoring statistics. 
+  
   - Analyze architecture to determine which AWS services can be used to automate monitoring and alerting. 
+  
   - Analyze the requirements for custom application monitoring, and determine how this could be achieved. 
+  
   - Set up automated tools/scripts to perform regular audits.
+  
+    
   
 - **2.2 Troubleshoot security monitoring and alerting.** 
 
@@ -2181,7 +2201,7 @@ https://docs.aws.amazon.com/waf/latest/developerguide/waf-chapter.html
     - update a cada 5 min
 
 
-  
+
 
 - WebACL - Use as regras em uma web ACL para definir como inspecionar e manipular solicitações da web HTTP (S) com base em critérios como o seguinte:
   - Scripts que provavelmente são mal-intencionados. Os invasores incorporam scripts que podem explorar vulnerabilidades nas aplicações web. Isso é conhecido como script entre sites (XSS).
