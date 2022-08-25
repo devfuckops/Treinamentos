@@ -2733,7 +2733,7 @@ https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-policy-language-ove
 
 
 
-## **Incident Response**
+## **Incident Response -- Medium**
 
 ### **Network Packet Inspection**
 
@@ -2760,24 +2760,6 @@ https://aws.amazon.com/blogs/security/how-to-receive-notifications-when-your-aws
 - Cria um Alarm a partir do metric filter 
 
   
-
-
-
-### **Penetration Testing**
-
-https://aws.amazon.com/security/penetration-testing/
-
-- Os clientes da AWS podem realizar avaliações de segurança ou testes de penetração em sua infraestrutura da AWS sem aprovação prévia em oito serviços, listados na próxima seção como “Serviços permitidos”.
-- Serviços permitidos
-  - EC2
-  - RDS
-  - Aurora
-  - Beanstalk
-  - API Gateway
-
-
-
-
 
 ### **DDoS - Distributed Denial of Service**
 
