@@ -8,7 +8,7 @@ https://aws.amazon.com/pt/certification/certified-security-specialty/
 
 
 
-# Dicas sobre a prova
+# Dicas sobre a prova - Medium
 
 - https://aws.amazon.com/pt/blogs/aws-brasil/dicas-para-a-certificacao-de-especialista-em-seguranca-na-aws/✔
 
@@ -32,7 +32,7 @@ https://aws.amazon.com/pt/certification/certified-security-specialty/
 
 
 
-# **Training**
+# **Training - Medium**
 
 ## Zeal Vora
 
@@ -293,7 +293,7 @@ https://portal.tutorialsdojo.com/courses/exam-readiness-aws-certified-security-s
 
 
 
-## **Simulados**
+## **Simulados - Medium**
 
 ### Whizlabs
 
@@ -1914,19 +1914,17 @@ https://docs.aws.amazon.com/detective/latest/adminguide/what-is-detective.html
 
 **Summary**
 
-- Torna mais fácil analisar, investigar e identificar rapidamente a **causa raiz** de possíveis problemas de segurança ou atividades suspeitas.
+- Torna mais fácil analisar, investigar e identificar rapidamente a **causa raiz** de possíveis problemas de segurança ou atividades suspeitas
 
 - Serviço persistente orientado a **Machine Learning**
 
-- Analisa, investiga e mstra a causa raiz do problema
-
 - Coleta automático
-
-  - Cloudtaul
+  - CloudTrail
 
   - Guardduty
 
   - VPC Flow Logs
+
 
 
 
