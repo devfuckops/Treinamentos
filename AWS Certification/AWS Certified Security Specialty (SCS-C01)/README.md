@@ -1908,7 +1908,7 @@ https://aws.amazon.com/guardduty/faqs/
 
   
 
-### Amazon Detective
+### Amazon Detective - Medium
 
 https://docs.aws.amazon.com/detective/latest/adminguide/what-is-detective.html
 
