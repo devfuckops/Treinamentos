@@ -2,57 +2,17 @@
 
 # **AWS Certified Security – Specialty (SCS-C01)**
 
-https://aws.amazon.com/pt/certification/certified-security-specialty/
 
 
 
 
 
-# Dicas sobre a prova - Medium
-
-- https://aws.amazon.com/pt/blogs/aws-brasil/dicas-para-a-certificacao-de-especialista-em-seguranca-na-aws/✔
-
-  
-
-- **AWS Certified Security – Speciality (SCS-C01) Exam Learning Path**
-
-  https://jayendrapatil.com/aws-certified-security-speciality-scs-c01-exam-learning-path/
-  
-  
-  
-- **Prepare for AWS Certified Security – Specialty | Cloud Security | AWS Training | Infosectrain**
-
-  https://www.youtube.com/watch?v=Ek1oQKtp5eU
-  
-  
-  
-  https://medium.com/@alexandre.gusson/prepa%C3%A7%C3%A3o-para-passar-no-exame-aws-certified-security-specialty-8b5085a075b1
-  
-- https://medium.com/@leticiamassae/preparing-for-the-aws-security-specialty-certification-exam-2640cb79f484
 
 
 
-# **Training - Medium**
-
-## Zeal Vora
-
-https://www.udemy.com/course/aws-certified-security-specialty/
 
 
 
-## Acloudguru
-
-- https://learn.acloud.guru/course/aws-certified-security-specialty/overview/✔
-
-
-
-## AWS
-
-- https://aws.amazon.com/pt/certification/certified-security-specialty/✔
-
-- https://d1.awsstatic.com/training-and-certification/ramp-up_guides/Ramp-Up_Guide_Security.pdf✔
-
-  
 
 ### AWS Skill Builder
 
@@ -293,184 +253,8 @@ https://portal.tutorialsdojo.com/courses/exam-readiness-aws-certified-security-s
 
 
 
-## **Simulados - Medium**
 
-### Whizlabs
 
-https://www.whizlabs.com/aws-certified-security-specialty/
-
-
-
-
-
-### Acloudguru
-
-- https://learn.acloud.guru/course/aws-certified-security-specialty/overview/
-
-
-
-### Dojo
-
-https://portal.tutorialsdojo.com/courses/aws-certified-security-specialty-practice-exams/
-
-
-
-# **Guia do Exame**
-
-https://d1.awsstatic.com/training-and-certification/docs-security-spec/AWS-Certified-Security-Specialty_Exam-Guide.pdf
-
-![image-20210913210128871](./imagens/image-20210913210128871.png)
-
-
-
-## **Domain 1: Incident Response** 
-
-- **1.1 Given an AWS abuse notice, evaluate the suspected compromised instance or exposed access keys.** 
-  - Given an AWS Abuse report about an EC2 instance, securely isolate the instance as part of a forensic investigation. 
-  
-  - Analyze logs relevant to a reported instance to verify a breach, and collect relevant data. 
-  
-  - Capture a memory dump from a suspected instance for later deep analysis or for legal compliance reasons. 
-  
-    
-  
-- **1.2 Verify that the Incident Response plan includes relevant AWS services.** 
-  - Determine if changes to baseline security configuration have been made. 
-  
-  - Determine if list omits services, processes, or procedures which facilitate Incident Response. 
-  
-  - Recommend services, processes, procedures to remediate gaps. 
-  
-    
-  
-- **1.3 Evaluate the configuration of automated alerting, and execute possible remediation of securityrelated incidents and emerging issues.** 
-  - Automate evaluation of conformance with rules for new/changed/removed resources. 
-  - Apply rule-based alerts for common infrastructure misconfigurations. 
-  - Review previous security incidents and recommend improvements to existing systems. 
-
-
-
-## **Domain 2: Logging and Monitoring**
-
-- **2.1 Design and implement security monitoring and alerting.** 
-  
-  - Analyze architecture and identify monitoring requirements and sources for monitoring statistics. 
-  
-  - Analyze architecture to determine which AWS services can be used to automate monitoring and alerting. 
-  
-  - Analyze the requirements for custom application monitoring, and determine how this could be achieved. 
-  
-  - Set up automated tools/scripts to perform regular audits.
-  
-    
-  
-- **2.2 Troubleshoot security monitoring and alerting.** 
-
-  - Given an occurrence of a known event without the expected alerting, analyze the service functionality and configuration and remediate. 
-  - Given an occurrence of a known event without the expected alerting, analyze the permissions and remediate.  Given a custom application which is not reporting its statistics, analyze the configuration and remediate. 
-  - Review audit trails of system and user activity. 
-
-  
-
-- **2.3 Design and implement a logging solution.** 
-
-  - Analyze architecture and identify logging requirements and sources for log ingestion. 
-  - Analyze requirements and implement durable and secure log storage according to AWS best practices. 
-  - Analyze architecture to determine which AWS services can be used to automate log ingestion and analysis. 2.4 Troubleshoot logging solutions. 
-  - Given the absence of logs, determine the incorrect configuration and define remediation steps.
-  -  Analyze logging access permissions to determine incorrect configuration and define remediation steps.
-  -  Based on the security policy requirements, determine the correct log level, type, and sources. 
-
-
-
-## **Domain 3: Infrastructure Security** 
-
-- **3.1 Design edge security on AWS.** 
-
-  - For a given workload, assess and limit the attack surface. 
-  - Reduce blast radius (e.g. by distributing applications across accounts and regions). 
-  - Choose appropriate AWS and/or third-party edge services such as WAF, CloudFront and Route 53 to protect against DDoS or filter application-level attacks. 
-  - Given a set of edge protection requirements for an application, evaluate the mechanisms to prevent and detect intrusions for compliance and recommend required changes. 
-  - Test WAF rules to ensure they block malicious traffic. 
-
-  
-
-- **3.2 Design and implement a secure network infrastructure.**
-
-  -  Disable any unnecessary network ports and protocols. 
-  - Given a set of edge protection requirements, evaluate the security groups and NACLs of an application for compliance and recommend required changes. 
-  - Given security requirements, decide on network segmentation (e.g. security groups and NACLs) that allow the minimum ingress/egress access required. 
-  - Determine the use case for VPN or Direct Connect. 
-  - Determine the use case for enabling VPC Flow Logs.
-  - Given a description of the network infrastructure for a VPC, analyze the use of subnets and gateways for secure operation. 
-
-  
-
-- **3.3 Troubleshoot a secure network infrastructure.** 
-
-  - Determine where network traffic flow is being denied. 
-
-  - Given a configuration, confirm security groups and NACLs have been implemented correctly.
-
-    
-
-- **3.4 Design and implement host-based security.** 
-  
-  - 7Given security requirements, install and configure host-based protections including Inspector, SSM. 
-  - Decide when to use host-based firewall like iptables. 
-  - Recommend methods for host hardening and monitoring. 
-
-
-
-## **Domain 4: Identity and Access Management** 
-
-
-
-- **4.1 Design and implement a scalable authorization and authentication system to access AWS resources.**
-
-  - Given a description of a workload, analyze the access control configuration for AWS services and make recommendations that reduce risk.
-  -  Given a description how an organization manages their AWS accounts, verify security of their root user. 
-  - Given your organization’s compliance requirements, determine when to apply user policies and resource policies. 
-  - Within an organization’s policy, determine when to federate a directory services to IAM. 
-  - Design a scalable authorization model that includes users, groups, roles, and policies. 
-  - Identify and restrict individual users of data and AWS resources. 
-  - Review policies to establish that users/systems are restricted from performing functions beyond their responsibility, and also enforce proper separation of duties. 
-
-  
-
-- **4.2 Troubleshoot an authorization and authentication system to access AWS resources.** 
-
-  - Investigate a user’s inability to access S3 bucket contents. 
-  - Investigate a user’s inability to switch roles to a different account. 
-  - Investigate an Amazon EC2 instance’s inability to access a given AWS resource. 
-
-
-
-## **Domain 5: Data Protection** 
-
-
-
-- **5.1 Design and implement key management and use.** 
-
-  - Analyze a given scenario to determine an appropriate key management solution. 
-  - Given a set of data protection requirements, evaluate key usage and recommend required changes. 
-  - Determine and control the blast radius of a key compromise event and design a solution to contain the same. 
-
-  
-
-- **5.2 Troubleshoot key management.** 
-
-  - Break down the difference between a KMS key grant and IAM policy.  Deduce the precedence given different conflicting policies for a given key. 
-  - Determine when and how to revoke permissions for a user or service in the event of a compromise. 
-
-  
-
-- **5.3 Design and implement a data encryption solution for data at rest and data in transit.** 
-
-  - Given a set of data protection requirements, evaluate the security of the data at rest in a workload and recommend required changes. 
-  - Verify policy on a key such that it can only be used by specific AWS services. 
-  - Distinguish the compliance state of data through tag-based data classifications and automate remediation. 
-  - Evaluate a number of transport encryption techniques and select the appropriate method (i.e. TLS, IPsec, client-side KMS encryption
 
 
 
@@ -1446,30 +1230,7 @@ https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy.html
 
 
 
-### **AWS Inspector -- Medium**
 
-***Cai muito***
-
-https://aws.amazon.com/pt/inspector/
-
-https://docs.aws.amazon.com/inspector/v1/userguide/inspector_cis.html
-
-- É um serviço automatizado de avaliação de segurança que ajuda a melhorar a segurança e a conformidade dos aplicativos implantados na AWS.
-- Ele ajuda a testar a acessibilidade de rede de suas instâncias do Amazon EC2 e o estado de segurança de seus aplicativos em execução nas instâncias.
-- Realiza verificações nas **instâncias EC2** em relação a modelos de segurança
-- Severity Level
-  - *High*
-  - *Medium*
-  - *Low*
-  - *Informational*
-- Analisa vulnerabilidades
-- **Agente AWS na EC2**
-  - https://docs.aws.amazon.com/inspector/v1/userguide/inspector_installing-uninstalling-agents.html
-- 2 tipos de assessments
-  - Network Assessments
-    - Agent opcional
-  - Host Assessments 
-    - Precisa de agents
 
 
 
@@ -1854,76 +1615,13 @@ O AD Connector é um serviço de proxy que oferece uma maneira fácil de conecta
 
 
 
-### AWS GuardDuty -- Medium
-
-https://aws.amazon.com/pt/guardduty/
-
-https://aws.amazon.com/guardduty/faqs/
-
-**Summary**
-
-- Rastreamento e Detecção de ameaças
-
-- **DNS Logs, Flow Logs e Cloudtrail Logs**
-
-- Monitora o Route53 pelo DNS Logs
-
-- Tem que habilitar o service role 
-
-- Usa Machine Learning
-
-- Categoriza os findings por severidade (High,Medium,Low)
-
-- Update findings notification
-
-  - 6 hours (default)
-
-  - 1 hour
-
-  - 15 min
-
-- Centraliza detecçao de multiple accounts
-
-- Respostas automáticas - CloudWatch Events e Lambda
-
-- 7 a 14 dias para configurar no baseline
-
-- 30 dias free
+- 
 
   
 
-### **Amazon Inspector**
+- 
 
-**Summary**
 
-- É um serviço automatizado de avaliação de segurança que ajuda a melhorar a segurança e a conformidade dos aplicativos implantados na AWS.
-
-- Ele ajuda a testar a acessibilidade de rede de suas instâncias do Amazon EC2 e o estado de segurança de seus aplicativos em execução nas instâncias.
-
-- Realiza verificações nas **instâncias EC2** em relação a modelos de segurança
-
-- Analisa vulnerabilidades
-
-- **Agente AWS na EC2**
-
-  
-
-### Amazon Detective - Medium
-
-https://docs.aws.amazon.com/detective/latest/adminguide/what-is-detective.html
-
-**Summary**
-
-- Torna mais fácil analisar, investigar e identificar rapidamente a **causa raiz** de possíveis problemas de segurança ou atividades suspeitas
-
-- Serviço persistente orientado a **Machine Learning**
-
-- Coleta automático
-  - CloudTrail
-
-  - Guardduty
-
-  - VPC Flow Logs
 
 
 
@@ -2235,69 +1933,6 @@ https://docs.aws.amazon.com/waf/latest/developerguide/waf-chapter.html
 
 
 
-
-### AWS Security Hub - medium
-
-https://aws.amazon.com/pt/security-hub/?nc=sn&loc=0
-
-https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-standards.html
-
-https://aws.amazon.com/blogs/security/nine-aws-security-hub-best-practices/
-
-**Summary**
-
-Coleta dados se segurança
-
-Organiza e prioriza
-
-Visualiza os findings
-
-Compliance checks
-
-Enable for all accounts
-
-
-
-**Tem que habilitar o AWS Config**
-
-- CloudWatch Events
-
-  - SIEM
-
-  - Notification
-
-  - Chat
-
-  - Lambda
-
-
-
-- Automated checks - habilita durante o setup
-  - PCI-DDS
-  
-  - CIS
-  
-    
-  
-- Integra com
-
-  - AWS Lambdas
-
-  - CloudWatch Events
-
-  - Guardduty
-
-  - Inspector
-
-  - Macie
-
-  - IAM Access Analizer
-
-  - AWS Systems Manager
-  
-  - AWS Firewall Manager
-  
-  - AWS Partner Network Solutions
 
 
 
@@ -2730,106 +2365,6 @@ https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-policy-language-ove
 
 
 
-
-## **Incident Response -- Medium**
-
-### **Network Packet Inspection**
-
-https://docs.aws.amazon.com/vpc/latest/userguide/network-firewall.html
-
-https://docs.aws.amazon.com/network-firewall/latest/developerguide/rule-groups.html
-
-- Tools
-  - Utilize ferramentas de terceiros 
-  - **Flow Logs e AWS WAF não inspecionam os pacotes**
-
-
-
-### How to Setup an Alert if the Root user login
-
-https://aws.amazon.com/blogs/mt/monitor-and-notify-on-aws-account-root-user-activity/
-
-https://aws.amazon.com/blogs/security/how-to-receive-notifications-when-your-aws-accounts-root-access-keys-are-used/
-
-- Utilizar o AWS Cloudtrail e habilita os eventos para o CloudWatch Logs
-
-- Cria um metric filter no CloudWatch 
-
-- Cria um Alarm a partir do metric filter 
-
-  
-
-### **DDoS - Distributed Denial of Service**
-
-https://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-ddos-resiliency/aws-best-practices-ddos-resiliency.pdf
-
-https://aws.amazon.com/pt/shield/ddos-attack-protection/
-
-https://jayendrapatil.com/aws-ddos-resiliency-best-practices-whitepaper-overview/
-
-https://d0.awsstatic.com/whitepapers/Security/DDoS_White_Paper.pdf
-
-- Tipos de Ataque
-
-  - Amplification
-
-  - Reflection
-
-    
-
-- Como minimizar o ataque
-
-  - Minimize a área do ataque
-    - Use jumpbox/bastion host
-
-
-
-
-
-### **Expose AWS Access Keys**
-
-https://aws.amazon.com/blogs/security/what-to-do-if-you-inadvertently-expose-an-aws-access-key/
-
-- Inativar/deletar a Access Keys
-
-
-
-### **Reading CloudTrail Logs**
-
-
-
-### **API Gateway - Throttling**
-
-https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-request-throttling.html
-
-- Limits - 10,000 requests per second 
-- Enable API Caching
-  - TTL = cache disabled
-
-
-
-### **Penetration Testing**
-
-https://aws.amazon.com/security/penetration-testing/
-
-- Os clientes da AWS podem realizar avaliações de segurança ou testes de penetração em sua infraestrutura da AWS sem aprovação prévia em oito serviços, listados na próxima seção como “**Serviços permitidos**”.
-- Serviços permitidos
-  - EC2
-  - RDS
-  - Aurora
-  - Beanstalk
-  - API Gateway
-- Serviços proibidos
-  - DDoS
-  - Port Flooting
-  - Protocol Flooting
-- Autorização deve ser solicitada via e-mail 
-
-
-
-## Top 10 security items to improve in your AWS account
-
-## ![10 most important security tips](./imagens/10-Security-Itemsb-Figure-1.png)
 
 
 
