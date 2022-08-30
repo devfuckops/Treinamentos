@@ -1446,7 +1446,7 @@ https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy.html
 
 
 
-### **AWS Inspector**
+### **AWS Inspector -- Medium**
 
 ***Cai muito***
 
@@ -2236,7 +2236,7 @@ https://docs.aws.amazon.com/waf/latest/developerguide/waf-chapter.html
 
 
 
-### AWS Security Hub
+### AWS Security Hub - medium
 
 https://aws.amazon.com/pt/security-hub/?nc=sn&loc=0
 
