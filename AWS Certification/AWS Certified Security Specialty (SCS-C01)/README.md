@@ -859,47 +859,6 @@ https://aws.amazon.com/pt/premiumsupport/technology/trusted-advisor/
 
 
 
-### **AWS Systems Manager**
-
-https://aws.amazon.com/systems-manager/
-
-**Summary**
-
-- Oferece visibilidade e controle de sua infraestrutura na AWS. É usado para corrigir sistemas em grande escala.
-- É usado para obter insights operacionais
-- Permite que os usuários controlem seus recursos unificando serviços onde ele podem visualizar, monitorar e automatizar
-- **EC2 e On-Premisses**
-- Patching
-- Windows e Linux
-- SSM agent
-
-
-
-**Parameter Store**
-
-https://docs.aws.amazon.com/pt_br/systems-manager/latest/userguide/systems-manager-parameter-store.html
-
-- Types
-  - String
-  - String List
-  - Secure String
-    - KMS Key ID / Value
-
-
-
-**RUN Command**
-
-https://aws.amazon.com/pt/systems-manager/features/#Run_Command
-
-
-
-**SSM Session Manager**
-
-https://aws.amazon.com/pt/systems-manager/features/#Session_Manager
-
-- Linux, Windows e MacOs
-- Send log S3 ou CloudWatch Logs
-
 
 
 
@@ -1615,12 +1574,6 @@ O AD Connector é um serviço de proxy que oferece uma maneira fácil de conecta
 
 
 
-- 
-
-  
-
-- 
-
 
 
 
@@ -1880,57 +1833,6 @@ https://docs.aws.amazon.com/pt_br/kms/latest/developerguide/multi-region-keys-ov
 - **CloudHMS Keys**
 
   - Keys generated from CloudHSM hardware device
-
-
-
-### **AWS Web Application Firewall (WAF)**
-
-https://docs.aws.amazon.com/waf/latest/developerguide/waf-chapter.html
-
-- Firewall aplicação web
-
-- Actions 
-
-  - **Allow** all requests except ones you specify
-  - **Block** all requests except ones you specify - **Pode bloquear todas as solicitações, exceto aquelas que você especificar**
-  - **Count** requests you specify
-
-- Use cases
-
-  - Protect against SQL Injection attacks
-  - Protect against cross-site scripting 
-  - Block specific ip
-  - only allow traffic from specific ip 
-
-- Protege contra Ataque DDoS
-
-- **Não inspeciona os pacotes**
-
-- Layer 7 (HTTP)
-
-- **Deploy in ALB, API GW e CloudFront**
-
-- **Pode ser utilizado para proteger sites fora da AWS c/ Cloudfront**
-
-- Types of rules
-
-  - Regular rules
-  - Rate-based rules
-    - update a cada 5 min
-
-
-
-
-- WebACL - Use as regras em uma web ACL para definir como inspecionar e manipular solicitações da web HTTP (S) com base em critérios como o seguinte:
-  - Scripts que provavelmente são mal-intencionados. Os invasores incorporam scripts que podem explorar vulnerabilidades nas aplicações web. Isso é conhecido como script entre sites (XSS).
-  - **Endereços IP ou intervalos de endereços IP** dos quais as solicitações se originam. /8, /16, /24 e /32
-  - País ou localização geográfica de origem das solicitações.
-  - Comprimento da parte específica da solicitação, como a string de consulta.
-  - Código SQL que provavelmente é mal-intencionado. Os invasores tentam extrair dados do seu banco de dados ao incorporarem código SQL mal-intencionado a uma solicitação da web. Isso é conhecido como **SQL injection**.
-  - Strings que aparecem na solicitação, por exemplo, valores que aparecem no cabeçalho `User-Agent` ou strings de texto que aparecem na string de consulta. Você também pode usar expressões regulares (regex) para especificar essas strings.
-  - Etiquetas que as regras anteriores na ACL da Web adicionaram à solicitação.
-
-
 
 
 
