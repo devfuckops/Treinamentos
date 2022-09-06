@@ -318,11 +318,7 @@ https://aws.amazon.com/athena/
 
 ## Application Integration
 
-### **EventBridge**
 
-- Summary
-  - Custom Event buses
-  - Schema registry
 
 
 
@@ -632,87 +628,6 @@ O AWS CloudTrail monitora e registra a atividade da conta por toda a infraestrut
     
 
 
-
-### AWS CloudWatch
-
-https://aws.amazon.com/pt/cloudwatch/
-
-https://aws.amazon.com/cloudwatch/faqs/
-
-O Amazon CloudWatch é um serviço de monitoramento e observabilidade criado para engenheiros de DevOps, desenvolvedores, engenheiros de confiabilidade de sites (SREs), gerentes de TI e proprietários de produtos.
-
-- **Summary**
-  - Coleta métricas e Logs
-  - Coleta On-premisse
-  - Real Time
-  - Custom metrics
-  - Notificações
-  - Alarmes
-  - Métricas
-
-
-
-**CloudWatch Events**
-
-https://docs.aws.amazon.com/pt_br/AmazonCloudWatch/latest/events/WhatIsCloudWatchEvents.html
-
-- Cron Jobs
-- Schedule
-- Event Pattern
-- Trigger
-
-
-
-**CloudWatch Logs**
-
-https://docs.aws.amazon.com/pt_br/AmazonCloudWatch/latest/logs/WhatIsCloudWatchLogs.html
-
-- Real-Time Monitoring
-
-- Inclui CloudTrail
-
-- **Coleta On-premisse através de agent**
-
-- Ajust Retention
-
-- Logs From
-
-  - ECS, Lambda, Cloudtrail, Cloudwatch agent, Beanstalk, Route53
-
-    
-
-**CloudWatch Alarms**
-
-https://docs.aws.amazon.com/pt_br/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html
-
-- Actions
-
-  - Auto Scaling
-  - EC2
-  - SNS
-
-- Utilizado como trigger
-
-- Alarm State
-
-  - OK
-
-  - INSUFFICIENT_DATA
-
-  - ALARM
-
-    
-
-**CloudWatch Metrics**
-
-https://docs.aws.amazon.com/pt_br/AmazonCloudWatch/latest/monitoring/working_with_metrics.html
-
-- Timestamps
-- Dashboards
-- Não tem métricas de RAM para EC2
-- Default 5 minutes
-- Detailed Monitoring - 1 min
-- Custom Metrics
 
 
 
