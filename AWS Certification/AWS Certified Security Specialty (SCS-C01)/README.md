@@ -1596,31 +1596,6 @@ https://aws.amazon.com/pt/secrets-manager/
 
 
 
-### Amazon Macie
-
-https://aws.amazon.com/pt/macie/
-
-O Amazon Macie é um serviço de segurança e privacidade de dados totalmente gerenciado que usa machine learning e correspondência de padrões para descobrir e proteger seus dados confidenciais na AWS.
-
-**Summary**
-
-- Usa machine learning
-- Usa NLP 
-- Dashboards
-- Pode analisar logs CloudTrail
-- Analisa dados no S3
-- PCI-DSS
-- PII data
-  - Personally Identifiable Information
-    - Home address, e-mail, Driver Licence 
-
-- Dados sensíveis
-- Classificação dos dados
-  - Por tipo de conteúdo
-  - Por Tema
-  - Por extensão arquivos
-  - Por Expressão Regular 
-
 
 
 ### **AWS Certificate Manager** (ACM)
