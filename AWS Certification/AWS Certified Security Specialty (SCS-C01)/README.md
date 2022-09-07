@@ -276,27 +276,7 @@ https://aws.amazon.com/pt/aup/
 
 ## Analytics
 
-### **Athena**
 
-https://aws.amazon.com/athena/
-
-**Summary**
-
-- **É um serviço de consulta interativo que facilita a análise de dados no Amazon S3 usando SQL padrão.**
-- Utiliza diretamente o S3
-- Serveless
-- SQL Languege
-- Casos de uso
-
-  - BI
-  - Analytics
-  - Report and Analyze
-- Support
-
-  - CVS
-  - JSON
-  - ORC
-  - AvroParquet
 
 
 
@@ -629,55 +609,7 @@ O AWS CloudTrail monitora e registra a atividade da conta por toda a infraestrut
 
 
 
-
-
-### **AWS Config**
-
-https://aws.amazon.com/pt/config/
-
-https://aws.amazon.com/pt/config/faq/
-
-É um serviço que permite acessar, auditar e avaliar as configurações dos recursos da AWS.
-
-**Summary**
-
-- Controla as alterações de configuração nos recursos
-- É um serviço que permite que você avalie, audite e avalie as configurações de seus recursos da AWS.
-- Grava todas as alterações no recurso
-- Pode trabalhar junto com o AWS Config onde captura as alterações feitas nos recursos
-- Pode salvar os dados no S3 e analisar pelo Athena
-- Publish for SNS
-
-
-
-**Conformance Packs**
-
-https://docs.aws.amazon.com/pt_br/config/latest/developerguide/conformance-packs.html
-
-É uma coleção de regras do AWS Config e ações de correção que podem ser facilmente implantadas como uma única entidade em uma conta e em uma região, ou em uma organização no AWS Organizations.
-
-Os pacotes de conformidade são criados usando um modelo YAML criado por você que contenha a lista de regras gerenciadas ou personalizadas do AWS Config e as ações de correção. É possível implantar o modelo usando o console do AWS Config ou a AWS CLI. Para começar rapidamente e avaliar o ambiente da AWS, use um dos modelos do pacote de conformidade de exemplo.
-
-
-
-**Aggegator**
-
-https://docs.aws.amazon.com/pt_br/config/latest/developerguide/aggregate-data.html
-
-
-
-**AWS Config Rules**
-
-**Only Admins**
-
-- ##### **AWS Managed Rules**
-
-  - basic
-  - https://docs.aws.amazon.com/pt_br/config/latest/developerguide/evaluate-config_use-managed-rules.html
-
-- ##### **Customer managed Rules**
-
-  - https://docs.aws.amazon.com/pt_br/config/latest/developerguide/evaluate-config_develop-rules.html
+- - 
 
 
 
@@ -713,66 +645,6 @@ https://aws.amazon.com/pt/organizations/
   - Não é aplicado na conta Master
   - Aplica em todos os usuários e roles, incluindo o root
   - Deve ter a permissão **Explicito**
-
-
-
-#### 
-
-
-
-
-
-
-
-- - 
-
-    
-
-### **AWS Trusted Advisor**
-
-https://aws.amazon.com/pt/premiumsupport/technology/trusted-advisor/
-
-- Checar os softlimits
-
-- Não é usado para obter **insights operacionais**
-
-- **Recomendações de Segurança e Otimização de custos**
-
-- Para receber notificações deve-se configura-ls na console
-
-- 5 categorias
-
-  - *Cost Optimization*
-  - *Performance*
-  - *Secutiry*
-  - *Fault Tolerance*
-  - *Service Limits*
-
-- Algumas verificações são gratuitas
-
-- Checks de acordo com Plano de Suportes
-
-  - **Basic e Developer Supports Plan**
-
-    - S3 Bucket
-    - Security Group
-    - IAM use
-    - MFA
-    - EBS Public Snapshot
-    - RDS Public Snapshot
-    - Service Limits
-
-  - **Business e Enterprise Supports Plan**
-
-    - Full checks
-
-    - Pode habilitar o CloudWatch Alarm
-
-    - AWS Support API
-
-      
-
-
 
 
 
